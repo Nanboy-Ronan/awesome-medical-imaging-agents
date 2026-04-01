@@ -9,6 +9,8 @@
 [![GitHub Contributors](https://img.shields.io/github/contributors/Nanboy-Ronan/awesome-agents-in-medicine?color=green&style=plastic)](https://github.com/Nanboy-Ronan/awesome-agents-in-medicine/graphs/contributors)
 
 > A curated academic list of AI agents in medicine.
+>
+> Last updated: 2026-04-01
 
 ## Table of Contents
 
@@ -33,6 +35,7 @@
 
 ### Surveys & Perspectives
 
+- [Rethinking Health Agents: From Siloed AI to Collaborative Decision Mediators](https://arxiv.org/abs/2603.24986) — arXiv (2026). Perspective on shifting health agents from isolated assistants toward collaborative mediators embedded in real clinical decision processes.
 - [Agentic AI in Healthcare & Medicine: A Seven-Dimensional Taxonomy for Empirical Evaluation of LLM-based Agents](https://arxiv.org/abs/2602.04813) — IEEE Access (2026). Taxonomy and rubric for evaluating healthcare LLM agents across seven capability dimensions.
 - [Beyond Medical Chatbots: Meddollina and the Rise of Continuous Clinical Intelligence](https://arxiv.org/abs/2601.22645) — arXiv (2026). Argues for governance-first clinical intelligence with bounded inference and principled deferral.
 - [Six Interventions for the Responsible and Ethical Implementation of Medical AI Agents](https://arxiv.org/abs/2603.13743) — arXiv (2026). Outlines governance and ethics interventions for deploying medical AI agents responsibly.
@@ -45,6 +48,13 @@
 
 ### Clinical QA & Knowledge Agents
 
+- [Within the MDT Room: Situated in Multidisciplinary Team-Grounded Agent Debate for Clinical Diagnosis](https://arxiv.org/abs/2603.28393) — arXiv (2026). Frames rare-disease diagnosis as a multidisciplinary team debate grounded in situated clinical evidence.
+- [Improving Clinical Diagnosis with Counterfactual Multi-Agent Reasoning](https://arxiv.org/abs/2603.27820) — arXiv (2026). Uses counterfactual critique across agents to test competing diagnostic hypotheses before commitment.
+- [PubMed Reasoner: Dynamic Reasoning-based Retrieval for Evidence-Grounded Biomedical Question Answering](https://arxiv.org/abs/2603.27335) — arXiv (2026). Couples iterative retrieval with reasoning to produce evidence-grounded biomedical answers from current literature.
+- [MediHive: A Decentralized Agent Collective for Medical Reasoning](https://arxiv.org/abs/2603.27150) — arXiv (2026). Decentralized specialist agents collaborate on complex medical reasoning while exposing uncertainty and disagreement.
+- [ClinicalAgents: Multi-Agent Orchestration for Clinical Decision Making with Dual-Memory](https://arxiv.org/abs/2603.26182) — arXiv (2026). Adds short- and long-term memory modules to improve multi-step clinical decision making.
+- [SkinGPT-X: A Self-Evolving Collaborative Multi-Agent System for Transparent and Trustworthy Dermatological Diagnosis](https://arxiv.org/abs/2603.26122) — arXiv (2026). Collaborative dermatology agents iteratively refine diagnoses and explanations for transparent skin-condition assessment.
+- [GSEM: Graph-based Self-Evolving Memory for Experience Augmented Clinical Reasoning](https://arxiv.org/abs/2603.22096) — arXiv (2026). Organizes prior clinical experiences as a graph memory to support retrieval and adaptation during reasoning.
 - [Agentic Cognitive Profiling: Realigning Automated Alzheimer's Disease Detection with Clinical Construct Validity](https://arxiv.org/abs/2603.17392) — arXiv (2026). Reframes Alzheimer's screening as an agentic cognitive profiling workflow designed to better match clinical constructs.
 - [MedCoRAG: Interpretable Hepatology Diagnosis via Hybrid Evidence Retrieval and Multispecialty Consensus](https://arxiv.org/abs/2603.05129) — arXiv (2026). Evidence-grounded hepatology diagnosis agent that fuses hybrid retrieval with multispecialty consensus.
 - [MedCollab: Causal-Driven Multi-Agent Collaboration for Full-Cycle Clinical Diagnosis via IBIS-Structured Argumentation](https://arxiv.org/abs/2603.01131) — arXiv (2026). Multi-agent diagnostic workflow that structures debate as causal arguments across the full clinical cycle.
@@ -76,6 +86,9 @@
 
 ### Workflow & Simulation Agents
 
+- [Symphony for Medical Coding: A Next-Generation Agentic System for Scalable and Explainable Medical Coding](https://arxiv.org/abs/2603.29709) — arXiv (2026). Multi-agent coding workflow for scalable ICD-style coding with explicit rationale and validation steps.
+- [CarePilot: A Multi-Agent Framework for Long-Horizon Computer Task Automation in Healthcare](https://arxiv.org/abs/2603.24157) — arXiv (2026). Targets long-horizon healthcare desktop workflows such as navigation, documentation, and task completion across software systems.
+- [Can LLM Agents Generate Real-World Evidence? Evaluating Observational Studies in Medical Databases](https://arxiv.org/abs/2603.22767) — arXiv (2026). Evaluates whether agents can execute end-to-end observational study workflows over medical databases.
 - [OpenHospital: A Thing-in-itself Arena for Evolving and Benchmarking LLM-based Collective Intelligence](https://arxiv.org/abs/2603.14771) — arXiv (2026). Introduces a hospital-style arena for evolving and benchmarking collaborative medical agent systems.
 - [When OpenClaw Meets Hospital: Toward an Agentic Operating System for Dynamic Clinical Workflows](https://arxiv.org/abs/2603.11721) — arXiv (2026). Proposes an agentic operating system for hospital workflows that coordinates documentation, tool use, and adaptive task execution.
 - [A Multi-Agent Framework for Interpreting Multivariate Physiological Time Series](https://arxiv.org/abs/2603.04142) — arXiv (2026). Coordinates specialized agents to interpret multivariate physiological signals for clinical decision support.
@@ -96,6 +109,8 @@
 
 ### Imaging & Vision Agents
 
+- [AD-CARE: A Guideline-grounded, Modality-agnostic LLM Agent for Real-world Alzheimer's Disease Diagnosis with Multi-cohort Assessment, Fairness Analysis, and Reader Study](https://arxiv.org/abs/2603.25322) — arXiv (2026). Alzheimer's diagnosis agent validated across cohorts with fairness analysis and clinician reader study.
+- [MedOpenClaw: Auditable Medical Imaging Agents Reasoning over Uncurated Full Studies](https://arxiv.org/abs/2603.24649) — arXiv (2026). Imaging agent framework designed to reason over full uncurated studies with auditable intermediate decisions.
 - [From Scanning Guidelines to Action: A Robotic Ultrasound Agent with LLM-Based Reasoning](https://arxiv.org/abs/2603.14393) — arXiv (2026). Turns ultrasound scanning guidelines into a reasoning-driven robotic agent for autonomous acquisition.
 - [EviAgent: Evidence-Driven Agent for Radiology Report Generation](https://arxiv.org/abs/2603.13956) — arXiv (2026). Evidence-grounded radiology reporting agent that emphasizes interpretable report generation.
 - [QCAgent: an agentic framework for quality-controllable pathology report generation from whole slide image](https://arxiv.org/abs/2603.01647) — arXiv (2026). Pathology reporting agent framework with explicit quality-control loops over whole-slide analysis.
@@ -200,6 +215,7 @@
 
 ## Benchmarks :fire:
 
+- [Doctorina MedBench: End-to-End Evaluation of Agent-Based Medical AI](https://arxiv.org/abs/2603.25821) — arXiv (2026). Simulated physician-patient benchmark for end-to-end evaluation of medical agents beyond static QA.
 - [GAIA-Medicine: Benchmarking Large Language Models in Medical Reasoning and Diagnosis](https://arxiv.org/abs/2602.18585) — arXiv (2026). Evaluates medical reasoning and diagnosis quality across diverse clinical scenarios.
 - [LiveMedBench: A Contamination-Free Medical Benchmark for LLMs with Automated Rubric Evaluation](https://arxiv.org/abs/2602.10367) — arXiv (2026). Live-style benchmark designed to reduce contamination while scoring medical outputs with automated rubrics.
 - [ClinTrialBench: A Multi-Dimensional Framework to Evaluate LLMs and AI Agents in Clinical Trial Eligibility and Matching](https://arxiv.org/abs/2602.15578) — arXiv (2026). Benchmark for trial eligibility and patient-matching decisions with clinical constraints.
