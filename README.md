@@ -10,7 +10,7 @@
 
 > A curated academic list of AI agents in medicine.
 >
-> Last updated: 2026-05-10
+> Last updated: 2026-05-15
 
 ## Table of Contents
 
@@ -50,6 +50,7 @@
 
 ### Clinical QA & Knowledge Agents
 
+- [COTCAgent: Preventive Consultation via Probabilistic Chain-of-Thought Completion](https://arxiv.org/abs/2605.15016) — arXiv (2026). Hierarchical longitudinal-EHR reasoning agent that combines executable temporal statistics, symptom-trend matching, and bounded follow-up inquiry for preventive consultation.
 - [A Versatile AI Agent for Rare Disease Diagnosis and Risk Gene Prioritization](https://arxiv.org/abs/2605.06226) — arXiv (2026). Hygieia integrates phenotypes, genetic profiles, and clinical records with router-based knowledge-enhanced reasoning for rare-disease diagnosis and risk-gene prioritization.
 - [TheraAgent: Self-Improving Therapeutic Agent for Precise and Comprehensive Treatment Planning](https://arxiv.org/abs/2605.05963) — arXiv / ACL (2026). Iterative generate-judge-refine treatment-planning agent with a treatment-specific evaluator for safer and more complete therapeutic recommendations.
 - [SymptomAI: Towards a Conversational AI Agent for Everyday Symptom Assessment](https://arxiv.org/abs/2605.04012) — arXiv (2026). Patient-facing conversational agents conduct symptom interviews and differential diagnosis for everyday symptom-assessment scenarios.
@@ -102,6 +103,10 @@
 
 ### Workflow & Simulation Agents
 
+- [GraphFlow: An Architecture for Formally Verifiable Visual Workflows Enabling Reliable Agentic AI Automation](https://arxiv.org/abs/2605.14968) — arXiv (2026). Visual workflow architecture for auditable clinical-site automation with contracts, durable execution, and explicit trust boundaries.
+- [Agentifying Patient Dynamics within LLMs through Interacting with Clinical World Model](https://arxiv.org/abs/2605.14723) — arXiv (2026). SepsisAgent uses a clinical world model in a propose-simulate-refine loop for ICU sepsis treatment recommendation.
+- [An Agentic LLM-Based Framework for Population-Scale Mental Health Screening](https://arxiv.org/abs/2605.13046) — arXiv (2026). Agentic framework for processing large-scale mental-health screening records and supporting population-level risk stratification.
+- [Towards a Virtual Neuroscientist: Autonomous Neuroimaging Analysis via Multi-Agent Collaboration](https://arxiv.org/abs/2605.09366) — arXiv (2026). Multi-agent neuroimaging analyst that plans preprocessing, feature extraction, interpretation, and iterative workflow refinement.
 - [BioResearcher: Scenario-Guided Multi-Agent for Translational Medicine](https://arxiv.org/abs/2605.05985) — arXiv (2026). Scenario-guided agents orchestrate literature, trials, patents, omics tools, and claim reconciliation for translational medicine research.
 - [ADAPTS: Agentic Decomposition for Automated Protocol-agnostic Tracking of Symptoms](https://arxiv.org/abs/2605.03212) — arXiv (2026). Mixture-of-agents decomposes long clinical interviews into symptom-specific reasoning tasks for depression and anxiety severity tracking.
 - [Virtual Speech Therapist: A Clinician-in-the-Loop AI Speech Therapy Agent for Personalized and Supervised Therapy](https://arxiv.org/abs/2605.01101) — arXiv (2026). Agentic speech-therapy platform combines stuttering classification, adaptive treatment planning, and clinician supervision.
@@ -137,6 +142,8 @@
 
 ### Imaging & Vision Agents
 
+- [DermAgent: A Self-Reflective Agentic System for Dermatological Image Analysis with Multi-Tool Reasoning and Traceable Decision-Making](https://arxiv.org/abs/2605.14403) — arXiv (2026). Dermatology agent orchestrates specialized vision, retrieval, and critic tools for traceable image diagnosis and self-correction.
+- [CellDX AI Autopilot: Agent-Guided Training and Deployment of Pathology Classifiers](https://arxiv.org/abs/2605.10362) — arXiv (2026). Agent-guided platform that helps pathologists train, evaluate, and deploy whole-slide pathology classifiers with minimal ML engineering.
 - [MedScribe: Clinically Grounded CT Reporting through Agentic Workflows](https://arxiv.org/abs/2605.01779) — arXiv (2026). Hypothesis-driven CT reporting agent iteratively acquires visual evidence to reduce hallucination and improve anatomical grounding.
 - [Echo-alpha: Large Agentic Multimodal Reasoning Model for Ultrasound Interpretation](https://arxiv.org/abs/2604.28011) — arXiv (2026). Agentic ultrasound model combines lesion localization with multimodal clinical reasoning for grounded interpretation.
 - [GAZE: Grounded Agentic Zero-shot Evaluation with Viewer-Level Tools and Literature Retrieval on Rare Brain MRI](https://arxiv.org/abs/2605.00876) — arXiv (2026). Rare brain MRI framework lets VLMs call viewer tools and PubMed-backed retrieval before generating reports.
@@ -199,6 +206,7 @@
 
 ### Multimodal Tool-Using Agents
 
+- [ProtoMedAgent: Multimodal Clinical Interpretability via Privacy-Aware Agentic Workflows](https://arxiv.org/abs/2605.14113) — arXiv (2026). Privacy-aware multimodal workflow converts prototype-model evidence into clinically interpretable documentation while auditing retrieval-driven hallucinations.
 - [TheraAgent: Multi-Agent Framework with Self-Evolving Memory and Evidence-Calibrated Reasoning for PET Theranostics](https://arxiv.org/abs/2603.13676) — arXiv (2026). Multi-agent PET theranostics framework with case memory and trial-grounded reasoning.
 - [CARE: Towards Clinical Accountability in Multi-Modal Medical Reasoning with an Evidence-Grounded Agentic Framework](https://arxiv.org/abs/2603.01607) — arXiv (2026). Evidence-grounded multimodal agent framework emphasizing traceability and accountable clinical reasoning.
 - [Meissa: Multi-modal Medical Agentic Intelligence](https://arxiv.org/abs/2603.09018) — arXiv (2026). Lightweight offline 4B multimodal medical agent trained on structured trajectories for strategy selection and multi-step tool or multi-agent interaction.
@@ -210,6 +218,7 @@
 
 ### Agent Skills & Tool Learning
 
+- [Reinforcement Learning for Tool-Calling Agents in Fast Healthcare Interoperability Resources (FHIR)](https://arxiv.org/abs/2605.14126) — arXiv (2026). RL post-training improves multi-turn CodeAct agents for clinically meaningful question answering over FHIR resource graphs.
 - [An Empirical Study of Agent Skills for Healthcare: Practice, Gaps, and Governance](https://arxiv.org/abs/2605.02709) — arXiv (2026). Empirical study of public healthcare agent skills, documenting practice patterns, transfer gaps, and governance needs.
 - [MedSkillAudit: A Domain-Specific Audit Framework for Medical Research Agent Skills](https://arxiv.org/abs/2604.20441) — arXiv (2026). Audit framework for medical research agent skills emphasizing scientific integrity, reproducibility, methodological validity, and boundary safety.
 - [Large language model agents can use tools to perform clinical calculations](https://www.nature.com/articles/s41746-025-01475-8) — npj Digital Medicine (2025). Tool-use agents improve clinical calculator accuracy via OpenMedCalc and code-interpreter style tools.
@@ -234,6 +243,8 @@
 
 ### Safety, Security & Evaluation
 
+- [MedMemoryBench: Benchmarking Agent Memory in Personalized Healthcare](https://arxiv.org/abs/2605.11814) — arXiv (2026). Benchmark and evaluation suite for long-term memory in personalized healthcare agents, emphasizing precision, safety, and clinical tracking.
+- [CPEMH: An Agentic Framework for Prompt-Driven Behavior Evaluation and Assurance in Foundation-Model Systems for Mental Health Screening](https://arxiv.org/abs/2605.11341) — arXiv (2026). Agentic assurance framework for evaluating prompt-driven behavior in mental-health screening systems.
 - [CuraView: A Multi-Agent Framework for Medical Hallucination Detection with GraphRAG-Enhanced Knowledge Verification](https://arxiv.org/abs/2605.03476) — arXiv (2026). Multi-agent verifier detects sentence-level hallucinations in discharge summaries with GraphRAG evidence grounding.
 - [Modeling Clinical Concern Trajectories in Language Model Agents](https://arxiv.org/abs/2604.27872) — arXiv (2026). Studies explicit clinical-concern state dynamics so agents expose pre-escalation risk signals without assuming clinical authority.
 - [Detecting Clinical Discrepancies in Health Coaching Agents: A Dual-Stream Memory and Reconciliation Architecture](https://arxiv.org/abs/2604.27045) — arXiv (2026). Memory architecture reconciles patient self-report and EHR facts to detect discrepancies in longitudinal health coaching agents.
@@ -263,6 +274,11 @@
 
 ## Benchmarks :fire:
 
+- [RealICU: Do LLM Agents Understand Long-Context ICU Data? A Benchmark Beyond Behavior Imitation](https://arxiv.org/abs/2605.13542) — arXiv (2026). ICU benchmark for long-context patient-state understanding and decision support beyond imitating historical clinician actions.
+- [ABRA: Agent Benchmark for Radiology Applications](https://arxiv.org/abs/2605.11224) — arXiv (2026). Radiology-agent benchmark where agents operate OHIF and Orthanc through viewer, DICOM, and function-calling tools.
+- [AgentRx: A Benchmark Study of LLM Agents for Multimodal Clinical Prediction Tasks](https://arxiv.org/abs/2605.10286) — arXiv (2026). Benchmark study of LLM agents synthesizing temporal EHR, medical images, reports, and notes for clinical prediction.
+- [DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agents](https://arxiv.org/abs/2605.09679) — arXiv (2026). Hierarchical 3D tumor VQA benchmark that isolates perception, localization, reasoning, and tool-use failures.
+- [CodeClinic: Evaluating Automation of Coding Skills for Clinical Reasoning Agents](https://arxiv.org/abs/2605.09675) — arXiv (2026). Tests whether clinical agents can generate and maintain code skills for ICU monitoring and EHR reasoning tasks.
 - [PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments](https://arxiv.org/abs/2605.02240) — arXiv (2026). Benchmark of 100 long-horizon physician tasks in realistic EHR environments with verifiable execution.
 - [Healthcare AI GYM for Medical Agents](https://arxiv.org/abs/2605.02943) — arXiv (2026). Gymnasium-compatible environment for multi-turn reinforcement learning across clinical domains, tools, and safe treatment decisions.
 - [MedProbeBench: Systematic Benchmarking at Deep Evidence Integration for Expert-level Medical Guideline](https://arxiv.org/abs/2604.18418) — arXiv (2026). Benchmark for deep evidence integration in expert-level medical guideline development workflows.
@@ -301,6 +317,8 @@
 
 ## Toolboxes :toolbox:
 
+- [FrankDengAI/COTCAgent](https://github.com/FrankDengAI/COTCAgent/) — Official implementation for COTCAgent longitudinal-EHR preventive consultation.
+- [YizeezLiu/DermAgent](https://github.com/YizeezLiu/DermAgent) — Official implementation for DermAgent dermatology image analysis with multi-tool reasoning and traceable decisions.
 - [gersteinlab/MedAgents](https://github.com/gersteinlab/MedAgents) — Official implementation for the MedAgents role-playing architecture and evaluation suite.
 - [Wangyixinxin/MMedAgent](https://github.com/Wangyixinxin/MMedAgent) — Codebase showing multimodal tool-use (retrieval, segmentation, calculators) via controller, solver, and reviewer agents.
 - [bowang-lab/MedRAX](https://github.com/bowang-lab/MedRAX) — ICML 2025 MedRAX pipeline with agent orchestration for chest X-ray reasoning.
