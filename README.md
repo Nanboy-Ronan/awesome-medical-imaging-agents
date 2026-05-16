@@ -1,20 +1,20 @@
-# Awesome Agents in Medicine [![Awesome Lists](https://srv-cdn.himpfen.io/badges/awesome-lists/awesomelists-flat.svg)](https://github.com/awesomelistsio/awesome)
+# Awesome Medical Imaging Agents [![Awesome Lists](https://srv-cdn.himpfen.io/badges/awesome-lists/awesomelists-flat.svg)](https://github.com/awesomelistsio/awesome)
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-YES-green.svg)](https://github.com/Nanboy-Ronan/awesome-agents-in-medicine/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-YES-green.svg)](https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents/graphs/commit-activity)
 ![PR Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
-![ ](https://img.shields.io/github/last-commit/Nanboy-Ronan/awesome-agents-in-medicine)
-[![GitHub stars](https://img.shields.io/github/stars/Nanboy-Ronan/awesome-agents-in-medicine?color=blue&style=plastic)](https://github.com/Nanboy-Ronan/awesome-agents-in-medicine/stargazers)
-[![GitHub watchers](https://img.shields.io/github/watchers/Nanboy-Ronan/awesome-agents-in-medicine?color=yellow&style=plastic)](https://github.com/Nanboy-Ronan/awesome-agents-in-medicine)
-[![GitHub forks](https://img.shields.io/github/forks/Nanboy-Ronan/awesome-agents-in-medicine?color=red&style=plastic)](https://github.com/Nanboy-Ronan/awesome-agents-in-medicine/network/members)
-[![GitHub Contributors](https://img.shields.io/github/contributors/Nanboy-Ronan/awesome-agents-in-medicine?color=green&style=plastic)](https://github.com/Nanboy-Ronan/awesome-agents-in-medicine/graphs/contributors)
+![ ](https://img.shields.io/github/last-commit/Nanboy-Ronan/awesome-medical-imaging-agents)
+[![GitHub stars](https://img.shields.io/github/stars/Nanboy-Ronan/awesome-medical-imaging-agents?color=blue&style=plastic)](https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents/stargazers)
+[![GitHub watchers](https://img.shields.io/github/watchers/Nanboy-Ronan/awesome-medical-imaging-agents?color=yellow&style=plastic)](https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents)
+[![GitHub forks](https://img.shields.io/github/forks/Nanboy-Ronan/awesome-medical-imaging-agents?color=red&style=plastic)](https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents/network/members)
+[![GitHub Contributors](https://img.shields.io/github/contributors/Nanboy-Ronan/awesome-medical-imaging-agents?color=green&style=plastic)](https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents/graphs/contributors)
 
-> A curated academic list of AI agents in medicine.
+> A curated academic list of AI agents for medical imaging.
 >
 > Last updated: 2026-05-16
 
 ## Table of Contents
 
-- [Awesome Agents in Medicine Paper List :page_with_curl:](#paper-list)
+- [Awesome Medical Imaging Agents Paper List :page_with_curl:](#paper-list)
   - [Surveys & Perspectives](#surveys--perspectives)
   - [Clinical QA & Knowledge Agents](#clinical-qa--knowledge-agents)
   - [Workflow & Simulation Agents](#workflow--simulation-agents)
