@@ -1,0 +1,32 @@
+# Awesome Medical Imaging Agents
+
+> A curated academic list of AI agents, LLM agents, multimodal agents, and tool-using AI systems for medical imaging and healthcare workflows.
+
+This repository is intended for researchers, clinicians, engineers, and AI assistants looking for resources on medical imaging agents and agentic AI in healthcare.
+
+## Main Resource
+
+- [README.md](README.md): Curated paper list, benchmarks, datasets, toolboxes, and related awesome lists.
+
+## Topics Covered
+
+- Medical imaging agents
+- Radiology agents
+- Pathology agents
+- Chest X-ray agents
+- CT and MRI agents
+- Ultrasound and echocardiography agents
+- Dermatology and endoscopy vision agents
+- Medical image segmentation agents
+- Radiology report generation agents
+- Multimodal medical AI agents
+- Healthcare LLM agents
+- Clinical reasoning agents
+- Tool-using medical AI
+- Multi-agent clinical systems
+- Medical AI benchmarks and datasets
+- Safety, hallucination detection, fairness, privacy, and evaluation for medical AI agents
+
+## Suggested Citation
+
+If this repository is useful, cite the GitHub repository or use the metadata in `CITATION.cff`.

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this curated list, please cite it as below."
+title: "Awesome Medical Imaging Agents"
+type: dataset
+authors:
+  - given-names: "Ruinan"
+    family-names: "Jin"
+repository-code: "https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents"
+url: "https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents"
+abstract: "A curated academic list of AI agents, LLM agents, multimodal agents, and tool-using AI systems for medical imaging and healthcare workflows."
+keywords:
+  - medical imaging agents
+  - radiology agents
+  - pathology agents
+  - healthcare AI agents
+  - medical AI agents
+  - LLM agents
+  - multimodal medical AI
+  - agentic AI in healthcare
+  - radiology report generation
+  - medical image analysis
+license: MIT

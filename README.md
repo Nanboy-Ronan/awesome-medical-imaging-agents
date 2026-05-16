@@ -12,8 +12,20 @@
 >
 > Last updated: 2026-05-16
 
+This repository tracks research on agentic AI, LLM agents, multimodal agents, and tool-using AI systems for medical imaging and clinical workflows. It focuses on radiology, pathology, ultrasound, CT, MRI, chest X-ray, dermatology imaging, endoscopy, segmentation, report generation, clinical decision support, benchmarks, datasets, and open-source toolboxes.
+
+Use this list to find recent papers, surveys, benchmarks, datasets, and implementations for medical imaging agents, healthcare AI agents, radiology agents, pathology agents, multimodal medical AI, and LLM-based clinical reasoning systems.
+
+## Scope
+
+- **Medical imaging agents:** radiology, pathology, ultrasound, CT, MRI, chest X-ray, dental X-ray, dermatology, endoscopy, PET, and cardiac imaging agents.
+- **Agent workflows:** tool use, retrieval-augmented generation, multi-agent collaboration, self-reflection, planning, clinical reasoning, report generation, quality control, and human-in-the-loop review.
+- **Research resources:** peer-reviewed papers, arXiv preprints, benchmarks, datasets, reproducible code, and related awesome lists.
+- **Safety and evaluation:** hallucination detection, fairness, robustness, uncertainty, abstention, privacy, security, and clinically grounded evaluation.
+
 ## Table of Contents
 
+- [Scope](#scope)
 - [Awesome Medical Imaging Agents Paper List :page_with_curl:](#paper-list)
   - [Surveys & Perspectives](#surveys--perspectives)
   - [Clinical QA & Knowledge Agents](#clinical-qa--knowledge-agents)
@@ -51,6 +63,7 @@
 ### Clinical QA & Knowledge Agents
 
 - [COTCAgent: Preventive Consultation via Probabilistic Chain-of-Thought Completion](https://arxiv.org/abs/2605.15016) — arXiv (2026). Hierarchical longitudinal-EHR reasoning agent that combines executable temporal statistics, symptom-trend matching, and bounded follow-up inquiry for preventive consultation.
+- [Text Knows What, Tables Know When: Clinical Timeline Reconstruction via Retrieval-Augmented Multimodal Alignment](https://arxiv.org/abs/2605.15168) — arXiv (2026). Retrieval-augmented multimodal alignment reconstructs clinical timelines by anchoring narrative events to structured EHR evidence.
 - [A Versatile AI Agent for Rare Disease Diagnosis and Risk Gene Prioritization](https://arxiv.org/abs/2605.06226) — arXiv (2026). Hygieia integrates phenotypes, genetic profiles, and clinical records with router-based knowledge-enhanced reasoning for rare-disease diagnosis and risk-gene prioritization.
 - [TheraAgent: Self-Improving Therapeutic Agent for Precise and Comprehensive Treatment Planning](https://arxiv.org/abs/2605.05963) — arXiv / ACL (2026). Iterative generate-judge-refine treatment-planning agent with a treatment-specific evaluator for safer and more complete therapeutic recommendations.
 - [SymptomAI: Towards a Conversational AI Agent for Everyday Symptom Assessment](https://arxiv.org/abs/2605.04012) — arXiv (2026). Patient-facing conversational agents conduct symptom interviews and differential diagnosis for everyday symptom-assessment scenarios.
@@ -144,6 +157,7 @@
 
 ### Imaging & Vision Agents
 
+- [Evidential Reasoning Advances Interpretable Real-World Disease Screening](https://arxiv.org/abs/2605.15171) — arXiv (2026). EviScreen retrieves region-level historical case evidence from dual knowledge banks to make medical image screening more interpretable.
 - [DermAgent: A Self-Reflective Agentic System for Dermatological Image Analysis with Multi-Tool Reasoning and Traceable Decision-Making](https://arxiv.org/abs/2605.14403) — arXiv (2026). Dermatology agent orchestrates specialized vision, retrieval, and critic tools for traceable image diagnosis and self-correction.
 - [CellDX AI Autopilot: Agent-Guided Training and Deployment of Pathology Classifiers](https://arxiv.org/abs/2605.10362) — arXiv (2026). Agent-guided platform that helps pathologists train, evaluate, and deploy whole-slide pathology classifiers with minimal ML engineering.
 - [MedScribe: Clinically Grounded CT Reporting through Agentic Workflows](https://arxiv.org/abs/2605.01779) — arXiv (2026). Hypothesis-driven CT reporting agent iteratively acquires visual evidence to reduce hallucination and improve anatomical grounding.
@@ -245,6 +259,8 @@
 
 ### Safety, Security & Evaluation
 
+- [Quantifying and Mitigating Premature Closure in Frontier LLMs](https://arxiv.org/abs/2605.15000) — arXiv (2026). Evaluates medical LLM false-action behavior when safer responses should clarify, abstain, escalate, or refuse.
+- [When Evidence Conflicts: Uncertainty and Order Effects in Retrieval-Augmented Biomedical Question Answering](https://arxiv.org/abs/2605.14115) — arXiv (2026). Shows that contradictory biomedical retrieval evidence and document order can flip LLM answers, motivating conflict-aware abstention.
 - [MedMemoryBench: Benchmarking Agent Memory in Personalized Healthcare](https://arxiv.org/abs/2605.11814) — arXiv (2026). Benchmark and evaluation suite for long-term memory in personalized healthcare agents, emphasizing precision, safety, and clinical tracking.
 - [CPEMH: An Agentic Framework for Prompt-Driven Behavior Evaluation and Assurance in Foundation-Model Systems for Mental Health Screening](https://arxiv.org/abs/2605.11341) — arXiv (2026). Agentic assurance framework for evaluating prompt-driven behavior in mental-health screening systems.
 - [CuraView: A Multi-Agent Framework for Medical Hallucination Detection with GraphRAG-Enhanced Knowledge Verification](https://arxiv.org/abs/2605.03476) — arXiv (2026). Multi-agent verifier detects sentence-level hallucinations in discharge summaries with GraphRAG evidence grounding.
@@ -320,6 +336,7 @@
 ## Toolboxes :toolbox:
 
 - [FrankDengAI/COTCAgent](https://github.com/FrankDengAI/COTCAgent/) — Official implementation for COTCAgent longitudinal-EHR preventive consultation.
+- [DopamineLcy/EviScreen](https://github.com/DopamineLcy/EviScreen) — Official implementation for EviScreen interpretable disease screening with evidential case retrieval.
 - [YizeezLiu/DermAgent](https://github.com/YizeezLiu/DermAgent) — Official implementation for DermAgent dermatology image analysis with multi-tool reasoning and traceable decisions.
 - [gersteinlab/MedAgents](https://github.com/gersteinlab/MedAgents) — Official implementation for the MedAgents role-playing architecture and evaluation suite.
 - [Wangyixinxin/MMedAgent](https://github.com/Wangyixinxin/MMedAgent) — Codebase showing multimodal tool-use (retrieval, segmentation, calculators) via controller, solver, and reviewer agents.
@@ -341,8 +358,10 @@
   
 ## Contributing
 
-Contributions are welcome!
+Contributions are welcome, especially new work on medical imaging agents, radiology agents, pathology agents, multimodal medical AI agents, healthcare LLM agents, clinical tool-use agents, benchmarks, datasets, and open-source implementations.
+
+Please open a pull request with the paper or project link, year, venue when available, and a concise one-sentence description of the agent workflow or imaging task.
 
 ## License
 
-[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)](http://creativecommons.org/licenses/by-sa/4.0/)
+[MIT](LICENSE)
