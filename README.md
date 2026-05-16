@@ -12,10 +12,6 @@
 >
 > Last updated: 2026-05-16
 
-> **Note:** Previously named *Awesome Agents in Medicine*, this list now focuses on the fast-growing subfield of medical imaging agents.
-
-> **Suggested GitHub description:** "Awesome list and searchable hub for medical imaging agents: radiology agents, pathology agents, segmentation agents, medical VLM agents, benchmarks, datasets, tools, and papers."
-
 This repository tracks research on medical imaging agents, agentic AI for medical image analysis, and tool-using AI systems for imaging-focused clinical workflows. It covers radiology agents, pathology agents, ultrasound agents, endoscopy agents, ophthalmology agents, 3D medical imaging agents, medical vision-language models (VLMs), segmentation agents, report-generation agents, multimodal clinical reasoning systems, CT, MRI, chest X-ray, dermatology imaging, clinical decision support, benchmarks, datasets, and open-source toolboxes.
 
 Use this list to find recent papers, surveys, benchmarks, datasets, and implementations for medical imaging agents, radiology agents, pathology agents, ultrasound agents, medical VLM agents, multimodal clinical reasoning, and tool-using agents for medical image analysis.
