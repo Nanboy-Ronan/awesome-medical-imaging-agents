@@ -1,0 +1,263 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 660" width="760" height="660">
+<defs>
+  <!-- Background -->
+  <linearGradient id="bg-g" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#eef4ff"/>
+    <stop offset="100%" stop-color="#f8fafc"/>
+  </linearGradient>
+  <!-- Root -->
+  <linearGradient id="root-g" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#0f172a"/>
+    <stop offset="100%" stop-color="#1e3a8a"/>
+  </linearGradient>
+  <!-- Radiology: blue -->
+  <linearGradient id="rad-g" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#1e3a8a"/>
+    <stop offset="100%" stop-color="#3b82f6"/>
+  </linearGradient>
+  <!-- Pathology: purple -->
+  <linearGradient id="path-g" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#5b21b6"/>
+    <stop offset="100%" stop-color="#8b5cf6"/>
+  </linearGradient>
+  <!-- Ultrasound: teal-green -->
+  <linearGradient id="us-g" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#065f46"/>
+    <stop offset="100%" stop-color="#10b981"/>
+  </linearGradient>
+  <!-- Segmentation: amber -->
+  <linearGradient id="seg-g" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#92400e"/>
+    <stop offset="100%" stop-color="#f59e0b"/>
+  </linearGradient>
+  <!-- VLM: rose-red -->
+  <linearGradient id="vlm-g" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#7f1d1d"/>
+    <stop offset="100%" stop-color="#f43f5e"/>
+  </linearGradient>
+  <!-- Evaluation: slate -->
+  <linearGradient id="eval-g" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#111827"/>
+    <stop offset="100%" stop-color="#4b5563"/>
+  </linearGradient>
+</defs>
+
+<!-- ─── Background ─────────────────────────────────────────────────── -->
+<rect width="760" height="660" fill="url(#bg-g)" rx="12" stroke="#dde6f0" stroke-width="1.5"/>
+
+<!-- ─── Title ────────────────────────────────────────────────────────── -->
+<text x="380" y="30" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="16" font-weight="700" fill="#0f172a"
+      letter-spacing="0.4">Medical Imaging Agents — Visual Taxonomy</text>
+<line x1="24" y1="47" x2="736" y2="47" stroke="#cbd5e1" stroke-width="1"/>
+
+<!-- ─── ROOT NODE  center=(119, 381), rect(24, 353, 190, 56) ─────────── -->
+<!-- shadow -->
+<rect x="27" y="356" width="190" height="56" rx="10" fill="#000" opacity="0.10"/>
+<!-- box -->
+<rect x="24" y="353" width="190" height="56" rx="10" fill="url(#root-g)"/>
+<!-- text -->
+<text x="119" y="372" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Medical Imaging</text>
+<text x="119" y="390" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Agents</text>
+
+<!-- Root → spine -->
+<line x1="214" y1="381" x2="228" y2="381" stroke="#94a3b8" stroke-width="2"/>
+<!-- Spine  x=228, y=151→597 -->
+<line x1="228" y1="151" x2="228" y2="597" stroke="#94a3b8" stroke-width="2"/>
+
+<!-- Spine junction dots (draw after spine so they sit on top) -->
+<circle cx="228" cy="151" r="5" fill="#3b82f6" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="228" cy="256" r="5" fill="#8b5cf6" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="228" cy="348" r="5" fill="#10b981" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="228" cy="427" r="5" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="228" cy="505" r="5" fill="#f43f5e" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="228" cy="597" r="5" fill="#6b7280" stroke="#ffffff" stroke-width="1.5"/>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- RADIOLOGY AGENTS  cat_y=151  •  blue                              -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<line x1="228" y1="151" x2="240" y2="151" stroke="#3b82f6" stroke-width="2"/>
+<!-- shadow -->
+<rect x="243" y="136" width="210" height="36" rx="8" fill="#000" opacity="0.08"/>
+<!-- box -->
+<rect x="240" y="133" width="210" height="36" rx="8" fill="url(#rad-g)"/>
+<text x="345" y="151" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Radiology Agents</text>
+
+<!-- cat → leaf hub -->
+<line x1="450" y1="151" x2="460" y2="151" stroke="#3b82f6" stroke-width="1.5"/>
+<!-- leaf hub vertical  y=110→191 -->
+<line x1="460" y1="110" x2="460" y2="191" stroke="#93c5fd" stroke-width="1.5"/>
+
+<!-- CXR Reasoning  y=110 -->
+<line x1="460" y1="110" x2="470" y2="110" stroke="#93c5fd" stroke-width="1"/>
+<rect x="470" y="98" width="245" height="24" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+<text x="592" y="110" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#1e40af">CXR Reasoning</text>
+
+<!-- CT / MRI Analysis  y=137 -->
+<line x1="460" y1="137" x2="470" y2="137" stroke="#93c5fd" stroke-width="1"/>
+<rect x="470" y="125" width="245" height="24" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+<text x="592" y="137" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#1e40af">CT / MRI Analysis</text>
+
+<!-- Report Generation  y=164 -->
+<line x1="460" y1="164" x2="470" y2="164" stroke="#93c5fd" stroke-width="1"/>
+<rect x="470" y="152" width="245" height="24" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+<text x="592" y="164" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#1e40af">Report Generation</text>
+
+<!-- DICOM Viewer Agents  y=191 -->
+<line x1="460" y1="191" x2="470" y2="191" stroke="#93c5fd" stroke-width="1"/>
+<rect x="470" y="179" width="245" height="24" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+<text x="592" y="191" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#1e40af">DICOM Viewer Agents</text>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- PATHOLOGY AGENTS  cat_y=256  •  purple                            -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<line x1="228" y1="256" x2="240" y2="256" stroke="#8b5cf6" stroke-width="2"/>
+<rect x="243" y="241" width="210" height="36" rx="8" fill="#000" opacity="0.08"/>
+<rect x="240" y="238" width="210" height="36" rx="8" fill="url(#path-g)"/>
+<text x="345" y="256" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Pathology Agents</text>
+
+<line x1="450" y1="256" x2="460" y2="256" stroke="#8b5cf6" stroke-width="1.5"/>
+<line x1="460" y1="229" x2="460" y2="283" stroke="#c4b5fd" stroke-width="1.5"/>
+
+<!-- WSI Navigation  y=229 -->
+<line x1="460" y1="229" x2="470" y2="229" stroke="#c4b5fd" stroke-width="1"/>
+<rect x="470" y="217" width="245" height="24" rx="12" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1.5"/>
+<text x="592" y="229" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#4c1d95">WSI Navigation</text>
+
+<!-- Visual Grounding  y=256 -->
+<line x1="460" y1="256" x2="470" y2="256" stroke="#c4b5fd" stroke-width="1"/>
+<rect x="470" y="244" width="245" height="24" rx="12" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1.5"/>
+<text x="592" y="256" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#4c1d95">Visual Grounding</text>
+
+<!-- Diagnosis Support  y=283 -->
+<line x1="460" y1="283" x2="470" y2="283" stroke="#c4b5fd" stroke-width="1"/>
+<rect x="470" y="271" width="245" height="24" rx="12" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1.5"/>
+<text x="592" y="283" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#4c1d95">Diagnosis Support</text>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- ULTRASOUND AGENTS  cat_y=348  •  teal                             -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<line x1="228" y1="348" x2="240" y2="348" stroke="#10b981" stroke-width="2"/>
+<rect x="243" y="333" width="210" height="36" rx="8" fill="#000" opacity="0.08"/>
+<rect x="240" y="330" width="210" height="36" rx="8" fill="url(#us-g)"/>
+<text x="345" y="348" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Ultrasound Agents</text>
+
+<line x1="450" y1="348" x2="460" y2="348" stroke="#10b981" stroke-width="1.5"/>
+<line x1="460" y1="321" x2="460" y2="375" stroke="#6ee7b7" stroke-width="1.5"/>
+
+<!-- Acquisition Guidance  y=321 -->
+<line x1="460" y1="321" x2="470" y2="321" stroke="#6ee7b7" stroke-width="1"/>
+<rect x="470" y="309" width="245" height="24" rx="12" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.5"/>
+<text x="592" y="321" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#064e3b">Acquisition Guidance</text>
+
+<!-- Fetal / OB Ultrasound  y=348 -->
+<line x1="460" y1="348" x2="470" y2="348" stroke="#6ee7b7" stroke-width="1"/>
+<rect x="470" y="336" width="245" height="24" rx="12" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.5"/>
+<text x="592" y="348" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#064e3b">Fetal / OB Ultrasound</text>
+
+<!-- Real-Time Interpretation  y=375 -->
+<line x1="460" y1="375" x2="470" y2="375" stroke="#6ee7b7" stroke-width="1"/>
+<rect x="470" y="363" width="245" height="24" rx="12" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.5"/>
+<text x="592" y="375" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#064e3b">Real-Time Interpretation</text>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- SEGMENTATION & ANNOTATION  cat_y=427  •  amber  (two-line, h=44) -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<line x1="228" y1="427" x2="240" y2="427" stroke="#f59e0b" stroke-width="2"/>
+<rect x="243" y="408" width="210" height="44" rx="8" fill="#000" opacity="0.08"/>
+<rect x="240" y="405" width="210" height="44" rx="8" fill="url(#seg-g)"/>
+<text x="345" y="418" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Segmentation &amp;</text>
+<text x="345" y="436" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Annotation Agents</text>
+
+<line x1="450" y1="427" x2="460" y2="427" stroke="#f59e0b" stroke-width="1.5"/>
+<line x1="460" y1="413" x2="460" y2="440" stroke="#fcd34d" stroke-width="1.5"/>
+
+<!-- Tool-Using Segmentation  y=413 -->
+<line x1="460" y1="413" x2="470" y2="413" stroke="#fcd34d" stroke-width="1"/>
+<rect x="470" y="401" width="245" height="24" rx="12" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.5"/>
+<text x="592" y="413" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#78350f">Tool-Using Segmentation</text>
+
+<!-- Interactive Correction  y=440 -->
+<line x1="460" y1="440" x2="470" y2="440" stroke="#fcd34d" stroke-width="1"/>
+<rect x="470" y="428" width="245" height="24" rx="12" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.5"/>
+<text x="592" y="440" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#78350f">Interactive Correction</text>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- MEDICAL VLM AGENTS  cat_y=505  •  rose                            -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<line x1="228" y1="505" x2="240" y2="505" stroke="#f43f5e" stroke-width="2"/>
+<rect x="243" y="490" width="210" height="36" rx="8" fill="#000" opacity="0.08"/>
+<rect x="240" y="487" width="210" height="36" rx="8" fill="url(#vlm-g)"/>
+<text x="345" y="505" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Medical VLM Agents</text>
+
+<line x1="450" y1="505" x2="460" y2="505" stroke="#f43f5e" stroke-width="1.5"/>
+<line x1="460" y1="478" x2="460" y2="532" stroke="#fda4af" stroke-width="1.5"/>
+
+<!-- VQA  y=478 -->
+<line x1="460" y1="478" x2="470" y2="478" stroke="#fda4af" stroke-width="1"/>
+<rect x="470" y="466" width="245" height="24" rx="12" fill="#fff1f2" stroke="#fda4af" stroke-width="1.5"/>
+<text x="592" y="478" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#7f1d1d">VQA</text>
+
+<!-- Multimodal Reasoning  y=505 -->
+<line x1="460" y1="505" x2="470" y2="505" stroke="#fda4af" stroke-width="1"/>
+<rect x="470" y="493" width="245" height="24" rx="12" fill="#fff1f2" stroke="#fda4af" stroke-width="1.5"/>
+<text x="592" y="505" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#7f1d1d">Multimodal Reasoning</text>
+
+<!-- Report Understanding  y=532 -->
+<line x1="460" y1="532" x2="470" y2="532" stroke="#fda4af" stroke-width="1"/>
+<rect x="470" y="520" width="245" height="24" rx="12" fill="#fff1f2" stroke="#fda4af" stroke-width="1.5"/>
+<text x="592" y="532" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#7f1d1d">Report Understanding</text>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- EVALUATION  cat_y=597  •  slate                                   -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<line x1="228" y1="597" x2="240" y2="597" stroke="#6b7280" stroke-width="2"/>
+<rect x="243" y="582" width="210" height="36" rx="8" fill="#000" opacity="0.08"/>
+<rect x="240" y="579" width="210" height="36" rx="8" fill="url(#eval-g)"/>
+<text x="345" y="597" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Evaluation</text>
+
+<line x1="450" y1="597" x2="460" y2="597" stroke="#6b7280" stroke-width="1.5"/>
+<line x1="460" y1="570" x2="460" y2="624" stroke="#9ca3af" stroke-width="1.5"/>
+
+<!-- Benchmarks  y=570 -->
+<line x1="460" y1="570" x2="470" y2="570" stroke="#9ca3af" stroke-width="1"/>
+<rect x="470" y="558" width="245" height="24" rx="12" fill="#f8fafc" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="592" y="570" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#1f2937">Benchmarks</text>
+
+<!-- Safety  y=597 -->
+<line x1="460" y1="597" x2="470" y2="597" stroke="#9ca3af" stroke-width="1"/>
+<rect x="470" y="585" width="245" height="24" rx="12" fill="#f8fafc" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="592" y="597" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#1f2937">Safety</text>
+
+<!-- Clinical Workflow Simulation  y=624 -->
+<line x1="460" y1="624" x2="470" y2="624" stroke="#9ca3af" stroke-width="1"/>
+<rect x="470" y="612" width="245" height="24" rx="12" fill="#f8fafc" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="592" y="624" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="11" font-weight="600" fill="#1f2937">Clinical Workflow Simulation</text>
+</svg>

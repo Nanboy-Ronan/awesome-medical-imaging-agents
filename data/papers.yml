@@ -1,0 +1,815 @@
+# Schema for entries in data/papers.yml
+#
+# Required fields:
+#   title       (str)  — Full paper or system name.
+#   year        (int)  — Publication or preprint year.
+#   domain      (str)  — Primary medical domain (e.g. "Radiology", "Pathology", "Survey").
+#   summary     (str)  — One-sentence description of the agent workflow or key contribution.
+#
+# Optional fields — use null when unavailable:
+#   venue       (str)  — Conference/journal (e.g. "ICML 2025", "arXiv", "npj Digital Medicine").
+#   paper_url   (str)  — Direct URL to the paper (arXiv, DOI, OpenReview, etc.).
+#   code_url    (str)  — GitHub or repository URL.
+#   project_url (str)  — Project page / demo URL.
+#   dataset_url (str)  — Dataset download URL (HuggingFace, Zenodo, etc.).
+#   benchmark_url (str) — Benchmark leaderboard or evaluation page URL.
+#   featured    (bool) — true for landmark / "Start Here" entries; false otherwise.
+#
+# List fields (use YAML block sequences; put null for genuinely unknown):
+#   modality    (list[str]) — Imaging modalities involved (e.g. ["CXR", "CT"]).
+#   task        (list[str]) — Agent tasks (e.g. ["report generation", "tool use"]).
+#   agent_type  (list[str]) — Agent architecture style (e.g. ["multi-agent", "tool-using", "RL-trained"]).
+#   tags        (list[str]) — Free-form keywords for filtering (e.g. ["hallucination", "RAG"]).
+#
+# Conventions:
+#   - null  → field is unknown or not applicable.
+#   - ""    → field exists but is intentionally empty (avoid; prefer null).
+#   - Lists should contain at least one element, or be null if nothing applies.
+
+papers:
+
+  # ── Radiology Agents ──────────────────────────────────────────────────────
+
+  - title: "MedRAX: Medical Reasoning Agent for Chest X-ray"
+    year: 2025
+    domain: "Radiology"
+    modality:
+      - CXR
+    task:
+      - report generation
+      - tool use
+      - visual reasoning
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/pdf/2502.02673v1"
+    code_url: "https://github.com/bowang-lab/MedRAX"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "ICML 2025"
+    tags:
+      - chest X-ray
+      - director-worker
+      - composable tools
+    summary: "Director-worker architecture where composable tool-using agents outperform single-model baselines on chest X-ray reasoning."
+    featured: true
+
+  - title: "RadAgent: A Tool-Using AI Agent for Stepwise Interpretation of Chest CT"
+    year: 2026
+    domain: "Radiology"
+    modality:
+      - CT
+    task:
+      - report generation
+      - tool use
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2604.15231"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - chest CT
+      - inspectable traces
+      - auditable reasoning
+    summary: "Generates chest CT reports through an explicit tool-calling workflow with inspectable intermediate reasoning traces."
+    featured: true
+
+  - title: "Agentic Systems in Radiology: Design, Applications, Evaluation, and Challenges"
+    year: 2025
+    domain: "Survey · Radiology"
+    modality: null
+    task:
+      - survey
+    agent_type: null
+    paper_url: "https://arxiv.org/pdf/2510.09404v2"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - survey
+      - radiology
+      - evaluation
+      - agent design
+    summary: "Best entry-point survey mapping agent design patterns, evaluation protocols, and open challenges across the full radiology pipeline."
+    featured: true
+
+  - title: "XrayClaw: Cooperative-Competitive Multi-Agent Alignment for Trustworthy Chest X-ray Diagnosis"
+    year: 2026
+    domain: "Radiology"
+    modality:
+      - CXR
+    task:
+      - diagnosis
+      - multi-agent collaboration
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2604.02695"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - trustworthiness
+      - adversarial agents
+      - cooperative agents
+    summary: "Uses cooperative and adversarial agent interactions to improve trustworthiness in chest X-ray diagnosis."
+    featured: false
+
+  - title: "GAZE: Grounded Agentic Zero-shot Evaluation on Rare Brain MRI"
+    year: 2026
+    domain: "Radiology"
+    modality:
+      - MRI
+    task:
+      - report generation
+      - retrieval
+      - tool use
+    agent_type:
+      - tool-using
+      - RAG
+    paper_url: "https://arxiv.org/abs/2605.00876"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - rare disease
+      - brain MRI
+      - DICOM viewer
+      - PubMed retrieval
+    summary: "Lets VLMs call DICOM viewer tools and PubMed-backed retrieval before generating reports for rare brain MRI cases."
+    featured: false
+
+  - title: "RadioRAG: Online Retrieval-Augmented Generation for Radiology Question Answering"
+    year: 2024
+    domain: "Radiology"
+    modality: null
+    task:
+      - question answering
+      - retrieval
+    agent_type:
+      - RAG
+    paper_url: "https://arxiv.org/abs/2407.15621"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - RAG
+      - radiology QA
+      - streaming retrieval
+    summary: "Streaming RAG agent that continuously pulls prior studies and reports while answering radiology questions."
+    featured: false
+
+  - title: "DUCX: Decomposing Unfairness in Tool-Using Chest X-ray Agents"
+    year: 2026
+    domain: "Radiology"
+    modality:
+      - CXR
+    task:
+      - fairness auditing
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2603.00777"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - fairness
+      - bias
+      - chest X-ray
+      - auditing
+    summary: "Audits how unfairness arises across tool-selection and reasoning stages in CXR agents."
+    featured: false
+
+  - title: "Zero-Shot Large Language Model Agents for Fully Automated Radiotherapy Treatment Planning"
+    year: 2025
+    domain: "Radiology"
+    modality:
+      - CT
+    task:
+      - treatment planning
+      - workflow automation
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2510.11754"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - radiotherapy
+      - treatment planning
+      - zero-shot
+    summary: "Planning agent automates radiotherapy workflows with iterative plan refinement via zero-shot LLM reasoning."
+    featured: false
+
+  # ── Pathology Agents ──────────────────────────────────────────────────────
+
+  - title: "CPathAgent: An Agent-based Foundation Model for Interpretable High-Resolution Pathology Image Analysis"
+    year: 2025
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - diagnosis
+      - interpretable analysis
+    agent_type:
+      - foundation model agent
+    paper_url: "https://arxiv.org/abs/2505.20510"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - whole-slide image
+      - pathology
+      - diagnostic logic
+      - interpretability
+    summary: "Agentic pathology foundation model mimics pathologist diagnostic logic to deliver interpretable analysis of whole-slide images."
+    featured: true
+
+  - title: "PathFinder: A Multi-Modal Multi-Agent System for Medical Diagnostic Decision-Making Applied to Histopathology"
+    year: 2025
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - diagnosis
+      - question answering
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/pdf/2502.08916"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - pathology QA
+      - planner agent
+      - verifier agent
+    summary: "Uses planner, analyzer, and verifier agents for histopathology question answering and diagnostic decision-making."
+    featured: false
+
+  - title: "WSI-Agents: A Collaborative Multi-Agent System for Multi-Modal Whole Slide Image Analysis"
+    year: 2025
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - slide parsing
+      - report generation
+      - triaging
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/pdf/2507.14680"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "MICCAI 2025"
+    tags:
+      - whole-slide image
+      - multimodal
+      - pathology
+    summary: "Delegates slide parsing, reporting, and triaging across specialized collaborative agents for whole-slide image analysis."
+    featured: false
+
+  - title: "QCAgent: An Agentic Framework for Quality-Controllable Pathology Report Generation from Whole Slide Image"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - report generation
+      - quality control
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2603.01647"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - pathology report
+      - quality control
+      - whole-slide image
+    summary: "Pathology reporting agent framework with explicit quality-control loops over whole-slide analysis."
+    featured: false
+
+  # ── Ultrasound Agents ─────────────────────────────────────────────────────
+
+  - title: "Echo-alpha: Large Agentic Multimodal Reasoning Model for Ultrasound Interpretation"
+    year: 2026
+    domain: "Ultrasound"
+    modality:
+      - ultrasound
+    task:
+      - diagnosis
+      - lesion localization
+      - clinical reasoning
+    agent_type:
+      - multimodal agent
+    paper_url: "https://arxiv.org/abs/2604.28011"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - ultrasound
+      - lesion localization
+      - grounded interpretation
+    summary: "Demonstrates that large agentic reasoning models can jointly localize lesions and perform grounded multimodal clinical interpretation of ultrasound studies."
+    featured: true
+
+  - title: "EchoAgent: Towards Reliable Echocardiography Interpretation with Eyes, Hands and Minds"
+    year: 2026
+    domain: "Ultrasound"
+    modality:
+      - echocardiography
+    task:
+      - diagnosis
+      - measurement
+      - report generation
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2604.05541"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - echocardiography
+      - cardiac imaging
+      - measurement
+    summary: "Decomposes echocardiography interpretation into visual observation, measurement, and expert reasoning for more reliable cardiac assessment."
+    featured: false
+
+  # ── Endoscopy and Surgical Agents ─────────────────────────────────────────
+
+  - title: "EndoAgent: A Memory-Guided Reflective Agent for Intelligent Endoscopic Vision-to-Decision Reasoning"
+    year: 2025
+    domain: "Endoscopy"
+    modality:
+      - endoscopy
+    task:
+      - diagnosis
+      - action planning
+    agent_type:
+      - memory-augmented
+      - reflective agent
+    paper_url: "https://arxiv.org/abs/2508.07292"
+    code_url: "https://github.com/Tyyds-ai/EndoAgent"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - endoscopy
+      - episodic memory
+      - reflective reasoning
+    summary: "Memory-guided reflective agent for endoscopic vision-to-decision reasoning; representative model for specialty-specific imaging agent design."
+    featured: true
+
+  # ── 3D CT / MRI / Volumetric Imaging Agents ───────────────────────────────
+
+  - title: "VoxelPrompt: A Vision Agent for End-to-End Medical Image Analysis"
+    year: 2024
+    domain: "3D Imaging"
+    modality:
+      - CT
+      - MRI
+      - PET
+    task:
+      - segmentation
+      - detection
+      - question answering
+    agent_type:
+      - vision agent
+      - multi-stage
+    paper_url: "http://arxiv.org/abs/2410.08397"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - volumetric
+      - 3D imaging
+      - end-to-end
+    summary: "Multi-stage vision agent for end-to-end volumetric medical image analysis covering segmentation, detection, and QA across CT, MRI, and PET."
+    featured: true
+
+  - title: "MARCH: Multi-Agent Radiology Clinical Hierarchy for CT Report Generation"
+    year: 2026
+    domain: "Radiology"
+    modality:
+      - CT
+    task:
+      - report generation
+      - quality control
+    agent_type:
+      - multi-agent
+      - hierarchical
+    paper_url: "https://arxiv.org/abs/2604.16175"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - CT report
+      - hallucination reduction
+      - hierarchical agents
+    summary: "Hierarchical radiology agents emulate clinical oversight to reduce hallucinations in 3D CT report generation."
+    featured: false
+
+  - title: "CT-Agent: A Multimodal-LLM Agent for 3D CT Radiology Question Answering"
+    year: 2025
+    domain: "Radiology"
+    modality:
+      - CT
+    task:
+      - question answering
+      - tool use
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2505.16229"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - CT
+      - volumetric QA
+      - slice-aware
+    summary: "Slice-aware CT agent answers volumetric radiology questions with targeted tool calls over 3D imaging data."
+    featured: false
+
+  # ── Segmentation and Annotation Agents ────────────────────────────────────
+
+  - title: "MedSAM-Agent: Empowering Interactive Medical Image Segmentation with Multi-turn Agentic Reinforcement Learning"
+    year: 2026
+    domain: "Segmentation"
+    modality:
+      - CT
+      - MRI
+      - ultrasound
+    task:
+      - segmentation
+      - interactive prompting
+    agent_type:
+      - RL-trained
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2602.03320"
+    code_url: "https://github.com/CUHK-AIM-Group/MedSAM-Agent"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - segmentation
+      - SAM
+      - reinforcement learning
+      - interactive
+    summary: "Introduces multi-turn RL to train an interactive segmentation agent that decides which prompts to issue to SAM — the first RL-trained imaging segmentation agent."
+    featured: true
+
+  # ── Medical VLM Agents ────────────────────────────────────────────────────
+
+  - title: "MMedAgent: Learning to Use Medical Tools with Multi-modal Agent"
+    year: 2024
+    domain: "Multimodal"
+    modality:
+      - CXR
+      - CT
+      - MRI
+      - pathology
+      - ultrasound
+      - dermatology
+      - fundus
+    task:
+      - tool use
+      - segmentation
+      - retrieval
+      - diagnosis
+    agent_type:
+      - tool-using
+      - multi-agent
+    paper_url: "https://arxiv.org/pdf/2407.02483"
+    code_url: "https://github.com/Wangyixinxin/MMedAgent"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multimodal
+      - tool selection
+      - seven modalities
+      - specialist tools
+    summary: "First paper to train a medical agent that selects and calls specialist tools (segmentation, retrieval, calculators) on demand across seven imaging modalities."
+    featured: true
+
+  - title: "MedAgent-Pro: Towards Evidence-based Multi-modal Medical Diagnosis via Reasoning Agentic Workflow"
+    year: 2026
+    domain: "Medical VLM"
+    modality:
+      - CXR
+      - CT
+      - fundus
+    task:
+      - diagnosis
+      - clinical reasoning
+      - tool use
+    agent_type:
+      - tool-using
+      - evidence-grounded
+    paper_url: "https://openreview.net/forum?id=ZOuU0udyA4"
+    code_url: "https://github.com/jinlab-imvr/MedAgent-Pro"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "ICLR 2026"
+    tags:
+      - evidence-based
+      - multimodal
+      - clinical guidelines
+      - tool calling
+    summary: "Integrates imaging, labs, and clinical guidelines via explicit tool calling; demonstrates evidence-based multimodal clinical reasoning."
+    featured: true
+
+  - title: "Meissa: Multi-modal Medical Agentic Intelligence"
+    year: 2026
+    domain: "Medical VLM"
+    modality:
+      - CXR
+      - CT
+      - MRI
+      - pathology
+    task:
+      - diagnosis
+      - tool use
+      - multi-agent collaboration
+    agent_type:
+      - lightweight agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2603.09018"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - lightweight
+      - offline
+      - multimodal
+      - strategy selection
+    summary: "Lightweight offline 4B multimodal medical agent trained on structured trajectories for strategy selection and multi-step tool or multi-agent interaction."
+    featured: false
+
+  # ── Tool-Using and Multi-Agent Frameworks ─────────────────────────────────
+
+  - title: "MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning"
+    year: 2024
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - diagnosis
+      - question answering
+      - multi-agent collaboration
+    agent_type:
+      - multi-agent
+      - role-playing
+    paper_url: "https://aclanthology.org/2024.findings-acl.33.pdf"
+    code_url: "https://github.com/gersteinlab/MedAgents"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Findings of ACL 2024"
+    tags:
+      - zero-shot
+      - differential diagnosis
+      - role specialization
+    summary: "Introduces collaborating LLM roles for zero-shot differential diagnosis and medical reasoning."
+    featured: false
+
+  - title: "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making"
+    year: 2024
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - diagnosis
+      - treatment decision
+      - multi-agent collaboration
+    agent_type:
+      - multi-agent
+      - adaptive
+    paper_url: "https://proceedings.neurips.cc/paper_files/paper/2024/file/90d1fc07f46e31387978b88e7e057a31-Paper-Conference.pdf"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "NeurIPS 2024"
+    tags:
+      - adaptive collaboration
+      - self-reflection
+      - treatment decisions
+    summary: "Uses self-reflection and role specialization to step adaptively through complex treatment decisions."
+    featured: false
+
+  - title: "Agent Hospital: A Simulacrum of Hospital with Evolvable Medical Agents"
+    year: 2024
+    domain: "Workflow Simulation"
+    modality: null
+    task:
+      - hospital simulation
+      - workflow automation
+      - clinical training
+    agent_type:
+      - multi-agent
+      - simulation
+    paper_url: "https://arxiv.org/pdf/2405.02957"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - hospital simulation
+      - patient agents
+      - clinician agents
+      - admin agents
+    summary: "End-to-end hospital simulator with evolvable patient, clinician, and administrative agents."
+    featured: false
+
+  - title: "AgentMD: Empowering Language Agents for Risk Prediction with Large-Scale Clinical Tool Learning"
+    year: 2025
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - risk prediction
+      - tool learning
+    agent_type:
+      - tool-using
+    paper_url: "https://www.nature.com/articles/s41467-025-64430-x"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Nature Communications"
+    tags:
+      - risk prediction
+      - clinical calculators
+      - tool selection
+    summary: "Agent curates and selects validated risk calculators at scale to improve clinical risk prediction."
+    featured: false
+
+  # ── Benchmarks and Evaluation ─────────────────────────────────────────────
+
+  - title: "AgentClinic: A Multimodal Benchmark for Tool-Using Clinical AI Agents"
+    year: 2026
+    domain: "Benchmark"
+    modality:
+      - CXR
+      - EHR
+      - lab tables
+    task:
+      - tool use
+      - diagnosis
+      - multimodal reasoning
+    agent_type:
+      - tool-using
+    paper_url: "https://www.nature.com/articles/s41746-026-02674-7"
+    code_url: "https://github.com/SamuelSchmidgall/AgentClinic"
+    project_url: "https://agentclinic.github.io/"
+    dataset_url: "https://agentclinic.github.io/"
+    benchmark_url: "https://agentclinic.github.io/"
+    venue: "npj Digital Medicine 2026"
+    tags:
+      - benchmark
+      - multimodal
+      - clinical simulator
+      - evaluation
+    summary: "The canonical multimodal benchmark for tool-using clinical AI agents with open simulator across imaging, EHR, and lab modalities."
+    featured: true
+
+  - title: "ABRA: Agent Benchmark for Radiology Applications"
+    year: 2026
+    domain: "Benchmark · Radiology"
+    modality:
+      - CT
+      - MRI
+      - DICOM
+    task:
+      - DICOM viewer navigation
+      - tool use
+      - report generation
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2605.11224"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - benchmark
+      - DICOM viewer
+      - OHIF
+      - Orthanc
+      - radiology
+    summary: "First benchmark where agents operate a real DICOM viewer (OHIF + Orthanc) via tool calls, testing end-to-end radiology agent workflows on live imaging software."
+    featured: true
+
+  - title: "MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents"
+    year: 2025
+    domain: "Benchmark"
+    modality:
+      - EHR
+    task:
+      - longitudinal task completion
+      - clinical decision making
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2501.14654"
+    code_url: "https://github.com/stanfordmlgroup/MedAgentBench"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - benchmark
+      - EHR
+      - Stanford
+      - longitudinal
+    summary: "Realistic virtual EHR environment with longitudinal inpatient cases for reinforcement-style training and evaluation of medical LLM agents."
+    featured: false
+
+  - title: "MedAgentBoard: Benchmarking Multi-Agent Collaboration with Conventional Methods for Diverse Medical Tasks"
+    year: 2025
+    domain: "Benchmark"
+    modality:
+      - CXR
+      - EHR
+    task:
+      - multi-agent collaboration
+      - diagnosis
+      - question answering
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2505.12371"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "NeurIPS 2025 Datasets & Benchmarks"
+    tags:
+      - benchmark
+      - multi-agent
+      - comparison
+      - imaging subtasks
+    summary: "Compares multi-agent, single-LLM, and conventional methods across text, imaging, and EHR medical tasks."
+    featured: false
+
+  - title: "DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agents"
+    year: 2026
+    domain: "Benchmark · Radiology"
+    modality:
+      - CT
+    task:
+      - visual question answering
+      - tool use
+      - localization
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2605.09679"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - benchmark
+      - 3D CT
+      - tumor VQA
+      - stage-wise evaluation
+    summary: "Hierarchical 3D CT tumor VQA benchmark that isolates perception, localization, reasoning, and tool-use failures stage by stage."
+    featured: false

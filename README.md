@@ -20,6 +20,12 @@ This repository tracks research on medical imaging agents, agentic AI for medica
 
 Use this list to find recent papers, surveys, benchmarks, datasets, and implementations for medical imaging agents, radiology agents, pathology agents, ultrasound agents, medical VLM agents, multimodal clinical reasoning, and tool-using agents for medical image analysis.
 
+> **Structured metadata** for entries in this list is maintained in [`data/papers.yml`](data/papers.yml).
+
+## Taxonomy
+
+![Visual taxonomy of medical imaging agents showing six top-level categories — Radiology Agents, Pathology Agents, Ultrasound Agents, Segmentation and Annotation Agents, Medical VLM Agents, and Evaluation — each branching into two to four subcategories](assets/medical-imaging-agents-taxonomy.svg)
+
 ## Start Here: Essential Medical Imaging Agent Papers
 
 New to the field? The table below selects 12 landmark papers and systems spanning the core subfields. Reading these gives a solid mental model of the space before diving into the full list.
@@ -494,11 +500,29 @@ Overview articles, scoping reviews, taxonomies, and position papers on medical A
 - [HealthcareAgent](https://github.com/AI-Hub-Admin/HealthcareAgent) — List of awesome AI agents for healthcare and common agentic AI API interface.
 - [Awesome-AI-Agents-for-Healthcare](https://github.com/AgenticHealthAI/Awesome-AI-Agents-for-Healthcare) — Latest advances on agentic AI and AI agents for healthcare.
   
+## Generating the Paper Index
+
+Structured metadata for this list is maintained in [`data/papers.yml`](data/papers.yml).
+A machine-readable index can be regenerated from that file at any time:
+
+```bash
+pip install pyyaml          # one-time setup
+python scripts/generate_readme.py
+```
+
+This writes [`generated/papers.md`](generated/papers.md) — a grouped markdown table indexed by domain.
+To validate the YAML without writing any files:
+
+```bash
+python scripts/generate_readme.py --validate-only
+```
+
 ## Contributing
 
 Contributions are welcome, especially new work on medical imaging agents, radiology agents, pathology agents, multimodal medical AI agents, healthcare LLM agents, clinical tool-use agents, benchmarks, datasets, and open-source implementations.
 
 Please open a pull request with the paper or project link, year, venue when available, and a concise one-sentence description of the agent workflow or imaging task.
+When adding a paper, also add a corresponding entry to [`data/papers.yml`](data/papers.yml) following the schema documented at the top of that file.
 
 ## License
 
