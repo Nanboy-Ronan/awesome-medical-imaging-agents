@@ -132,6 +132,9 @@ Agents for whole-slide image (WSI) analysis, histopathology, digital pathology, 
 - [PathAgent: Toward Interpretable Analysis of Whole-slide Pathology Images via Large Language Model-based Agentic Reasoning](https://arxiv.org/pdf/2511.17052v1) — arXiv (2025). Combines slide parsers with language agents to narrate lesion findings.
 - [SurvAgent: Hierarchical CoT-Enhanced Case Banking and Dichotomy-Based Multi-Agent System for Multimodal Survival Prediction](https://arxiv.org/pdf/2511.16635v1) — arXiv (2025). Multimodal agents pool pathology, imaging, and clinical signals for survival analysis.
 - [Agent-Based Large Language Model System for Extracting Structured Data from Breast Cancer Synoptic Reports: A Dual-Validation Study](https://www.medrxiv.org/content/10.1101/2025.11.25.25340989v1) — MedRxiv (2025). Agentic LLM pipeline for structured extraction from breast cancer synoptic reports with dual validation.
+- [Exploring General-Purpose Autonomous Multimodal Agents for Pathology Report Generation](https://arxiv.org/abs/2601.11540) — BVM (2026). Evaluates general-purpose agentic AI systems that autonomously navigate whole-slide tissue viewers and generate diagnostic pathology reports, reaching 68.6% accuracy on veterinary cases.
+- [PathReasoning: A Multimodal Reasoning Agent for Query-Based ROI Navigation on Whole-Slide Images](https://arxiv.org/abs/2511.21902) — arXiv (2025). Multimodal agent that navigates gigapixel whole-slide images through iterative reasoning cycles — sampling regions, reflecting on selections, and building reasoning chains — for cancer subtyping and survival prediction.
+- [Navigating Gigapixel Pathology Images with Large Multimodal Models](https://arxiv.org/abs/2511.19652) — arXiv (2025). GIANT enables large multimodal models to iteratively navigate whole-slide images at multiple scales, paired with MultiPathQA, a benchmark of 934 clinical pathology questions including 128 authored by professional pathologists.
 
 ---
 
@@ -142,6 +145,7 @@ Agents for echocardiography interpretation, robotic ultrasound acquisition, and 
 - [Echo-alpha: Large Agentic Multimodal Reasoning Model for Ultrasound Interpretation](https://arxiv.org/abs/2604.28011) — arXiv (2026). Agentic ultrasound model combines lesion localization with multimodal clinical reasoning for grounded interpretation.
 - [EchoAgent: Towards Reliable Echocardiography Interpretation with "Eyes","Hands" and "Minds"](https://arxiv.org/abs/2604.05541) — arXiv (2026). Echocardiography agent decomposes interpretation into visual observation, measurement, and expert reasoning for more reliable cardiac assessment.
 - [Evidence-Based Actor-Verifier Reasoning for Echocardiographic Agents](https://arxiv.org/abs/2604.06347) — arXiv (2026). Adds an actor-verifier loop to echocardiography agents so image understanding is cross-checked against clinical evidence before conclusions.
+- [MARCUS: An Agentic, Multimodal Vision-Language Model for Cardiac Diagnosis and Management](https://arxiv.org/abs/2603.22179) — arXiv (2026). Hierarchical agentic architecture with modality-specific expert models interprets ECGs, echocardiograms, and cardiac MRI, achieving nearly triple the multimodal accuracy of frontier models on cardiac cases.
 - [Echo-CoPilot: A Multi-View, Multi-Task Agent for Echocardiography Interpretation and Reporting](http://arxiv.org/abs/2512.09944v2) — arXiv (2025). Multi-stage agent handles view selection, measurements, and report drafting for echo studies.
 - [From Scanning Guidelines to Action: A Robotic Ultrasound Agent with LLM-Based Reasoning](https://arxiv.org/abs/2603.14393) — arXiv (2026). Turns ultrasound scanning guidelines into a reasoning-driven robotic agent for autonomous acquisition.
 - [Image-Guided Navigation of a Robotic Ultrasound Probe for Autonomous Spinal Sonography Using a Shadow-aware Dual-Agent Framework](http://arxiv.org/abs/2111.02167) — arXiv (2021). Cooperative perception-control agents for ultrasound-guided robotics.
@@ -153,6 +157,7 @@ Agents for echocardiography interpretation, robotic ultrasound acquisition, and 
 Agents for gastrointestinal endoscopy, surgical scene understanding, and voice-directed surgical data interaction.
 
 - [EndoAgent: A Memory-Guided Reflective Agent for Intelligent Endoscopic Vision-to-Decision Reasoning](https://arxiv.org/abs/2508.07292) — arXiv (2025). Adds episodic memory and action planning for endoscopy.
+- [SCOPE: Speech-guided COllaborative PErception Framework for Surgical Scene Segmentation](https://arxiv.org/abs/2509.10748) — arXiv (2025). Collaborative perception agent combines LLM reasoning with vision foundation models for real-time, hands-free speech-guided segmentation of surgical instruments and anatomy during operations.
 - [Surgical Agent Orchestration Platform for Voice-directed Patient Data Interaction](https://arxiv.org/pdf/2511.07392v2) — arXiv (2025). Voice-first assistant that routes surgical team requests across documentation and data tools.
 
 ---
@@ -162,6 +167,7 @@ Agents for gastrointestinal endoscopy, surgical scene understanding, and voice-d
 Agents for ophthalmic image analysis, myopia screening, and pre-consultation education in eye care settings.
 
 - [ChatMyopia: An AI Agent for Pre-consultation Education in Primary Eye Care Settings](https://arxiv.org/abs/2507.19498) — arXiv (2025). Pre-consultation education agent that integrates image tools and RAG for myopia counseling.
+- [LLM-based multi-agent system for neuro-ophthalmic diagnosis and personalized treatment planning](https://doi.org/10.3389/fnins.2025.1688509) — Frontiers in Neuroscience (2025). Multi-agent framework with an Information Collection Agent and Diagnosis Agent synthesizes ophthalmic imaging and clinical records to produce uncertainty-aware, ensemble-ranked neuro-ophthalmic diagnoses.
 
 ---
 
@@ -186,6 +192,8 @@ Agents that autonomously plan and execute segmentation, annotation, and region-o
 
 - [MedSAM-Agent: Empowering Interactive Medical Image Segmentation with Multi-turn Agentic Reinforcement Learning](https://arxiv.org/abs/2602.03320) — arXiv (2026). Interactive segmentation agent trained with multi-turn RL for tool orchestration.
 - [Incentivizing Tool-augmented Thinking with Images for Medical Image Analysis](http://arxiv.org/abs/2512.14157v1) — arXiv (2025). Adds vision-tool reward shaping so agents decide when to call segmentation, detection, or retrieval modules.
+- [Towards User-Centered Interactive Medical Image Segmentation in VR with an Assistive AI Agent](https://arxiv.org/abs/2505.07214) — arXiv (2025). SAMIRA is a conversational VR agent that assists radiologists with localizing, segmenting, and visualizing 3D medical image structures through speech and multimodal interaction.
+- [Policy to Assist Iteratively Local Segmentation: Optimising Modality and Location Selection for Prostate Cancer Localisation](https://arxiv.org/abs/2508.03953) — arXiv (2025). Policy network agent iteratively recommends optimal imaging modalities and anatomical regions of interest to progressively localize prostate cancer in multiparametric MRI.
 
 ---
 

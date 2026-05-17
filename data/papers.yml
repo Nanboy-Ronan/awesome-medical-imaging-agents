@@ -312,6 +312,80 @@ papers:
     summary: "Pathology reporting agent framework with explicit quality-control loops over whole-slide analysis."
     featured: false
 
+  - title: "Exploring General-Purpose Autonomous Multimodal Agents for Pathology Report Generation"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - report generation
+      - autonomous navigation
+    agent_type:
+      - tool-using
+      - autonomous agent
+    paper_url: "https://arxiv.org/abs/2601.11540"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "BVM 2026"
+    tags:
+      - whole-slide image
+      - autonomous navigation
+      - pathology report
+    summary: "Evaluates general-purpose agentic AI systems that autonomously navigate whole-slide tissue viewers and generate diagnostic pathology reports, reaching 68.6% accuracy on veterinary cases."
+    featured: false
+
+  - title: "PathReasoning: A Multimodal Reasoning Agent for Query-Based ROI Navigation on Whole-Slide Images"
+    year: 2025
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - diagnosis
+      - region navigation
+      - report generation
+    agent_type:
+      - reflective agent
+    paper_url: "https://arxiv.org/abs/2511.21902"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - whole-slide image
+      - iterative reasoning
+      - region of interest
+      - cancer subtyping
+    summary: "Multimodal agent that navigates gigapixel whole-slide images through iterative reasoning cycles — sampling regions, reflecting on selections, and building reasoning chains — for cancer subtyping and survival prediction."
+    featured: false
+
+  - title: "Navigating Gigapixel Pathology Images with Large Multimodal Models"
+    year: 2025
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - diagnosis
+      - question answering
+      - multi-scale navigation
+    agent_type:
+      - vision agent
+    paper_url: "https://arxiv.org/abs/2511.19652"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - whole-slide image
+      - gigapixel
+      - MultiPathQA
+      - benchmark
+    summary: "GIANT enables large multimodal models to iteratively navigate whole-slide images at multiple scales, paired with MultiPathQA, a benchmark of 934 clinical pathology questions including 128 authored by professional pathologists."
+    featured: false
+
   # ── Ultrasound Agents ─────────────────────────────────────────────────────
 
   - title: "Echo-alpha: Large Agentic Multimodal Reasoning Model for Ultrasound Interpretation"
@@ -362,6 +436,35 @@ papers:
     summary: "Decomposes echocardiography interpretation into visual observation, measurement, and expert reasoning for more reliable cardiac assessment."
     featured: false
 
+  - title: "MARCUS: An Agentic, Multimodal Vision-Language Model for Cardiac Diagnosis and Management"
+    year: 2026
+    domain: "Ultrasound"
+    modality:
+      - echocardiography
+      - cardiac MRI
+      - ECG
+    task:
+      - diagnosis
+      - multimodal reasoning
+      - clinical reasoning
+    agent_type:
+      - multi-agent
+      - hierarchical
+    paper_url: "https://arxiv.org/abs/2603.22179"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - cardiac imaging
+      - echocardiography
+      - cardiac MRI
+      - ECG
+      - multimodal
+    summary: "Hierarchical agentic architecture with modality-specific expert models interprets ECGs, echocardiograms, and cardiac MRI, achieving nearly triple the multimodal accuracy of frontier models on cardiac cases."
+    featured: false
+
   # ── Endoscopy and Surgical Agents ─────────────────────────────────────────
 
   - title: "EndoAgent: A Memory-Guided Reflective Agent for Intelligent Endoscopic Vision-to-Decision Reasoning"
@@ -387,6 +490,83 @@ papers:
       - reflective reasoning
     summary: "Memory-guided reflective agent for endoscopic vision-to-decision reasoning; representative model for specialty-specific imaging agent design."
     featured: true
+
+  - title: "SCOPE: Speech-guided COllaborative PErception Framework for Surgical Scene Segmentation"
+    year: 2025
+    domain: "Endoscopy"
+    modality:
+      - surgical video
+    task:
+      - segmentation
+      - instrument tracking
+      - speech interaction
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2509.10748"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - surgical scene
+      - speech-guided
+      - segmentation
+      - collaborative perception
+    summary: "Collaborative perception agent combines LLM reasoning with vision foundation models for real-time, hands-free speech-guided segmentation of surgical instruments and anatomy during operations."
+    featured: false
+
+  # ── Ophthalmology Agents ──────────────────────────────────────────────────
+
+  - title: "ChatMyopia: An AI Agent for Pre-consultation Education in Primary Eye Care Settings"
+    year: 2025
+    domain: "Ophthalmology"
+    modality:
+      - fundus
+    task:
+      - patient education
+      - retrieval
+    agent_type:
+      - RAG
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2507.19498"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - myopia
+      - pre-consultation
+      - RAG
+      - eye care
+    summary: "Pre-consultation education agent that integrates image tools and RAG for myopia counseling in primary eye care."
+    featured: false
+
+  - title: "LLM-based multi-agent system for neuro-ophthalmic diagnosis and personalized treatment planning"
+    year: 2025
+    domain: "Ophthalmology"
+    modality:
+      - ophthalmic imaging
+    task:
+      - diagnosis
+      - treatment planning
+    agent_type:
+      - multi-agent
+    paper_url: "https://doi.org/10.3389/fnins.2025.1688509"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Frontiers in Neuroscience"
+    tags:
+      - neuro-ophthalmic
+      - uncertainty quantification
+      - ensemble diagnosis
+      - clinical imaging
+    summary: "Multi-agent framework with an Information Collection Agent and Diagnosis Agent synthesizes ophthalmic imaging and clinical records to produce uncertainty-aware, ensemble-ranked neuro-ophthalmic diagnoses."
+    featured: false
 
   # ── 3D CT / MRI / Volumetric Imaging Agents ───────────────────────────────
 
@@ -492,6 +672,55 @@ papers:
       - interactive
     summary: "Introduces multi-turn RL to train an interactive segmentation agent that decides which prompts to issue to SAM — the first RL-trained imaging segmentation agent."
     featured: true
+
+  - title: "Towards User-Centered Interactive Medical Image Segmentation in VR with an Assistive AI Agent"
+    year: 2025
+    domain: "Segmentation"
+    modality:
+      - CT
+      - MRI
+    task:
+      - segmentation
+      - interactive annotation
+    agent_type:
+      - conversational agent
+    paper_url: "https://arxiv.org/abs/2505.07214"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - VR
+      - interactive segmentation
+      - speech interaction
+      - 3D visualization
+    summary: "SAMIRA is a conversational VR agent that assists radiologists with localizing, segmenting, and visualizing 3D medical image structures through speech and multimodal interaction."
+    featured: false
+
+  - title: "Policy to Assist Iteratively Local Segmentation: Optimising Modality and Location Selection for Prostate Cancer Localisation"
+    year: 2025
+    domain: "Segmentation"
+    modality:
+      - MRI
+    task:
+      - segmentation
+      - modality selection
+    agent_type:
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2508.03953"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - prostate cancer
+      - MRI
+      - policy network
+      - iterative segmentation
+    summary: "Policy network agent iteratively recommends optimal imaging modalities and anatomical regions of interest to progressively localize prostate cancer in multiparametric MRI."
+    featured: false
 
   # ── Medical VLM Agents ────────────────────────────────────────────────────
 
