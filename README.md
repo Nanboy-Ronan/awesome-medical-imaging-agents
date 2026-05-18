@@ -54,32 +54,32 @@ New to the field? The table below selects 12 landmark papers and systems spannin
 
 - [Scope](#scope)
 - [Start Here: Essential Medical Imaging Agent Papers](#start-here-essential-medical-imaging-agent-papers)
-- [Radiology Agents](#radiology-agents)
-- [Pathology Agents (Whole-Slide Imaging · Digital Pathology)](#pathology-agents-whole-slide-imaging--digital-pathology)
-- [Ultrasound Agents (Echocardiography · Robotic Ultrasound)](#ultrasound-agents-echocardiography--robotic-ultrasound)
-- [Endoscopy and Surgical Imaging Agents](#endoscopy-and-surgical-imaging-agents)
-- [Ophthalmology Agents](#ophthalmology-agents)
-- [3D CT / MRI / Volumetric Imaging Agents](#3d-ct--mri--volumetric-imaging-agents)
-- [Segmentation and Annotation Agents](#segmentation-and-annotation-agents)
-- [Report Generation Agents](#report-generation-agents)
-- [Medical Vision-Language Model (VLM) Agents](#medical-vision-language-model-vlm-agents)
+- [Radiology Agents (28)](#radiology-agents-28)
+- [Pathology Agents (Whole-Slide Imaging · Digital Pathology) (17)](#pathology-agents-whole-slide-imaging--digital-pathology-17)
+- [Ultrasound Agents (Echocardiography · Robotic Ultrasound) (7)](#ultrasound-agents-echocardiography--robotic-ultrasound-7)
+- [Endoscopy and Surgical Imaging Agents (3)](#endoscopy-and-surgical-imaging-agents-3)
+- [Ophthalmology Agents (2)](#ophthalmology-agents-2)
+- [3D CT / MRI / Volumetric Imaging Agents (8)](#3d-ct--mri--volumetric-imaging-agents-8)
+- [Segmentation and Annotation Agents (4)](#segmentation-and-annotation-agents-4)
+- [Report Generation Agents (9)](#report-generation-agents-9)
+- [Medical Vision-Language Model (VLM) Agents (15)](#medical-vision-language-model-vlm-agents-15)
 - [Tool-Using and Multi-Agent Frameworks](#tool-using-and-multi-agent-frameworks)
-  - [Clinical Reasoning Agents](#clinical-reasoning-agents)
-  - [Workflow and Simulation Agents](#workflow-and-simulation-agents)
-  - [Agent Skills and Tool Learning](#agent-skills-and-tool-learning)
+  - [Clinical Reasoning Agents (50)](#clinical-reasoning-agents-50)
+  - [Workflow and Simulation Agents (32)](#workflow-and-simulation-agents-32)
+  - [Agent Skills and Tool Learning (7)](#agent-skills-and-tool-learning-7)
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
-  - [Benchmark Papers](#benchmark-papers)
-  - [Safety, Robustness, and Fairness](#safety-robustness-and-fairness)
+  - [Benchmark Papers (31)](#benchmark-papers-31)
+  - [Safety, Robustness, and Fairness (19)](#safety-robustness-and-fairness-19)
 - [Datasets](#datasets)
 - [Toolboxes](#toolboxes)
-- [Surveys and Position Papers](#surveys-and-position-papers)
+- [Surveys and Position Papers (14)](#surveys-and-position-papers-14)
 - [Related Awesome Lists](#related-awesome-lists)
 - [Contributing](#contributing)
 - [License](#license)
 
 ---
 
-## Radiology Agents
+## Radiology Agents (28)
 
 Agents for chest X-ray (CXR), chest CT, neuro-radiology, DICOM workflows, dental X-ray, radiotherapy planning, stroke imaging, and other radiology-specific tasks.
 
@@ -114,7 +114,7 @@ Agents for chest X-ray (CXR), chest CT, neuro-radiology, DICOM workflows, dental
 
 ---
 
-## Pathology Agents (Whole-Slide Imaging · Digital Pathology)
+## Pathology Agents (Whole-Slide Imaging · Digital Pathology) (17)
 
 Agents for whole-slide image (WSI) analysis, histopathology, digital pathology, and pathology report generation.
 
@@ -138,7 +138,7 @@ Agents for whole-slide image (WSI) analysis, histopathology, digital pathology, 
 
 ---
 
-## Ultrasound Agents (Echocardiography · Robotic Ultrasound)
+## Ultrasound Agents (Echocardiography · Robotic Ultrasound) (7)
 
 Agents for echocardiography interpretation, robotic ultrasound acquisition, and ultrasound-guided procedures.
 
@@ -152,7 +152,7 @@ Agents for echocardiography interpretation, robotic ultrasound acquisition, and 
 
 ---
 
-## Endoscopy and Surgical Imaging Agents
+## Endoscopy and Surgical Imaging Agents (3)
 
 Agents for gastrointestinal endoscopy, surgical scene understanding, and voice-directed surgical data interaction.
 
@@ -162,7 +162,7 @@ Agents for gastrointestinal endoscopy, surgical scene understanding, and voice-d
 
 ---
 
-## Ophthalmology Agents
+## Ophthalmology Agents (2)
 
 Agents for ophthalmic image analysis, myopia screening, and pre-consultation education in eye care settings.
 
@@ -171,7 +171,7 @@ Agents for ophthalmic image analysis, myopia screening, and pre-consultation edu
 
 ---
 
-## 3D CT / MRI / Volumetric Imaging Agents
+## 3D CT / MRI / Volumetric Imaging Agents (8)
 
 Agents for volumetric CT, MRI, PET/CT, and neuroimaging analysis including segmentation, dosimetry, and multi-organ reasoning.
 
@@ -186,7 +186,7 @@ Agents for volumetric CT, MRI, PET/CT, and neuroimaging analysis including segme
 
 ---
 
-## Segmentation and Annotation Agents
+## Segmentation and Annotation Agents (4)
 
 Agents that autonomously plan and execute segmentation, annotation, and region-of-interest prompting in medical images.
 
@@ -197,7 +197,7 @@ Agents that autonomously plan and execute segmentation, annotation, and region-o
 
 ---
 
-## Report Generation Agents
+## Report Generation Agents (9)
 
 Agents focused on automated medical imaging report drafting, refinement, evaluation, and quality control.
 
@@ -213,7 +213,7 @@ Agents focused on automated medical imaging report drafting, refinement, evaluat
 
 ---
 
-## Medical Vision-Language Model (VLM) Agents
+## Medical Vision-Language Model (VLM) Agents (15)
 
 Multimodal agents that combine vision encoders with language models for medical image understanding, diagnosis, and clinical reasoning across imaging modalities.
 
@@ -233,7 +233,7 @@ Multimodal agents that combine vision encoders with language models for medical 
 - [Inquire, Interact, and Integrate: A Proactive Agent Collaborative Framework for Zero-Shot Multimodal Medical Reasoning](http://arxiv.org/abs/2405.11640) — arXiv (2024). Planner-agent loop that interleaves questioning, evidence integration, and summarization.
 - [MMedAgent-RL: Optimizing Multi-Agent Collaboration for Multimodal Medical Reasoning](https://arxiv.org/abs/2506.00555) — ICLR (2026). RL-based collaboration among GP and specialist agents for multimodal diagnosis.
 
-### Backbone Foundation Models (not agents)
+### Backbone Foundation Models (not agents) (11)
 
 These models are frequently used as backbone or base components within imaging agent pipelines but are not themselves agents.
 
@@ -255,7 +255,7 @@ These models are frequently used as backbone or base components within imaging a
 
 Frameworks that coordinate multiple agents or enable tool-use for clinical reasoning, workflow automation, and skill acquisition in medical settings.
 
-### Clinical Reasoning Agents
+### Clinical Reasoning Agents (50)
 
 Agents for clinical question answering, diagnosis, differential reasoning, and knowledge-intensive medical decision support.
 
@@ -310,7 +310,7 @@ Agents for clinical question answering, diagnosis, differential reasoning, and k
 - [MedBeads: An Agent-Native, Immutable Data Substrate for Trustworthy Medical AI](https://arxiv.org/abs/2602.01086) — arXiv (2026). Proposes an immutable, graph-structured clinical data substrate to give medical agents deterministic and tamper-evident patient context.
 - [Multi-agent Searching System for Medical Information](http://arxiv.org/abs/2203.12465) — arXiv (2022). Early agentic pipeline that dispatches searchers and summarizers for literature triage.
 
-### Workflow and Simulation Agents
+### Workflow and Simulation Agents (32)
 
 Agents for clinical workflow automation, hospital simulation, population health, coding, trial matching, and multi-step administrative tasks.
 
@@ -347,7 +347,7 @@ Agents for clinical workflow automation, hospital simulation, population health,
 - [An Agentic AI Framework for Training General Practitioner Student Skills](https://arxiv.org/abs/2512.18440) — arXiv (2025). Simulated patient and tutor agents improve GP student training in virtual consultations.
 - [Multi-Agent Medical Decision Consensus Matrix System: An Intelligent Collaborative Framework for Oncology MDT Consultations](http://arxiv.org/abs/2512.14321v1) — arXiv (2025). Coordinates planner, specialist, and auditor agents to reach treatment consensus in tumor boards.
 
-### Agent Skills and Tool Learning
+### Agent Skills and Tool Learning (7)
 
 Research on how agents learn, select, and audit clinical tools and skills.
 
@@ -385,7 +385,7 @@ This section is for researchers choosing evaluation resources for medical imagin
 
 ---
 
-### Benchmark Papers
+### Benchmark Papers (31)
 
 Peer-reviewed and preprint benchmark papers providing evaluation frameworks, datasets, and simulation environments for medical AI agents.
 
@@ -421,7 +421,7 @@ Peer-reviewed and preprint benchmark papers providing evaluation frameworks, dat
 - [CP-Env: Evaluating Large Language Models on Clinical Pathways in a Controllable Hospital Environment](http://arxiv.org/abs/2512.10206v2) — arXiv (2025). Hospital simulator that stresses pathway adherence, order entry, and safety guardrails for agent controllers.
 - [MLB: A Scenario-Driven Benchmark for Evaluating Large Language Models in Clinical Applications](https://arxiv.org/abs/2601.06193) — arXiv (2026). Scenario-driven benchmark spanning knowledge, safety, medical records, and smart services.
 
-### Safety, Robustness, and Fairness
+### Safety, Robustness, and Fairness (19)
 
 Papers on hallucination, bias, adversarial robustness, fairness, privacy, and safe deployment of medical AI agents.
 
@@ -478,7 +478,7 @@ Papers on hallucination, bias, adversarial robustness, fairness, privacy, and sa
 
 ---
 
-## Surveys and Position Papers
+## Surveys and Position Papers (14)
 
 Overview articles, scoping reviews, taxonomies, and position papers on medical AI agents and the broader landscape.
 
