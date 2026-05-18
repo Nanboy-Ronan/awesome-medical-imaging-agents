@@ -119,6 +119,7 @@ papers:
       - trustworthiness
       - adversarial agents
       - cooperative agents
+      - safety
     summary: "Uses cooperative and adversarial agent interactions to improve trustworthiness in chest X-ray diagnosis."
     featured: false
 
@@ -262,6 +263,7 @@ papers:
       - pathology QA
       - planner agent
       - verifier agent
+      - multi-agent
     summary: "Uses planner, analyzer, and verifier agents for histopathology question answering and diagnostic decision-making."
     featured: false
 
@@ -286,6 +288,7 @@ papers:
       - whole-slide image
       - multimodal
       - pathology
+      - multi-agent
     summary: "Delegates slide parsing, reporting, and triaging across specialized collaborative agents for whole-slide image analysis."
     featured: false
 
@@ -618,6 +621,7 @@ papers:
       - CT report
       - hallucination reduction
       - hierarchical agents
+      - hallucination
     summary: "Hierarchical radiology agents emulate clinical oversight to reduce hallucinations in 3D CT report generation."
     featured: false
 
@@ -670,6 +674,8 @@ papers:
       - SAM
       - reinforcement learning
       - interactive
+      - reinforcement-learning
+      - human-in-the-loop
     summary: "Introduces multi-turn RL to train an interactive segmentation agent that decides which prompts to issue to SAM — the first RL-trained imaging segmentation agent."
     featured: true
 
@@ -695,6 +701,7 @@ papers:
       - interactive segmentation
       - speech interaction
       - 3D visualization
+      - human-in-the-loop
     summary: "SAMIRA is a conversational VR agent that assists radiologists with localizing, segmenting, and visualizing 3D medical image structures through speech and multimodal interaction."
     featured: false
 
@@ -719,6 +726,7 @@ papers:
       - MRI
       - policy network
       - iterative segmentation
+      - reinforcement-learning
     summary: "Policy network agent iteratively recommends optimal imaging modalities and anatomical regions of interest to progressively localize prostate cancer in multiparametric MRI."
     featured: false
 
@@ -754,6 +762,7 @@ papers:
       - tool selection
       - seven modalities
       - specialist tools
+      - multi-agent
     summary: "First paper to train a medical agent that selects and calls specialist tools (segmentation, retrieval, calculators) on demand across seven imaging modalities."
     featured: true
 
@@ -837,6 +846,7 @@ papers:
       - zero-shot
       - differential diagnosis
       - role specialization
+      - multi-agent
     summary: "Introduces collaborating LLM roles for zero-shot differential diagnosis and medical reasoning."
     featured: false
 
@@ -861,6 +871,7 @@ papers:
       - adaptive collaboration
       - self-reflection
       - treatment decisions
+      - multi-agent
     summary: "Uses self-reflection and role specialization to step adaptively through complex treatment decisions."
     featured: false
 
@@ -886,6 +897,7 @@ papers:
       - patient agents
       - clinician agents
       - admin agents
+      - multi-agent
     summary: "End-to-end hospital simulator with evolvable patient, clinician, and administrative agents."
     featured: false
 
