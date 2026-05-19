@@ -45,15 +45,6 @@ jobs:
         run: pip install requests
       - name: Check README links
         run: |
-          python check_readme_links.py README.md 2>&1 | tee link-check.log
-          # Fail if any link returned a non-200 status or an error
-          if grep -qiE '(status code [^2]|error occurred)' link-check.log; then
-            echo "::warning::Some links may be broken — see link-check.log above."
-          fi
-        continue-on-error: true
-      - name: Upload link-check log
-        uses: actions/upload-artifact@v4
-        with:
-          name: link-check-log
-          path: link-check.log
-          retention-days: 14
+          output=$(python check_readme_links.py README.md)
+          echo "$output"
+          ! echo "$output" | grep -qiE '(status code [^2]|error occurred)'
