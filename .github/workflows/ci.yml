@@ -6,10 +6,12 @@ on:
     paths:
       - 'README.md'
       - 'data/papers.yml'
+      - '.github/workflows/ci.yml'
   pull_request:
     paths:
       - 'README.md'
       - 'data/papers.yml'
+      - '.github/workflows/ci.yml'
   schedule:
     # Run link check weekly on Sunday at 06:00 UTC
     - cron: '0 6 * * 0'
