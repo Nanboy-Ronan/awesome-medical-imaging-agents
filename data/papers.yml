@@ -473,6 +473,56 @@ papers:
 
   # ── Endoscopy and Surgical Agents ─────────────────────────────────────────
 
+  - title: "Anatomical Landmark-Guided Deep Reinforcement Learning for Autonomous Gastric Navigation"
+    year: 2026
+    domain: "Endoscopy"
+    modality:
+      - capsule endoscopy
+    task:
+      - navigation
+      - autonomous control
+    agent_type:
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2605.08269"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - reinforcement-learning
+      - capsule endoscopy
+      - autonomous navigation
+    summary: "RL-trained agent uses anatomical landmarks to autonomously navigate the stomach during wireless capsule endoscopy, achieving >97% gastric coverage and decoupling diagnostic quality from specialist availability."
+    featured: false
+
+  - title: "Multi-Agent Intelligence for Multidisciplinary Decision-Making in Gastrointestinal Oncology"
+    year: 2025
+    domain: "Endoscopy"
+    modality:
+      - endoscopy
+      - CT
+      - MRI
+    task:
+      - diagnosis
+      - multi-agent collaboration
+      - clinical reasoning
+    agent_type:
+      - multi-agent
+      - hierarchical
+    paper_url: "https://arxiv.org/abs/2512.08674"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+      - GI oncology
+      - endoscopy VLM
+    summary: "Hierarchical multi-agent framework with a Visual-Language Endoscopy Agent plus domain-specialist agents for radiology, lab, and text analysis, emulating multidisciplinary team decision-making for GI oncology."
+    featured: false
+
   - title: "EndoAgent: A Memory-Guided Reflective Agent for Intelligent Endoscopic Vision-to-Decision Reasoning"
     year: 2025
     domain: "Endoscopy"
@@ -525,6 +575,32 @@ papers:
     featured: false
 
   # ── Ophthalmology Agents ──────────────────────────────────────────────────
+
+  - title: "EyeAgent: An Agentic AI System for Multimodal Clinical Decision Support in Ophthalmology"
+    year: 2025
+    domain: "Ophthalmology"
+    modality:
+      - fundus
+      - OCT
+      - ophthalmic imaging
+    task:
+      - diagnosis
+      - clinical decision support
+      - tool use
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2511.09394"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - ophthalmology
+      - multi-tool
+      - RAG
+    summary: "Tool-using agentic AI that orchestrates 53 validated ophthalmic tools across 23 imaging modalities with RAG-grounded reasoning from authoritative textbooks, matching or exceeding senior ophthalmologist performance."
+    featured: false
 
   - title: "ChatMyopia: An AI Agent for Pre-consultation Education in Primary Eye Care Settings"
     year: 2025
@@ -655,6 +731,30 @@ papers:
     featured: false
 
   # ── Segmentation and Annotation Agents ────────────────────────────────────
+
+  - title: "Beyond Manual Annotation: A Human-AI Collaborative Framework for Medical Image Segmentation Using Only \"Better or Worse\" Expert Feedback"
+    year: 2025
+    domain: "Segmentation"
+    modality:
+      - CT
+      - MRI
+    task:
+      - segmentation
+      - interactive annotation
+    agent_type:
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2507.05815"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - human-in-the-loop
+      - preference learning
+      - interactive segmentation
+    summary: "Clicking agent that learns from minimal expert 'better or worse' preference signals to decide where and how to annotate, eliminating pixel-level manual labeling while training a strong segmentation model."
+    featured: false
 
   - title: "MedSAM-Agent: Empowering Interactive Medical Image Segmentation with Multi-turn Agentic Reinforcement Learning"
     year: 2026
@@ -1082,7 +1182,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - RAG
     summary: "Evidence-grounded chest X-ray agent that structures diagnostic reasoning around retrieved findings."
     featured: false
 
@@ -1102,7 +1203,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Learns when to trust different tool outputs in chest X-ray workflows using expertise-aware agent collaboration."
     featured: false
 
@@ -1122,7 +1224,9 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - hallucination
+      - safety
     summary: "Triage agent that defers or escalates based on calibrated uncertainty."
     featured: false
 
@@ -1183,7 +1287,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Tutoring agents guide trainees with attention feedback and targeted remediation."
     featured: false
 
@@ -1226,7 +1331,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Director agent routes tasks among radiology specialists."
     featured: false
 
@@ -1246,7 +1352,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Emulates radiology conferences with discussion-style agents."
     featured: false
 
@@ -1390,7 +1497,9 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - hallucination
+      - safety
     summary: "Imaging agent that explains decisions and abstains under uncertainty for acute stroke workflows."
     featured: false
 
@@ -1430,7 +1539,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - RAG
     summary: "EviScreen retrieves region-level historical case evidence from dual knowledge banks to make medical image screening more interpretable."
     featured: false
 
@@ -1494,7 +1604,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - safety
     summary: "Uses agents to detect performance drift across sites in clinical imaging decision support."
     featured: false
 
@@ -1725,7 +1836,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Adds an actor-verifier loop to echocardiography agents so image understanding is cross-checked against clinical evidence before conclusions."
     featured: false
 
@@ -1785,7 +1897,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Cooperative perception-control agents for ultrasound-guided robotics."
     featured: false
 
@@ -2349,7 +2462,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Planner-agent loop that interleaves questioning, evidence integration, and summarization."
     featured: false
 
@@ -2640,7 +2754,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Hygieia integrates phenotypes, genetic profiles, and clinical records with router-based knowledge-enhanced reasoning for rare-disease diagnosis and risk-gene prioritization."
     featured: false
 
@@ -2736,7 +2851,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "DxChain mirrors clinician cognitive steps with memory anchoring, profiling, and adversarial debate over EHR evidence."
     featured: false
 
@@ -2755,7 +2871,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - RAG
     summary: "Chinese medical deep-search agent with multi-hop data construction, tool invocation, reflection training, and expert-verified evaluation."
     featured: false
 
@@ -2777,25 +2894,6 @@ papers:
     tags:
       - multi-agent
     summary: "Knowledge-guided psychiatric diagnosis agents combine structured clinical reasoning with empathetic dialogue."
-    featured: false
-
-  - title: "EcoRxAgent: an AI agent for generating economically substitutable prescriptions"
-    year: 2026
-    domain: "Clinical Reasoning"
-    modality: null
-    task:
-      - clinical reasoning
-      - diagnosis
-    agent_type:
-      - multi-agent
-    paper_url: "https://www.nature.com/articles/s41746-026-02612-7"
-    code_url: null
-    project_url: null
-    dataset_url: null
-    benchmark_url: null
-    venue: "npj Digital Medicine"
-    tags: null
-    summary: "Prescription agent proposes lower-cost therapeutic substitutes while preserving clinical constraints."
     featured: false
 
   - title: "A multi-agent framework combining large language models with medical flowcharts for self-triage"
@@ -2874,7 +2972,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Frames rare-disease diagnosis as a multidisciplinary team debate grounded in situated clinical evidence."
     featured: false
 
@@ -2952,7 +3051,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Decentralized specialist agents collaborate on complex medical reasoning while exposing uncertainty and disagreement."
     featured: false
 
@@ -3089,7 +3189,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - RAG
     summary: "Learns from discrepancies between agent reasoning and reference rationales, then retrieves targeted instructions to patch likely logic gaps at inference time."
     featured: false
 
@@ -3108,7 +3209,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Decentralized specialist agents estimate marginal evidence contribution to produce more stable and interpretable oncology decisions."
     featured: false
 
@@ -3127,7 +3229,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - human-in-the-loop
     summary: "Diagnostic agent that asks targeted follow-up questions to reduce ambiguity before final recommendations."
     featured: false
 
@@ -3206,7 +3309,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Router-and-orchestrator agents coordinate domain-specialist models for medical QA."
     featured: false
 
@@ -3287,7 +3391,9 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
+      - hallucination
     summary: "Cascaded agents turn free-text oncology encounters into structured registries with validator feedback."
     featured: false
 
@@ -3326,7 +3432,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - RAG
     summary: "Grounds agents in dynamic knowledge graphs for up-to-date recommendations."
     featured: false
 
@@ -3406,7 +3513,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Decomposes physician intents into coordinated agent subtasks."
     featured: false
 
@@ -3661,7 +3769,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - safety
     summary: "Visual workflow architecture for auditable clinical-site automation with contracts, durable execution, and explicit trust boundaries."
     featured: false
 
@@ -3734,7 +3843,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Mixture-of-agents decomposes long clinical interviews into symptom-specific reasoning tasks for depression and anxiety severity tracking."
     featured: false
 
@@ -3865,7 +3975,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "npj Health Systems"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Clinical workload study showing orchestrated task-specific agents preserve accuracy and efficiency better than a single agent at scale."
     featured: false
 
@@ -3958,7 +4069,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Introduces a hospital-style arena for evolving and benchmarking collaborative medical agent systems."
     featured: false
 
@@ -3976,7 +4088,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - multi-agent
     summary: "Proposes an agentic operating system for hospital workflows that coordinates documentation, tool use, and adaptive task execution."
     featured: false
 
@@ -4050,7 +4163,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - hallucination
     summary: "Agentic screening pipeline for systematic reviews that adds causal signals to reduce hallucinations."
     featured: false
 
@@ -4496,25 +4610,9 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - safety
     summary: "Evaluates safe, multi-step agent reasoning over structured EHR tasks."
-    featured: false
-
-  - title: "HealthBench"
-    year: 2025
-    domain: "Benchmark"
-    modality: null
-    task:
-      - evaluation
-    agent_type: null
-    paper_url: "https://openai.com/index/healthbench/"
-    code_url: null
-    project_url: null
-    dataset_url: null
-    benchmark_url: null
-    venue: "OpenAI"
-    tags: null
-    summary: "Rubric-based benchmark of 5,000 multi-turn health conversations with physician-authored criteria."
     featured: false
 
   - title: "MedAgentsBench: Benchmarking Thinking Models and Agent Frameworks for Complex Medical Reasoning"
@@ -4568,23 +4666,6 @@ papers:
     tags:
       - safety
     summary: "Large-scale multilingual benchmark spanning clinical QA, imaging, and tool-use tasks."
-    featured: false
-
-  - title: "SCARE: A Benchmark for SQL Correction and Question Answerability Classification for Reliable EHR Question Answering"
-    year: 2025
-    domain: "Benchmark"
-    modality: null
-    task:
-      - evaluation
-    agent_type: null
-    paper_url: "https://arxiv.org/pdf/2511.17559v1"
-    code_url: null
-    project_url: null
-    dataset_url: null
-    benchmark_url: null
-    venue: "arXiv"
-    tags: null
-    summary: "Evaluates how agents handle database-grounded clinical questions and detect unanswerable prompts."
     featured: false
 
   - title: "LLM-Assisted Emergency Triage Benchmark: Bridging Hospital-Rich and MCI-Like Field Simulation"
@@ -4687,7 +4768,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - hallucination
     summary: "Evaluates medical LLM false-action behavior when safer responses should clarify, abstain, escalate, or refuse."
     featured: false
 
@@ -4740,7 +4822,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - safety
     summary: "Agentic assurance framework for evaluating prompt-driven behavior in mental-health screening systems."
     featured: false
 
@@ -4760,6 +4843,7 @@ papers:
     tags:
       - hallucination
       - multi-agent
+      - RAG
     summary: "Multi-agent verifier detects sentence-level hallucinations in discharge summaries with GraphRAG evidence grounding."
     featured: false
 
@@ -4776,7 +4860,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - safety
     summary: "Studies explicit clinical-concern state dynamics so agents expose pre-escalation risk signals without assuming clinical authority."
     featured: false
 
@@ -4793,7 +4878,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - hallucination
     summary: "Memory architecture reconciles patient self-report and EHR facts to detect discrepancies in longitudinal health coaching agents."
     featured: false
 
@@ -5113,7 +5199,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - safety
     summary: "Outlines governance and ethics interventions for deploying medical AI agents responsibly."
     featured: false
 
@@ -5232,6 +5319,7 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "JMIR"
-    tags: null
+    tags:
+      - safety
     summary: "Defines a tiered competency framework for clinicians supervising agentic workflows."
     featured: false

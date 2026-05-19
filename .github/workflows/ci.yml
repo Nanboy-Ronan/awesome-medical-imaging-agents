@@ -31,6 +31,17 @@ jobs:
       - name: Validate YAML schema
         run: python scripts/generate_readme.py --validate-only
 
+  validate-counts:
+    name: Validate README section counts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check section (N) counts match bullet counts
+        run: python scripts/validate_counts.py
+
   check-links:
     name: Check README links
     runs-on: ubuntu-latest
