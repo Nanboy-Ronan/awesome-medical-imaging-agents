@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Medical Imaging Agents</title>
+  <meta name="description" content="258 curated papers on agentic AI for medical image analysis — radiology, pathology, ultrasound, segmentation, VLMs, benchmarks, and more.">
+  <meta property="og:title" content="Awesome Medical Imaging Agents">
+  <meta property="og:description" content="Searchable index of curated papers on agentic AI for medical image analysis.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --muted: #64748b;
+      --accent: #2563eb;
+      --accent-light: #eff6ff;
+      --featured: #d97706;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .header-logo {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .header-logo:hover { color: var(--accent); }
+    .header-right {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .stat-chip {
+      background: var(--accent-light);
+      color: var(--accent);
+      padding: 0.2rem 0.65rem;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    .gh-link {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .gh-link:hover { color: var(--accent); }
+
+    /* ── Main layout ── */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem;
+    }
+
+    /* ── Controls ── */
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .search-row {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .search-input {
+      flex: 1;
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      font-size: 0.95rem;
+      font-family: inherit;
+      background: var(--surface);
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+    }
+    .clear-btn {
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      background: var(--surface);
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-family: inherit;
+      white-space: nowrap;
+      transition: all 0.15s;
+    }
+    .clear-btn:hover { background: var(--bg); color: var(--text); }
+
+    .filter-row {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .filter-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+      min-width: 3.5rem;
+    }
+    .pill {
+      padding: 0.3rem 0.7rem;
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      background: var(--surface);
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 0.78rem;
+      font-weight: 500;
+      font-family: inherit;
+      transition: all 0.15s;
+      user-select: none;
+    }
+    .pill:hover { border-color: var(--accent); color: var(--accent); }
+    .pill.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    /* ── Results bar ── */
+    .results-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.875rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .featured-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      cursor: pointer;
+      font-size: 0.82rem;
+    }
+    .featured-toggle input { cursor: pointer; }
+
+    /* ── Paper cards ── */
+    .papers-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+    .paper-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.625rem;
+      padding: 1.1rem 1.4rem;
+      transition: box-shadow 0.15s;
+    }
+    .paper-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
+    .paper-card.featured { border-left: 3px solid var(--featured); }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+    .paper-title {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+      line-height: 1.45;
+      flex: 1;
+    }
+    .paper-title:hover { text-decoration: underline; }
+    .paper-title-plain {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.45;
+      flex: 1;
+    }
+    .star { color: var(--featured); font-size: 0.9rem; flex-shrink: 0; padding-top: 0.15rem; }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.45rem;
+    }
+    .domain-badge {
+      font-size: 0.68rem;
+      font-weight: 600;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .venue-text {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .card-summary {
+      font-size: 0.86rem;
+      color: #475569;
+      line-height: 1.65;
+      margin-bottom: 0.7rem;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+    .tag { font-size: 0.68rem; padding: 0.125rem 0.5rem; border-radius: 9999px; background: var(--bg); border: 1px solid var(--border); color: var(--muted); }
+    .spacer { flex: 1; }
+    .lbtn {
+      font-size: 0.74rem;
+      font-weight: 600;
+      padding: 0.25rem 0.6rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .lbtn:hover { opacity: 0.85; }
+    .lbtn-paper { background: var(--accent); color: #fff; }
+    .lbtn-code  { background: #1e293b; color: #fff; }
+    .lbtn-demo  { background: #059669; color: #fff; }
+
+    /* ── Domain colour palette ── */
+    .d-radiology   { background:#dbeafe; color:#1e40af; }
+    .d-pathology   { background:#ede9fe; color:#5b21b6; }
+    .d-ultrasound  { background:#ccfbf1; color:#0f766e; }
+    .d-endoscopy   { background:#dcfce7; color:#15803d; }
+    .d-ophthalmology { background:#fef3c7; color:#92400e; }
+    .d-3d          { background:#e0e7ff; color:#3730a3; }
+    .d-segmentation{ background:#cffafe; color:#0e7490; }
+    .d-report      { background:#d1fae5; color:#065f46; }
+    .d-vlm         { background:#f3e8ff; color:#7e22ce; }
+    .d-clinical    { background:#fee2e2; color:#991b1b; }
+    .d-workflow    { background:#fef9c3; color:#854d0e; }
+    .d-benchmark   { background:#f1f5f9; color:#475569; }
+    .d-survey      { background:#f8fafc; color:#334155; border:1px solid #e2e8f0; }
+
+    /* ── Pagination ── */
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.375rem;
+      margin-top: 1.75rem;
+      flex-wrap: wrap;
+    }
+    .pgbtn {
+      padding: 0.45rem 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: 0.4rem;
+      background: var(--surface);
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 0.83rem;
+      font-family: inherit;
+      transition: all 0.15s;
+    }
+    .pgbtn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+    .pgbtn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .pgbtn:disabled { opacity: 0.35; cursor: not-allowed; }
+    .pgellipsis { color: var(--muted); padding: 0 0.2rem; font-size: 0.85rem; }
+
+    /* ── Empty / loading ── */
+    .state-box {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--muted);
+    }
+    .state-box h3 { font-size: 1.1rem; color: var(--text); margin-bottom: 0.4rem; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.78rem;
+      border-top: 1px solid var(--border);
+      margin-top: 3rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      header { padding: 0.875rem 1rem; }
+      .header-right .stat-chip { display: none; }
+      .container { padding: 1rem; }
+      .paper-card { padding: 0.875rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents" class="header-logo">
+      ★ Awesome Medical Imaging Agents
+    </a>
+    <div class="header-right">
+      <span class="stat-chip" id="total-chip">— papers</span>
+      <a href="https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents" class="gh-link" target="_blank" rel="noopener">
+        GitHub ↗
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="controls">
+    <div class="search-row">
+      <input id="search" type="text" class="search-input"
+             placeholder="Search titles, summaries, venues, tags…" autocomplete="off">
+      <button class="clear-btn" onclick="clearAll()">Clear</button>
+    </div>
+
+    <div class="filter-row">
+      <span class="filter-label">Domain</span>
+      <div id="domain-pills" style="display:contents"></div>
+    </div>
+
+    <div class="filter-row">
+      <span class="filter-label">Theme</span>
+      <div id="tag-pills" style="display:contents"></div>
+    </div>
+
+    <div class="filter-row">
+      <span class="filter-label">Year</span>
+      <div id="year-pills" style="display:contents"></div>
+    </div>
+  </div>
+
+  <div class="results-bar">
+    <span id="result-count" style="font-weight:500"></span>
+    <label class="featured-toggle">
+      <input type="checkbox" id="featured-only" onchange="render()">
+      Featured only (★)
+    </label>
+  </div>
+
+  <div id="papers-container">
+    <div class="state-box"><p>Loading…</p></div>
+  </div>
+
+  <div class="pagination" id="pagination"></div>
+
+</main>
+
+<footer>
+  Data from
+  <a href="https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents" target="_blank" rel="noopener">awesome-medical-imaging-agents</a>
+  · Contributions welcome via
+  <a href="https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>
+</footer>
+
+<script>
+/* ── Constants ─────────────────────────────────────── */
+const PAGE_SIZE = 25;
+
+// Canonical theme tags shown as filter pills (display label → stored tag value)
+const THEME_TAGS = [
+  ['Multi-Agent',         'multi-agent'],
+  ['RAG',                 'RAG'],
+  ['Safety',              'safety'],
+  ['Hallucination',       'hallucination'],
+  ['Privacy',             'privacy'],
+  ['Fairness',            'fairness'],
+  ['RL',                  'reinforcement-learning'],
+  ['Human-in-the-Loop',  'human-in-the-loop'],
+];
+
+// Domain display groups: UI label → raw domain values in YAML
+const DOMAIN_GROUPS = {
+  'Radiology':          ['Radiology', 'Survey · Radiology', 'Benchmark · Radiology'],
+  'Pathology':          ['Pathology'],
+  'Ultrasound':         ['Ultrasound'],
+  'Endoscopy':          ['Endoscopy'],
+  'Ophthalmology':      ['Ophthalmology'],
+  '3D Imaging':         ['3D Imaging'],
+  'Segmentation':       ['Segmentation'],
+  'Report Generation':  ['Report Generation'],
+  'Medical VLM':        ['Medical VLM', 'Multimodal'],
+  'Clinical Reasoning': ['Clinical Reasoning'],
+  'Workflow':           ['Workflow Simulation'],
+  'Benchmark':          ['Benchmark'],
+  'Survey':             ['Survey'],
+};
+
+const DOMAIN_CLASS = {
+  'Radiology': 'd-radiology', 'Pathology': 'd-pathology', 'Ultrasound': 'd-ultrasound',
+  'Endoscopy': 'd-endoscopy', 'Ophthalmology': 'd-ophthalmology', '3D Imaging': 'd-3d',
+  'Segmentation': 'd-segmentation', 'Report Generation': 'd-report', 'Medical VLM': 'd-vlm',
+  'Clinical Reasoning': 'd-clinical', 'Workflow': 'd-workflow', 'Benchmark': 'd-benchmark',
+  'Survey': 'd-survey',
+};
+
+/* ── State ──────────────────────────────────────────── */
+let allPapers = [];
+let filteredPapers = [];
+let activeDomains = new Set();
+let activeTags    = new Set();
+let activeYears   = new Set();
+let currentPage   = 1;
+
+/* ── Boot ───────────────────────────────────────────── */
+async function init() {
+  try {
+    const r = await fetch('papers.json');
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    allPapers = await r.json();
+  } catch (e) {
+    document.getElementById('papers-container').innerHTML =
+      `<div class="state-box"><h3>Could not load papers.json</h3><p>${esc(e.message)}</p></div>`;
+    return;
+  }
+
+  // Sort: featured first, then newest → oldest
+  allPapers.sort((a, b) => {
+    if (b.featured && !a.featured) return 1;
+    if (a.featured && !b.featured) return -1;
+    return (b.year || 0) - (a.year || 0);
+  });
+
+  document.getElementById('total-chip').textContent = `${allPapers.length} papers`;
+
+  buildDomainPills();
+  buildTagPills();
+  buildYearPills();
+
+  document.getElementById('search').addEventListener('input',
+    debounce(() => { currentPage = 1; render(); }, 180));
+
+  render();
+}
+
+/* ── Filter pill builders ───────────────────────────── */
+function buildDomainPills() {
+  const container = document.getElementById('domain-pills');
+  for (const [label, rawVals] of Object.entries(DOMAIN_GROUPS)) {
+    if (!allPapers.some(p => rawVals.includes(p.domain))) continue;
+    container.appendChild(makePill(label, activeDomains, label));
+  }
+}
+
+function buildTagPills() {
+  const container = document.getElementById('tag-pills');
+  for (const [label, val] of THEME_TAGS) {
+    container.appendChild(makePill(label, activeTags, val));
+  }
+}
+
+function buildYearPills() {
+  const container = document.getElementById('year-pills');
+  const years = [...new Set(allPapers.map(p => p.year).filter(Boolean))].sort((a, b) => b - a);
+  for (const y of years) {
+    container.appendChild(makePill(String(y), activeYears, String(y)));
+  }
+}
+
+function makePill(label, set, val) {
+  const btn = document.createElement('button');
+  btn.className = 'pill';
+  btn.textContent = label;
+  btn.dataset.val = val;
+  btn.addEventListener('click', () => {
+    if (set.has(val)) { set.delete(val); btn.classList.remove('active'); }
+    else              { set.add(val);    btn.classList.add('active');    }
+    currentPage = 1;
+    render();
+  });
+  return btn;
+}
+
+/* ── Filtering ──────────────────────────────────────── */
+function domainGroup(rawDomain) {
+  for (const [group, vals] of Object.entries(DOMAIN_GROUPS)) {
+    if (vals.includes(rawDomain)) return group;
+  }
+  return rawDomain;
+}
+
+function matches(p, query) {
+  if (activeDomains.size > 0 && !activeDomains.has(domainGroup(p.domain))) return false;
+  if (activeTags.size > 0) {
+    const ptags = (p.tags || []).map(t => t.toLowerCase());
+    if (![...activeTags].some(t => ptags.includes(t.toLowerCase()))) return false;
+  }
+  if (activeYears.size > 0 && !activeYears.has(String(p.year))) return false;
+  if (document.getElementById('featured-only').checked && !p.featured) return false;
+  if (query) {
+    const hay = [p.title, p.summary, p.venue, ...(p.tags || []),
+                 ...(p.modality || []), ...(p.task || [])]
+                 .filter(Boolean).join(' ').toLowerCase();
+    if (!hay.includes(query)) return false;
+  }
+  return true;
+}
+
+/* ── Render ─────────────────────────────────────────── */
+function render() {
+  const q = document.getElementById('search').value.toLowerCase().trim();
+  filteredPapers = allPapers.filter(p => matches(p, q));
+
+  const total      = filteredPapers.length;
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  currentPage      = Math.min(currentPage, totalPages);
+
+  document.getElementById('result-count').textContent =
+    `${total.toLocaleString()} paper${total !== 1 ? 's' : ''}`;
+
+  const slice = filteredPapers.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+  const container = document.getElementById('papers-container');
+
+  if (slice.length === 0) {
+    container.innerHTML =
+      `<div class="state-box"><h3>No papers match</h3><p>Try broadening your search or clearing filters.</p></div>`;
+  } else {
+    container.innerHTML = `<div class="papers-list">${slice.map(card).join('')}</div>`;
+  }
+
+  renderPagination(totalPages);
+}
+
+function card(p) {
+  const group = domainGroup(p.domain);
+  const cls   = DOMAIN_CLASS[group] || 'd-benchmark';
+
+  const titleEl = p.paper_url
+    ? `<a href="${esc(p.paper_url)}" target="_blank" rel="noopener" class="paper-title">${esc(p.title)}</a>`
+    : `<span class="paper-title-plain">${esc(p.title)}</span>`;
+
+  const starEl = p.featured ? `<span class="star" title="Landmark / featured paper">★</span>` : '';
+
+  const venueLine = [p.venue, p.year ? `(${p.year})` : ''].filter(Boolean).join(' ');
+  const venueEl   = venueLine ? `<span class="venue-text">${esc(venueLine)}</span>` : '';
+
+  const summaryEl = p.summary ? `<p class="card-summary">${esc(p.summary)}</p>` : '';
+
+  const SKIP_TAGS = new Set(['backbone', 'foundation model']);
+  const tagEls = (p.tags || [])
+    .filter(t => !SKIP_TAGS.has(t))
+    .slice(0, 7)
+    .map(t => `<span class="tag">${esc(t)}</span>`).join('');
+
+  const links = [];
+  if (p.paper_url)   links.push(`<a href="${esc(p.paper_url)}"   target="_blank" rel="noopener" class="lbtn lbtn-paper">Paper ↗</a>`);
+  if (p.code_url)    links.push(`<a href="${esc(p.code_url)}"    target="_blank" rel="noopener" class="lbtn lbtn-code">Code</a>`);
+  if (p.project_url) links.push(`<a href="${esc(p.project_url)}" target="_blank" rel="noopener" class="lbtn lbtn-demo">Demo</a>`);
+
+  return `
+<div class="paper-card${p.featured ? ' featured' : ''}">
+  <div class="card-header">
+    ${titleEl}
+    ${starEl}
+  </div>
+  <div class="card-meta">
+    <span class="domain-badge ${cls}">${esc(group)}</span>
+    ${venueEl}
+  </div>
+  ${summaryEl}
+  <div class="card-footer">
+    ${tagEls}
+    <span class="spacer"></span>
+    ${links.join('')}
+  </div>
+</div>`;
+}
+
+/* ── Pagination ─────────────────────────────────────── */
+function renderPagination(totalPages) {
+  const pag = document.getElementById('pagination');
+  if (totalPages <= 1) { pag.innerHTML = ''; return; }
+
+  // Collect page numbers to show
+  const show = new Set([1, totalPages, currentPage,
+    currentPage - 1, currentPage + 1].filter(n => n >= 1 && n <= totalPages));
+  const sorted = [...show].sort((a, b) => a - b);
+
+  const parts = [];
+  parts.push(pgBtn('← Prev', currentPage - 1, currentPage === 1));
+  let prev = 0;
+  for (const n of sorted) {
+    if (n - prev > 1) parts.push(`<span class="pgellipsis">…</span>`);
+    parts.push(pgBtn(n, n, false, n === currentPage));
+    prev = n;
+  }
+  parts.push(pgBtn('Next →', currentPage + 1, currentPage === totalPages));
+  pag.innerHTML = parts.join('');
+}
+
+function pgBtn(label, page, disabled, active = false) {
+  const cls = ['pgbtn', active ? 'active' : ''].join(' ').trim();
+  const dis = disabled ? 'disabled' : '';
+  const fn  = disabled ? '' : `onclick="goPage(${page})"`;
+  return `<button class="${cls}" ${dis} ${fn}>${label}</button>`;
+}
+
+function goPage(n) {
+  currentPage = n;
+  render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ── Utilities ──────────────────────────────────────── */
+function clearAll() {
+  document.getElementById('search').value = '';
+  document.getElementById('featured-only').checked = false;
+  activeDomains.clear();
+  activeTags.clear();
+  activeYears.clear();
+  document.querySelectorAll('.pill.active').forEach(el => el.classList.remove('active'));
+  currentPage = 1;
+  render();
+}
+
+function esc(s) {
+  if (s == null) return '';
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function debounce(fn, ms) {
+  let t;
+  return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), ms); };
+}
+
+init();
+</script>
+</body>
+</html>
