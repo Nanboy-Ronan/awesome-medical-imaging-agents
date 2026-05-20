@@ -12,14 +12,19 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
   <style>
     :root {
-      --bg: #f8fafc;
+      --bg: #f1f5f9;
       --surface: #ffffff;
       --border: #e2e8f0;
-      --text: #1e293b;
+      --text: #0f172a;
       --muted: #64748b;
+      --subtle: #94a3b8;
       --accent: #2563eb;
       --accent-light: #eff6ff;
+      --accent-mid: #bfdbfe;
       --featured: #d97706;
+      --featured-bg: #fffbeb;
+      --sidebar-w: 240px;
+      --radius: 0.625rem;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -29,84 +34,122 @@
       background: var(--bg);
       color: var(--text);
       min-height: 100vh;
+      font-size: 14px;
+      line-height: 1.5;
     }
 
-    /* ── Header ── */
+    /* ── Header ─────────────────────────────────────── */
     header {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 1rem 2rem;
+      background: var(--text);
+      color: #f8fafc;
+      padding: 0 1.5rem;
+      height: 52px;
+      display: flex;
+      align-items: center;
       position: sticky;
       top: 0;
-      z-index: 100;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      z-index: 200;
+      box-shadow: 0 1px 0 rgba(255,255,255,0.08);
     }
     .header-inner {
-      max-width: 1200px;
+      width: 100%;
+      max-width: 1440px;
       margin: 0 auto;
       display: flex;
       align-items: center;
       gap: 1rem;
-      flex-wrap: wrap;
     }
-    .header-logo {
-      font-size: 1.1rem;
+    .logo {
       font-weight: 700;
-      color: var(--text);
+      font-size: 0.95rem;
+      color: #f8fafc;
       text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
       white-space: nowrap;
     }
-    .header-logo:hover { color: var(--accent); }
+    .logo-star { color: var(--featured); font-size: 1rem; }
+    .header-chips {
+      display: flex;
+      gap: 0.5rem;
+      margin-left: 1rem;
+    }
+    .hchip {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 9999px;
+      background: rgba(255,255,255,0.12);
+      color: #cbd5e1;
+    }
     .header-right {
       margin-left: auto;
       display: flex;
       align-items: center;
-      gap: 0.75rem;
-    }
-    .stat-chip {
-      background: var(--accent-light);
-      color: var(--accent);
-      padding: 0.2rem 0.65rem;
-      border-radius: 9999px;
-      font-size: 0.78rem;
-      font-weight: 600;
+      gap: 1rem;
     }
     .gh-link {
       font-size: 0.8rem;
-      color: var(--muted);
+      color: #94a3b8;
       text-decoration: none;
       display: flex;
       align-items: center;
       gap: 0.3rem;
+      transition: color 0.15s;
     }
-    .gh-link:hover { color: var(--accent); }
+    .gh-link:hover { color: #f8fafc; }
+    .mobile-filter-toggle {
+      display: none;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.75rem;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: var(--radius);
+      background: transparent;
+      color: #cbd5e1;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-family: inherit;
+    }
 
-    /* ── Main layout ── */
-    .container {
-      max-width: 1200px;
+    /* ── Page body layout ───────────────────────────── */
+    .page-body {
+      max-width: 1440px;
       margin: 0 auto;
-      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0;
+      min-height: calc(100vh - 52px);
     }
 
-    /* ── Controls ── */
-    .controls {
+    /* ── Sidebar ─────────────────────────────────────── */
+    .sidebar {
+      width: var(--sidebar-w);
+      flex-shrink: 0;
+      position: sticky;
+      top: 52px;
+      height: calc(100vh - 52px);
+      overflow-y: auto;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      padding: 1.25rem 1rem;
       display: flex;
       flex-direction: column;
-      gap: 0.75rem;
-      margin-bottom: 1.25rem;
+      gap: 1.5rem;
     }
-    .search-row {
-      display: flex;
-      gap: 0.5rem;
-    }
+    .sidebar::-webkit-scrollbar { width: 4px; }
+    .sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+    .search-wrap { position: relative; }
     .search-input {
-      flex: 1;
-      padding: 0.6rem 1rem;
+      width: 100%;
+      padding: 0.55rem 0.75rem 0.55rem 2rem;
       border: 1px solid var(--border);
-      border-radius: 0.5rem;
-      font-size: 0.95rem;
+      border-radius: var(--radius);
+      font-size: 0.83rem;
       font-family: inherit;
-      background: var(--surface);
+      background: var(--bg);
       color: var(--text);
       outline: none;
       transition: border-color 0.15s, box-shadow 0.15s;
@@ -114,125 +157,263 @@
     .search-input:focus {
       border-color: var(--accent);
       box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
-    }
-    .clear-btn {
-      padding: 0.6rem 1rem;
-      border: 1px solid var(--border);
-      border-radius: 0.5rem;
       background: var(--surface);
-      color: var(--muted);
-      cursor: pointer;
+    }
+    .search-icon {
+      position: absolute;
+      left: 0.6rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--subtle);
+      pointer-events: none;
       font-size: 0.85rem;
-      font-family: inherit;
-      white-space: nowrap;
-      transition: all 0.15s;
     }
-    .clear-btn:hover { background: var(--bg); color: var(--text); }
 
-    .filter-row {
-      display: flex;
-      gap: 0.4rem;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .filter-label {
-      font-size: 0.72rem;
-      font-weight: 600;
-      color: var(--muted);
+    .filter-group {}
+    .filter-group-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--subtle);
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-      white-space: nowrap;
-      min-width: 3.5rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
     }
-    .pill {
-      padding: 0.3rem 0.7rem;
-      border: 1px solid var(--border);
-      border-radius: 9999px;
-      background: var(--surface);
-      color: var(--muted);
-      cursor: pointer;
-      font-size: 0.78rem;
-      font-weight: 500;
-      font-family: inherit;
-      transition: all 0.15s;
-      user-select: none;
+    .filter-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
     }
-    .pill:hover { border-color: var(--accent); color: var(--accent); }
-    .pill.active { background: var(--accent); border-color: var(--accent); color: #fff; }
-
-    /* ── Results bar ── */
-    .results-bar {
+    .fopt {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 0.875rem;
-      font-size: 0.85rem;
-      color: var(--muted);
+      padding: 0.35rem 0.5rem;
+      border-radius: 0.4rem;
+      cursor: pointer;
+      transition: background 0.12s;
+      user-select: none;
+      border: none;
+      background: transparent;
+      text-align: left;
+      width: 100%;
+      font-family: inherit;
     }
+    .fopt:hover { background: var(--bg); }
+    .fopt.active { background: var(--accent-light); }
+    .fopt-label {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .fopt.active .fopt-label { color: var(--accent); font-weight: 600; }
+    .fopt-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border);
+      flex-shrink: 0;
+      transition: all 0.12s;
+    }
+    .fopt.active .fopt-dot {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    .fopt-count {
+      font-size: 0.72rem;
+      color: var(--subtle);
+      font-weight: 500;
+      background: var(--bg);
+      padding: 0.1rem 0.4rem;
+      border-radius: 9999px;
+      min-width: 1.6rem;
+      text-align: center;
+    }
+    .fopt.active .fopt-count {
+      background: var(--accent-mid);
+      color: var(--accent);
+    }
+
+    .clear-btn {
+      padding: 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-family: inherit;
+      transition: all 0.15s;
+      text-align: center;
+      width: 100%;
+    }
+    .clear-btn:hover { border-color: #ef4444; color: #ef4444; background: #fff1f2; }
+
+    /* ── Main content ────────────────────────────────── */
+    .main {
+      flex: 1;
+      min-width: 0;
+      padding: 1.25rem 1.5rem;
+    }
+
+    /* ── Stats strip ─────────────────────────────────── */
+    .stats-strip {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.75rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+    .stat-value {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Results bar ─────────────────────────────────── */
+    .results-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.875rem;
+      flex-wrap: wrap;
+    }
+    .result-count {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+    }
+    .active-filters {
+      display: flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+    .af-chip {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.2rem 0.5rem 0.2rem 0.65rem;
+      background: var(--accent-light);
+      border: 1px solid var(--accent-mid);
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent);
+      cursor: pointer;
+      transition: all 0.12s;
+    }
+    .af-chip:hover { background: #dbeafe; }
+    .af-chip-x { font-size: 0.85rem; opacity: 0.7; }
     .featured-toggle {
       display: flex;
       align-items: center;
       gap: 0.35rem;
       cursor: pointer;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      white-space: nowrap;
+      margin-left: auto;
     }
-    .featured-toggle input { cursor: pointer; }
+    .featured-toggle input { cursor: pointer; accent-color: var(--accent); }
 
-    /* ── Paper cards ── */
-    .papers-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.625rem;
-    }
+    /* ── Paper cards ─────────────────────────────────── */
+    .papers-list { display: flex; flex-direction: column; gap: 0.625rem; }
+
     .paper-card {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 0.625rem;
-      padding: 1.1rem 1.4rem;
-      transition: box-shadow 0.15s;
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem 1rem 1.1rem;
+      transition: box-shadow 0.15s, border-color 0.15s;
+      display: flex;
+      gap: 0.75rem;
+      position: relative;
     }
-    .paper-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
-    .paper-card.featured { border-left: 3px solid var(--featured); }
+    .paper-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      border-color: #cbd5e1;
+    }
+    .card-accent-bar {
+      width: 3px;
+      border-radius: 9999px;
+      flex-shrink: 0;
+      align-self: stretch;
+      min-height: 2rem;
+    }
+    .card-body { flex: 1; min-width: 0; }
 
-    .card-header {
+    .card-top {
       display: flex;
       align-items: flex-start;
       gap: 0.5rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.35rem;
     }
     .paper-title {
-      font-size: 0.97rem;
+      font-size: 0.93rem;
       font-weight: 600;
       color: var(--accent);
       text-decoration: none;
-      line-height: 1.45;
+      line-height: 1.4;
       flex: 1;
     }
     .paper-title:hover { text-decoration: underline; }
     .paper-title-plain {
-      font-size: 0.97rem;
+      font-size: 0.93rem;
       font-weight: 600;
       color: var(--text);
-      line-height: 1.45;
+      line-height: 1.4;
       flex: 1;
     }
-    .star { color: var(--featured); font-size: 0.9rem; flex-shrink: 0; padding-top: 0.15rem; }
+    .featured-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      padding: 0.15rem 0.5rem;
+      background: var(--featured-bg);
+      border: 1px solid #fcd34d;
+      border-radius: 9999px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--featured);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
 
     .card-meta {
       display: flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.45rem;
       flex-wrap: wrap;
-      margin-bottom: 0.45rem;
+      margin-bottom: 0.55rem;
     }
     .domain-badge {
-      font-size: 0.68rem;
-      font-weight: 600;
+      font-size: 0.67rem;
+      font-weight: 700;
       padding: 0.15rem 0.55rem;
       border-radius: 9999px;
       text-transform: uppercase;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.05em;
     }
+    .meta-dot { color: var(--border); }
     .venue-text {
       font-size: 0.78rem;
       color: var(--muted);
@@ -240,54 +421,79 @@
     }
 
     .card-summary {
-      font-size: 0.86rem;
+      font-size: 0.84rem;
       color: #475569;
       line-height: 1.65;
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.75rem;
     }
 
     .card-footer {
       display: flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.35rem;
       flex-wrap: wrap;
     }
-    .tag { font-size: 0.68rem; padding: 0.125rem 0.5rem; border-radius: 9999px; background: var(--bg); border: 1px solid var(--border); color: var(--muted); }
+    .tag {
+      font-size: 0.67rem;
+      padding: 0.12rem 0.45rem;
+      border-radius: 9999px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
     .spacer { flex: 1; }
     .lbtn {
-      font-size: 0.74rem;
+      font-size: 0.73rem;
       font-weight: 600;
-      padding: 0.25rem 0.6rem;
+      padding: 0.28rem 0.65rem;
       border-radius: 0.375rem;
       text-decoration: none;
-      transition: opacity 0.15s;
+      transition: opacity 0.12s, transform 0.1s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
     }
-    .lbtn:hover { opacity: 0.85; }
+    .lbtn:hover { opacity: 0.82; transform: translateY(-1px); }
     .lbtn-paper { background: var(--accent); color: #fff; }
     .lbtn-code  { background: #1e293b; color: #fff; }
     .lbtn-demo  { background: #059669; color: #fff; }
 
-    /* ── Domain colour palette ── */
-    .d-radiology   { background:#dbeafe; color:#1e40af; }
-    .d-pathology   { background:#ede9fe; color:#5b21b6; }
-    .d-ultrasound  { background:#ccfbf1; color:#0f766e; }
-    .d-endoscopy   { background:#dcfce7; color:#15803d; }
-    .d-ophthalmology { background:#fef3c7; color:#92400e; }
-    .d-3d          { background:#e0e7ff; color:#3730a3; }
-    .d-segmentation{ background:#cffafe; color:#0e7490; }
-    .d-report      { background:#d1fae5; color:#065f46; }
-    .d-vlm         { background:#f3e8ff; color:#7e22ce; }
-    .d-clinical    { background:#fee2e2; color:#991b1b; }
-    .d-workflow    { background:#fef9c3; color:#854d0e; }
-    .d-benchmark   { background:#f1f5f9; color:#475569; }
-    .d-survey      { background:#f8fafc; color:#334155; border:1px solid #e2e8f0; }
+    /* ── Domain palette ───────────────────────────────── */
+    .d-radiology    { background:#dbeafe; color:#1e40af; }
+    .d-pathology    { background:#ede9fe; color:#5b21b6; }
+    .d-ultrasound   { background:#ccfbf1; color:#0f766e; }
+    .d-endoscopy    { background:#dcfce7; color:#15803d; }
+    .d-ophthalmology{ background:#fef3c7; color:#92400e; }
+    .d-3d           { background:#e0e7ff; color:#3730a3; }
+    .d-segmentation { background:#cffafe; color:#0e7490; }
+    .d-report       { background:#d1fae5; color:#065f46; }
+    .d-vlm          { background:#f3e8ff; color:#7e22ce; }
+    .d-clinical     { background:#fee2e2; color:#991b1b; }
+    .d-workflow     { background:#fef9c3; color:#854d0e; }
+    .d-benchmark    { background:#f1f5f9; color:#475569; }
+    .d-survey       { background:#f8fafc; color:#334155; border:1px solid #e2e8f0; }
 
-    /* ── Pagination ── */
+    /* accent bar colours keyed to domain */
+    .ab-radiology    { background:#3b82f6; }
+    .ab-pathology    { background:#8b5cf6; }
+    .ab-ultrasound   { background:#14b8a6; }
+    .ab-endoscopy    { background:#22c55e; }
+    .ab-ophthalmology{ background:#f59e0b; }
+    .ab-3d           { background:#6366f1; }
+    .ab-segmentation { background:#06b6d4; }
+    .ab-report       { background:#10b981; }
+    .ab-vlm          { background:#a855f7; }
+    .ab-clinical     { background:#ef4444; }
+    .ab-workflow     { background:#eab308; }
+    .ab-benchmark    { background:#64748b; }
+    .ab-survey       { background:#94a3b8; }
+
+    /* ── Pagination ──────────────────────────────────── */
     .pagination {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 0.375rem;
+      gap: 0.3rem;
       margin-top: 1.75rem;
       flex-wrap: wrap;
     }
@@ -298,127 +504,194 @@
       background: var(--surface);
       color: var(--muted);
       cursor: pointer;
-      font-size: 0.83rem;
+      font-size: 0.82rem;
       font-family: inherit;
-      transition: all 0.15s;
+      transition: all 0.12s;
+      min-width: 2.25rem;
+      text-align: center;
     }
     .pgbtn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
-    .pgbtn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
-    .pgbtn:disabled { opacity: 0.35; cursor: not-allowed; }
-    .pgellipsis { color: var(--muted); padding: 0 0.2rem; font-size: 0.85rem; }
+    .pgbtn.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+    .pgbtn:disabled { opacity: 0.3; cursor: not-allowed; }
+    .pgellipsis { color: var(--subtle); padding: 0 0.1rem; }
 
-    /* ── Empty / loading ── */
+    /* ── State boxes ─────────────────────────────────── */
     .state-box {
       text-align: center;
       padding: 4rem 2rem;
       color: var(--muted);
     }
-    .state-box h3 { font-size: 1.1rem; color: var(--text); margin-bottom: 0.4rem; }
+    .state-box h3 { font-size: 1.05rem; color: var(--text); margin-bottom: 0.4rem; }
+    .state-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
 
-    /* ── Footer ── */
+    /* ── Footer ──────────────────────────────────────── */
     footer {
       text-align: center;
-      padding: 2rem;
-      color: var(--muted);
+      padding: 1.5rem 2rem;
+      color: var(--subtle);
       font-size: 0.78rem;
       border-top: 1px solid var(--border);
-      margin-top: 3rem;
+      margin-top: 2rem;
+      background: var(--surface);
     }
     footer a { color: var(--accent); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
 
-    /* ── Responsive ── */
-    @media (max-width: 640px) {
-      header { padding: 0.875rem 1rem; }
-      .header-right .stat-chip { display: none; }
-      .container { padding: 1rem; }
-      .paper-card { padding: 0.875rem 1rem; }
+    /* ── Mobile ──────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+        position: fixed;
+        top: 52px;
+        left: 0;
+        width: 280px;
+        z-index: 150;
+        box-shadow: 4px 0 20px rgba(0,0,0,0.12);
+      }
+      .sidebar.open { display: flex; }
+      .mobile-filter-toggle { display: flex; }
+      .main { padding: 1rem; }
+      .header-chips { display: none; }
+      .stats-strip { gap: 0.5rem; }
+      .stat-card { padding: 0.6rem 0.85rem; }
+      .stat-value { font-size: 1.1rem; }
     }
   </style>
 </head>
 <body>
 
+<!-- ── Header ─────────────────────────────────────── -->
 <header>
   <div class="header-inner">
-    <a href="https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents" class="header-logo">
-      ★ Awesome Medical Imaging Agents
+    <a href="https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents"
+       class="logo" target="_blank" rel="noopener">
+      <span class="logo-star">★</span>
+      Awesome Medical Imaging Agents
     </a>
+    <div class="header-chips">
+      <span class="hchip" id="header-total">— papers</span>
+      <span class="hchip" id="header-domains">— domains</span>
+    </div>
     <div class="header-right">
-      <span class="stat-chip" id="total-chip">— papers</span>
-      <a href="https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents" class="gh-link" target="_blank" rel="noopener">
+      <button class="mobile-filter-toggle" onclick="toggleSidebar()">
+        ⚙ Filters
+      </button>
+      <a href="https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents"
+         class="gh-link" target="_blank" rel="noopener">
         GitHub ↗
       </a>
     </div>
   </div>
 </header>
 
-<main class="container">
+<div class="page-body">
 
-  <div class="controls">
-    <div class="search-row">
+  <!-- ── Sidebar ───────────────────────────────────── -->
+  <aside class="sidebar" id="sidebar">
+
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
       <input id="search" type="text" class="search-input"
-             placeholder="Search titles, summaries, venues, tags…" autocomplete="off">
-      <button class="clear-btn" onclick="clearAll()">Clear</button>
+             placeholder="Search papers…" autocomplete="off">
     </div>
 
-    <div class="filter-row">
-      <span class="filter-label">Domain</span>
-      <div id="domain-pills" style="display:contents"></div>
+    <div class="filter-group">
+      <div class="filter-group-label">Domain</div>
+      <div class="filter-options" id="domain-opts"></div>
     </div>
 
-    <div class="filter-row">
-      <span class="filter-label">Theme</span>
-      <div id="tag-pills" style="display:contents"></div>
+    <div class="filter-group">
+      <div class="filter-group-label">Theme</div>
+      <div class="filter-options" id="tag-opts"></div>
     </div>
 
-    <div class="filter-row">
-      <span class="filter-label">Year</span>
-      <div id="year-pills" style="display:contents"></div>
+    <div class="filter-group">
+      <div class="filter-group-label">Year</div>
+      <div class="filter-options" id="year-opts"></div>
     </div>
-  </div>
 
-  <div class="results-bar">
-    <span id="result-count" style="font-weight:500"></span>
-    <label class="featured-toggle">
-      <input type="checkbox" id="featured-only" onchange="render()">
-      Featured only (★)
-    </label>
-  </div>
+    <button class="clear-btn" onclick="clearAll()">✕ Clear all filters</button>
 
-  <div id="papers-container">
-    <div class="state-box"><p>Loading…</p></div>
-  </div>
+  </aside>
 
-  <div class="pagination" id="pagination"></div>
+  <!-- ── Main ──────────────────────────────────────── -->
+  <main class="main">
 
-</main>
+    <!-- Stats strip -->
+    <div class="stats-strip" id="stats-strip">
+      <div class="stat-card">
+        <span class="stat-value" id="stat-total">—</span>
+        <span class="stat-label">Papers</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="stat-domains">—</span>
+        <span class="stat-label">Domains</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="stat-featured">—</span>
+        <span class="stat-label">Featured</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="stat-code">—</span>
+        <span class="stat-label">With Code</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="stat-years">—</span>
+        <span class="stat-label">Year Range</span>
+      </div>
+    </div>
+
+    <!-- Results bar -->
+    <div class="results-bar">
+      <span class="result-count" id="result-count"></span>
+      <div class="active-filters" id="active-filters"></div>
+      <label class="featured-toggle">
+        <input type="checkbox" id="featured-only" onchange="render()">
+        ★ Featured only
+      </label>
+    </div>
+
+    <!-- Paper cards -->
+    <div id="papers-container">
+      <div class="state-box">
+        <div class="state-icon">⏳</div>
+        <p>Loading papers…</p>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination"></div>
+
+  </main>
+</div>
 
 <footer>
   Data from
-  <a href="https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents" target="_blank" rel="noopener">awesome-medical-imaging-agents</a>
+  <a href="https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents" target="_blank" rel="noopener">
+    awesome-medical-imaging-agents
+  </a>
   · Contributions welcome via
-  <a href="https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>
+  <a href="https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents/blob/main/CONTRIBUTING.md"
+     target="_blank" rel="noopener">CONTRIBUTING.md</a>
 </footer>
 
 <script>
-/* ── Constants ─────────────────────────────────────── */
-const PAGE_SIZE = 25;
+/* ── Constants ───────────────────────────────────── */
+const PAGE_SIZE = 20;
 
-// Canonical theme tags shown as filter pills (display label → stored tag value)
 const THEME_TAGS = [
-  ['Multi-Agent',         'multi-agent'],
-  ['RAG',                 'RAG'],
-  ['Safety',              'safety'],
-  ['Hallucination',       'hallucination'],
-  ['Privacy',             'privacy'],
-  ['Fairness',            'fairness'],
-  ['RL',                  'reinforcement-learning'],
+  ['Multi-Agent',        'multi-agent'],
+  ['RAG',                'RAG'],
+  ['Safety',             'safety'],
+  ['Hallucination',      'hallucination'],
+  ['Privacy',            'privacy'],
+  ['Fairness',           'fairness'],
+  ['Reinforcement Learning', 'reinforcement-learning'],
   ['Human-in-the-Loop',  'human-in-the-loop'],
 ];
 
-// Domain display groups: UI label → raw domain values in YAML
 const DOMAIN_GROUPS = {
-  'Radiology':          ['Radiology', 'Survey · Radiology', 'Benchmark · Radiology'],
+  'Radiology':          ['Radiology','Survey · Radiology','Benchmark · Radiology'],
   'Pathology':          ['Pathology'],
   'Ultrasound':         ['Ultrasound'],
   'Endoscopy':          ['Endoscopy'],
@@ -426,30 +699,27 @@ const DOMAIN_GROUPS = {
   '3D Imaging':         ['3D Imaging'],
   'Segmentation':       ['Segmentation'],
   'Report Generation':  ['Report Generation'],
-  'Medical VLM':        ['Medical VLM', 'Multimodal'],
+  'Medical VLM':        ['Medical VLM','Multimodal'],
   'Clinical Reasoning': ['Clinical Reasoning'],
   'Workflow':           ['Workflow Simulation'],
   'Benchmark':          ['Benchmark'],
   'Survey':             ['Survey'],
 };
 
-const DOMAIN_CLASS = {
-  'Radiology': 'd-radiology', 'Pathology': 'd-pathology', 'Ultrasound': 'd-ultrasound',
-  'Endoscopy': 'd-endoscopy', 'Ophthalmology': 'd-ophthalmology', '3D Imaging': 'd-3d',
-  'Segmentation': 'd-segmentation', 'Report Generation': 'd-report', 'Medical VLM': 'd-vlm',
-  'Clinical Reasoning': 'd-clinical', 'Workflow': 'd-workflow', 'Benchmark': 'd-benchmark',
-  'Survey': 'd-survey',
+const DOMAIN_CSS = {
+  'Radiology':'radiology','Pathology':'pathology','Ultrasound':'ultrasound',
+  'Endoscopy':'endoscopy','Ophthalmology':'ophthalmology','3D Imaging':'3d',
+  'Segmentation':'segmentation','Report Generation':'report','Medical VLM':'vlm',
+  'Clinical Reasoning':'clinical','Workflow':'workflow','Benchmark':'benchmark',
+  'Survey':'survey',
 };
 
-/* ── State ──────────────────────────────────────────── */
-let allPapers = [];
-let filteredPapers = [];
-let activeDomains = new Set();
-let activeTags    = new Set();
-let activeYears   = new Set();
-let currentPage   = 1;
+/* ── State ───────────────────────────────────────── */
+let allPapers = [], filteredPapers = [];
+let activeDomains = new Set(), activeTags = new Set(), activeYears = new Set();
+let currentPage = 1;
 
-/* ── Boot ───────────────────────────────────────────── */
+/* ── Boot ────────────────────────────────────────── */
 async function init() {
   try {
     const r = await fetch('papers.json');
@@ -461,54 +731,85 @@ async function init() {
     return;
   }
 
-  // Sort: featured first, then newest → oldest
-  allPapers.sort((a, b) => {
+  allPapers.sort((a,b) => {
     if (b.featured && !a.featured) return 1;
     if (a.featured && !b.featured) return -1;
-    return (b.year || 0) - (a.year || 0);
+    return (b.year||0) - (a.year||0);
   });
 
-  document.getElementById('total-chip').textContent = `${allPapers.length} papers`;
-
-  buildDomainPills();
-  buildTagPills();
-  buildYearPills();
-
+  populateStats();
+  buildFilters();
   document.getElementById('search').addEventListener('input',
-    debounce(() => { currentPage = 1; render(); }, 180));
-
+    debounce(() => { currentPage=1; render(); }, 180));
   render();
 }
 
-/* ── Filter pill builders ───────────────────────────── */
-function buildDomainPills() {
-  const container = document.getElementById('domain-pills');
-  for (const [label, rawVals] of Object.entries(DOMAIN_GROUPS)) {
-    if (!allPapers.some(p => rawVals.includes(p.domain))) continue;
-    container.appendChild(makePill(label, activeDomains, label));
-  }
+function populateStats() {
+  const years   = allPapers.map(p=>p.year).filter(Boolean);
+  const domains = new Set(allPapers.map(p=>domainGroup(p.domain)));
+  document.getElementById('stat-total').textContent    = allPapers.length;
+  document.getElementById('stat-domains').textContent  = domains.size;
+  document.getElementById('stat-featured').textContent = allPapers.filter(p=>p.featured).length;
+  document.getElementById('stat-code').textContent     = allPapers.filter(p=>p.code_url).length;
+  document.getElementById('stat-years').textContent    = `${Math.min(...years)}–${Math.max(...years)}`;
+  document.getElementById('header-total').textContent  = `${allPapers.length} papers`;
+  document.getElementById('header-domains').textContent= `${domains.size} domains`;
 }
 
-function buildTagPills() {
-  const container = document.getElementById('tag-pills');
-  for (const [label, val] of THEME_TAGS) {
-    container.appendChild(makePill(label, activeTags, val));
-  }
+/* ── Filter builders ─────────────────────────────── */
+function buildFilters() {
+  const domainCounts = {};
+  allPapers.forEach(p => {
+    const g = domainGroup(p.domain);
+    domainCounts[g] = (domainCounts[g]||0) + 1;
+  });
+
+  const tagCounts = {};
+  allPapers.forEach(p => (p.tags||[]).forEach(t => {
+    const lower = t.toLowerCase();
+    if (lower === 'rag') tagCounts['RAG'] = (tagCounts['RAG']||0) + 1;
+    else tagCounts[lower] = (tagCounts[lower]||0) + 1;
+  }));
+
+  const yearCounts = {};
+  allPapers.forEach(p => {
+    if (p.year) yearCounts[p.year] = (yearCounts[p.year]||0) + 1;
+  });
+
+  // Domain
+  const domainContainer = document.getElementById('domain-opts');
+  Object.entries(DOMAIN_GROUPS)
+    .filter(([g]) => domainCounts[g])
+    .forEach(([g]) => {
+      domainContainer.appendChild(makeOpt(g, `${g}`, domainCounts[g]||0, activeDomains, g));
+    });
+
+  // Theme tags
+  const tagContainer = document.getElementById('tag-opts');
+  THEME_TAGS.forEach(([label, val]) => {
+    const cnt = val==='RAG' ? (tagCounts['RAG']||0) : (tagCounts[val]||tagCounts[val.toLowerCase()]||0);
+    tagContainer.appendChild(makeOpt(label, label, cnt, activeTags, val));
+  });
+
+  // Years
+  const yearContainer = document.getElementById('year-opts');
+  Object.entries(yearCounts)
+    .sort((a,b) => b[0]-a[0])
+    .forEach(([y, cnt]) => {
+      yearContainer.appendChild(makeOpt(y, y, cnt, activeYears, String(y)));
+    });
 }
 
-function buildYearPills() {
-  const container = document.getElementById('year-pills');
-  const years = [...new Set(allPapers.map(p => p.year).filter(Boolean))].sort((a, b) => b - a);
-  for (const y of years) {
-    container.appendChild(makePill(String(y), activeYears, String(y)));
-  }
-}
-
-function makePill(label, set, val) {
+function makeOpt(id, label, count, set, val) {
   const btn = document.createElement('button');
-  btn.className = 'pill';
-  btn.textContent = label;
+  btn.className = 'fopt';
   btn.dataset.val = val;
+  btn.innerHTML = `
+    <span class="fopt-label">
+      <span class="fopt-dot"></span>
+      ${esc(label)}
+    </span>
+    <span class="fopt-count">${count}</span>`;
   btn.addEventListener('click', () => {
     if (set.has(val)) { set.delete(val); btn.classList.remove('active'); }
     else              { set.add(val);    btn.classList.add('active');    }
@@ -518,76 +819,93 @@ function makePill(label, set, val) {
   return btn;
 }
 
-/* ── Filtering ──────────────────────────────────────── */
-function domainGroup(rawDomain) {
-  for (const [group, vals] of Object.entries(DOMAIN_GROUPS)) {
-    if (vals.includes(rawDomain)) return group;
-  }
-  return rawDomain;
+/* ── Filtering ───────────────────────────────────── */
+function domainGroup(raw) {
+  for (const [g, vals] of Object.entries(DOMAIN_GROUPS))
+    if (vals.includes(raw)) return g;
+  return raw;
 }
 
 function matches(p, query) {
   if (activeDomains.size > 0 && !activeDomains.has(domainGroup(p.domain))) return false;
   if (activeTags.size > 0) {
-    const ptags = (p.tags || []).map(t => t.toLowerCase());
+    const ptags = (p.tags||[]).map(t=>t.toLowerCase());
     if (![...activeTags].some(t => ptags.includes(t.toLowerCase()))) return false;
   }
   if (activeYears.size > 0 && !activeYears.has(String(p.year))) return false;
   if (document.getElementById('featured-only').checked && !p.featured) return false;
   if (query) {
-    const hay = [p.title, p.summary, p.venue, ...(p.tags || []),
-                 ...(p.modality || []), ...(p.task || [])]
-                 .filter(Boolean).join(' ').toLowerCase();
+    const hay = [p.title,p.summary,p.venue,...(p.tags||[]),...(p.modality||[]),...(p.task||[])]
+                .filter(Boolean).join(' ').toLowerCase();
     if (!hay.includes(query)) return false;
   }
   return true;
 }
 
-/* ── Render ─────────────────────────────────────────── */
+/* ── Render ──────────────────────────────────────── */
 function render() {
   const q = document.getElementById('search').value.toLowerCase().trim();
-  filteredPapers = allPapers.filter(p => matches(p, q));
+  filteredPapers = allPapers.filter(p => matches(p,q));
 
-  const total      = filteredPapers.length;
-  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
-  currentPage      = Math.min(currentPage, totalPages);
+  const total = filteredPapers.length;
+  const totalPages = Math.max(1, Math.ceil(total/PAGE_SIZE));
+  currentPage = Math.min(currentPage, totalPages);
 
   document.getElementById('result-count').textContent =
-    `${total.toLocaleString()} paper${total !== 1 ? 's' : ''}`;
+    `${total.toLocaleString()} paper${total!==1?'s':''}`;
 
-  const slice = filteredPapers.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+  renderActiveFilters(q);
+
+  const slice = filteredPapers.slice((currentPage-1)*PAGE_SIZE, currentPage*PAGE_SIZE);
   const container = document.getElementById('papers-container');
-
-  if (slice.length === 0) {
-    container.innerHTML =
-      `<div class="state-box"><h3>No papers match</h3><p>Try broadening your search or clearing filters.</p></div>`;
-  } else {
-    container.innerHTML = `<div class="papers-list">${slice.map(card).join('')}</div>`;
-  }
+  container.innerHTML = slice.length===0
+    ? `<div class="state-box"><div class="state-icon">🔍</div><h3>No papers match</h3><p>Try broadening your search or clearing filters.</p></div>`
+    : `<div class="papers-list">${slice.map(paperCard).join('')}</div>`;
 
   renderPagination(totalPages);
 }
 
-function card(p) {
+function renderActiveFilters(query) {
+  const af = document.getElementById('active-filters');
+  af.innerHTML = '';
+  const add = (label, removeFn) => {
+    const chip = document.createElement('span');
+    chip.className = 'af-chip';
+    chip.innerHTML = `${esc(label)} <span class="af-chip-x">×</span>`;
+    chip.onclick = removeFn;
+    af.appendChild(chip);
+  };
+  if (query) add(`"${query}"`, () => { document.getElementById('search').value=''; currentPage=1; render(); });
+  activeDomains.forEach(v => add(v, () => removeFilter(activeDomains, v)));
+  activeTags.forEach(v    => add(v, () => removeFilter(activeTags,    v)));
+  activeYears.forEach(v   => add(v, () => removeFilter(activeYears,   v)));
+}
+
+function removeFilter(set, val) {
+  set.delete(val);
+  document.querySelectorAll(`.fopt[data-val="${CSS.escape(val)}"]`)
+    .forEach(el => el.classList.remove('active'));
+  currentPage = 1;
+  render();
+}
+
+function paperCard(p) {
   const group = domainGroup(p.domain);
-  const cls   = DOMAIN_CLASS[group] || 'd-benchmark';
+  const css   = DOMAIN_CSS[group] || 'benchmark';
 
   const titleEl = p.paper_url
     ? `<a href="${esc(p.paper_url)}" target="_blank" rel="noopener" class="paper-title">${esc(p.title)}</a>`
     : `<span class="paper-title-plain">${esc(p.title)}</span>`;
 
-  const starEl = p.featured ? `<span class="star" title="Landmark / featured paper">★</span>` : '';
+  const featuredEl = p.featured
+    ? `<span class="featured-badge">★ Landmark</span>` : '';
 
-  const venueLine = [p.venue, p.year ? `(${p.year})` : ''].filter(Boolean).join(' ');
+  const venueLine = [p.venue, p.year?`(${p.year})`:''].filter(Boolean).join(' ');
   const venueEl   = venueLine ? `<span class="venue-text">${esc(venueLine)}</span>` : '';
 
-  const summaryEl = p.summary ? `<p class="card-summary">${esc(p.summary)}</p>` : '';
-
-  const SKIP_TAGS = new Set(['backbone', 'foundation model']);
-  const tagEls = (p.tags || [])
-    .filter(t => !SKIP_TAGS.has(t))
-    .slice(0, 7)
-    .map(t => `<span class="tag">${esc(t)}</span>`).join('');
+  const SKIP = new Set(['backbone','foundation model']);
+  const tagEls = (p.tags||[]).filter(t=>!SKIP.has(t)).slice(0,6)
+    .map(t=>`<span class="tag">${esc(t)}</span>`).join('');
 
   const links = [];
   if (p.paper_url)   links.push(`<a href="${esc(p.paper_url)}"   target="_blank" rel="noopener" class="lbtn lbtn-paper">Paper ↗</a>`);
@@ -595,83 +913,82 @@ function card(p) {
   if (p.project_url) links.push(`<a href="${esc(p.project_url)}" target="_blank" rel="noopener" class="lbtn lbtn-demo">Demo</a>`);
 
   return `
-<div class="paper-card${p.featured ? ' featured' : ''}">
-  <div class="card-header">
-    ${titleEl}
-    ${starEl}
-  </div>
-  <div class="card-meta">
-    <span class="domain-badge ${cls}">${esc(group)}</span>
-    ${venueEl}
-  </div>
-  ${summaryEl}
-  <div class="card-footer">
-    ${tagEls}
-    <span class="spacer"></span>
-    ${links.join('')}
+<div class="paper-card">
+  <div class="card-accent-bar ab-${css}"></div>
+  <div class="card-body">
+    <div class="card-top">
+      ${titleEl}
+      ${featuredEl}
+    </div>
+    <div class="card-meta">
+      <span class="domain-badge d-${css}">${esc(group)}</span>
+      ${venueEl ? `<span class="meta-dot">·</span>${venueEl}` : ''}
+    </div>
+    ${p.summary ? `<p class="card-summary">${esc(p.summary)}</p>` : ''}
+    <div class="card-footer">
+      ${tagEls}
+      <span class="spacer"></span>
+      ${links.join('')}
+    </div>
   </div>
 </div>`;
 }
 
-/* ── Pagination ─────────────────────────────────────── */
+/* ── Pagination ──────────────────────────────────── */
 function renderPagination(totalPages) {
   const pag = document.getElementById('pagination');
-  if (totalPages <= 1) { pag.innerHTML = ''; return; }
+  if (totalPages <= 1) { pag.innerHTML=''; return; }
 
-  // Collect page numbers to show
-  const show = new Set([1, totalPages, currentPage,
-    currentPage - 1, currentPage + 1].filter(n => n >= 1 && n <= totalPages));
-  const sorted = [...show].sort((a, b) => a - b);
+  const show = new Set([1, totalPages, currentPage, currentPage-1, currentPage+1]
+    .filter(n => n>=1 && n<=totalPages));
+  const sorted = [...show].sort((a,b)=>a-b);
 
   const parts = [];
-  parts.push(pgBtn('← Prev', currentPage - 1, currentPage === 1));
-  let prev = 0;
+  parts.push(pgBtn('← Prev', currentPage-1, currentPage===1));
+  let prev=0;
   for (const n of sorted) {
-    if (n - prev > 1) parts.push(`<span class="pgellipsis">…</span>`);
-    parts.push(pgBtn(n, n, false, n === currentPage));
-    prev = n;
+    if (n-prev > 1) parts.push(`<span class="pgellipsis">…</span>`);
+    parts.push(pgBtn(n, n, false, n===currentPage));
+    prev=n;
   }
-  parts.push(pgBtn('Next →', currentPage + 1, currentPage === totalPages));
+  parts.push(pgBtn('Next →', currentPage+1, currentPage===totalPages));
   pag.innerHTML = parts.join('');
 }
 
-function pgBtn(label, page, disabled, active = false) {
-  const cls = ['pgbtn', active ? 'active' : ''].join(' ').trim();
-  const dis = disabled ? 'disabled' : '';
-  const fn  = disabled ? '' : `onclick="goPage(${page})"`;
-  return `<button class="${cls}" ${dis} ${fn}>${label}</button>`;
+function pgBtn(label, page, disabled, active=false) {
+  const cls = ['pgbtn', active?'active':''].join(' ').trim();
+  return `<button class="${cls}" ${disabled?'disabled':''} ${disabled?'':
+    `onclick="goPage(${page})"`}>${label}</button>`;
 }
 
 function goPage(n) {
-  currentPage = n;
+  currentPage=n;
   render();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({top:0,behavior:'smooth'});
 }
 
-/* ── Utilities ──────────────────────────────────────── */
+/* ── Utilities ───────────────────────────────────── */
 function clearAll() {
-  document.getElementById('search').value = '';
-  document.getElementById('featured-only').checked = false;
-  activeDomains.clear();
-  activeTags.clear();
-  activeYears.clear();
-  document.querySelectorAll('.pill.active').forEach(el => el.classList.remove('active'));
-  currentPage = 1;
+  document.getElementById('search').value='';
+  document.getElementById('featured-only').checked=false;
+  activeDomains.clear(); activeTags.clear(); activeYears.clear();
+  document.querySelectorAll('.fopt.active').forEach(el=>el.classList.remove('active'));
+  currentPage=1;
   render();
+}
+
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
 }
 
 function esc(s) {
-  if (s == null) return '';
-  return String(s)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
+  if (s==null) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-function debounce(fn, ms) {
+function debounce(fn,ms) {
   let t;
-  return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), ms); };
+  return (...args)=>{ clearTimeout(t); t=setTimeout(()=>fn(...args),ms); };
 }
 
 init();
