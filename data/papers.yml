@@ -785,6 +785,30 @@ papers:
     summary: "Introduces multi-turn RL to train an interactive segmentation agent that decides which prompts to issue to SAM — the first RL-trained imaging segmentation agent."
     featured: true
 
+  - title: "Shifting Adaptation from Weight Space to Memory Space: A Memory-Augmented Agent for Medical Image Segmentation"
+    year: 2026
+    domain: "Segmentation"
+    modality:
+      - CT
+      - MRI
+    task:
+      - segmentation
+      - domain adaptation
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2603.05873"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - domain adaptation
+      - federated learning
+      - memory augmented
+    summary: "Memory-augmented segmentation agent with an agentic controller that dynamically composes static, few-shot, and test-time working memories to generalize a fixed backbone across institutions without retraining."
+    featured: false
+
   - title: "Towards User-Centered Interactive Medical Image Segmentation in VR with an Assistive AI Agent"
     year: 2025
     domain: "Segmentation"
@@ -2695,6 +2719,30 @@ papers:
       - backbone
       - foundation model
     summary: "— Model (MLLM). Surgical VQA model that can be wrapped by agent controllers."
+    featured: false
+
+  - title: "MedMMV: A Controllable Multimodal Multi-Agent Framework for Reliable and Verifiable Clinical Reasoning"
+    year: 2025
+    domain: "Medical VLM"
+    modality:
+      - CXR
+      - CT
+      - MRI
+    task:
+      - clinical reasoning
+      - diagnosis
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2509.24314"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+      - hallucination
+    summary: "Multi-agent clinical reasoning framework with dedicated ImageDoctor and TextDoctor agents that ground intermediate steps in a structured evidence graph under Hallucination Detector supervision to prevent cascading reasoning errors."
     featured: false
 
 
@@ -5584,6 +5632,48 @@ papers:
       - multi-agent
       - human-in-the-loop
     summary: "TissueLab integrates standardized tool factories across pathology, radiology, and spatial omics domains and enables real-time expert feedback for iterative, explainable multi-domain imaging analysis."
+    featured: false
+
+  - title: "Simple Agents Outperform Experts in Biomedical Imaging Workflow Optimization"
+    year: 2025
+    domain: "Workflow Simulation"
+    modality:
+      - CXR
+      - CT
+      - MRI
+    task:
+      - workflow automation
+      - pipeline optimization
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2512.06006"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags: null
+    summary: "Simple LLM agent framework automatically generates adaptation code for production biomedical imaging pipelines using small gold-standard validation sets, consistently outperforming human-expert manual adaptation."
+    featured: false
+
+  - title: "Autonomous Computer Vision Development with Agentic AI"
+    year: 2025
+    domain: "Workflow Simulation"
+    modality:
+      - CXR
+    task:
+      - workflow automation
+      - pipeline optimization
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2506.11140"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags: null
+    summary: "LLM-based agent autonomously configures, trains, and tests medical image analysis pipelines by extending SimpleMind with automated planning and tool-calling, achieving strong chest X-ray segmentation performance."
     featured: false
 
   - title: "MedRCube: A Multidimensional Framework for Fine-Grained and In-Depth Evaluation of MLLMs in Medical Imaging"
