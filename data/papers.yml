@@ -496,6 +496,30 @@ papers:
     summary: "RL-trained agent uses anatomical landmarks to autonomously navigate the stomach during wireless capsule endoscopy, achieving >97% gastric coverage and decoupling diagnostic quality from specialist availability."
     featured: false
 
+  - title: "Reinforcement Learning for Follow-the-Leader Robotic Endoscopic Navigation via Synthetic Data"
+    year: 2026
+    domain: "Endoscopy"
+    modality:
+      - endoscopy
+    task:
+      - navigation
+      - autonomous control
+    agent_type:
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2601.02798"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - reinforcement-learning
+      - robotic endoscopy
+      - autonomous navigation
+      - depth estimation
+    summary: "RL-trained agent drives a flexible continuum endoscope by combining monocular depth estimation with policy learning in a synthetic intestinal simulation, improving depth accuracy 39% over baselines."
+    featured: false
+
   - title: "Multi-Agent Intelligence for Multidisciplinary Decision-Making in Gastrointestinal Oncology"
     year: 2025
     domain: "Endoscopy"
@@ -600,6 +624,33 @@ papers:
       - multi-tool
       - RAG
     summary: "Tool-using agentic AI that orchestrates 53 validated ophthalmic tools across 23 imaging modalities with RAG-grounded reasoning from authoritative textbooks, matching or exceeding senior ophthalmologist performance."
+    featured: false
+
+  - title: "Multimodal reasoning agent for enhanced ophthalmic decision-making: a preliminary real-world clinical validation"
+    year: 2025
+    domain: "Ophthalmology"
+    modality:
+      - fundus
+      - OCT
+      - ophthalmic imaging
+    task:
+      - diagnosis
+      - treatment planning
+      - clinical reasoning
+    agent_type:
+      - tool-using
+      - RAG
+    paper_url: "https://doi.org/10.3389/fcell.2025.1642539"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Frontiers in Cell and Developmental Biology"
+    tags:
+      - ophthalmology
+      - RAG
+      - multimodal reasoning
+    summary: "Three-module agentic pipeline integrating GPT-4o visual understanding, RAG from ophthalmic guideline knowledge bases, and DeepSeek-R1 diagnostic reasoning; validated on 30 real-world ophthalmic cases matching ophthalmology resident accuracy."
     featured: false
 
   - title: "ChatMyopia: An AI Agent for Pre-consultation Education in Primary Eye Care Settings"
@@ -858,6 +909,32 @@ papers:
       - iterative segmentation
       - reinforcement-learning
     summary: "Policy network agent iteratively recommends optimal imaging modalities and anatomical regions of interest to progressively localize prostate cancer in multiparametric MRI."
+    featured: false
+
+  - title: "Iteratively-Refined Interactive 3D Medical Image Segmentation with Multi-Agent Reinforcement Learning"
+    year: 2020
+    domain: "Segmentation"
+    modality:
+      - CT
+      - MRI
+    task:
+      - segmentation
+      - interactive annotation
+    agent_type:
+      - RL-trained
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/1911.10334"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "CVPR"
+    tags:
+      - multi-agent
+      - reinforcement-learning
+      - human-in-the-loop
+      - interactive segmentation
+    summary: "Foundational paper modelling iterative 3D medical image segmentation as an MDP; each voxel acts as an independent agent sharing a behaviour policy, converging to accurate segmentations with fewer user interactions than prior methods."
     featured: false
 
   # ── Medical VLM Agents ────────────────────────────────────────────────────
