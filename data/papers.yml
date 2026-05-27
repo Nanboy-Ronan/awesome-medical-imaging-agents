@@ -829,9 +829,8 @@ papers:
     tags:
       - segmentation
       - SAM
-      - reinforcement learning
-      - interactive
       - reinforcement-learning
+      - interactive
       - human-in-the-loop
     summary: "Introduces multi-turn RL to train an interactive segmentation agent that decides which prompts to issue to SAM — the first RL-trained imaging segmentation agent."
     featured: true
@@ -1151,7 +1150,7 @@ papers:
     project_url: "https://agentclinic.github.io/"
     dataset_url: "https://agentclinic.github.io/"
     benchmark_url: "https://agentclinic.github.io/"
-    venue: "npj Digital Medicine 2026"
+    venue: "npj Digital Medicine"
     tags:
       - benchmark
       - multimodal
@@ -1328,6 +1327,7 @@ papers:
     tags:
       - hallucination
       - safety
+      - human-in-the-loop
     summary: "Triage agent that defers or escalates based on calibrated uncertainty."
     featured: false
 
@@ -1586,7 +1586,8 @@ papers:
     year: 2026
     domain: "Radiology"
     modality:
-      - CXR
+      - CT
+      - MRI
     task:
       - diagnosis
       - tool use
@@ -1608,7 +1609,7 @@ papers:
     year: 2026
     domain: "Radiology"
     modality:
-      - CXR
+      - mammography
     task:
       - diagnosis
       - tool use
@@ -1649,9 +1650,10 @@ papers:
     year: 2025
     domain: "Radiology"
     modality:
-      - CXR
+      - CT
+      - MRI
     task:
-      - diagnosis
+      - treatment planning
       - tool use
     agent_type:
       - tool-using
@@ -1670,8 +1672,7 @@ papers:
   - title: "Bridging Clinical Narratives and ACR Appropriateness Guidelines: A Multi-Agent RAG System for Medical Imaging Decisions"
     year: 2025
     domain: "Radiology"
-    modality:
-      - CXR
+    modality: null
     task:
       - diagnosis
       - tool use
@@ -1693,7 +1694,8 @@ papers:
     year: 2025
     domain: "Radiology"
     modality:
-      - CXR
+      - mammography
+      - MRI
     task:
       - diagnosis
       - tool use
@@ -1814,6 +1816,7 @@ papers:
     tags:
       - RAG
       - reinforcement-learning
+      - hallucination
     summary: "RL-trained agentic RAG reduces pathology VLM hallucinations."
     featured: false
 
@@ -2582,7 +2585,7 @@ papers:
     project_url: null
     dataset_url: null
     benchmark_url: null
-    venue: "ICLR"
+    venue: "ICLR 2026"
     tags:
       - multi-agent
     summary: "RL-based collaboration among GP and specialist agents for multimodal diagnosis."
@@ -2898,7 +2901,7 @@ papers:
     project_url: null
     dataset_url: null
     benchmark_url: null
-    venue: "arXiv / ACL"
+    venue: "ACL 2026"
     tags: null
     summary: "Iterative generate-judge-refine treatment-planning agent with a treatment-specific evaluator for safer and more complete therapeutic recommendations."
     featured: false
@@ -5796,4 +5799,106 @@ papers:
       - hallucination
       - safety
     summary: "Studies hallucination patterns in both image-to-text interpretation and text-to-image generation across X-ray, CT, and MRI, cataloguing factual inconsistencies and anatomical inaccuracies with implications for clinical deployment."
+    featured: false
+
+  # ── Ultrasound Agents (new additions) ────────────────────────────────────
+
+  - title: "USPilot: An Embodied Robotic Assistant Ultrasound System with Large Language Model Enhanced Graph Planner"
+    year: 2025
+    domain: "Ultrasound"
+    modality:
+      - ultrasound
+    task:
+      - navigation
+      - autonomous control
+    agent_type:
+      - tool-using
+      - embodied agent
+    paper_url: "https://arxiv.org/abs/2502.12498"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "IEEE RA-L"
+    tags:
+      - robotic ultrasound
+      - embodied agent
+      - autonomous navigation
+    summary: "Embodied robotic assistant where an LLM-enhanced graph neural network planner selects and sequences ultrasound APIs to enable autonomous acquisition and patient query handling, tackling the global shortage of sonographers."
+    featured: false
+
+  - title: "RAG-RUSS: A Retrieval-Augmented Robotic Ultrasound for Autonomous Carotid Examination"
+    year: 2026
+    domain: "Ultrasound"
+    modality:
+      - ultrasound
+    task:
+      - navigation
+      - autonomous control
+    agent_type:
+      - RAG
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2603.01153"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - robotic ultrasound
+      - RAG
+      - autonomous navigation
+    summary: "Interpretable retrieval-augmented robotic ultrasound that autonomously plans probe motions and explains each scanning stage to complete a full carotid examination across transverse and longitudinal planes."
+    featured: false
+
+  # ── Ophthalmology Agents (new additions) ─────────────────────────────────
+
+  - title: "Detection and Diagnosis of Diabetic Retinopathy in Retinal Fundus Images Using Agentic AI Approaches"
+    year: 2025
+    domain: "Ophthalmology"
+    modality:
+      - fundus
+    task:
+      - diagnosis
+    agent_type:
+      - multi-agent
+    paper_url: "https://www.nature.com/articles/s41598-025-34016-0"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Scientific Reports"
+    tags:
+      - diabetic retinopathy
+      - fundus
+      - multi-agent
+    summary: "AADR-AI uses JADE/Mesa autonomous agents that specialize in preprocessing, feature extraction, fusion, classification, and clinical explanation for diabetic retinopathy detection from retinal fundus images."
+    featured: false
+
+  # ── Workflow Simulation (new additions) ───────────────────────────────────
+
+  - title: "MedAgentSim: Self-Evolving Multi-Agent Simulations for Realistic Clinical Interactions"
+    year: 2025
+    domain: "Workflow Simulation"
+    modality:
+      - CXR
+      - MRI
+      - X-ray
+    task:
+      - hospital simulation
+      - workflow automation
+      - clinical training
+    agent_type:
+      - multi-agent
+      - simulation
+    paper_url: "https://arxiv.org/abs/2503.22678"
+    code_url: "https://github.com/MAXNORM8650/MedAgentSim"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "MICCAI 2025"
+    tags:
+      - multi-agent
+      - hospital simulation
+    summary: "MICCAI 2025 oral; open-source simulated clinical environment where self-evolving doctor agents engage in multi-turn conversations with patient and measurement agents, requesting examinations and imaging results to mimic real-world diagnostic workflows."
     featured: false
