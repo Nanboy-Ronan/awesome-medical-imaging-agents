@@ -5902,3 +5902,75 @@ papers:
       - hospital simulation
     summary: "MICCAI 2025 oral; open-source simulated clinical environment where self-evolving doctor agents engage in multi-turn conversations with patient and measurement agents, requesting examinations and imaging results to mimic real-world diagnostic workflows."
     featured: false
+
+  - title: "EndoVLA: Dual-Phase Vision-Language-Action Model for Autonomous Tracking in Endoscopy"
+    year: 2025
+    domain: "Endoscopy"
+    modality:
+      - endoscopy
+    task:
+      - polyp tracking
+      - autonomous tracking
+      - mucosal region delineation
+    agent_type:
+      - VLA
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2505.15206"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "CoRL 2025"
+    tags:
+      - reinforcement-learning
+      - endoscopy
+      - polyp tracking
+    summary: "Dual-phase VLA model combines supervised fine-tuning with RL fine-tuning and task-aware rewards to autonomously track polyps, delineate abnormal mucosal regions, and follow markers in GI endoscopy, enabling zero-shot generalization to diverse gastrointestinal scenarios."
+    featured: false
+
+  - title: "CT-Flow: Orchestrating CT Interpretation Workflow with Model Context Protocol Servers"
+    year: 2026
+    domain: "3D Imaging"
+    modality:
+      - CT
+    task:
+      - CT interpretation
+      - tool use
+      - multi-step reasoning
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2603.00123"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "ACL 2026"
+    tags:
+      - CT interpretation
+      - MCP
+      - tool use
+    summary: "MCP-based agentic CT interpreter that orchestrates radiomics, segmentation, and measurement tool calls over volumetric DICOM data; introduces CT-FlowBench, a 3D CT multi-step tool-use benchmark, surpassing static VLMs by 41% in diagnostic accuracy."
+    featured: false
+
+  - title: "An Artifact-based Agent Framework for Adaptive and Reproducible Medical Image Processing"
+    year: 2026
+    domain: "Workflow Simulation"
+    modality:
+      - CT
+      - MRI
+    task:
+      - workflow automation
+      - medical image processing
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2604.21936"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv (2026)"
+    tags:
+      - workflow automation
+      - reproducibility
+    summary: "Formalizes intermediate pipeline outputs as artifact contracts so a goal-conditioned agent assembles modular processing rules and tracks provenance, enabling adaptive and reproducible medical image workflows across heterogeneous clinical CT and MRI datasets."
+    featured: false
