@@ -9,7 +9,7 @@
 [![GitHub Contributors](https://img.shields.io/github/contributors/Nanboy-Ronan/awesome-medical-imaging-agents?color=green&style=plastic)](https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents/graphs/contributors)
 [![Website](https://img.shields.io/badge/Website-Search%20%26%20Filter-blue?style=plastic&logo=googlechrome)](https://nanboy-ronan.github.io/awesome-medical-imaging-agents/)
 
-> A curated academic list of agentic AI for medical image analysis.
+> An awesome list of agentic AI papers, benchmarks, and tools for medical image analysis — radiology agents, pathology agents, ultrasound agents, segmentation agents, and medical VLM agents.
 >
 > Last updated: 2026-05-30
 
