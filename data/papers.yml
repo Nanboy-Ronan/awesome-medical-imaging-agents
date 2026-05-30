@@ -5974,3 +5974,99 @@ papers:
       - reproducibility
     summary: "Formalizes intermediate pipeline outputs as artifact contracts so a goal-conditioned agent assembles modular processing rules and tracks provenance, enabling adaptive and reproducible medical image workflows across heterogeneous clinical CT and MRI datasets."
     featured: false
+
+  - title: "PathNavigate: A Training-Free Pathology Agent with Surprise-Guided Scan and Shared Slide Memory for Whole-Slide Image VQA"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - VQA
+      - slide navigation
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2605.23559"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - whole-slide image
+      - training-free
+      - VQA
+    summary: "Training-free WSI agent performs surprise-guided low-magnification scanning and shared-memory filtering to identify question-relevant regions before high-resolution evidence extraction for VQA."
+    featured: false
+
+  - title: "Towards Reliable Fetal Ultrasound Interpretation with Multi-Agent Collaboration"
+    year: 2026
+    domain: "Ultrasound"
+    modality:
+      - ultrasound
+    task:
+      - VQA
+      - report generation
+      - image analysis
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2605.25357"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - fetal ultrasound
+      - multi-agent
+      - benchmark
+    summary: "FetUSAgents coordinates specialized visual tools and LLM agents with Dual-Path Evidence Arbitration for fetal ultrasound interpretation; introduces FetUS-VQA benchmark with 1,892 images and 10 clinical tasks."
+    featured: false
+
+  - title: "BCER Agent: Reliable Long-Horizon MRI Workflow Execution via Compilation, Artifact Binding, and Bounded Local Recovery"
+    year: 2026
+    domain: "3D Imaging"
+    modality:
+      - MRI
+    task:
+      - workflow execution
+      - multi-organ analysis
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2605.29163"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - MRI
+      - long-horizon
+      - error recovery
+    summary: "Controller architecture that decouples planning from execution for long-horizon MRI analysis pipelines, with bounded local recovery to prevent cascading failures across multi-organ brain, prostate, and cardiac tasks."
+    featured: false
+
+  - title: "ClinSeekAgent: Automating Multimodal Evidence Seeking for Agentic Clinical Reasoning"
+    year: 2026
+    domain: "Clinical Reasoning"
+    modality:
+      - CXR
+    task:
+      - clinical reasoning
+      - evidence seeking
+      - multimodal QA
+    agent_type:
+      - tool-using
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2605.20176"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - clinical reasoning
+      - multimodal
+      - RAG
+    summary: "Automated evidence-seeking agent that queries medical knowledge bases, EHRs, and medical imaging tools to assemble multimodal clinical evidence, with a distillation pipeline for compact open-source models and significant gains on CXR and EHR benchmarks."
+    featured: false
