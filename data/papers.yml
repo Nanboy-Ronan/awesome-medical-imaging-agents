@@ -3595,7 +3595,7 @@ papers:
       - diagnosis
     agent_type:
       - multi-agent
-    paper_url: "https://ojs.aaai.org/index.php/AAAI/article/view/37052"
+    paper_url: "https://arxiv.org/abs/2509.23725"
     code_url: null
     project_url: null
     dataset_url: null
