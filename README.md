@@ -1,4 +1,4 @@
-# Awesome Medical Imaging Agents [![Awesome Lists](https://srv-cdn.himpfen.io/badges/awesome-lists/awesomelists-flat.svg)](https://github.com/awesomelistsio/awesome)
+# Awesome Medical Imaging Agents [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-YES-green.svg)](https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents/graphs/commit-activity)
 ![PR Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
@@ -9,7 +9,7 @@
 [![GitHub Contributors](https://img.shields.io/github/contributors/Nanboy-Ronan/awesome-medical-imaging-agents?color=green&style=plastic)](https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents/graphs/contributors)
 [![Website](https://img.shields.io/badge/Website-Search%20%26%20Filter-blue?style=plastic&logo=googlechrome)](https://nanboy-ronan.github.io/awesome-medical-imaging-agents/)
 
-> An awesome list of agentic AI papers, benchmarks, and tools for medical image analysis — radiology agents, pathology agents, ultrasound agents, segmentation agents, and medical VLM agents.
+> Agentic AI systems for medical image analysis — radiology agents, pathology agents, ultrasound agents, surgical imaging agents, segmentation agents, and medical vision-language model agents.
 >
 > Last updated: 2026-05-30
 
@@ -28,6 +28,7 @@ Use this list to find recent papers, surveys, benchmarks, datasets, and implemen
 
 Quick reference: which imaging modalities appear in which sections of this list. ●●● = many papers; ●● = several; ● = one or two.
 
+<!-- lint ignore table-pipe-alignment table-cell-padding -->
 | Modality | Radiology | Pathology | Ultrasound | Endoscopy | Ophthalmology | 3D Imaging | Segmentation | Report Gen | VLM |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Chest X-ray (CXR) | ●●● | | | | | | ● | ●●● | ● |
@@ -48,6 +49,7 @@ Quick reference: which imaging modalities appear in which sections of this list.
 
 New to the field? The table below selects 12 landmark papers and systems spanning the core subfields. Reading these gives a solid mental model of the space before diving into the full list.
 
+<!-- lint ignore table-pipe-alignment table-cell-padding -->
 | Paper / System | Year | Domain | Why it matters | Links |
 |---|---:|---|---|---|
 | [Agentic Systems in Radiology: Design, Applications, Evaluation, and Challenges](https://arxiv.org/pdf/2510.09404v2) | 2025 | Survey · Radiology | Best entry-point survey: maps agent design patterns, evaluation protocols, and open challenges across the full radiology pipeline. | [Paper](https://arxiv.org/pdf/2510.09404v2) |
@@ -72,7 +74,7 @@ New to the field? The table below selects 12 landmark papers and systems spannin
 - **Research resources:** peer-reviewed papers, arXiv preprints, benchmarks, datasets, reproducible code, and related awesome lists.
 - **Safety and evaluation:** hallucination detection, fairness, robustness, uncertainty, abstention, privacy, security, and clinically grounded evaluation.
 
-## Table of Contents
+## Contents
 
 - [Scope](#scope)
 - [Modality Coverage](#modality-coverage)
@@ -98,8 +100,6 @@ New to the field? The table below selects 12 landmark papers and systems spannin
 - [Toolboxes](#toolboxes)
 - [Surveys and Position Papers (14)](#surveys-and-position-papers-14)
 - [Related Awesome Lists](#related-awesome-lists)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -428,6 +428,7 @@ Research on how agents learn, select, and audit clinical tools and skills.
 
 This section is for researchers choosing evaluation resources for medical imaging agents. The table below maps published benchmarks, simulation environments, and datasets to the imaging domain, modality, and agent capability they test. Entries are drawn from resources already listed in this repository; information is taken directly from source abstracts and descriptions. Where details are not stated in the source, the entry reads "Not specified."
 
+<!-- lint ignore table-pipe-alignment table-cell-padding -->
 | Name | Domain | Modality | Agent Task | Data / Environment | Metrics | Code / Dataset | Notes |
 |---|---|---|---|---|---|---|---|
 | [ABRA](https://arxiv.org/abs/2605.11224) | Radiology | DICOM (CT / MRI) | Viewer navigation · tool use | Agents operate a live OHIF viewer and Orthanc DICOM server via function calls | Not specified | [Paper](https://arxiv.org/abs/2605.11224) | First benchmark where agents drive a real DICOM viewer; 2026 |
@@ -443,7 +444,7 @@ This section is for researchers choosing evaluation resources for medical imagin
 | [MedAgentBench](https://arxiv.org/abs/2501.14654) | Clinical (EHR) | EHR text | Longitudinal task completion | Realistic virtual EHR with longitudinal inpatient cases | Task completion accuracy | [Paper](https://arxiv.org/abs/2501.14654) · [Code](https://github.com/stanfordmlgroup/MedAgentBench) | Stanford; EHR-focused; reinforcement-style training environment; 2025 |
 | [MedMemoryBench](https://arxiv.org/abs/2605.11814) | Personalized healthcare | Not specified | Long-term memory · personalized tracking | Personalized healthcare agent interactions | Precision, safety, clinical tracking | [Paper](https://arxiv.org/abs/2605.11814) | Memory-specific benchmark for healthcare agents; 2026 |
 | [BioTool](https://arxiv.org/abs/2605.05758) | Biomedical (general) | Text | Tool use (biomedical tools) | Biomedical tool-calling dataset | Not specified | [Paper](https://arxiv.org/abs/2605.05758) | Training and evaluation dataset for agents calling biomedical tools; 2026 |
-| [MedicalAgentQA](https://huggingface.co/datasets/vapa/MedicalAgentQA) | General medical | Text | Visual question answering · tool selection | QA pairs targeting reasoning, evidence citation, and tool selection | Not specified | [Dataset](https://huggingface.co/datasets/vapa/MedicalAgentQA) | Compact HuggingFace QA dataset for medical agent evaluation |
+| [MedicalAgentQA](https://huggingface.co/datasets/vapa/MedicalAgentQA) | General medical | Text | Visual question answering · tool selection | QA pairs targeting reasoning, evidence citation, and tool selection | Not specified | [Dataset](https://huggingface.co/datasets/vapa/MedicalAgentQA) | Compact Hugging Face QA dataset for medical agent evaluation |
 
 ---
 
@@ -771,7 +772,7 @@ Papers on hallucination, bias, adversarial robustness, fairness, privacy, and sa
 - [CUHK-AIM-Group/MedSAM-Agent](https://github.com/CUHK-AIM-Group/MedSAM-Agent) — Interactive segmentation agent with multi-turn RL and tool orchestration.
 - [SamuelSchmidgall/AgentClinic](https://github.com/SamuelSchmidgall/AgentClinic) — Simulator, scoring harness, and baselines for the AgentClinic benchmark.
 - [stanfordmlgroup/MedAgentBench](https://github.com/stanfordmlgroup/MedAgentBench) — Official implementation of the MedAgentBench virtual EHR benchmark.
-- [openai/simple-evals](https://github.com/openai/simple-evals) — Reference eval code for HealthBench and related benchmarks.
+- [simple-evals](https://github.com/openai/simple-evals) — Reference eval code for HealthBench and related benchmarks by OpenAI.
 - [alexander2618/MedLA](https://github.com/alexander2618/MedLA) — Official AAAI 2026 codebase for logic-driven multi-agent medical reasoning.
 - [PKU-AICare/ConfAgents](https://github.com/PKU-AICare/ConfAgents) — Official implementation for conformal-guided, cost-efficient multi-agent medical diagnosis.
 
@@ -805,7 +806,7 @@ Overview articles, scoping reviews, taxonomies, and position papers on medical A
   
 ## Generating the Paper Index
 
-Structured metadata for this list is maintained in [`data/papers.yml`](data/papers.yml).
+Structured metadata for this list is maintained in `data/papers.yml`.
 A machine-readable index can be regenerated from that file at any time:
 
 ```bash
@@ -813,7 +814,7 @@ pip install pyyaml          # one-time setup
 python scripts/generate_readme.py
 ```
 
-This writes [`generated/papers.md`](generated/papers.md) — a grouped markdown table indexed by domain.
+This writes `generated/papers.md` — a grouped markdown table indexed by domain.
 To validate the YAML without writing any files:
 
 ```bash
@@ -825,8 +826,5 @@ python scripts/generate_readme.py --validate-only
 Contributions are welcome, especially new work on medical imaging agents, radiology agents, pathology agents, multimodal medical AI agents, healthcare LLM agents, clinical tool-use agents, benchmarks, datasets, and open-source implementations.
 
 Please open a pull request with the paper or project link, year, venue when available, and a concise one-sentence description of the agent workflow or imaging task.
-When adding a paper, also add a corresponding entry to [`data/papers.yml`](data/papers.yml) following the schema documented at the top of that file.
+When adding a paper, also add a corresponding entry to `data/papers.yml` following the schema documented at the top of that file.
 
-## License
-
-[MIT](LICENSE)
