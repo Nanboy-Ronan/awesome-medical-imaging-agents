@@ -222,6 +222,31 @@ papers:
 
   # ── Pathology Agents ──────────────────────────────────────────────────────
 
+  - title: "LAMMI-Pathology: A Tool-Centric Bottom-Up LVLM-Agent Framework for Molecularly Informed Medical Intelligence in Pathology"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - diagnosis
+      - tool use
+      - multi-step reasoning
+    agent_type:
+      - tool-using
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2602.18773"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - whole-slide imaging
+      - pathology
+      - multi-agent
+    summary: "Tool-centric bottom-up agent framework that organizes domain-specific pathology tools into Atomic Execution Nodes, enabling LVLMs to construct multi-step diagnostic reasoning trajectories for molecularly informed pathology analysis."
+    featured: false
+
   - title: "CPathAgent: An Agent-based Foundation Model for Interpretable High-Resolution Pathology Image Analysis"
     year: 2025
     domain: "Pathology"
@@ -393,6 +418,76 @@ papers:
     featured: false
 
   # ── Ultrasound Agents ─────────────────────────────────────────────────────
+
+  - title: "UltrasoundAgents: Hierarchical Multi-Agent Evidence-Chain Reasoning for Breast Ultrasound Diagnosis"
+    year: 2026
+    domain: "Ultrasound"
+    modality:
+      - ultrasound
+    task:
+      - diagnosis
+      - classification
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2603.10852"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - breast ultrasound
+      - BI-RADS
+      - multi-agent
+    summary: "Hierarchical multi-agent framework that mirrors clinical diagnostic workflows by localizing breast lesions, analyzing fine-grained attributes such as echogenicity and calcification, and integrating traceable evidence chains for BI-RADS classification."
+    featured: false
+
+  - title: "Unified Ultrasound Intelligence Toward an End-to-End Agentic System"
+    year: 2026
+    domain: "Ultrasound"
+    modality:
+      - ultrasound
+    task:
+      - report generation
+      - multi-organ analysis
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2604.16914"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - ultrasound
+      - multi-agent
+    summary: "Three-stage agentic ultrasound system (USTri) that trains a universal model, adapts dataset-specific specialists, and orchestrates them via an agent to produce clinically structured reports across multiple organ types."
+    featured: false
+
+  - title: "FetalAgents: A Multi-Agent System for Fetal Ultrasound Image and Video Analysis"
+    year: 2026
+    domain: "Ultrasound"
+    modality:
+      - ultrasound
+    task:
+      - diagnosis
+      - measurement
+      - segmentation
+      - report generation
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2603.09733"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - fetal ultrasound
+      - multi-agent
+    summary: "Multi-agent system that coordinates specialized vision experts to analyze fetal ultrasound images and videos across diagnosis, measurement, and segmentation tasks, generating structured clinical reports from keyframe identification and anatomical plane analysis."
+    featured: false
 
   - title: "Echo-alpha: Large Agentic Multimodal Reasoning Model for Ultrasound Interpretation"
     year: 2026
@@ -599,6 +694,29 @@ papers:
     featured: false
 
   # ── Ophthalmology Agents ──────────────────────────────────────────────────
+
+  - title: "Deliberative multi-agent large language models improve clinical reasoning in ophthalmology"
+    year: 2026
+    domain: "Ophthalmology"
+    modality:
+      - fundus
+      - OCT
+    task:
+      - diagnosis
+      - clinical reasoning
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2603.21447"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - ophthalmology
+      - multi-agent
+    summary: "Multi-agent council where LLMs independently answer ophthalmic clinical questions, peer-review each other's responses, and synthesize conclusions via a designated chair, consistently outperforming individual models in diagnostic accuracy while reducing harmful errors."
+    featured: false
 
   - title: "EyeAgent: An Agentic AI System for Multimodal Clinical Decision Support in Ophthalmology"
     year: 2025
@@ -938,6 +1056,28 @@ papers:
 
   # ── Medical VLM Agents ────────────────────────────────────────────────────
 
+  - title: "DERM-3R: A Resource-Efficient Multimodal Agents Framework for Dermatologic Diagnosis and Treatment in Real-World Clinical Settings"
+    year: 2026
+    domain: "Medical VLM"
+    modality:
+      - dermatology
+    task:
+      - diagnosis
+      - treatment planning
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2604.09596"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - dermatology
+      - multi-agent
+    summary: "Three collaborative agents (DERM-Rec, DERM-Rep, DERM-Reason) built on a resource-efficient multimodal LLM for real-world dermatologic diagnosis and treatment, matching larger models with only 103 training cases through structured domain-aware multi-agent design."
+    featured: false
+
   - title: "MMedAgent: Learning to Use Medical Tools with Multi-modal Agent"
     year: 2024
     domain: "Multimodal"
@@ -1131,6 +1271,32 @@ papers:
     featured: false
 
   # ── Benchmarks and Evaluation ─────────────────────────────────────────────
+
+  - title: "AutoMedBench: Towards Medical AutoResearch with Agentic AI Models"
+    year: 2026
+    domain: "Benchmark"
+    modality:
+      - CT
+      - MRI
+      - CXR
+    task:
+      - benchmark
+      - segmentation
+      - report generation
+      - VQA
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.01961"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - benchmark
+      - medical imaging
+    summary: "Benchmark for autonomous agents performing end-to-end medical AI research workflows covering segmentation, image enhancement, VQA, report generation, and lesion detection in a five-stage pipeline; analysis of thousands of runs reveals validation and submission as the hardest stages."
+    featured: false
 
   - title: "AgentClinic: A Multimodal Benchmark for Tool-Using Clinical AI Agents"
     year: 2026
