@@ -6236,3 +6236,114 @@ papers:
       - RAG
     summary: "Automated evidence-seeking agent that queries medical knowledge bases, EHRs, and medical imaging tools to assemble multimodal clinical evidence, with a distillation pipeline for compact open-source models and significant gains on CXR and EHR benchmarks."
     featured: false
+
+  - title: "Evo-MedAgent: Beyond One-Shot Diagnosis with Agents That Remember, Reflect, and Improve"
+    year: 2026
+    domain: "Radiology"
+    modality:
+      - CXR
+    task:
+      - diagnosis
+      - tool use
+    agent_type:
+      - self-evolving
+      - memory-augmented
+    paper_url: "https://arxiv.org/abs/2604.14475"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - chest X-ray
+      - RAG
+      - self-evolving memory
+    summary: "Self-evolving memory module that equips a chest X-ray agent with episodic, procedural, and tool-reliability memory stores for inter-case learning without retraining, lifting ChestAgentBench accuracy by up to 14 points."
+    featured: false
+
+  - title: "EvoClinician: A Self-Evolving Agent for Multi-Turn Medical Diagnosis via Test-Time Evolutionary Learning"
+    year: 2026
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - diagnosis
+      - multi-turn dialogue
+    agent_type:
+      - self-evolving
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2601.22964"
+    code_url: "https://github.com/yf-he/EvoClinician"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - self-evolving
+      - multi-turn diagnosis
+    summary: "Self-evolving agent that refines multi-turn diagnostic strategy through a Diagnose-Grade-Evolve loop and introduces the Med-Inquire benchmark for evaluating iterative clinical diagnosis."
+    featured: false
+
+  - title: "SEMA-RAG: A Self-Evolving Multi-Agent Retrieval-Augmented Generation Framework for Medical Reasoning"
+    year: 2026
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - medical QA
+    agent_type:
+      - self-evolving
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2605.17101"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Findings of ACL 2026"
+    tags:
+      - RAG
+      - multi-agent
+      - self-evolving
+    summary: "Three-agent system where a self-evolving Explorer agent iterates retrieval until evidence is sufficient, and an Arbiter adjudicates; outperforms strong baselines by +6.46 pp on average across five medical QA benchmarks."
+    featured: false
+
+  - title: "TARSE: Test-Time Adaptation via Retrieval of Skills and Experience for Reasoning Agents"
+    year: 2026
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - clinical reasoning
+      - medical QA
+    agent_type:
+      - self-evolving
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2603.01241"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - RAG
+      - self-evolving
+    summary: "Clinical QA agent that aligns reasoning at inference time by retrieving guideline-level clinical skills and prior verified experience traces, verifying each reasoning step before committing."
+    featured: false
+
+  - title: "MedReflect: Teaching Medical LLMs to Self-Improve via Reflective Correction"
+    year: 2025
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - medical QA
+      - self-improvement
+    agent_type:
+      - self-evolving
+    paper_url: "https://arxiv.org/abs/2510.03687"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - self-evolving
+      - hallucination
+    summary: "Trains medical LLMs to generate a reflective correction chain — hypothesis, self-questioning, self-answering, and decision refinement — improving benchmark accuracy with only 2,000 training examples and no external retrieval."
+    featured: false
