@@ -120,8 +120,10 @@ Agents for echocardiography interpretation, fetal ultrasound, robotic scanning, 
 - [MARCUS: An Agentic, Multimodal Vision-Language Model for Cardiac Diagnosis and Management](https://arxiv.org/abs/2603.22179) - Published in arXiv (2026). Hierarchical agentic architecture with modality-specific expert models interprets ECGs, echocardiograms, and cardiac MRI, achieving nearly triple the multimodal accuracy of frontier models on cardiac cases.
 - [RAG-RUSS: A Retrieval-Augmented Robotic Ultrasound for Autonomous Carotid Examination](https://arxiv.org/abs/2603.01153) - Published in arXiv (2026). Interpretable retrieval-augmented robotic ultrasound that autonomously plans probe motions and explains each scanning stage to complete a full carotid examination across transverse and longitudinal planes.
 - [Towards Reliable Fetal Ultrasound Interpretation with Multi-Agent Collaboration](https://arxiv.org/abs/2605.25357) - Published in arXiv (2026). FetUSAgents coordinates specialized visual tools and LLM agents with Dual-Path Evidence Arbitration for fetal ultrasound interpretation; introduces FetUS-VQA benchmark with 1,892 images and 10 clinical tasks.
+- [Anatomical Prior-Driven Framework for Autonomous Robotic Cardiac Ultrasound Standard View Acquisition](https://arxiv.org/abs/2603.21134) — arXiv (2026). RL-trained probe-adjustment agent uses a YOLO-based spatial-relation graph to embed cardiac anatomical priors into state representation, autonomously acquiring standard echocardiography views with a 92.5% success rate in simulation and 86.7% in phantom experiments.
 - [Echo-CoPilot: A Multi-View, Multi-Task Agent for Echocardiography Interpretation and Reporting](http://arxiv.org/abs/2512.09944v2) - Published in arXiv (2025). Multi-stage agent handles view selection, measurements, and report drafting for echo studies.
 - [EchoAgent: Guideline-Centric Reasoning Agent for Echocardiography Measurement and Interpretation](https://arxiv.org/abs/2511.13948) - Published in arXiv (2025). Orchestrates specialized echocardiography vision tools under LLM control for guideline-centric temporal localization, spatial measurement, and clinical interpretation of cardiac studies.
+- [FUAS-Agents: Autonomous Multi-Modal LLM Agents for Treatment Planning in Focused Ultrasound Ablation Surgery](https://arxiv.org/abs/2505.21418) — arXiv (2025). Multi-modal LLM agent integrates MRI data and patient profiles to orchestrate specialized tools including segmentation for autonomous treatment plan generation in focused ultrasound ablation surgery across 3,000+ multicenter cases.
 - [USPilot: An Embodied Robotic Assistant Ultrasound System with Large Language Model Enhanced Graph Planner](https://arxiv.org/abs/2502.12498) - Published in IEEE RA-L (2025). Embodied robotic assistant where an LLM-enhanced graph neural network planner selects and sequences ultrasound APIs to enable autonomous acquisition and patient query handling, tackling the global shortage of sonographers.
 - [Image-Guided Navigation of a Robotic Ultrasound Probe for Autonomous Spinal Sonography Using a Shadow-aware Dual-Agent Framework](http://arxiv.org/abs/2111.02167) - Published in arXiv (2021). Cooperative perception-control agents for ultrasound-guided robotics.
 
@@ -165,12 +167,14 @@ Agents for volumetric CT, MRI, PET, dosimetry, neuroimaging, and multi-organ ima
 - [TheraAgent: Multi-Agent Framework with Self-Evolving Memory and Evidence-Calibrated Reasoning for PET Theranostics](https://arxiv.org/abs/2603.13676) - Published in arXiv (2026). Multi-agent PET theranostics framework with case memory and trial-grounded reasoning.
 - [Towards a Virtual Neuroscientist: Autonomous Neuroimaging Analysis via Multi-Agent Collaboration](https://arxiv.org/abs/2605.09366) - Published in arXiv (2026). Multi-agent neuroimaging analyst that plans preprocessing, feature extraction, interpretation, and iterative workflow refinement.
 - [AURA: A Multi-Modal Medical Agent for Understanding, Reasoning & Annotation](https://arxiv.org/abs/2507.16940) - Published in arXiv (2025). Unified multimodal agent that annotates and reasons over MRI, CT, and EHR text.
+- [INFORM-CT: INtegrating LLMs and VLMs FOR Incidental Findings Management in Abdominal CT](https://arxiv.org/abs/2512.14732) — arXiv (2025). Plan-and-execute agentic framework where an LLM planner generates Python scripts and a VLM executor detects, classifies, and reports incidental findings in abdominal CT scans, outperforming pure VLM baselines.
 - [VoxelPrompt: A Vision Agent for End-to-End Medical Image Analysis](http://arxiv.org/abs/2410.08397) - Published in arXiv (2024). Multi-stage vision agent for end-to-end volumetric medical image analysis covering segmentation, detection, and QA across CT, MRI, and PET.
 
 ## Segmentation and Annotation Agents
 
 Agents that plan, prompt, refine, or evaluate segmentation and annotation workflows.
 
+- [MARL-MambaContour: Unleashing Multi-Agent Deep Reinforcement Learning for Active Contour Optimization in Medical Image Segmentation](https://arxiv.org/abs/2506.18679) — arXiv (2026). Multi-agent RL framework where each contour point is an autonomous agent that iteratively refines its position using a Mamba-based SAC policy with entropy regularization for topologically consistent medical image segmentation across five datasets.
 - [MedSAM-Agent: Empowering Interactive Medical Image Segmentation with Multi-turn Agentic Reinforcement Learning](https://arxiv.org/abs/2602.03320) - Published in arXiv (2026). Introduces multi-turn RL to train an interactive segmentation agent that decides which prompts to issue to SAM — the first RL-trained imaging segmentation agent.
 - [Shifting Adaptation from Weight Space to Memory Space: A Memory-Augmented Agent for Medical Image Segmentation](https://arxiv.org/abs/2603.05873) - Published in arXiv (2026). Memory-augmented segmentation agent with an agentic controller that dynamically composes static, few-shot, and test-time working memories to generalize a fixed backbone across institutions without retraining.
 - [Beyond Manual Annotation: A Human-AI Collaborative Framework for Medical Image Segmentation Using Only "Better or Worse" Expert Feedback](https://arxiv.org/abs/2507.05815) - Published in arXiv (2025). Clicking agent that learns from minimal expert 'better or worse' preference signals to decide where and how to annotate, eliminating pixel-level manual labeling while training a strong segmentation model.
@@ -423,7 +427,7 @@ Surveys and position papers on medical AI agents, evaluation, safety, and deploy
 
 - Structured metadata for this list is maintained in [data/papers.yml](data/papers.yml).
 - A machine-readable table view is available in [docs/papers.json](docs/papers.json).
-- Last updated: 2026-06-04.
+- Last updated: 2026-06-06.
 
 ## Contributing
 

@@ -6347,3 +6347,103 @@ papers:
       - hallucination
     summary: "Trains medical LLMs to generate a reflective correction chain — hypothesis, self-questioning, self-answering, and decision refinement — improving benchmark accuracy with only 2,000 training examples and no external retrieval."
     featured: false
+
+  # ── Segmentation Agents (new additions 2026-06) ───────────────────────────
+
+  - title: "MARL-MambaContour: Unleashing Multi-Agent Deep Reinforcement Learning for Active Contour Optimization in Medical Image Segmentation"
+    year: 2026
+    domain: "Segmentation"
+    modality:
+      - CT
+      - MRI
+      - dermoscopy
+    task:
+      - segmentation
+      - contour optimization
+    agent_type:
+      - multi-agent
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2506.18679"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+      - reinforcement-learning
+    summary: "Multi-agent RL framework where each contour point is an autonomous agent that iteratively refines its position using a Mamba-based SAC policy with entropy regularization for topologically consistent medical image segmentation across five datasets."
+    featured: false
+
+  # ── Ultrasound Agents (new additions 2026-06) ─────────────────────────────
+
+  - title: "Anatomical Prior-Driven Framework for Autonomous Robotic Cardiac Ultrasound Standard View Acquisition"
+    year: 2026
+    domain: "Ultrasound"
+    modality:
+      - echocardiography
+    task:
+      - autonomous acquisition
+      - navigation
+    agent_type:
+      - RL-trained
+      - embodied agent
+    paper_url: "https://arxiv.org/abs/2603.21134"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - robotic ultrasound
+      - reinforcement-learning
+      - echocardiography
+    summary: "RL-trained probe-adjustment agent uses a YOLO-based spatial-relation graph to embed cardiac anatomical priors into state representation, autonomously acquiring standard echocardiography views with 92.5% success rate in simulation and 86.7% in phantom experiments."
+    featured: false
+
+  - title: "FUAS-Agents: Autonomous Multi-Modal LLM Agents for Treatment Planning in Focused Ultrasound Ablation Surgery"
+    year: 2025
+    domain: "Ultrasound"
+    modality:
+      - MRI
+    task:
+      - treatment planning
+      - tool use
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2505.21418"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+      - tool-using
+    summary: "Multi-modal LLM agent integrates MRI data and patient profiles to orchestrate specialized tools including segmentation for autonomous treatment plan generation in focused ultrasound ablation surgery across 3,000+ multicenter cases."
+    featured: false
+
+  # ── 3D Imaging Agents (new additions 2026-06) ─────────────────────────────
+
+  - title: "INFORM-CT: INtegrating LLMs and VLMs FOR Incidental Findings Management in Abdominal CT"
+    year: 2025
+    domain: "3D Imaging"
+    modality:
+      - CT
+    task:
+      - incidental findings detection
+      - report generation
+      - tool use
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2512.14732"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - tool-using
+    summary: "Plan-and-execute agentic framework where an LLM planner generates Python scripts and a VLM executor detects, classifies, and reports incidental findings in abdominal CT scans, outperforming pure VLM baselines."
+    featured: false
