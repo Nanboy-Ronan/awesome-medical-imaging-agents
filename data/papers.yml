@@ -6447,3 +6447,144 @@ papers:
       - tool-using
     summary: "Plan-and-execute agentic framework where an LLM planner generates Python scripts and a VLM executor detects, classifies, and reports incidental findings in abdominal CT scans, outperforming pure VLM baselines."
     featured: false
+
+  # ── New additions 2026-06-12 ──────────────────────────────────────────────
+
+  - title: "PathoSage: Towards Multi-Source Evidence Adjudication in Pathology via Experience-Aware Agentic Workflow"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - VQA
+      - tool use
+      - evidence adjudication
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.07549"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - pathology
+      - hallucination
+    summary: "Experience-aware pathology agent that separately gathers, deliberates over, and adjudicates evidence from multiple tools — tracking tool reliability with a Beta-Bernoulli experience system — to reduce hallucinations in patch-level whole-slide VQA."
+    featured: false
+
+  - title: "MAGIS: Evidence-Based Multi-Agent Reasoning for Interpretable Strabismus Clinical Decision-Making"
+    year: 2026
+    domain: "Ophthalmology"
+    modality:
+      - fundus
+      - gaze photograph
+    task:
+      - diagnosis
+      - clinical reasoning
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2606.09249"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - ophthalmology
+      - strabismus
+      - multi-agent
+    summary: "Multi-agent framework that analyses nine-cardinal-gaze photographs with hypothesis-generation, dual-evidence-constrained, and verification agents to deliver interpretable, evidence-grounded strabismus diagnoses."
+    featured: false
+
+  - title: "A multi-agent system for spine MRI report generation from multi-sequence imaging"
+    year: 2026
+    domain: "3D Imaging"
+    modality:
+      - MRI
+    task:
+      - report generation
+      - segmentation
+      - classification
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2606.08897"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - spine MRI
+      - multi-agent
+    summary: "Coordinates 37 specialised agents for classification, localisation, segmentation, and image-report retrieval across multi-sequence (T1/T2) spine MRI, integrating their outputs into a report agent for radiologist-level clinical report generation."
+    featured: false
+
+  - title: "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages"
+    year: 2026
+    domain: "Multimodal"
+    modality: null
+    task:
+      - medical QA
+      - tool use
+      - clinical reasoning
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.13572"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multilingual
+      - multi-agent
+    summary: "Actor-critic multi-agent framework with tool grounding and dual-memory mechanisms for step-wise medical reasoning over six imaging modalities and text spanning English and seven Indian languages."
+    featured: false
+
+  - title: "VERITAS: Verifiable Epistemic Reasoning for Image-Derived Hypothesis Testing via Agentic Systems"
+    year: 2026
+    domain: "Workflow Simulation"
+    modality:
+      - MRI
+    task:
+      - hypothesis testing
+      - segmentation
+      - statistical analysis
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2604.12144"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - research automation
+      - multi-agent
+    summary: "Role-specialised multi-agent system that autonomously segments cardiac and brain-glioma MRI, runs statistical analyses, and classifies natural-language hypotheses as supported, refuted, underpowered, or invalid with auditable evidence trails."
+    featured: false
+
+  - title: "MedCTA: A Benchmark for Clinical Tool Agents"
+    year: 2026
+    domain: "Benchmark"
+    modality:
+      - CXR
+      - WSI
+    task:
+      - tool use
+      - benchmark
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.11702"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - benchmark
+      - tool-using
+    summary: "Benchmark of 107 clinician-verified, step-implicit clinical tasks grounded in multimodal inputs (radiology images, pathology slides, reports) that scores medical tool agents on tool selection, argument validity, execution stability, and trajectory adherence across five deployed tools."
+    featured: false
