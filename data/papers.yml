@@ -6588,3 +6588,135 @@ papers:
       - tool-using
     summary: "Benchmark of 107 clinician-verified, step-implicit clinical tasks grounded in multimodal inputs (radiology images, pathology slides, reports) that scores medical tool agents on tool selection, argument validity, execution stability, and trajectory adherence across five deployed tools."
     featured: false
+
+  - title: "A Vision-Language Framework for Comparative Reasoning in Radiology"
+    year: 2026
+    domain: "Radiology"
+    modality:
+      - CT
+      - MRI
+      - CXR
+      - multi-modality
+    task:
+      - comparative reasoning
+      - reference retrieval
+      - temporal comparison
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.06407"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - RAG
+      - comparative reasoning
+    summary: "Entity-aware cross-image reasoning framework for reference-case retrieval and longitudinal comparison in radiology; introduces MedReCo-DB with 690K images from 160K patients across eight institutions and seven modalities."
+    featured: false
+
+  - title: "A Machine-to-Machine Knowledge-Guided LLM Agent for Generalizable Radiotherapy Treatment Planning"
+    year: 2026
+    domain: "Radiology"
+    modality:
+      - CT
+    task:
+      - radiotherapy planning
+      - treatment planning
+    agent_type:
+      - tool-using
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2606.00922"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - reinforcement-learning
+      - radiotherapy
+    summary: "Transfers DRL-derived treatment planning parameter knowledge to an LLM agent via in-context learning for autonomous, iterative radiotherapy planning without human intervention across prostate, liver, and complex anatomy cases."
+    featured: false
+
+  - title: "MedVR: Annotation-Free Medical Visual Reasoning via Agentic Reinforcement Learning"
+    year: 2026
+    domain: "Medical VLM"
+    modality: null
+    task:
+      - visual question answering
+      - visual reasoning
+    agent_type:
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2604.08203"
+    code_url: "https://github.com/alibaba-damo-academy/MedVR"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "ICLR 2026"
+    tags:
+      - reinforcement-learning
+    summary: "RL-trained agent that uses entropy-guided visual regrounding and consensus-based credit assignment to improve medical VLM visual grounding without human annotation."
+    featured: false
+
+  - title: "Towards Responsible Multimodal Medical Reasoning via Context-Aligned Vision-Language Models"
+    year: 2026
+    domain: "Medical VLM"
+    modality:
+      - multi-modality
+    task:
+      - clinical reasoning
+      - hallucination reduction
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2604.08815"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - hallucination
+      - safety
+    summary: "Context-aligned reasoning framework that enforces multi-modal evidence agreement before generating diagnostic conclusions, substantially reducing hallucinated keywords on radiology tasks."
+    featured: false
+
+  - title: "Experience Makes Skillful: Enabling Generalizable Medical Agent Reasoning via Self-Evolving Skill Memory"
+    year: 2026
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - skill memory
+      - clinical reasoning
+      - self-evolution
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.09365"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+    summary: "Post-deployment self-evolution framework (SkeMex) that distills agent interaction trajectories into structured, reusable skills organized in a multi-branch memory without model retraining."
+    featured: false
+
+  - title: "OpenMedReason: Scientific Reasoning Supervision for Medical Vision-Language Models"
+    year: 2026
+    domain: "Medical VLM"
+    modality:
+      - multi-modality
+    task:
+      - reasoning supervision
+      - training data
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2606.12169"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - hallucination
+    summary: "Open corpus of 450K medical image-QA instances with reasoning traces grounded in scientific literature, spanning radiology, microscopy, dermatology, and other modalities for training more reliable medical VLMs."
+    featured: false
