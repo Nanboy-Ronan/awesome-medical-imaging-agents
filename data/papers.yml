@@ -6720,3 +6720,116 @@ papers:
       - hallucination
     summary: "Open corpus of 450K medical image-QA instances with reasoning traces grounded in scientific literature, spanning radiology, microscopy, dermatology, and other modalities for training more reliable medical VLMs."
     featured: false
+
+  # ── New additions 2026-06-18 ──────────────────────────────────────────────
+
+  - title: "SAGE: Agentic Framework for Interpretable and Clinically Translatable Computational Pathology Biomarker Discovery"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+      - histopathology
+    task:
+      - biomarker discovery
+      - multi-agent collaboration
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2602.00953"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+      - hallucination
+    summary: "Multi-agent system that automates pathology biomarker discovery by grounding hypothesis generation in biological knowledge graphs, applying debate-based novelty assessment, and running automated validation pipelines on multimodal pathology datasets."
+    featured: false
+
+  - title: "Long-Short Term Agents for Pure-Vision Bronchoscopy Robotic Autonomy"
+    year: 2026
+    domain: "Endoscopy"
+    modality:
+      - bronchoscopy
+    task:
+      - robotic navigation
+      - autonomous navigation
+    agent_type:
+      - multi-agent
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2603.07909"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - reinforcement-learning
+    summary: "Hierarchical dual-agent framework for autonomous vision-only bronchoscopic navigation, combining a short-term reactive agent for continuous motion control with a long-term strategic agent for navigational decisions at ambiguous anatomical junctions."
+    featured: false
+
+  - title: "Colon-Bench: An Agentic Workflow for Scalable Dense Lesion Annotation in Full-Procedure Colonoscopy Videos"
+    year: 2026
+    domain: "Benchmark"
+    modality:
+      - colonoscopy
+    task:
+      - lesion detection
+      - annotation
+      - benchmark
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2603.25645"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - human-in-the-loop
+    summary: "Agentic annotation pipeline generates a large-scale colonoscopy benchmark with 528 videos, 14 lesion categories, 300K+ bounding boxes, and 213K segmentation masks for evaluating multimodal models on dense endoscopic lesion analysis."
+    featured: false
+
+  - title: "Camyla: Scaling Autonomous Research in Medical Image Segmentation"
+    year: 2026
+    domain: "Segmentation"
+    modality:
+      - multi-modality
+    task:
+      - segmentation
+      - autonomous research
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2604.10696"
+    code_url: null
+    project_url: "https://yifangao112.github.io/camyla-page/"
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags: null
+    summary: "Autonomous research pipeline that transforms raw segmentation datasets into literature-grounded proposals, executable experiments, and complete manuscripts without human intervention, demonstrated across 31 benchmark datasets."
+    featured: false
+
+  - title: "MEDVISTAGYM: A Scalable Training Environment for Thinking with Medical Images via Tool-Integrated Reinforcement Learning"
+    year: 2026
+    domain: "Benchmark"
+    modality:
+      - multi-modality
+    task:
+      - training environment
+      - tool use
+      - visual reasoning
+    agent_type:
+      - tool-using
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2601.07107"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - reinforcement-learning
+    summary: "Interactive RL training environment that teaches VLMs to perform multi-step reasoning over medical images by deciding when and which tools to invoke, with rewards grounded in tool-use correctness across diverse imaging tasks."
+    featured: false
