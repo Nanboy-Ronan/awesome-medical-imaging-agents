@@ -7,10 +7,8 @@ Build a Themes Index from two sources:
   1. data/papers.yml  — explicit canonical tags (precise, highest priority)
   2. README.md        — keyword inference on every paper entry (broad coverage)
 
-The combined index is injected into README.md between the markers:
-
-    <!-- THEMES-INDEX-START -->
-    <!-- THEMES-INDEX-END -->
+The combined index replaces the "## Themes Index" section in README.md,
+from that heading down to (but not including) the next "## " heading.
 
 Usage:
     python scripts/update_themes.py
@@ -22,7 +20,6 @@ import argparse
 import re
 import sys
 from collections import defaultdict
-from datetime import date
 from pathlib import Path
 
 try:
@@ -113,8 +110,7 @@ THEMES: dict[str, dict] = {
 }
 
 # ── README parsing ─────────────────────────────────────────────────────────────
-START_MARKER = "<!-- THEMES-INDEX-START -->"
-END_MARKER = "<!-- THEMES-INDEX-END -->"
+THEMES_HEADING = "## Themes Index"
 
 # Map YAML `domain` values → canonical section label for the index.
 _YAML_DOMAIN_TO_SECTION: dict[str, str] = {
@@ -201,19 +197,8 @@ def parse_readme_papers(readme_text: str) -> list[dict]:
     papers: list[dict] = []
     current_section: str | None = None
     skip_mode = False          # True when inside a _SKIP_SUBSECTIONS block
-    in_markers = False         # True between the THEMES-INDEX markers (skip)
 
     for line in readme_text.splitlines():
-        # Skip everything between the injected markers.
-        if START_MARKER in line:
-            in_markers = True
-            continue
-        if END_MARKER in line:
-            in_markers = False
-            continue
-        if in_markers:
-            continue
-
         # Section headers
         hm = _HEADER_RE.match(line)
         if hm:
@@ -406,16 +391,12 @@ def _paper_line(entry: dict) -> str:
 
 
 def generate_themes_section(index: dict[str, list[dict]], total_tagged: int) -> str:
-    today = date.today().isoformat()
     lines: list[str] = [
-        START_MARKER,
-        "## Themes Index",
+        THEMES_HEADING,
         "",
         ("*Cross-cutting topics that span multiple domain sections above. "
          "Each paper is listed once in its primary section; this index lets you "
-         "find it by theme.*  "),
-        (f"*Generated from README.md + `data/papers.yml` — last refreshed {today}. "
-         "Run `python scripts/update_themes.py` to refresh.*"),
+         "find it by theme.*"),
         "",
     ]
 
@@ -435,29 +416,33 @@ def generate_themes_section(index: dict[str, list[dict]], total_tagged: int) -> 
         lines.append("*No papers matched canonical theme keywords yet.*")
         lines.append("")
 
-    lines.append(END_MARKER)
-    return "\n".join(lines)
+    return "\n".join(lines).rstrip() + "\n"
 
 
 # ── README injection ───────────────────────────────────────────────────────────
 
-def inject_into_readme(readme_text: str, themes_section: str) -> str:
-    start_idx = readme_text.find(START_MARKER)
-    end_idx = readme_text.find(END_MARKER)
+_NEXT_H2_RE = re.compile(r"^## ")
 
-    if start_idx == -1 or end_idx == -1:
+
+def inject_into_readme(readme_text: str, themes_section: str) -> str:
+    lines = readme_text.splitlines(keepends=True)
+
+    start_line = next(
+        (i for i, line in enumerate(lines) if line.rstrip("\n") == THEMES_HEADING),
+        None,
+    )
+    if start_line is None:
         raise ValueError(
-            f"README is missing one or both markers.\n"
-            f"  Expected: {START_MARKER!r}\n"
-            f"            {END_MARKER!r}\n"
-            "Add them to README.md before running this script."
+            f"README is missing the {THEMES_HEADING!r} heading.\n"
+            "Add it to README.md before running this script."
         )
 
-    end_idx += len(END_MARKER)
-    if end_idx < len(readme_text) and readme_text[end_idx] == "\n":
-        end_idx += 1
+    end_line = next(
+        (i for i in range(start_line + 1, len(lines)) if _NEXT_H2_RE.match(lines[i])),
+        len(lines),
+    )
 
-    return readme_text[:start_idx] + themes_section + "\n" + readme_text[end_idx:]
+    return "".join(lines[:start_line]) + themes_section + "\n" + "".join(lines[end_line:])
 
 
 # ── CLI ────────────────────────────────────────────────────────────────────────

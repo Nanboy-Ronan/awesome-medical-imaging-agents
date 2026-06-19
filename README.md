@@ -442,11 +442,7 @@ Surveys and position papers on medical AI agents, evaluation, safety, and deploy
 
 ## Themes Index
 
-<!-- THEMES-INDEX-START -->
-## Themes Index
-
-*Cross-cutting topics that span multiple domain sections above. Each paper is listed once in its primary section; this index lets you find it by theme.*  
-*Generated from README.md + `data/papers.yml` — last refreshed 2026-06-18. Run `python scripts/update_themes.py` to refresh.*
+*Cross-cutting topics that span multiple domain sections above. Each paper is listed once in its primary section; this index lets you find it by theme.*
 
 ### Fairness and Bias (6)
 
@@ -704,8 +700,6 @@ Surveys and position papers on medical AI agents, evaluation, safety, and deploy
 - [A co-evolving agentic AI system for medical imaging analysis](https://arxiv.org/abs/2509.20279) — arXiv (2025) · *Workflow Agents*
 - [ChatCAD+: Towards a Universal and Reliable Interactive CAD using LLMs](https://arxiv.org/abs/2305.15964) — arXiv (2023) · *Medical VLM Agents*
 - [Iteratively-Refined Interactive 3D Medical Image Segmentation with Multi-Agent Reinforcement Learning](https://arxiv.org/abs/1911.10334) — CVPR (2020) · *Segmentation Agents*
-
-<!-- THEMES-INDEX-END -->
 
 ## Footnotes
 
