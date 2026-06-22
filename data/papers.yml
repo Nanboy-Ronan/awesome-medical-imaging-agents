@@ -6833,3 +6833,147 @@ papers:
       - reinforcement-learning
     summary: "Interactive RL training environment that teaches VLMs to perform multi-step reasoning over medical images by deciding when and which tools to invoke, with rewards grounded in tool-use correctness across diverse imaging tasks."
     featured: false
+
+  # ── New additions 2026-06-21 ──────────────────────────────────────────────
+
+  - title: "MedRLM: Recursive Multimodal Health Intelligence for Long-Context Clinical Reasoning, Sensor-Guided Screening, Evidence-Grounded Decision Support, and Community-to-Tertiary Referral Optimization"
+    year: 2026
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - clinical reasoning
+      - screening
+      - decision support
+      - referral optimization
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.20164"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - EHR
+      - multimodal
+      - longitudinal
+    summary: "Recursive multimodal framework coordinates specialized agents over EHRs, medical imaging, and sensor streams for long-context clinical reasoning, sensor-guided screening, and community-to-tertiary referral optimization."
+    featured: false
+
+  - title: "XMedFusion: A Knowledge-Guided Multimodal Perception and Reasoning Framework for Autonomous Medical Systems"
+    year: 2026
+    domain: "Report Generation"
+    modality:
+      - CXR
+    task:
+      - report generation
+      - visual perception
+      - knowledge graph reasoning
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.14766"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - chest X-ray
+      - knowledge graph
+      - multi-agent
+    summary: "Decomposes chest X-ray report generation into coordinated visual-perception, knowledge-graph-construction, and synthesis agents for image-grounded radiology reporting."
+    featured: false
+
+  - title: "Baichuan-M4: A Clinical-Grade Medical Agent System for Continuous Care"
+    year: 2026
+    domain: "Clinical Reasoning"
+    modality:
+      - CXR
+    task:
+      - continuous care
+      - patient memory
+      - evidence retrieval
+    agent_type:
+      - multi-agent
+      - tool-using
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2606.08982"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - reinforcement-learning
+      - patient memory
+    summary: "Clinical-grade medical agent system built on a unified tool-use runtime and continuous-care reinforcement learning, combining patient memory, evidence retrieval, and multimodal perception across documents, X-rays, and dermatology images."
+    featured: false
+
+  - title: "Automated Report-Derived Oncology VQA Benchmark for Evaluating Vision-Language Models on 3D Medical Imaging"
+    year: 2026
+    domain: "Benchmark"
+    modality:
+      - 3D imaging
+    task:
+      - benchmark
+      - VQA
+      - agent-driven dataset generation
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.02809"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - benchmark
+      - oncology
+    summary: "Agent-driven pipeline automatically generates contamination-controlled multiple-choice VQA benchmarks from paired radiology reports and 3D oncology imaging across four in-house cancer cohorts."
+    featured: false
+
+  # ── Backfill: present in README but missing from YAML ─────────────────────
+
+  - title: "MedExpMem: Adapting Experience Memory for Differential Diagnosis"
+    year: 2026
+    domain: "Radiology"
+    modality: null
+    task:
+      - differential diagnosis
+      - experience memory
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2605.22872"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "MICCAI 2026"
+    tags: null
+    summary: "Experience-memory framework that lets VLM-based diagnostic agents accumulate differential diagnosis expertise from prior failures and retrieve it for radiology cases across 11 subspecialties."
+    featured: false
+
+  - title: "An Interactive Trustworthy AI Pathology Copilot to Improve Biomarker-Driven Prognostic Stratification and Therapeutic Response Prediction"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - biomarker profiling
+      - outcome prediction
+      - clinical reasoning
+    agent_type:
+      - tool-using
+      - human-in-the-loop
+    paper_url: "https://www.medrxiv.org/content/10.64898/2026.05.17.26352870v1"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "MedRxiv"
+    tags:
+      - human-in-the-loop
+    summary: "TEAM-Agent dynamically orchestrates WSI-based biomarker profiling, outcome prediction, uncertainty-aware clinical reasoning, and clinician-in-the-loop refinement for pathology prognosis and therapy-response support."
+    featured: false
