@@ -6977,3 +6977,111 @@ papers:
       - human-in-the-loop
     summary: "TEAM-Agent dynamically orchestrates WSI-based biomarker profiling, outcome prediction, uncertainty-aware clinical reasoning, and clinician-in-the-loop refinement for pathology prognosis and therapy-response support."
     featured: false
+
+  # ── New additions 2026-06-24 ──────────────────────────────────────────────
+
+  - title: "NOVA: An Agentic Framework for Automated Histopathology Analysis and Discovery"
+    year: 2025
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - biomarker discovery
+      - tool use
+      - data analysis
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2511.11324"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - whole-slide image
+      - SlideQuest
+      - benchmark
+    summary: "Agentic framework converts pathology research queries into executable Python analysis pipelines using 49 domain-specific tools, introducing SlideQuest, a 90-question pathologist-verified benchmark for multi-step coding-agent reasoning over whole-slide images."
+    featured: false
+
+  - title: "FedAgentBench: Towards Automating Real-world Federated Medical Image Analysis with Server-Client LLM Agents"
+    year: 2025
+    domain: "Benchmark"
+    modality:
+      - dermoscopy
+      - ultrasound
+      - fundus
+      - histopathology
+      - MRI
+      - X-ray
+    task:
+      - benchmark
+      - federated learning orchestration
+      - client selection
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2509.23803"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - privacy
+      - multi-agent
+      - federated learning
+    summary: "Benchmark and framework where server-agent and per-hospital client-agents autonomously coordinate federated learning setup, data harmonization, and model training across 201 datasets spanning six medical imaging modalities."
+    featured: false
+
+  - title: "Grounded Multimodal Retrieval-Augmented Drafting of Radiology Impressions Using Case-Based Similarity Search"
+    year: 2026
+    domain: "Report Generation"
+    modality:
+      - CXR
+    task:
+      - report generation
+      - retrieval
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2603.17765"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - RAG
+      - hallucination
+    summary: "Retrieval-augmented pipeline combines contrastive image-text embeddings, case-based similarity search, and citation-constrained generation to draft grounded chest radiograph impressions, with confidence-based refusal when evidence is insufficient."
+    featured: false
+
+  - title: "When Models Learn to Ask Why: Adaptive Causal Reasoning for Trustworthy Medical Vision-Language Models"
+    year: 2026
+    domain: "Medical VLM"
+    modality:
+      - CXR
+      - CT
+      - MRI
+      - ultrasound
+      - histopathology
+      - endoscopy
+      - dermoscopy
+      - fundus
+    task:
+      - diagnosis
+      - clinical reasoning
+      - causal reasoning
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2603.23085"
+    code_url: "https://github.com/zhcz328/MedCausalX"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - hallucination
+      - reinforcement-learning
+    summary: "MedCausalX uses a two-stage adaptive self-reflection architecture with dedicated causal-analysis and verification tokens, refined via error-attributed reinforcement learning, to reduce hallucination and improve causal diagnostic consistency in medical VLMs."
+    featured: false
