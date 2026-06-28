@@ -7085,3 +7085,141 @@ papers:
       - reinforcement-learning
     summary: "MedCausalX uses a two-stage adaptive self-reflection architecture with dedicated causal-analysis and verification tokens, refined via error-attributed reinforcement learning, to reduce hallucination and improve causal diagnostic consistency in medical VLMs."
     featured: false
+
+  - title: "SurgRAW: Multi-Agent Workflow with Chain of Thought Reasoning for Robotic Surgical Video Analysis"
+    year: 2025
+    domain: "Endoscopy"
+    modality:
+      - surgical video
+    task:
+      - surgical scene understanding
+      - clinical reasoning
+      - multi-agent collaboration
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2503.10265"
+    code_url: "https://github.com/jinlab-imvr/SurgRAW"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+      - chain-of-thought
+      - RAG
+    summary: "A hierarchical orchestrator directs specialized agents through parallel chain-of-thought reasoning streams with a panel-discussion mechanism and retrieval-augmented surgical knowledge to interpret robotic surgical video, introducing the SurgCoTBench reasoning benchmark."
+    featured: false
+
+  - title: "Act Like a Pathologist: Tissue-Aware Whole Slide Image Reasoning"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - question answering
+      - tissue retrieval
+      - diagnosis
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2603.00667"
+    code_url: "https://github.com/winston52/HistoSelect"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "CVPR 2026"
+    tags:
+      - whole-slide imaging
+    summary: "HistoSelect mimics pathologist visual search with a question-guided, tissue-aware, coarse-to-fine retrieval framework that progressively narrows from broad tissue regions to diagnostic patches, cutting visual token usage 70% on gigapixel whole-slide image question answering."
+    featured: false
+
+  - title: "MEDSYN: Benchmarking Multi-EviDence SYNthesis in Complex Clinical Cases for Multimodal Large Language Models"
+    year: 2026
+    domain: "Benchmark"
+    modality:
+      - multimodal
+    task:
+      - evaluation
+      - benchmark
+      - diagnostic reasoning
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2602.21950"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags: null
+    summary: "A multilingual benchmark of complex clinical cases with up to seven visual evidence types per case shows 18 MLLMs match clinicians on generating differential diagnoses but lag badly at synthesizing diverse multimodal evidence into a final diagnosis."
+    featured: false
+
+  - title: "MedRoute: RL-Based Dynamic Specialist Routing in Multi-Agent Medical Diagnosis"
+    year: 2026
+    domain: "Clinical Reasoning"
+    modality:
+      - multimodal
+    task:
+      - diagnosis
+      - triage
+      - routing
+    agent_type:
+      - multi-agent
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2604.06180"
+    code_url: "https://github.com/UCF-CRCV/MedRoute/"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+      - reinforcement-learning
+    summary: "A reinforcement-learning-trained General Practitioner agent dynamically routes each case to specialist large multimodal model agents, with a Moderator synthesizing their outputs into a final diagnosis across text- and image-based medical datasets."
+    featured: false
+
+  - title: "To Agree or To Be Right? The Grounding-Sycophancy Tradeoff in Medical Vision-Language Models"
+    year: 2026
+    domain: "Benchmark"
+    modality:
+      - multimodal
+    task:
+      - safety
+      - hallucination detection
+      - evaluation
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2603.22623"
+    code_url: "https://github.com/UTSA-VIRLab/AgreeOrRight"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - hallucination
+      - safety
+    summary: "Introduces three new metrics to evaluate the tradeoff between hallucination resistance and sycophancy under social pressure across six medical VLMs, finding none exceed a 0.35 composite safety index."
+    featured: false
+
+  - title: "Hallucination in Medical Imaging AI: A Cross-Modality Analytical Framework for Taxonomy, Detection, and Mitigation under Regulatory Constraints"
+    year: 2026
+    domain: "Survey"
+    modality:
+      - CT
+      - MRI
+      - PET
+      - ultrasound
+      - histopathology
+    task:
+      - safety
+      - hallucination detection
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2606.13211"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - hallucination
+      - safety
+    summary: "Cross-modality survey building a hallucination taxonomy for medical imaging AI across CT, MRI, PET/SPECT, ultrasound, and digital pathology, mapping detection and mitigation strategies to FDA regulatory constraints."
+    featured: false

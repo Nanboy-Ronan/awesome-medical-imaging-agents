@@ -40,9 +40,9 @@ Twelve landmark systems, one per major domain, for readers who want the fastest 
 - [Start Here](#start-here)
 - [Scope](#scope)
 - [Radiology Agents (36)](#radiology-agents-36)
-- [Pathology Agents (Whole-Slide Imaging · Digital Pathology) (23)](#pathology-agents-whole-slide-imaging--digital-pathology-23)
+- [Pathology Agents (Whole-Slide Imaging · Digital Pathology) (24)](#pathology-agents-whole-slide-imaging--digital-pathology-24)
 - [Ultrasound Agents (Echocardiography · Robotic Ultrasound) (16)](#ultrasound-agents-echocardiography--robotic-ultrasound-16)
-- [Endoscopy and Surgical Imaging Agents (10)](#endoscopy-and-surgical-imaging-agents-10)
+- [Endoscopy and Surgical Imaging Agents (11)](#endoscopy-and-surgical-imaging-agents-11)
 - [Ophthalmology Agents (8)](#ophthalmology-agents-8)
 - [3D CT / MRI / Volumetric Imaging Agents (13)](#3d-ct--mri--volumetric-imaging-agents-13)
 - [Segmentation and Annotation Agents (9)](#segmentation-and-annotation-agents-9)
@@ -50,13 +50,13 @@ Twelve landmark systems, one per major domain, for readers who want the fastest 
 - [Medical Vision-Language Model (VLM) Agents (21)](#medical-vision-language-model-vlm-agents-21)
   - [Backbone Foundation Models (not agents) (11)](#backbone-foundation-models-not-agents-11)
 - [Tool-Using and Multi-Agent Frameworks](#tool-using-and-multi-agent-frameworks)
-  - [Clinical Reasoning Agents (57)](#clinical-reasoning-agents-57)
+  - [Clinical Reasoning Agents (58)](#clinical-reasoning-agents-58)
   - [Workflow and Simulation Agents (37)](#workflow-and-simulation-agents-37)
   - [Agent Skills and Tool Learning (9)](#agent-skills-and-tool-learning-9)
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
   - [Benchmark Table](#benchmark-table)
-  - [Benchmark Papers (34)](#benchmark-papers-34)
-  - [Safety, Robustness, and Fairness (22)](#safety-robustness-and-fairness-22)
+  - [Benchmark Papers (35)](#benchmark-papers-35)
+  - [Safety, Robustness, and Fairness (24)](#safety-robustness-and-fairness-24)
 - [Themes Index](#themes-index)
 - [Datasets](#datasets)
 - [Toolboxes](#toolboxes)
@@ -106,10 +106,11 @@ Agents for chest X-ray, CT, MRI, DICOM workflows, radiotherapy planning, and rad
 - [Zero-Shot Large Language Model Agents for Fully Automated Radiotherapy Treatment Planning](https://arxiv.org/abs/2510.11754) - Published in arXiv (2025). Planning agent automates radiotherapy workflows with iterative plan refinement via zero-shot LLM reasoning.
 - [RadioRAG: Online Retrieval-Augmented Generation for Radiology Question Answering](https://arxiv.org/abs/2407.15621) - Published in arXiv (2024). Streaming RAG agent that continuously pulls prior studies and reports while answering radiology questions.
 
-## Pathology Agents (Whole-Slide Imaging · Digital Pathology) (23)
+## Pathology Agents (Whole-Slide Imaging · Digital Pathology) (24)
 
 Agents for whole-slide image analysis, digital pathology, pathology reports, and slide navigation.
 
+- [Act Like a Pathologist: Tissue-Aware Whole Slide Image Reasoning](https://arxiv.org/abs/2603.00667) — CVPR 2026 (2026). HistoSelect mimics pathologist visual search with a question-guided, tissue-aware, coarse-to-fine retrieval framework that narrows from broad tissue regions to diagnostic patches, cutting visual token usage 70% on gigapixel WSI question answering. [Code](https://github.com/winston52/HistoSelect)
 - [SAGE: Agentic Framework for Interpretable and Clinically Translatable Computational Pathology Biomarker Discovery](https://arxiv.org/abs/2602.00953) - Published in arXiv (2026). Multi-agent system that automates pathology biomarker discovery by grounding hypothesis generation in biological knowledge graphs, applying debate-based novelty assessment, and running automated validation pipelines on multimodal pathology datasets.
 - [An Interactive Trustworthy AI Pathology Copilot to Improve Biomarker-Driven Prognostic Stratification and Therapeutic Response Prediction](https://www.medrxiv.org/content/10.64898/2026.05.17.26352870v1) - Published in MedRxiv (2026). TEAM-Agent dynamically orchestrates WSI-based biomarker profiling, outcome prediction, uncertainty-aware clinical reasoning, and clinician-in-the-loop refinement for pathology prognosis and therapy-response support.
 - [CellDX AI Autopilot: Agent-Guided Training and Deployment of Pathology Classifiers](https://arxiv.org/abs/2605.10362) - Published in arXiv (2026). Agent-guided platform that helps pathologists train, evaluate, and deploy whole-slide pathology classifiers with minimal ML engineering.
@@ -155,7 +156,7 @@ Agents for echocardiography interpretation, fetal ultrasound, robotic scanning, 
 - [USPilot: An Embodied Robotic Assistant Ultrasound System with Large Language Model Enhanced Graph Planner](https://arxiv.org/abs/2502.12498) - Published in IEEE RA-L (2025). Embodied robotic assistant where an LLM-enhanced graph neural network planner selects and sequences ultrasound APIs to enable autonomous acquisition and patient query handling, tackling the global shortage of sonographers.
 - [Image-Guided Navigation of a Robotic Ultrasound Probe for Autonomous Spinal Sonography Using a Shadow-aware Dual-Agent Framework](http://arxiv.org/abs/2111.02167) - Published in arXiv (2021). Cooperative perception-control agents for ultrasound-guided robotics.
 
-## Endoscopy and Surgical Imaging Agents (10)
+## Endoscopy and Surgical Imaging Agents (11)
 
 Agents for gastrointestinal endoscopy, surgical scene understanding, and autonomous endoscopic navigation.
 
@@ -169,6 +170,7 @@ Agents for gastrointestinal endoscopy, surgical scene understanding, and autonom
 - [Surgical Agent Orchestration Platform for Voice-directed Patient Data Interaction](https://arxiv.org/pdf/2511.07392v2) - Published in arXiv (2025). Voice-first assistant that routes surgical team requests across documentation and data tools.
 - [SurgicalVLM-Agent: Towards an Interactive AI Co-Pilot for Pituitary Surgery](https://arxiv.org/abs/2503.09474) - Published in arXiv (2025). AI co-pilot for image-guided pituitary surgery that plans and executes MRI tumor segmentation, endoscope anatomy analysis, intraoperative overlay, and surgical VQA through a planner–worker agent pair.
 - [SurgVisAgent: Multimodal Agentic Model for Versatile Surgical Visual Enhancement](https://arxiv.org/abs/2507.02252) - Published in arXiv (2025). Identifies distortion categories and severity in endoscopic images via in-context few-shot reasoning and chain-of-thought to apply targeted enhancements such as low-light correction, smoke removal, and motion deblurring.
+- [SurgRAW: Multi-Agent Workflow with Chain of Thought Reasoning for Robotic Surgical Video Analysis](https://arxiv.org/abs/2503.10265) — arXiv (2025). Hierarchical orchestrator directs specialized agents through parallel chain-of-thought reasoning streams with a panel-discussion mechanism and RAG-grounded surgical knowledge, introducing the SurgCoTBench reasoning benchmark. [Code](https://github.com/jinlab-imvr/SurgRAW)
 
 ## Ophthalmology Agents (8)
 
@@ -277,10 +279,11 @@ Pretrained medical LLMs/MLLMs frequently wrapped by the agent systems above; inc
 
 Agents and frameworks for general clinical reasoning, workflow automation, simulation, and tool/skill learning that span beyond a single imaging modality.
 
-### Clinical Reasoning Agents (57)
+### Clinical Reasoning Agents (58)
 
 Agents for diagnosis, differential reasoning, treatment planning, retrieval, and clinical decision support.
 
+- [MedRoute: RL-Based Dynamic Specialist Routing in Multi-Agent Medical Diagnosis](https://arxiv.org/abs/2604.06180) - Published in arXiv (2026). RL-trained General Practitioner agent dynamically routes each case to specialist LMM agents, with a Moderator synthesizing their outputs into a final diagnosis across text- and image-based medical datasets. [Code](https://github.com/UCF-CRCV/MedRoute/)
 - [MedRLM: Recursive Multimodal Health Intelligence for Long-Context Clinical Reasoning, Sensor-Guided Screening, Evidence-Grounded Decision Support, and Community-to-Tertiary Referral Optimization](https://arxiv.org/abs/2606.20164) - Published in arXiv (2026). Recursive multimodal framework coordinates specialized agents over EHRs, medical imaging, and sensor streams for long-context clinical reasoning, sensor-guided screening, and community-to-tertiary referral optimization.
 - [Baichuan-M4: A Clinical-Grade Medical Agent System for Continuous Care](https://arxiv.org/abs/2606.08982) - Published in arXiv (2026). Clinical-grade medical agent system built on a unified tool-use runtime and continuous-care reinforcement learning, combining patient memory, evidence retrieval, and multimodal perception across documents, X-rays, and dermatology images.
 - [A multi-agent framework combining large language models with medical flowcharts for self-triage](https://www.nature.com/articles/s44360-026-00112-2) - Published in Nature Health (2026). Structured and auditable self-triage system with retrieval, decision, and conversation agents grounded in validated medical flowcharts.
@@ -417,8 +420,9 @@ Benchmarks with explicit imaging modality and task metadata.
 | Colon-Bench | colonoscopy | lesion detection, annotation, benchmark | [Paper](https://arxiv.org/abs/2603.25645) |
 | MEDVISTAGYM | multi-modality | training environment, tool use, visual reasoning | [Paper](https://arxiv.org/abs/2601.07107) |
 
-### Benchmark Papers (34)
+### Benchmark Papers (35)
 
+- [MEDSYN: Benchmarking Multi-EviDence SYNthesis in Complex Clinical Cases for Multimodal Large Language Models](https://arxiv.org/abs/2602.21950) - Published in arXiv (2026). Multilingual benchmark of complex clinical cases with up to seven visual evidence types per case, showing 18 MLLMs match clinicians on differential generation but lag badly at synthesizing multimodal evidence into a final diagnosis.
 - [Automated Report-Derived Oncology VQA Benchmark for Evaluating Vision-Language Models on 3D Medical Imaging](https://arxiv.org/abs/2606.02809) - Published in arXiv (2026). Agent-driven pipeline automatically generates contamination-controlled multiple-choice VQA benchmarks from paired radiology reports and 3D oncology imaging across four in-house cancer cohorts.
 - [Colon-Bench: An Agentic Workflow for Scalable Dense Lesion Annotation in Full-Procedure Colonoscopy Videos](https://arxiv.org/abs/2603.25645) - Published in arXiv (2026). Agentic annotation pipeline generates a large-scale colonoscopy benchmark with 528 videos, 14 lesion categories, 300K+ bounding boxes, and 213K segmentation masks, enabling evaluation of multimodal models on dense endoscopic lesion analysis.
 - [MEDVISTAGYM: A Scalable Training Environment for Thinking with Medical Images via Tool-Integrated Reinforcement Learning](https://arxiv.org/abs/2601.07107) - Published in arXiv (2026). Interactive RL training environment that teaches VLMs to perform multi-step reasoning over medical images by deciding when and which tools to invoke, with rewards grounded in tool-use correctness across diverse imaging tasks.
@@ -454,8 +458,10 @@ Benchmarks with explicit imaging modality and task metadata.
 - [ABRA: Agent Benchmark for Radiology Applications](https://arxiv.org/abs/2605.11224) - Published in arXiv (2026). First benchmark where agents operate a real DICOM viewer (OHIF + Orthanc) via tool calls, testing end-to-end radiology agent workflows on live imaging software.
 - [DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agents](https://arxiv.org/abs/2605.09679) - Published in arXiv (2026). Hierarchical 3D CT tumor VQA benchmark that isolates perception, localization, reasoning, and tool-use failures stage by stage.
 
-### Safety, Robustness, and Fairness (22)
+### Safety, Robustness, and Fairness (24)
 
+- [Hallucination in Medical Imaging AI: A Cross-Modality Analytical Framework for Taxonomy, Detection, and Mitigation under Regulatory Constraints](https://arxiv.org/abs/2606.13211) - Published in arXiv (2026). Cross-modality survey building a hallucination taxonomy for medical imaging AI across CT, MRI, PET/SPECT, ultrasound, and digital pathology, mapping detection and mitigation strategies to FDA regulatory constraints.
+- [To Agree or To Be Right? The Grounding-Sycophancy Tradeoff in Medical Vision-Language Models](https://arxiv.org/abs/2603.22623) - Published in arXiv (2026). Introduces three new metrics to evaluate the tradeoff between hallucination resistance and sycophancy under social pressure across six medical VLMs, finding none exceed a 0.35 composite safety index. [Code](https://github.com/UTSA-VIRLab/AgreeOrRight)
 - [ART: Action-based Reasoning Task Benchmarking for Medical AI Agents](https://arxiv.org/abs/2601.08988) - Published in arXiv (2026). Evaluates safe, multi-step agent reasoning over structured EHR tasks.
 - [Ablation Study of a Fairness Auditing Agentic System for Bias Mitigation in Early-Onset Colorectal Cancer Detection](https://arxiv.org/abs/2603.17179) - Published in arXiv (2026). Evaluates an agentic auditing system that surfaces and mitigates bias in colorectal cancer detection models.
 - [CPEMH: An Agentic Framework for Prompt-Driven Behavior Evaluation and Assurance in Foundation-Model Systems for Mental Health Screening](https://arxiv.org/abs/2605.11341) - Published in arXiv (2026). Agentic assurance framework for evaluating prompt-driven behavior in mental-health screening systems.
@@ -492,7 +498,7 @@ Benchmarks with explicit imaging modality and task metadata.
 - [Medical Imaging AI Competitions Lack Fairness](https://arxiv.org/abs/2512.17581) — arXiv (2025) · *Benchmarks*
 - [Intersectional Fairness in Vision-Language Models for Medical Image Disease Classification](https://arxiv.org/abs/2512.15249) — arXiv (2025) · *Benchmarks*
 
-### Hallucination and Reliability (24)
+### Hallucination and Reliability (26)
 
 - [MARCH: Multi-Agent Radiology Clinical Hierarchy for CT Report Generation](https://arxiv.org/abs/2604.16175) — arXiv (2026) · *Radiology Agents*
 - [An Explainable Agentic AI Framework for Uncertainty-Aware and Abstention-Enabled Acute Ischemic Stroke Imaging Decisions](https://arxiv.org/abs/2601.01008) — arXiv (2026) · *Radiology Agents*
@@ -509,6 +515,8 @@ Benchmarks with explicit imaging modality and task metadata.
 - [SAGE: Agentic Framework for Interpretable and Clinically Translatable Computational Pathology Biomarker Discovery](https://arxiv.org/abs/2602.00953) — arXiv (2026) · *Pathology Agents*
 - [Grounded Multimodal Retrieval-Augmented Drafting of Radiology Impressions Using Case-Based Similarity Search](https://arxiv.org/abs/2603.17765) — arXiv (2026) · *Report Generation Agents*
 - [When Models Learn to Ask Why: Adaptive Causal Reasoning for Trustworthy Medical Vision-Language Models](https://arxiv.org/abs/2603.23085) — arXiv (2026) · *Medical VLM Agents*
+- [To Agree or To Be Right? The Grounding-Sycophancy Tradeoff in Medical Vision-Language Models](https://arxiv.org/abs/2603.22623) — arXiv (2026) · *Benchmarks*
+- [Hallucination in Medical Imaging AI: A Cross-Modality Analytical Framework for Taxonomy, Detection, and Mitigation under Regulatory Constraints](https://arxiv.org/abs/2606.13211) — arXiv (2026) · *Surveys*
 - [AT-CXR: Uncertainty-Aware Agentic Triage for Chest X-rays](https://arxiv.org/abs/2508.19322) — arXiv (2025) · *Radiology Agents*
 - [RadFabric: Agentic AI System with Reasoning Capability for Radiology](https://arxiv.org/abs/2506.14142) — arXiv (2025) · *Radiology Agents*
 - [Patho-AgenticRAG: Towards Multimodal Agentic Retrieval-Augmented Generation for Pathology VLMs via Reinforcement Learning](https://arxiv.org/abs/2508.02258) — arXiv (2025) · *Pathology Agents*
@@ -519,7 +527,7 @@ Benchmarks with explicit imaging modality and task metadata.
 - [Trustworthy Medical Imaging with Large Language Models: A Study of Hallucinations Across Modalities](https://arxiv.org/abs/2508.07031) — arXiv (2025) · *Benchmarks*
 - [MedReflect: Teaching Medical LLMs to Self-Improve via Reflective Correction](https://arxiv.org/abs/2510.03687) — arXiv (2025) · *Clinical Reasoning Agents*
 
-### Safety and Robustness (23)
+### Safety and Robustness (25)
 
 - [XrayClaw: Cooperative-Competitive Multi-Agent Alignment for Trustworthy Chest X-ray Diagnosis](https://arxiv.org/abs/2604.02695) — arXiv (2026) · *Radiology Agents*
 - [An Explainable Agentic AI Framework for Uncertainty-Aware and Abstention-Enabled Acute Ischemic Stroke Imaging Decisions](https://arxiv.org/abs/2601.01008) — arXiv (2026) · *Radiology Agents*
@@ -535,6 +543,8 @@ Benchmarks with explicit imaging modality and task metadata.
 - [Six Interventions for the Responsible and Ethical Implementation of Medical AI Agents](https://arxiv.org/abs/2603.13743) — arXiv (2026) · *Surveys*
 - [From Agents to Governance: Essential AI Skills for Clinicians in the Large Language Model Era](https://www.jmir.org/2026/1/e86550) — JMIR (2026) · *Surveys*
 - [Towards Responsible Multimodal Medical Reasoning via Context-Aligned Vision-Language Models](https://arxiv.org/abs/2604.08815) — arXiv (2026) · *Medical VLM Agents*
+- [To Agree or To Be Right? The Grounding-Sycophancy Tradeoff in Medical Vision-Language Models](https://arxiv.org/abs/2603.22623) — arXiv (2026) · *Benchmarks*
+- [Hallucination in Medical Imaging AI: A Cross-Modality Analytical Framework for Taxonomy, Detection, and Mitigation under Regulatory Constraints](https://arxiv.org/abs/2606.13211) — arXiv (2026) · *Surveys*
 - [AT-CXR: Uncertainty-Aware Agentic Triage for Chest X-rays](https://arxiv.org/abs/2508.19322) — arXiv (2025) · *Radiology Agents*
 - [Automated stereotactic radiosurgery planning using a human-in-the-loop reasoning large language model agent](http://arxiv.org/abs/2512.20586v1) — arXiv (2025) · *Radiology Agents*
 - [Agent-Based Output Drift Detection for Breast Cancer Response Prediction in a Multisite Clinical Decision Support System](https://arxiv.org/abs/2512.18450) — arXiv (2025) · *Radiology Agents*
@@ -553,7 +563,7 @@ Benchmarks with explicit imaging modality and task metadata.
 - [Metric Privacy in Federated Learning for Medical Imaging: Improving Convergence and Preventing Client Inference Attacks](https://arxiv.org/abs/2502.01352) — arXiv (2025) · *Benchmarks*
 - [FedAgentBench: Towards Automating Real-world Federated Medical Image Analysis with Server-Client LLM Agents](https://arxiv.org/abs/2509.23803) — arXiv (2025) · *Benchmarks*
 
-### RAG and Retrieval (41)
+### RAG and Retrieval (42)
 
 - [GAZE: Grounded Agentic Zero-shot Evaluation on Rare Brain MRI](https://arxiv.org/abs/2605.00876) — arXiv (2026) · *Radiology Agents*
 - [CXReasonAgent: Evidence-Grounded Diagnostic Reasoning Agent for Chest X-rays](https://arxiv.org/abs/2602.23276) — arXiv (2026) · *Radiology Agents*
@@ -594,10 +604,11 @@ Benchmarks with explicit imaging modality and task metadata.
 - [KERAP: A Knowledge-Enhanced Reasoning Approach for Accurate Zero-shot Diagnosis Prediction Using Multi-agent LLMs](https://arxiv.org/abs/2507.02773) — arXiv (2025) · *Clinical Reasoning Agents*
 - [CDR-Agent: Intelligent Selection and Execution of Clinical Decision Rules Using Large Language Model Agents](https://arxiv.org/pdf/2505.23055v1) — arXiv (2025) · *Clinical Reasoning Agents*
 - [MedDCR: Learning to Design Agentic Workflows for Medical Coding](https://arxiv.org/pdf/2511.13361v1) — arXiv (2025) · *Workflow Agents*
+- [SurgRAW: Multi-Agent Workflow with Chain of Thought Reasoning for Robotic Surgical Video Analysis](https://arxiv.org/abs/2503.10265) — arXiv (2025) · *Endoscopy Agents*
 - [RadioRAG: Online Retrieval-Augmented Generation for Radiology Question Answering](https://arxiv.org/abs/2407.15621) — arXiv (2024) · *Radiology Agents*
 - [Hybrid Retrieval-Generation Reinforced Agent for Medical Image Report Generation](http://arxiv.org/abs/1805.08298) — arXiv (2018) · *Report Generation Agents*
 
-### Multi-Agent Collaboration (109)
+### Multi-Agent Collaboration (111)
 
 - [XrayClaw: Cooperative-Competitive Multi-Agent Alignment for Trustworthy Chest X-ray Diagnosis](https://arxiv.org/abs/2604.02695) — arXiv (2026) · *Radiology Agents*
 - [LAMMI-Pathology: A Tool-Centric Bottom-Up LVLM-Agent Framework for Molecularly Informed Medical Intelligence in Pathology](https://arxiv.org/abs/2602.18773) — arXiv (2026) · *Pathology Agents*
@@ -654,6 +665,7 @@ Benchmarks with explicit imaging modality and task metadata.
 - [Experience Makes Skillful: Enabling Generalizable Medical Agent Reasoning via Self-Evolving Skill Memory](https://arxiv.org/abs/2606.09365) — arXiv (2026) · *Clinical Reasoning Agents*
 - [SAGE: Agentic Framework for Interpretable and Clinically Translatable Computational Pathology Biomarker Discovery](https://arxiv.org/abs/2602.00953) — arXiv (2026) · *Pathology Agents*
 - [XMedFusion: A Knowledge-Guided Multimodal Perception and Reasoning Framework for Autonomous Medical Systems](https://arxiv.org/abs/2606.14766) — arXiv (2026) · *Report Generation Agents*
+- [MedRoute: RL-Based Dynamic Specialist Routing in Multi-Agent Medical Diagnosis](https://arxiv.org/abs/2604.06180) — arXiv (2026) · *Clinical Reasoning Agents*
 - [MedRAX: Medical Reasoning Agent for Chest X-ray](https://arxiv.org/pdf/2502.02673v1) — ICML 2025 (2025) · *Radiology Agents*
 - [PathFinder: A Multi-Modal Multi-Agent System for Medical Diagnostic Decision-Making Applied to Histopathology](https://arxiv.org/pdf/2502.08916) — arXiv (2025) · *Pathology Agents*
 - [WSI-Agents: A Collaborative Multi-Agent System for Multi-Modal Whole Slide Image Analysis](https://arxiv.org/pdf/2507.14680) — MICCAI 2025 (2025) · *Pathology Agents*
@@ -699,6 +711,7 @@ Benchmarks with explicit imaging modality and task metadata.
 - [MedAgentSim: Self-Evolving Multi-Agent Simulations for Realistic Clinical Interactions](https://arxiv.org/abs/2503.22678) — MICCAI 2025 (2025) · *Workflow Agents*
 - [FUAS-Agents: Autonomous Multi-Modal LLM Agents for Treatment Planning in Focused Ultrasound Ablation Surgery](https://arxiv.org/abs/2505.21418) — arXiv (2025) · *Ultrasound Agents*
 - [FedAgentBench: Towards Automating Real-world Federated Medical Image Analysis with Server-Client LLM Agents](https://arxiv.org/abs/2509.23803) — arXiv (2025) · *Benchmarks*
+- [SurgRAW: Multi-Agent Workflow with Chain of Thought Reasoning for Robotic Surgical Video Analysis](https://arxiv.org/abs/2503.10265) — arXiv (2025) · *Endoscopy Agents*
 - [MMedAgent: Learning to Use Medical Tools with Multi-modal Agent](https://arxiv.org/pdf/2407.02483) — arXiv (2024) · *Multimodal Agents*
 - [MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning](https://aclanthology.org/2024.findings-acl.33.pdf) — Findings of ACL 2024 (2024) · *Clinical Reasoning Agents*
 - [MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making](https://proceedings.neurips.cc/paper_files/paper/2024/file/90d1fc07f46e31387978b88e7e057a31-Paper-Conference.pdf) — NeurIPS 2024 (2024) · *Clinical Reasoning Agents*
@@ -709,7 +722,7 @@ Benchmarks with explicit imaging modality and task metadata.
 - [Image-Guided Navigation of a Robotic Ultrasound Probe for Autonomous Spinal Sonography Using a Shadow-aware Dual-Agent Framework](http://arxiv.org/abs/2111.02167) — arXiv (2021) · *Ultrasound Agents*
 - [Iteratively-Refined Interactive 3D Medical Image Segmentation with Multi-Agent Reinforcement Learning](https://arxiv.org/abs/1911.10334) — CVPR (2020) · *Segmentation Agents*
 
-### Reinforcement Learning (20)
+### Reinforcement Learning (21)
 
 - [Anatomical Landmark-Guided Deep Reinforcement Learning for Autonomous Gastric Navigation](https://arxiv.org/abs/2605.08269) — arXiv (2026) · *Endoscopy Agents*
 - [Reinforcement Learning for Follow-the-Leader Robotic Endoscopic Navigation via Synthetic Data](https://arxiv.org/abs/2601.02798) — arXiv (2026) · *Endoscopy Agents*
@@ -725,6 +738,7 @@ Benchmarks with explicit imaging modality and task metadata.
 - [MEDVISTAGYM: A Scalable Training Environment for Thinking with Medical Images via Tool-Integrated Reinforcement Learning](https://arxiv.org/abs/2601.07107) — arXiv (2026) · *Benchmarks*
 - [Baichuan-M4: A Clinical-Grade Medical Agent System for Continuous Care](https://arxiv.org/abs/2606.08982) — arXiv (2026) · *Clinical Reasoning Agents*
 - [When Models Learn to Ask Why: Adaptive Causal Reasoning for Trustworthy Medical Vision-Language Models](https://arxiv.org/abs/2603.23085) — arXiv (2026) · *Medical VLM Agents*
+- [MedRoute: RL-Based Dynamic Specialist Routing in Multi-Agent Medical Diagnosis](https://arxiv.org/abs/2604.06180) — arXiv (2026) · *Clinical Reasoning Agents*
 - [Policy to Assist Iteratively Local Segmentation: Optimising Modality and Location Selection for Prostate Cancer Localisation](https://arxiv.org/abs/2508.03953) — arXiv (2025) · *Segmentation Agents*
 - [Patho-AgenticRAG: Towards Multimodal Agentic Retrieval-Augmented Generation for Pathology VLMs via Reinforcement Learning](https://arxiv.org/abs/2508.02258) — arXiv (2025) · *Pathology Agents*
 - [Incentivizing Tool-augmented Thinking with Images for Medical Image Analysis](http://arxiv.org/abs/2512.14157v1) — arXiv (2025) · *Segmentation Agents*
@@ -806,7 +820,7 @@ Surveys and position papers on medical AI agents, evaluation, safety, and deploy
 
 - Structured metadata for this list is maintained in [data/papers.yml](data/papers.yml).
 - A machine-readable table view is available in [docs/papers.json](docs/papers.json).
-- Last updated: 2026-06-24.
+- Last updated: 2026-06-28.
 
 ## Contributing
 
