@@ -51,7 +51,7 @@ Twelve landmark systems, one per major domain, for readers who want the fastest 
   - [Backbone Foundation Models (not agents) (11)](#backbone-foundation-models-not-agents-11)
 - [Tool-Using and Multi-Agent Frameworks](#tool-using-and-multi-agent-frameworks)
   - [Clinical Reasoning Agents (58)](#clinical-reasoning-agents-58)
-  - [Workflow and Simulation Agents (37)](#workflow-and-simulation-agents-37)
+  - [Workflow and Simulation Agents (38)](#workflow-and-simulation-agents-38)
   - [Agent Skills and Tool Learning (9)](#agent-skills-and-tool-learning-9)
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
   - [Benchmark Table](#benchmark-table)
@@ -342,7 +342,7 @@ Agents for diagnosis, differential reasoning, treatment planning, retrieval, and
 - [MedAide: Information Fusion and Anatomy of Medical Intents via LLM-based Agent Collaboration](http://arxiv.org/abs/2410.12532) - Published in arXiv (2024). Decomposes physician intents into coordinated agent subtasks.
 - [Multi-agent Searching System for Medical Information](http://arxiv.org/abs/2203.12465) - Published in arXiv (2022). Early agentic pipeline that dispatches searchers and summarizers for literature triage.
 
-### Workflow and Simulation Agents (37)
+### Workflow and Simulation Agents (38)
 
 Agents and environments for clinical workflow automation, simulation, and operational task execution.
 
@@ -376,6 +376,7 @@ Agents and environments for clinical workflow automation, simulation, and operat
 - [From Passive to Proactive: A Multi-Agent System with Dynamic Task Orchestration for Intelligent Medical Pre-Consultation](https://arxiv.org/abs/2511.01445) - Published in arXiv (2025). Hierarchical agent orchestration for proactive triage and history collection.
 - [Hybrid-Code: A Privacy-Preserving, Redundant Multi-Agent Framework for Reliable Local Clinical Coding](https://arxiv.org/abs/2512.23743) - Published in arXiv (2025). Redundant, on-prem agents deliver resilient clinical coding while preserving patient privacy.
 - [Learning to Be a Doctor: Searching for Effective Medical Agent Architectures](https://arxiv.org/abs/2504.11301) - Published in arXiv (2025). Benchmarks agent-based curricula across simulated clinical tasks.
+- [M^3Builder: A Multi-Agent System for Automated Machine Learning in Medical Imaging](https://arxiv.org/abs/2502.20301) - Published in arXiv (2025). Four collaborating agents (task manager, data engineer, module architect, model trainer) automate end-to-end medical imaging ML pipelines, from data processing to auto-debugged model training, achieving 94.29% build success across 14 datasets. [Code](https://github.com/MAGIC-AI4Med/M3Builder)
 - [MedAgentSim: Self-Evolving Multi-Agent Simulations for Realistic Clinical Interactions](https://arxiv.org/abs/2503.22678) - Published in MICCAI 2025 (2025). MICCAI 2025 oral; open-source simulated clinical environment where self-evolving doctor agents engage in multi-turn conversations with patient and measurement agents, requesting examinations and imaging results to mimic real-world diagnostic workflows.
 - [MedDCR: Learning to Design Agentic Workflows for Medical Coding](https://arxiv.org/pdf/2511.13361v1) - Published in arXiv (2025). Trains agents to chain codebook retrieval, reasoning, and validation for ICD/DRG assignment.
 - [Mediator-Guided Multi-Agent Collaboration among Open-Source Models for Medical Decision-Making](http://arxiv.org/abs/2508.05996) - Published in arXiv (2025). Introduces a mediator agent that coaches specialized LLMs through patient encounters.
@@ -608,7 +609,7 @@ Benchmarks with explicit imaging modality and task metadata.
 - [RadioRAG: Online Retrieval-Augmented Generation for Radiology Question Answering](https://arxiv.org/abs/2407.15621) — arXiv (2024) · *Radiology Agents*
 - [Hybrid Retrieval-Generation Reinforced Agent for Medical Image Report Generation](http://arxiv.org/abs/1805.08298) — arXiv (2018) · *Report Generation Agents*
 
-### Multi-Agent Collaboration (111)
+### Multi-Agent Collaboration (112)
 
 - [XrayClaw: Cooperative-Competitive Multi-Agent Alignment for Trustworthy Chest X-ray Diagnosis](https://arxiv.org/abs/2604.02695) — arXiv (2026) · *Radiology Agents*
 - [LAMMI-Pathology: A Tool-Centric Bottom-Up LVLM-Agent Framework for Molecularly Informed Medical Intelligence in Pathology](https://arxiv.org/abs/2602.18773) — arXiv (2026) · *Pathology Agents*
@@ -697,6 +698,7 @@ Benchmarks with explicit imaging modality and task metadata.
 - [ConfAgents: A Conformal-Guided Multi-Agent Framework for Cost-Efficient Medical Diagnosis](https://arxiv.org/abs/2508.04915) — arXiv (2025) · *Clinical Reasoning Agents*
 - [Multi Agent based Medical Assistant for Edge Devices](http://arxiv.org/abs/2503.05397) — arXiv (2025) · *Clinical Reasoning Agents*
 - [OEMA: Ontology-Enhanced Multi-Agent Collaboration Framework for Zero-Shot Clinical Named Entity Recognition](https://arxiv.org/pdf/2511.15211v2) — arXiv (2025) · *Clinical Reasoning Agents*
+- [M^3Builder: A Multi-Agent System for Automated Machine Learning in Medical Imaging](https://arxiv.org/abs/2502.20301) — arXiv (2025) · *Workflow Agents*
 - [From Passive to Proactive: A Multi-Agent System with Dynamic Task Orchestration for Intelligent Medical Pre-Consultation](https://arxiv.org/abs/2511.01445) — arXiv (2025) · *Workflow Agents*
 - [MedTutor-R1: Socratic Personalized Medical Teaching with Multi-Agent Simulation](https://arxiv.org/abs/2512.05671) — arXiv (2025) · *Workflow Agents*
 - [Mediator-Guided Multi-Agent Collaboration among Open-Source Models for Medical Decision-Making](http://arxiv.org/abs/2508.05996) — arXiv (2025) · *Workflow Agents*
@@ -820,7 +822,7 @@ Surveys and position papers on medical AI agents, evaluation, safety, and deploy
 
 - Structured metadata for this list is maintained in [data/papers.yml](data/papers.yml).
 - A machine-readable table view is available in [docs/papers.json](docs/papers.json).
-- Last updated: 2026-06-28.
+- Last updated: 2026-06-30.
 
 ## Contributing
 

@@ -4049,6 +4049,30 @@ papers:
 
   # ── Workflow and Simulation Agents ────────────────────────────────────────
 
+  - title: "M^3Builder: A Multi-Agent System for Automated Machine Learning in Medical Imaging"
+    year: 2025
+    domain: "Workflow Simulation"
+    modality:
+      - CT
+      - MRI
+      - X-ray
+    task:
+      - workflow automation
+      - tool use
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2502.20301"
+    code_url: "https://github.com/MAGIC-AI4Med/M3Builder"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+      - AutoML
+    summary: "Four collaborating agents (task manager, data engineer, module architect, model trainer) automate end-to-end medical imaging ML pipelines, from data processing to auto-debugged model training, achieving 94.29% build success across 14 datasets."
+    featured: false
+
   - title: "GraphFlow: An Architecture for Formally Verifiable Visual Workflows Enabling Reliable Agentic AI Automation"
     year: 2026
     domain: "Workflow Simulation"
