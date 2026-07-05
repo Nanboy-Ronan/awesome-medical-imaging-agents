@@ -971,6 +971,7 @@ papers:
     benchmark_url: null
     venue: "arXiv"
     tags:
+      - self-evolving
       - domain adaptation
       - federated learning
       - memory augmented
@@ -1240,6 +1241,7 @@ papers:
     benchmark_url: null
     venue: "arXiv"
     tags:
+      - self-evolving
       - hospital simulation
       - patient agents
       - clinician agents
@@ -2318,6 +2320,7 @@ papers:
     benchmark_url: null
     venue: "arXiv"
     tags:
+      - self-evolving
       - multi-agent
     summary: "Multi-agent PET theranostics framework with case memory and trial-grounded reasoning."
     featured: false
@@ -2556,6 +2559,7 @@ papers:
     benchmark_url: null
     venue: "arXiv"
     tags:
+      - self-evolving
       - multi-agent
     summary: "Collaborative dermatology agents iteratively refine diagnoses and explanations for transparent skin-condition assessment."
     featured: false
@@ -2614,7 +2618,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - self-evolving
     summary: "Self-evolving imaging agent that discovers effective composite tool chains from successful trajectories and reuses them as new skills."
     featured: false
 
@@ -2634,6 +2639,7 @@ papers:
     benchmark_url: null
     venue: "arXiv"
     tags:
+      - self-evolving
       - RAG
     summary: "Iterative vision-language agent that refines detections and rationales with retrieval and repair loops."
     featured: false
@@ -3068,7 +3074,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "ACL 2026"
-    tags: null
+    tags:
+      - self-evolving
     summary: "Iterative generate-judge-refine treatment-planning agent with a treatment-specific evaluator for safer and more complete therapeutic recommendations."
     featured: false
 
@@ -3386,6 +3393,7 @@ papers:
     benchmark_url: null
     venue: "arXiv"
     tags:
+      - self-evolving
       - RAG
     summary: "Organizes prior clinical experiences as a graph memory to support retrieval and adaptation during reasoning."
     featured: false
@@ -4463,7 +4471,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - self-evolving
     summary: "Self-improving agent that iterates on trial protocol drafts to reduce design flaws and improve feasibility."
     featured: false
 
@@ -5586,7 +5595,8 @@ papers:
     dataset_url: null
     benchmark_url: null
     venue: "arXiv"
-    tags: null
+    tags:
+      - self-evolving
     summary: "Discusses design patterns for agents that plan, critique, and self-improve in clinical tasks."
     featured: false
 
@@ -6088,6 +6098,7 @@ papers:
     benchmark_url: null
     venue: "MICCAI 2025"
     tags:
+      - self-evolving
       - multi-agent
       - hospital simulation
     summary: "MICCAI 2025 oral; open-source simulated clinical environment where self-evolving doctor agents engage in multi-turn conversations with patient and measurement agents, requesting examinations and imaging results to mimic real-world diagnostic workflows."
@@ -6279,6 +6290,7 @@ papers:
     benchmark_url: null
     venue: "arXiv"
     tags:
+      - self-evolving
       - chest X-ray
       - RAG
       - self-evolving memory
@@ -6721,6 +6733,7 @@ papers:
     benchmark_url: null
     venue: "arXiv"
     tags:
+      - self-evolving
       - multi-agent
     summary: "Post-deployment self-evolution framework (SkeMex) that distills agent interaction trajectories into structured, reusable skills organized in a multi-branch memory without model retraining."
     featured: false
@@ -7246,4 +7259,71 @@ papers:
       - hallucination
       - safety
     summary: "Cross-modality survey building a hallucination taxonomy for medical imaging AI across CT, MRI, PET/SPECT, ultrasound, and digital pathology, mapping detection and mitigation strategies to FDA regulatory constraints."
+    featured: false
+
+  - title: "Evo-RAD: Navigating Rare Retinal Disease Diagnosis via Self-Evolving Agentic Retrieval"
+    year: 2026
+    domain: "Ophthalmology"
+    modality:
+      - fundus
+      - OCT
+    task:
+      - diagnosis
+      - retrieval
+    agent_type:
+      - tool-using
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2606.22955"
+    code_url: "https://github.com/SDH-Lab/Evo-RAD"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "MICCAI 2026"
+    tags:
+      - self-evolving
+      - RAG
+      - rare disease
+    summary: "Self-evolving agentic retrieval framework that reformulates evidence acquisition for rare retinal disease diagnosis as an MDP, dynamically inserting, deleting, and terminating reference-case retrieval to overcome the hubness problem of static retrieval."
+    featured: false
+
+  - title: "Can Agents Distinguish Visually Hard-to-Separate Diseases in a Zero-Shot Setting? A Pilot Study"
+    year: 2026
+    domain: "Medical VLM"
+    modality:
+      - dermoscopy
+      - CXR
+    task:
+      - diagnosis
+      - clinical reasoning
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2602.22959"
+    code_url: "https://github.com/TruhnLab/Contrastive-Agent-Reasoning"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "MICCAI 2026"
+    tags:
+      - multi-agent
+      - zero-shot
+    summary: "Multi-agent contrastive-adjudication framework probes zero-shot agent performance on visually confounded disease pairs (melanoma vs. atypical nevus; pulmonary edema vs. pneumonia), improving accuracy but finding it still short of clinical deployment."
+    featured: false
+
+  - title: "ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning"
+    year: 2026
+    domain: "Benchmark"
+    modality: null
+    task:
+      - safety
+      - hallucination detection
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2606.14697"
+    code_url: "https://github.com/alibaba-damo-academy/ClinHallu"
+    project_url: null
+    dataset_url: null
+    benchmark_url: "https://github.com/alibaba-damo-academy/ClinHallu"
+    venue: "arXiv"
+    tags:
+      - hallucination
+    summary: "Benchmark of 7,031 instances that decomposes medical MLLM reasoning into visual recognition, knowledge recall, and reasoning integration stages to localize where hallucinations originate, using staged interventions and trace-supervised fine-tuning."
     featured: false
