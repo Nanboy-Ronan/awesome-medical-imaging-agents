@@ -7327,3 +7327,113 @@ papers:
       - hallucination
     summary: "Benchmark of 7,031 instances that decomposes medical MLLM reasoning into visual recognition, knowledge recall, and reasoning integration stages to localize where hallucinations originate, using staged interventions and trace-supervised fine-tuning."
     featured: false
+
+  - title: "CogRad: A Cognitively-Inspired Multi-Agent Framework for Radiology Report Generation"
+    year: 2026
+    domain: "Report Generation"
+    modality:
+      - CXR
+    task:
+      - report generation
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2607.03853"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - chest X-ray
+      - multi-agent
+      - hallucination
+    summary: "Coordinates Scout, Investigator, Writer, and Verifier agents that locate suspicious regions, focus analysis, draft findings, and validate each claim against the chest X-ray before finalizing the report."
+    featured: false
+
+  - title: "TopoAgent: An Agentic Framework for Automated Topology Learning in Medical Imaging"
+    year: 2026
+    domain: "Segmentation"
+    modality: null
+    task:
+      - image analysis
+      - tool use
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.29763"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - topological data analysis
+      - persistent homology
+    summary: "LLM-driven agent that automatically selects and applies topological descriptors (persistent homology) for a given medical imaging dataset without task-specific training."
+    featured: false
+
+  - title: "CPAgents: Agentic Composite Phenotype Generation for Cardiac Disease Association"
+    year: 2026
+    domain: "3D Imaging"
+    modality:
+      - cardiac imaging
+    task:
+      - phenotyping
+      - disease association
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2606.28179"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "MICCAI 2026"
+    tags:
+      - cardiac
+      - phenotyping
+      - multi-agent
+    summary: "Agentic framework that automatically constructs and validates interpretable composite phenotypes from cardiac imaging features to surface disease associations beyond single-variable phenome-wide studies."
+    featured: false
+
+  - title: "HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents"
+    year: 2026
+    domain: "Benchmark"
+    modality: null
+    task:
+      - evaluation
+      - tool use
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.31179"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - benchmark
+      - healthcare agents
+    summary: "Suite of 54 agentic healthcare tasks across 7 categories spanning the patient journey and multiple modalities, with medical imaging tasks emerging as the hardest for current frontier agents."
+    featured: false
+
+  - title: "Evaluating Agentic Harness Systems for Autonomous Computational Pathology"
+    year: 2026
+    domain: "Benchmark"
+    modality:
+      - WSI
+    task:
+      - evaluation
+      - workflow automation
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2607.02598"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - pathology
+      - benchmark
+      - whole-slide imaging
+    summary: "Introduces ACP-Bench to evaluate how well general agentic harness systems convert high-level pathology goals into executable, traceable, and clinically bounded whole-slide analysis workflows."
+    featured: false
