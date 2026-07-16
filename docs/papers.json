@@ -227,6 +227,36 @@
     "featured": false
   },
   {
+    "title": "LAMMI-Pathology: A Tool-Centric Bottom-Up LVLM-Agent Framework for Molecularly Informed Medical Intelligence in Pathology",
+    "year": 2026,
+    "domain": "Pathology",
+    "modality": [
+      "WSI"
+    ],
+    "task": [
+      "diagnosis",
+      "tool use",
+      "multi-step reasoning"
+    ],
+    "agent_type": [
+      "tool-using",
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2602.18773",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "whole-slide imaging",
+      "pathology",
+      "multi-agent"
+    ],
+    "summary": "Tool-centric bottom-up agent framework that organizes domain-specific pathology tools into Atomic Execution Nodes, enabling LVLMs to construct multi-step diagnostic reasoning trajectories for molecularly informed pathology analysis.",
+    "featured": false
+  },
+  {
     "title": "CPathAgent: An Agent-based Foundation Model for Interpretable High-Resolution Pathology Image Analysis",
     "year": 2025,
     "domain": "Pathology",
@@ -432,6 +462,91 @@
     "featured": false
   },
   {
+    "title": "UltrasoundAgents: Hierarchical Multi-Agent Evidence-Chain Reasoning for Breast Ultrasound Diagnosis",
+    "year": 2026,
+    "domain": "Ultrasound",
+    "modality": [
+      "ultrasound"
+    ],
+    "task": [
+      "diagnosis",
+      "classification"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.10852",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "breast ultrasound",
+      "BI-RADS",
+      "multi-agent"
+    ],
+    "summary": "Hierarchical multi-agent framework that mirrors clinical diagnostic workflows by localizing breast lesions, analyzing fine-grained attributes such as echogenicity and calcification, and integrating traceable evidence chains for BI-RADS classification.",
+    "featured": false
+  },
+  {
+    "title": "Unified Ultrasound Intelligence Toward an End-to-End Agentic System",
+    "year": 2026,
+    "domain": "Ultrasound",
+    "modality": [
+      "ultrasound"
+    ],
+    "task": [
+      "report generation",
+      "multi-organ analysis"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2604.16914",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "ultrasound",
+      "multi-agent"
+    ],
+    "summary": "Three-stage agentic ultrasound system (USTri) that trains a universal model, adapts dataset-specific specialists, and orchestrates them via an agent to produce clinically structured reports across multiple organ types.",
+    "featured": false
+  },
+  {
+    "title": "FetalAgents: A Multi-Agent System for Fetal Ultrasound Image and Video Analysis",
+    "year": 2026,
+    "domain": "Ultrasound",
+    "modality": [
+      "ultrasound"
+    ],
+    "task": [
+      "diagnosis",
+      "measurement",
+      "segmentation",
+      "report generation"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.09733",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "fetal ultrasound",
+      "multi-agent"
+    ],
+    "summary": "Multi-agent system that coordinates specialized vision experts to analyze fetal ultrasound images and videos across diagnosis, measurement, and segmentation tasks, generating structured clinical reports from keyframe identification and anatomical plane analysis.",
+    "featured": false
+  },
+  {
     "title": "Echo-alpha: Large Agentic Multimodal Reasoning Model for Ultrasound Interpretation",
     "year": 2026,
     "domain": "Ultrasound",
@@ -552,6 +667,35 @@
     "featured": false
   },
   {
+    "title": "Reinforcement Learning for Follow-the-Leader Robotic Endoscopic Navigation via Synthetic Data",
+    "year": 2026,
+    "domain": "Endoscopy",
+    "modality": [
+      "endoscopy"
+    ],
+    "task": [
+      "navigation",
+      "autonomous control"
+    ],
+    "agent_type": [
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2601.02798",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "reinforcement-learning",
+      "robotic endoscopy",
+      "autonomous navigation",
+      "depth estimation"
+    ],
+    "summary": "RL-trained agent drives a flexible continuum endoscope by combining monocular depth estimation with policy learning in a synthetic intestinal simulation, improving depth accuracy 39% over baselines.",
+    "featured": false
+  },
+  {
     "title": "Multi-Agent Intelligence for Multidisciplinary Decision-Making in Gastrointestinal Oncology",
     "year": 2025,
     "domain": "Endoscopy",
@@ -645,6 +789,34 @@
     "featured": false
   },
   {
+    "title": "Deliberative multi-agent large language models improve clinical reasoning in ophthalmology",
+    "year": 2026,
+    "domain": "Ophthalmology",
+    "modality": [
+      "fundus",
+      "OCT"
+    ],
+    "task": [
+      "diagnosis",
+      "clinical reasoning"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.21447",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "ophthalmology",
+      "multi-agent"
+    ],
+    "summary": "Multi-agent council where LLMs independently answer ophthalmic clinical questions, peer-review each other's responses, and synthesize conclusions via a designated chair, consistently outperforming individual models in diagnostic accuracy while reducing harmful errors.",
+    "featured": false
+  },
+  {
     "title": "EyeAgent: An Agentic AI System for Multimodal Clinical Decision Support in Ophthalmology",
     "year": 2025,
     "domain": "Ophthalmology",
@@ -673,6 +845,38 @@
       "RAG"
     ],
     "summary": "Tool-using agentic AI that orchestrates 53 validated ophthalmic tools across 23 imaging modalities with RAG-grounded reasoning from authoritative textbooks, matching or exceeding senior ophthalmologist performance.",
+    "featured": false
+  },
+  {
+    "title": "Multimodal reasoning agent for enhanced ophthalmic decision-making: a preliminary real-world clinical validation",
+    "year": 2025,
+    "domain": "Ophthalmology",
+    "modality": [
+      "fundus",
+      "OCT",
+      "ophthalmic imaging"
+    ],
+    "task": [
+      "diagnosis",
+      "treatment planning",
+      "clinical reasoning"
+    ],
+    "agent_type": [
+      "tool-using",
+      "RAG"
+    ],
+    "paper_url": "https://doi.org/10.3389/fcell.2025.1642539",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Frontiers in Cell and Developmental Biology",
+    "tags": [
+      "ophthalmology",
+      "RAG",
+      "multimodal reasoning"
+    ],
+    "summary": "Three-module agentic pipeline integrating GPT-4o visual understanding, RAG from ophthalmic guideline knowledge bases, and DeepSeek-R1 diagnostic reasoning; validated on 30 real-world ophthalmic cases matching ophthalmology resident accuracy.",
     "featured": false
   },
   {
@@ -881,13 +1085,42 @@
     "tags": [
       "segmentation",
       "SAM",
-      "reinforcement learning",
-      "interactive",
       "reinforcement-learning",
+      "interactive",
       "human-in-the-loop"
     ],
     "summary": "Introduces multi-turn RL to train an interactive segmentation agent that decides which prompts to issue to SAM — the first RL-trained imaging segmentation agent.",
     "featured": true
+  },
+  {
+    "title": "Shifting Adaptation from Weight Space to Memory Space: A Memory-Augmented Agent for Medical Image Segmentation",
+    "year": 2026,
+    "domain": "Segmentation",
+    "modality": [
+      "CT",
+      "MRI"
+    ],
+    "task": [
+      "segmentation",
+      "domain adaptation"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.05873",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "self-evolving",
+      "domain adaptation",
+      "federated learning",
+      "memory augmented"
+    ],
+    "summary": "Memory-augmented segmentation agent with an agentic controller that dynamically composes static, few-shot, and test-time working memories to generalize a fixed backbone across institutions without retraining.",
+    "featured": false
   },
   {
     "title": "Towards User-Centered Interactive Medical Image Segmentation in VR with an Assistive AI Agent",
@@ -948,6 +1181,64 @@
       "reinforcement-learning"
     ],
     "summary": "Policy network agent iteratively recommends optimal imaging modalities and anatomical regions of interest to progressively localize prostate cancer in multiparametric MRI.",
+    "featured": false
+  },
+  {
+    "title": "Iteratively-Refined Interactive 3D Medical Image Segmentation with Multi-Agent Reinforcement Learning",
+    "year": 2020,
+    "domain": "Segmentation",
+    "modality": [
+      "CT",
+      "MRI"
+    ],
+    "task": [
+      "segmentation",
+      "interactive annotation"
+    ],
+    "agent_type": [
+      "RL-trained",
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/1911.10334",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "CVPR",
+    "tags": [
+      "multi-agent",
+      "reinforcement-learning",
+      "human-in-the-loop",
+      "interactive segmentation"
+    ],
+    "summary": "Foundational paper modelling iterative 3D medical image segmentation as an MDP; each voxel acts as an independent agent sharing a behaviour policy, converging to accurate segmentations with fewer user interactions than prior methods.",
+    "featured": false
+  },
+  {
+    "title": "DERM-3R: A Resource-Efficient Multimodal Agents Framework for Dermatologic Diagnosis and Treatment in Real-World Clinical Settings",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": [
+      "dermatology"
+    ],
+    "task": [
+      "diagnosis",
+      "treatment planning"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2604.09596",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "dermatology",
+      "multi-agent"
+    ],
+    "summary": "Three collaborative agents (DERM-Rec, DERM-Rep, DERM-Reason) built on a resource-efficient multimodal LLM for real-world dermatologic diagnosis and treatment, matching larger models with only 103 training cases through structured domain-aware multi-agent design.",
     "featured": false
   },
   {
@@ -1136,6 +1427,7 @@
     "benchmark_url": null,
     "venue": "arXiv",
     "tags": [
+      "self-evolving",
       "hospital simulation",
       "patient agents",
       "clinician agents",
@@ -1172,6 +1464,37 @@
     "featured": false
   },
   {
+    "title": "AutoMedBench: Towards Medical AutoResearch with Agentic AI Models",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "CT",
+      "MRI",
+      "CXR"
+    ],
+    "task": [
+      "benchmark",
+      "segmentation",
+      "report generation",
+      "VQA"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.01961",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "benchmark",
+      "medical imaging"
+    ],
+    "summary": "Benchmark for autonomous agents performing end-to-end medical AI research workflows covering segmentation, image enhancement, VQA, report generation, and lesion detection in a five-stage pipeline; analysis of thousands of runs reveals validation and submission as the hardest stages.",
+    "featured": false
+  },
+  {
     "title": "AgentClinic: A Multimodal Benchmark for Tool-Using Clinical AI Agents",
     "year": 2026,
     "domain": "Benchmark",
@@ -1193,7 +1516,7 @@
     "project_url": "https://agentclinic.github.io/",
     "dataset_url": "https://agentclinic.github.io/",
     "benchmark_url": "https://agentclinic.github.io/",
-    "venue": "npj Digital Medicine 2026",
+    "venue": "npj Digital Medicine",
     "tags": [
       "benchmark",
       "multimodal",
@@ -1400,7 +1723,8 @@
     "venue": "arXiv",
     "tags": [
       "hallucination",
-      "safety"
+      "safety",
+      "human-in-the-loop"
     ],
     "summary": "Triage agent that defers or escalates based on calibrated uncertainty.",
     "featured": false
@@ -1717,7 +2041,8 @@
     "year": 2026,
     "domain": "Radiology",
     "modality": [
-      "CXR"
+      "CT",
+      "MRI"
     ],
     "task": [
       "diagnosis",
@@ -1744,7 +2069,7 @@
     "year": 2026,
     "domain": "Radiology",
     "modality": [
-      "CXR"
+      "mammography"
     ],
     "task": [
       "diagnosis",
@@ -1794,10 +2119,11 @@
     "year": 2025,
     "domain": "Radiology",
     "modality": [
-      "CXR"
+      "CT",
+      "MRI"
     ],
     "task": [
-      "diagnosis",
+      "treatment planning",
       "tool use"
     ],
     "agent_type": [
@@ -1820,9 +2146,7 @@
     "title": "Bridging Clinical Narratives and ACR Appropriateness Guidelines: A Multi-Agent RAG System for Medical Imaging Decisions",
     "year": 2025,
     "domain": "Radiology",
-    "modality": [
-      "CXR"
-    ],
+    "modality": null,
     "task": [
       "diagnosis",
       "tool use"
@@ -1848,7 +2172,8 @@
     "year": 2025,
     "domain": "Radiology",
     "modality": [
-      "CXR"
+      "mammography",
+      "MRI"
     ],
     "task": [
       "diagnosis",
@@ -1991,7 +2316,8 @@
     "venue": "arXiv",
     "tags": [
       "RAG",
-      "reinforcement-learning"
+      "reinforcement-learning",
+      "hallucination"
     ],
     "summary": "RL-trained agentic RAG reduces pathology VLM hallucinations.",
     "featured": false
@@ -2387,6 +2713,7 @@
     "benchmark_url": null,
     "venue": "arXiv",
     "tags": [
+      "self-evolving",
       "multi-agent"
     ],
     "summary": "Multi-agent PET theranostics framework with case memory and trial-grounded reasoning.",
@@ -2667,6 +2994,7 @@
     "benchmark_url": null,
     "venue": "arXiv",
     "tags": [
+      "self-evolving",
       "multi-agent"
     ],
     "summary": "Collaborative dermatology agents iteratively refine diagnoses and explanations for transparent skin-condition assessment.",
@@ -2736,7 +3064,9 @@
     "dataset_url": null,
     "benchmark_url": null,
     "venue": "arXiv",
-    "tags": null,
+    "tags": [
+      "self-evolving"
+    ],
     "summary": "Self-evolving imaging agent that discovers effective composite tool chains from successful trajectories and reuses them as new skills.",
     "featured": false
   },
@@ -2759,6 +3089,7 @@
     "benchmark_url": null,
     "venue": "arXiv",
     "tags": [
+      "self-evolving",
       "RAG"
     ],
     "summary": "Iterative vision-language agent that refines detections and rationales with retrieval and repair loops.",
@@ -2898,7 +3229,7 @@
     "project_url": null,
     "dataset_url": null,
     "benchmark_url": null,
-    "venue": "ICLR",
+    "venue": "ICLR 2026",
     "tags": [
       "multi-agent"
     ],
@@ -3149,6 +3480,35 @@
     "featured": false
   },
   {
+    "title": "MedMMV: A Controllable Multimodal Multi-Agent Framework for Reliable and Verifiable Clinical Reasoning",
+    "year": 2025,
+    "domain": "Medical VLM",
+    "modality": [
+      "CXR",
+      "CT",
+      "MRI"
+    ],
+    "task": [
+      "clinical reasoning",
+      "diagnosis"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2509.24314",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "hallucination"
+    ],
+    "summary": "Multi-agent clinical reasoning framework with dedicated ImageDoctor and TextDoctor agents that ground intermediate steps in a structured evidence graph under Hallucination Detector supervision to prevent cascading reasoning errors.",
+    "featured": false
+  },
+  {
     "title": "COTCAgent: Preventive Consultation via Probabilistic Chain-of-Thought Completion",
     "year": 2026,
     "domain": "Clinical Reasoning",
@@ -3235,8 +3595,10 @@
     "project_url": null,
     "dataset_url": null,
     "benchmark_url": null,
-    "venue": "arXiv / ACL",
-    "tags": null,
+    "venue": "ACL 2026",
+    "tags": [
+      "self-evolving"
+    ],
     "summary": "Iterative generate-judge-refine treatment-planning agent with a treatment-specific evaluator for safer and more complete therapeutic recommendations.",
     "featured": false
   },
@@ -3614,6 +3976,7 @@
     "benchmark_url": null,
     "venue": "arXiv",
     "tags": [
+      "self-evolving",
       "RAG"
     ],
     "summary": "Organizes prior clinical experiences as a graph memory to support retrieval and adaptation during reasoning.",
@@ -4400,6 +4763,35 @@
     "featured": false
   },
   {
+    "title": "M^3Builder: A Multi-Agent System for Automated Machine Learning in Medical Imaging",
+    "year": 2025,
+    "domain": "Workflow Simulation",
+    "modality": [
+      "CT",
+      "MRI",
+      "X-ray"
+    ],
+    "task": [
+      "workflow automation",
+      "tool use"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2502.20301",
+    "code_url": "https://github.com/MAGIC-AI4Med/M3Builder",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "AutoML"
+    ],
+    "summary": "Four collaborating agents (task manager, data engineer, module architect, model trainer) automate end-to-end medical imaging ML pipelines, from data processing to auto-debugged model training, achieving 94.29% build success across 14 datasets.",
+    "featured": false
+  },
+  {
     "title": "GraphFlow: An Architecture for Formally Verifiable Visual Workflows Enabling Reliable Agentic AI Automation",
     "year": 2026,
     "domain": "Workflow Simulation",
@@ -4866,7 +5258,9 @@
     "dataset_url": null,
     "benchmark_url": null,
     "venue": "arXiv",
-    "tags": null,
+    "tags": [
+      "self-evolving"
+    ],
     "summary": "Self-improving agent that iterates on trial protocol drafts to reduce design flaws and improve feasibility.",
     "featured": false
   },
@@ -6152,7 +6546,9 @@
     "dataset_url": null,
     "benchmark_url": null,
     "venue": "arXiv",
-    "tags": null,
+    "tags": [
+      "self-evolving"
+    ],
     "summary": "Discusses design patterns for agents that plan, critique, and self-improve in clinical tasks.",
     "featured": false
   },
@@ -6213,6 +6609,2225 @@
       "safety"
     ],
     "summary": "Defines a tiered competency framework for clinicians supervising agentic workflows.",
+    "featured": false
+  },
+  {
+    "title": "EchoAgent: Guideline-Centric Reasoning Agent for Echocardiography Measurement and Interpretation",
+    "year": 2025,
+    "domain": "Ultrasound",
+    "modality": [
+      "echocardiography"
+    ],
+    "task": [
+      "measurement",
+      "clinical interpretation",
+      "tool use"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2511.13948",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "echocardiography",
+      "cardiac ultrasound"
+    ],
+    "summary": "Orchestrates specialized echocardiography vision tools under LLM control for guideline-centric temporal localization, spatial measurement, and clinical interpretation of cardiac studies.",
+    "featured": false
+  },
+  {
+    "title": "SurgVisAgent: Multimodal Agentic Model for Versatile Surgical Visual Enhancement",
+    "year": 2025,
+    "domain": "Endoscopy",
+    "modality": [
+      "endoscopy"
+    ],
+    "task": [
+      "image enhancement",
+      "surgical assistance"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2507.02252",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "surgical vision",
+      "endoscopy"
+    ],
+    "summary": "Identifies distortion categories and severity in endoscopic images via in-context few-shot reasoning and chain-of-thought to apply targeted enhancements such as low-light correction, smoke removal, and motion deblurring.",
+    "featured": false
+  },
+  {
+    "title": "SurgicalVLM-Agent: Towards an Interactive AI Co-Pilot for Pituitary Surgery",
+    "year": 2025,
+    "domain": "Endoscopy",
+    "modality": [
+      "MRI",
+      "endoscopy"
+    ],
+    "task": [
+      "surgical assistance",
+      "segmentation",
+      "visual question answering",
+      "planning"
+    ],
+    "agent_type": [
+      "tool-using",
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2503.09474",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "surgical imaging",
+      "pituitary surgery"
+    ],
+    "summary": "AI co-pilot for image-guided pituitary surgery that plans and executes MRI tumor segmentation, endoscope anatomy analysis, intraoperative overlay, and surgical VQA through a planner–worker agent pair.",
+    "featured": false
+  },
+  {
+    "title": "MedChat: A Multi-Agent Framework for Multimodal Diagnosis with Large Language Models",
+    "year": 2025,
+    "domain": "Ophthalmology",
+    "modality": [
+      "fundus"
+    ],
+    "task": [
+      "diagnosis",
+      "clinical reasoning"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2506.07400",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "IEEE MIPR 2025",
+    "tags": [
+      "glaucoma",
+      "fundus",
+      "multi-agent"
+    ],
+    "summary": "Director agent coordinates role-specific LLM agents (ophthalmologist, glaucoma specialist, optometrist, pharmacist) each receiving deep-learning classifier outputs for fundus-based glaucoma diagnosis.",
+    "featured": false
+  },
+  {
+    "title": "3DMedAgent: Unified Perception-to-Understanding for 3D Medical Analysis",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "CT"
+    ],
+    "task": [
+      "visual question answering",
+      "segmentation",
+      "tool use",
+      "multi-step reasoning"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2602.18064",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "3D CT",
+      "volumetric"
+    ],
+    "summary": "Enables 2D MLLMs to perform general 3D CT analysis by coordinating visual and textual tools with a structured long-term memory for multi-step perception-to-understanding reasoning across 40+ tasks.",
+    "featured": false
+  },
+  {
+    "title": "NeuroAgent: LLM Agents for Multimodal Neuroimaging Analysis and Research",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "MRI",
+      "fMRI",
+      "PET",
+      "DTI"
+    ],
+    "task": [
+      "preprocessing",
+      "analysis",
+      "multi-step reasoning"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2605.06584",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "neuroimaging",
+      "brain MRI"
+    ],
+    "summary": "Hierarchical multi-agent system that automates preprocessing, validation, and analysis of heterogeneous neuroimaging data (sMRI, fMRI, dMRI, PET) through a Generate-Execute-Validate engine with feedback-driven error recovery.",
+    "featured": false
+  },
+  {
+    "title": "Agentic Automation of BT-RADS Scoring: End-to-End Multi-Agent System for Standardized Brain Tumor Follow-up Assessment",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "report generation",
+      "classification",
+      "tool use"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.21494",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "brain tumor",
+      "MRI",
+      "multi-agent"
+    ],
+    "summary": "Multi-agent system combining an extractor agent (clinical notes) and a scorer agent (BT-RADS decision logic + volumetric CNN segmentation) for standardized post-treatment glioma MRI response assessment.",
+    "featured": false
+  },
+  {
+    "title": "Agentic LLM Workflow for MR Spectroscopy Volume-of-Interest Placements in Brain Tumors",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "segmentation",
+      "tool use",
+      "planning"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.13371",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "brain tumor",
+      "MR spectroscopy"
+    ],
+    "summary": "LLM agent decomposes spectroscopy VOI placement into candidate generation and optimal selection via tool calls, enabling user-instruction-driven MRS acquisition planning for brain tumors.",
+    "featured": false
+  },
+  {
+    "title": "MARL-Rad: Multi-Modal Multi-Agent Reinforcement Learning for Radiology Report Generation",
+    "year": 2026,
+    "domain": "Report Generation",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "report generation"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.16876",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "reinforcement-learning",
+      "report generation",
+      "multi-agent"
+    ],
+    "summary": "Jointly trains region-specific observation agents and a global integrating agent via clinically verifiable rewards, achieving state-of-the-art RadGraph and CheXbert scores on MIMIC-CXR.",
+    "featured": false
+  },
+  {
+    "title": "A Medical Multimodal Diagnostic Framework Integrating Vision-Language Models and Logic Tree Reasoning",
+    "year": 2025,
+    "domain": "Medical VLM",
+    "modality": null,
+    "task": [
+      "diagnosis",
+      "multi-step reasoning",
+      "clinical reasoning"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2512.21583",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multimodal",
+      "hallucination"
+    ],
+    "summary": "Combines VLM alignment with a reasoning controller that decomposes diagnostic tasks into stepwise premises and a logic tree generator that assembles verifiable conclusions for interpretable multi-step diagnosis.",
+    "featured": false
+  },
+  {
+    "title": "A co-evolving agentic AI system for medical imaging analysis",
+    "year": 2025,
+    "domain": "Workflow Simulation",
+    "modality": [
+      "CT",
+      "histopathology"
+    ],
+    "task": [
+      "tool use",
+      "analysis",
+      "workflow automation"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2509.20279",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "human-in-the-loop"
+    ],
+    "summary": "TissueLab integrates standardized tool factories across pathology, radiology, and spatial omics domains and enables real-time expert feedback for iterative, explainable multi-domain imaging analysis.",
+    "featured": false
+  },
+  {
+    "title": "Simple Agents Outperform Experts in Biomedical Imaging Workflow Optimization",
+    "year": 2025,
+    "domain": "Workflow Simulation",
+    "modality": [
+      "CXR",
+      "CT",
+      "MRI"
+    ],
+    "task": [
+      "workflow automation",
+      "pipeline optimization"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2512.06006",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": null,
+    "summary": "Simple LLM agent framework automatically generates adaptation code for production biomedical imaging pipelines using small gold-standard validation sets, consistently outperforming human-expert manual adaptation.",
+    "featured": false
+  },
+  {
+    "title": "Autonomous Computer Vision Development with Agentic AI",
+    "year": 2025,
+    "domain": "Workflow Simulation",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "workflow automation",
+      "pipeline optimization"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2506.11140",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": null,
+    "summary": "LLM-based agent autonomously configures, trains, and tests medical image analysis pipelines by extending SimpleMind with automated planning and tool-calling, achieving strong chest X-ray segmentation performance.",
+    "featured": false
+  },
+  {
+    "title": "MedRCube: A Multidimensional Framework for Fine-Grained and In-Depth Evaluation of MLLMs in Medical Imaging",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "CXR",
+      "CT",
+      "MRI",
+      "histopathology"
+    ],
+    "task": [
+      "evaluation",
+      "benchmark"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2604.13756",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": null,
+    "summary": "Evaluates 33 MLLMs across anatomical region, imaging modality, and task-type dimensions with 7,626 samples from 36 datasets, exposing capability gaps invisible to coarse single-metric evaluations.",
+    "featured": false
+  },
+  {
+    "title": "Trustworthy Medical Imaging with Large Language Models: A Study of Hallucinations Across Modalities",
+    "year": 2025,
+    "domain": "Benchmark",
+    "modality": [
+      "CXR",
+      "CT",
+      "MRI"
+    ],
+    "task": [
+      "safety",
+      "hallucination detection"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2508.07031",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "hallucination",
+      "safety"
+    ],
+    "summary": "Studies hallucination patterns in both image-to-text interpretation and text-to-image generation across X-ray, CT, and MRI, cataloguing factual inconsistencies and anatomical inaccuracies with implications for clinical deployment.",
+    "featured": false
+  },
+  {
+    "title": "USPilot: An Embodied Robotic Assistant Ultrasound System with Large Language Model Enhanced Graph Planner",
+    "year": 2025,
+    "domain": "Ultrasound",
+    "modality": [
+      "ultrasound"
+    ],
+    "task": [
+      "navigation",
+      "autonomous control"
+    ],
+    "agent_type": [
+      "tool-using",
+      "embodied agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2502.12498",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "IEEE RA-L",
+    "tags": [
+      "robotic ultrasound",
+      "embodied agent",
+      "autonomous navigation"
+    ],
+    "summary": "Embodied robotic assistant where an LLM-enhanced graph neural network planner selects and sequences ultrasound APIs to enable autonomous acquisition and patient query handling, tackling the global shortage of sonographers.",
+    "featured": false
+  },
+  {
+    "title": "RAG-RUSS: A Retrieval-Augmented Robotic Ultrasound for Autonomous Carotid Examination",
+    "year": 2026,
+    "domain": "Ultrasound",
+    "modality": [
+      "ultrasound"
+    ],
+    "task": [
+      "navigation",
+      "autonomous control"
+    ],
+    "agent_type": [
+      "RAG",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.01153",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "robotic ultrasound",
+      "RAG",
+      "autonomous navigation"
+    ],
+    "summary": "Interpretable retrieval-augmented robotic ultrasound that autonomously plans probe motions and explains each scanning stage to complete a full carotid examination across transverse and longitudinal planes.",
+    "featured": false
+  },
+  {
+    "title": "Detection and Diagnosis of Diabetic Retinopathy in Retinal Fundus Images Using Agentic AI Approaches",
+    "year": 2025,
+    "domain": "Ophthalmology",
+    "modality": [
+      "fundus"
+    ],
+    "task": [
+      "diagnosis"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://www.nature.com/articles/s41598-025-34016-0",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Scientific Reports",
+    "tags": [
+      "diabetic retinopathy",
+      "fundus",
+      "multi-agent"
+    ],
+    "summary": "AADR-AI uses JADE/Mesa autonomous agents that specialize in preprocessing, feature extraction, fusion, classification, and clinical explanation for diabetic retinopathy detection from retinal fundus images.",
+    "featured": false
+  },
+  {
+    "title": "MedAgentSim: Self-Evolving Multi-Agent Simulations for Realistic Clinical Interactions",
+    "year": 2025,
+    "domain": "Workflow Simulation",
+    "modality": [
+      "CXR",
+      "MRI",
+      "X-ray"
+    ],
+    "task": [
+      "hospital simulation",
+      "workflow automation",
+      "clinical training"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "simulation"
+    ],
+    "paper_url": "https://arxiv.org/abs/2503.22678",
+    "code_url": "https://github.com/MAXNORM8650/MedAgentSim",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2025",
+    "tags": [
+      "self-evolving",
+      "multi-agent",
+      "hospital simulation"
+    ],
+    "summary": "MICCAI 2025 oral; open-source simulated clinical environment where self-evolving doctor agents engage in multi-turn conversations with patient and measurement agents, requesting examinations and imaging results to mimic real-world diagnostic workflows.",
+    "featured": false
+  },
+  {
+    "title": "EndoVLA: Dual-Phase Vision-Language-Action Model for Autonomous Tracking in Endoscopy",
+    "year": 2025,
+    "domain": "Endoscopy",
+    "modality": [
+      "endoscopy"
+    ],
+    "task": [
+      "polyp tracking",
+      "autonomous tracking",
+      "mucosal region delineation"
+    ],
+    "agent_type": [
+      "VLA",
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2505.15206",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "CoRL 2025",
+    "tags": [
+      "reinforcement-learning",
+      "endoscopy",
+      "polyp tracking"
+    ],
+    "summary": "Dual-phase VLA model combines supervised fine-tuning with RL fine-tuning and task-aware rewards to autonomously track polyps, delineate abnormal mucosal regions, and follow markers in GI endoscopy, enabling zero-shot generalization to diverse gastrointestinal scenarios.",
+    "featured": false
+  },
+  {
+    "title": "CT-Flow: Orchestrating CT Interpretation Workflow with Model Context Protocol Servers",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "CT"
+    ],
+    "task": [
+      "CT interpretation",
+      "tool use",
+      "multi-step reasoning"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.00123",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "ACL 2026",
+    "tags": [
+      "CT interpretation",
+      "MCP",
+      "tool use"
+    ],
+    "summary": "MCP-based agentic CT interpreter that orchestrates radiomics, segmentation, and measurement tool calls over volumetric DICOM data; introduces CT-FlowBench, a 3D CT multi-step tool-use benchmark, surpassing static VLMs by 41% in diagnostic accuracy.",
+    "featured": false
+  },
+  {
+    "title": "An Artifact-based Agent Framework for Adaptive and Reproducible Medical Image Processing",
+    "year": 2026,
+    "domain": "Workflow Simulation",
+    "modality": [
+      "CT",
+      "MRI"
+    ],
+    "task": [
+      "workflow automation",
+      "medical image processing"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2604.21936",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv (2026)",
+    "tags": [
+      "workflow automation",
+      "reproducibility"
+    ],
+    "summary": "Formalizes intermediate pipeline outputs as artifact contracts so a goal-conditioned agent assembles modular processing rules and tracks provenance, enabling adaptive and reproducible medical image workflows across heterogeneous clinical CT and MRI datasets.",
+    "featured": false
+  },
+  {
+    "title": "PathNavigate: A Training-Free Pathology Agent with Surprise-Guided Scan and Shared Slide Memory for Whole-Slide Image VQA",
+    "year": 2026,
+    "domain": "Pathology",
+    "modality": [
+      "WSI"
+    ],
+    "task": [
+      "VQA",
+      "slide navigation"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2605.23559",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "whole-slide image",
+      "training-free",
+      "VQA"
+    ],
+    "summary": "Training-free WSI agent performs surprise-guided low-magnification scanning and shared-memory filtering to identify question-relevant regions before high-resolution evidence extraction for VQA.",
+    "featured": false
+  },
+  {
+    "title": "Towards Reliable Fetal Ultrasound Interpretation with Multi-Agent Collaboration",
+    "year": 2026,
+    "domain": "Ultrasound",
+    "modality": [
+      "ultrasound"
+    ],
+    "task": [
+      "VQA",
+      "report generation",
+      "image analysis"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2605.25357",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "fetal ultrasound",
+      "multi-agent",
+      "benchmark"
+    ],
+    "summary": "FetUSAgents coordinates specialized visual tools and LLM agents with Dual-Path Evidence Arbitration for fetal ultrasound interpretation; introduces FetUS-VQA benchmark with 1,892 images and 10 clinical tasks.",
+    "featured": false
+  },
+  {
+    "title": "BCER Agent: Reliable Long-Horizon MRI Workflow Execution via Compilation, Artifact Binding, and Bounded Local Recovery",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "workflow execution",
+      "multi-organ analysis"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2605.29163",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "MRI",
+      "long-horizon",
+      "error recovery"
+    ],
+    "summary": "Controller architecture that decouples planning from execution for long-horizon MRI analysis pipelines, with bounded local recovery to prevent cascading failures across multi-organ brain, prostate, and cardiac tasks.",
+    "featured": false
+  },
+  {
+    "title": "ClinSeekAgent: Automating Multimodal Evidence Seeking for Agentic Clinical Reasoning",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "clinical reasoning",
+      "evidence seeking",
+      "multimodal QA"
+    ],
+    "agent_type": [
+      "tool-using",
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2605.20176",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "clinical reasoning",
+      "multimodal",
+      "RAG"
+    ],
+    "summary": "Automated evidence-seeking agent that queries medical knowledge bases, EHRs, and medical imaging tools to assemble multimodal clinical evidence, with a distillation pipeline for compact open-source models and significant gains on CXR and EHR benchmarks.",
+    "featured": false
+  },
+  {
+    "title": "Evo-MedAgent: Beyond One-Shot Diagnosis with Agents That Remember, Reflect, and Improve",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "diagnosis",
+      "tool use"
+    ],
+    "agent_type": [
+      "self-evolving",
+      "memory-augmented"
+    ],
+    "paper_url": "https://arxiv.org/abs/2604.14475",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "self-evolving",
+      "chest X-ray",
+      "RAG",
+      "self-evolving memory"
+    ],
+    "summary": "Self-evolving memory module that equips a chest X-ray agent with episodic, procedural, and tool-reliability memory stores for inter-case learning without retraining, lifting ChestAgentBench accuracy by up to 14 points.",
+    "featured": false
+  },
+  {
+    "title": "EvoClinician: A Self-Evolving Agent for Multi-Turn Medical Diagnosis via Test-Time Evolutionary Learning",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "diagnosis",
+      "multi-turn dialogue"
+    ],
+    "agent_type": [
+      "self-evolving",
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2601.22964",
+    "code_url": "https://github.com/yf-he/EvoClinician",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "self-evolving",
+      "multi-turn diagnosis"
+    ],
+    "summary": "Self-evolving agent that refines multi-turn diagnostic strategy through a Diagnose-Grade-Evolve loop and introduces the Med-Inquire benchmark for evaluating iterative clinical diagnosis.",
+    "featured": false
+  },
+  {
+    "title": "SEMA-RAG: A Self-Evolving Multi-Agent Retrieval-Augmented Generation Framework for Medical Reasoning",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "medical QA"
+    ],
+    "agent_type": [
+      "self-evolving",
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2605.17101",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Findings of ACL 2026",
+    "tags": [
+      "RAG",
+      "multi-agent",
+      "self-evolving"
+    ],
+    "summary": "Three-agent system where a self-evolving Explorer agent iterates retrieval until evidence is sufficient, and an Arbiter adjudicates; outperforms strong baselines by +6.46 pp on average across five medical QA benchmarks.",
+    "featured": false
+  },
+  {
+    "title": "TARSE: Test-Time Adaptation via Retrieval of Skills and Experience for Reasoning Agents",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "clinical reasoning",
+      "medical QA"
+    ],
+    "agent_type": [
+      "self-evolving",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.01241",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "RAG",
+      "self-evolving"
+    ],
+    "summary": "Clinical QA agent that aligns reasoning at inference time by retrieving guideline-level clinical skills and prior verified experience traces, verifying each reasoning step before committing.",
+    "featured": false
+  },
+  {
+    "title": "MedReflect: Teaching Medical LLMs to Self-Improve via Reflective Correction",
+    "year": 2025,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "medical QA",
+      "self-improvement"
+    ],
+    "agent_type": [
+      "self-evolving"
+    ],
+    "paper_url": "https://arxiv.org/abs/2510.03687",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "self-evolving",
+      "hallucination"
+    ],
+    "summary": "Trains medical LLMs to generate a reflective correction chain — hypothesis, self-questioning, self-answering, and decision refinement — improving benchmark accuracy with only 2,000 training examples and no external retrieval.",
+    "featured": false
+  },
+  {
+    "title": "MARL-MambaContour: Unleashing Multi-Agent Deep Reinforcement Learning for Active Contour Optimization in Medical Image Segmentation",
+    "year": 2026,
+    "domain": "Segmentation",
+    "modality": [
+      "CT",
+      "MRI",
+      "dermoscopy"
+    ],
+    "task": [
+      "segmentation",
+      "contour optimization"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2506.18679",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "reinforcement-learning"
+    ],
+    "summary": "Multi-agent RL framework where each contour point is an autonomous agent that iteratively refines its position using a Mamba-based SAC policy with entropy regularization for topologically consistent medical image segmentation across five datasets.",
+    "featured": false
+  },
+  {
+    "title": "Anatomical Prior-Driven Framework for Autonomous Robotic Cardiac Ultrasound Standard View Acquisition",
+    "year": 2026,
+    "domain": "Ultrasound",
+    "modality": [
+      "echocardiography"
+    ],
+    "task": [
+      "autonomous acquisition",
+      "navigation"
+    ],
+    "agent_type": [
+      "RL-trained",
+      "embodied agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.21134",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "robotic ultrasound",
+      "reinforcement-learning",
+      "echocardiography"
+    ],
+    "summary": "RL-trained probe-adjustment agent uses a YOLO-based spatial-relation graph to embed cardiac anatomical priors into state representation, autonomously acquiring standard echocardiography views with 92.5% success rate in simulation and 86.7% in phantom experiments.",
+    "featured": false
+  },
+  {
+    "title": "FUAS-Agents: Autonomous Multi-Modal LLM Agents for Treatment Planning in Focused Ultrasound Ablation Surgery",
+    "year": 2025,
+    "domain": "Ultrasound",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "treatment planning",
+      "tool use"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2505.21418",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "summary": "Multi-modal LLM agent integrates MRI data and patient profiles to orchestrate specialized tools including segmentation for autonomous treatment plan generation in focused ultrasound ablation surgery across 3,000+ multicenter cases.",
+    "featured": false
+  },
+  {
+    "title": "INFORM-CT: INtegrating LLMs and VLMs FOR Incidental Findings Management in Abdominal CT",
+    "year": 2025,
+    "domain": "3D Imaging",
+    "modality": [
+      "CT"
+    ],
+    "task": [
+      "incidental findings detection",
+      "report generation",
+      "tool use"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2512.14732",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "tool-using"
+    ],
+    "summary": "Plan-and-execute agentic framework where an LLM planner generates Python scripts and a VLM executor detects, classifies, and reports incidental findings in abdominal CT scans, outperforming pure VLM baselines.",
+    "featured": false
+  },
+  {
+    "title": "PathoSage: Towards Multi-Source Evidence Adjudication in Pathology via Experience-Aware Agentic Workflow",
+    "year": 2026,
+    "domain": "Pathology",
+    "modality": [
+      "WSI"
+    ],
+    "task": [
+      "VQA",
+      "tool use",
+      "evidence adjudication"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.07549",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "pathology",
+      "hallucination"
+    ],
+    "summary": "Experience-aware pathology agent that separately gathers, deliberates over, and adjudicates evidence from multiple tools — tracking tool reliability with a Beta-Bernoulli experience system — to reduce hallucinations in patch-level whole-slide VQA.",
+    "featured": false
+  },
+  {
+    "title": "MAGIS: Evidence-Based Multi-Agent Reasoning for Interpretable Strabismus Clinical Decision-Making",
+    "year": 2026,
+    "domain": "Ophthalmology",
+    "modality": [
+      "fundus",
+      "gaze photograph"
+    ],
+    "task": [
+      "diagnosis",
+      "clinical reasoning"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.09249",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "ophthalmology",
+      "strabismus",
+      "multi-agent"
+    ],
+    "summary": "Multi-agent framework that analyses nine-cardinal-gaze photographs with hypothesis-generation, dual-evidence-constrained, and verification agents to deliver interpretable, evidence-grounded strabismus diagnoses.",
+    "featured": false
+  },
+  {
+    "title": "A multi-agent system for spine MRI report generation from multi-sequence imaging",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "report generation",
+      "segmentation",
+      "classification"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.08897",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "spine MRI",
+      "multi-agent"
+    ],
+    "summary": "Coordinates 37 specialised agents for classification, localisation, segmentation, and image-report retrieval across multi-sequence (T1/T2) spine MRI, integrating their outputs into a report agent for radiologist-level clinical report generation.",
+    "featured": false
+  },
+  {
+    "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
+    "year": 2026,
+    "domain": "Multimodal",
+    "modality": null,
+    "task": [
+      "medical QA",
+      "tool use",
+      "clinical reasoning"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.13572",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multilingual",
+      "multi-agent"
+    ],
+    "summary": "Actor-critic multi-agent framework with tool grounding and dual-memory mechanisms for step-wise medical reasoning over six imaging modalities and text spanning English and seven Indian languages.",
+    "featured": false
+  },
+  {
+    "title": "VERITAS: Verifiable Epistemic Reasoning for Image-Derived Hypothesis Testing via Agentic Systems",
+    "year": 2026,
+    "domain": "Workflow Simulation",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "hypothesis testing",
+      "segmentation",
+      "statistical analysis"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2604.12144",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "research automation",
+      "multi-agent"
+    ],
+    "summary": "Role-specialised multi-agent system that autonomously segments cardiac and brain-glioma MRI, runs statistical analyses, and classifies natural-language hypotheses as supported, refuted, underpowered, or invalid with auditable evidence trails.",
+    "featured": false
+  },
+  {
+    "title": "MedCTA: A Benchmark for Clinical Tool Agents",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "CXR",
+      "WSI"
+    ],
+    "task": [
+      "tool use",
+      "benchmark"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.11702",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "benchmark",
+      "tool-using"
+    ],
+    "summary": "Benchmark of 107 clinician-verified, step-implicit clinical tasks grounded in multimodal inputs (radiology images, pathology slides, reports) that scores medical tool agents on tool selection, argument validity, execution stability, and trajectory adherence across five deployed tools.",
+    "featured": false
+  },
+  {
+    "title": "A Vision-Language Framework for Comparative Reasoning in Radiology",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "CT",
+      "MRI",
+      "CXR",
+      "multi-modality"
+    ],
+    "task": [
+      "comparative reasoning",
+      "reference retrieval",
+      "temporal comparison"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.06407",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "RAG",
+      "comparative reasoning"
+    ],
+    "summary": "Entity-aware cross-image reasoning framework for reference-case retrieval and longitudinal comparison in radiology; introduces MedReCo-DB with 690K images from 160K patients across eight institutions and seven modalities.",
+    "featured": false
+  },
+  {
+    "title": "A Machine-to-Machine Knowledge-Guided LLM Agent for Generalizable Radiotherapy Treatment Planning",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "CT"
+    ],
+    "task": [
+      "radiotherapy planning",
+      "treatment planning"
+    ],
+    "agent_type": [
+      "tool-using",
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.00922",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "reinforcement-learning",
+      "radiotherapy"
+    ],
+    "summary": "Transfers DRL-derived treatment planning parameter knowledge to an LLM agent via in-context learning for autonomous, iterative radiotherapy planning without human intervention across prostate, liver, and complex anatomy cases.",
+    "featured": false
+  },
+  {
+    "title": "MedVR: Annotation-Free Medical Visual Reasoning via Agentic Reinforcement Learning",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": null,
+    "task": [
+      "visual question answering",
+      "visual reasoning"
+    ],
+    "agent_type": [
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2604.08203",
+    "code_url": "https://github.com/alibaba-damo-academy/MedVR",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "ICLR 2026",
+    "tags": [
+      "reinforcement-learning"
+    ],
+    "summary": "RL-trained agent that uses entropy-guided visual regrounding and consensus-based credit assignment to improve medical VLM visual grounding without human annotation.",
+    "featured": false
+  },
+  {
+    "title": "Towards Responsible Multimodal Medical Reasoning via Context-Aligned Vision-Language Models",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": [
+      "multi-modality"
+    ],
+    "task": [
+      "clinical reasoning",
+      "hallucination reduction"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2604.08815",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "hallucination",
+      "safety"
+    ],
+    "summary": "Context-aligned reasoning framework that enforces multi-modal evidence agreement before generating diagnostic conclusions, substantially reducing hallucinated keywords on radiology tasks.",
+    "featured": false
+  },
+  {
+    "title": "Experience Makes Skillful: Enabling Generalizable Medical Agent Reasoning via Self-Evolving Skill Memory",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "skill memory",
+      "clinical reasoning",
+      "self-evolution"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.09365",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "self-evolving",
+      "multi-agent"
+    ],
+    "summary": "Post-deployment self-evolution framework (SkeMex) that distills agent interaction trajectories into structured, reusable skills organized in a multi-branch memory without model retraining.",
+    "featured": false
+  },
+  {
+    "title": "OpenMedReason: Scientific Reasoning Supervision for Medical Vision-Language Models",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": [
+      "multi-modality"
+    ],
+    "task": [
+      "reasoning supervision",
+      "training data"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2606.12169",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "hallucination"
+    ],
+    "summary": "Open corpus of 450K medical image-QA instances with reasoning traces grounded in scientific literature, spanning radiology, microscopy, dermatology, and other modalities for training more reliable medical VLMs.",
+    "featured": false
+  },
+  {
+    "title": "SAGE: Agentic Framework for Interpretable and Clinically Translatable Computational Pathology Biomarker Discovery",
+    "year": 2026,
+    "domain": "Pathology",
+    "modality": [
+      "WSI",
+      "histopathology"
+    ],
+    "task": [
+      "biomarker discovery",
+      "multi-agent collaboration"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2602.00953",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "hallucination"
+    ],
+    "summary": "Multi-agent system that automates pathology biomarker discovery by grounding hypothesis generation in biological knowledge graphs, applying debate-based novelty assessment, and running automated validation pipelines on multimodal pathology datasets.",
+    "featured": false
+  },
+  {
+    "title": "Long-Short Term Agents for Pure-Vision Bronchoscopy Robotic Autonomy",
+    "year": 2026,
+    "domain": "Endoscopy",
+    "modality": [
+      "bronchoscopy"
+    ],
+    "task": [
+      "robotic navigation",
+      "autonomous navigation"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.07909",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "reinforcement-learning"
+    ],
+    "summary": "Hierarchical dual-agent framework for autonomous vision-only bronchoscopic navigation, combining a short-term reactive agent for continuous motion control with a long-term strategic agent for navigational decisions at ambiguous anatomical junctions.",
+    "featured": false
+  },
+  {
+    "title": "Colon-Bench: An Agentic Workflow for Scalable Dense Lesion Annotation in Full-Procedure Colonoscopy Videos",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "colonoscopy"
+    ],
+    "task": [
+      "lesion detection",
+      "annotation",
+      "benchmark"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.25645",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "human-in-the-loop"
+    ],
+    "summary": "Agentic annotation pipeline generates a large-scale colonoscopy benchmark with 528 videos, 14 lesion categories, 300K+ bounding boxes, and 213K segmentation masks for evaluating multimodal models on dense endoscopic lesion analysis.",
+    "featured": false
+  },
+  {
+    "title": "Camyla: Scaling Autonomous Research in Medical Image Segmentation",
+    "year": 2026,
+    "domain": "Segmentation",
+    "modality": [
+      "multi-modality"
+    ],
+    "task": [
+      "segmentation",
+      "autonomous research"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2604.10696",
+    "code_url": null,
+    "project_url": "https://yifangao112.github.io/camyla-page/",
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": null,
+    "summary": "Autonomous research pipeline that transforms raw segmentation datasets into literature-grounded proposals, executable experiments, and complete manuscripts without human intervention, demonstrated across 31 benchmark datasets.",
+    "featured": false
+  },
+  {
+    "title": "MEDVISTAGYM: A Scalable Training Environment for Thinking with Medical Images via Tool-Integrated Reinforcement Learning",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "multi-modality"
+    ],
+    "task": [
+      "training environment",
+      "tool use",
+      "visual reasoning"
+    ],
+    "agent_type": [
+      "tool-using",
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2601.07107",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "reinforcement-learning"
+    ],
+    "summary": "Interactive RL training environment that teaches VLMs to perform multi-step reasoning over medical images by deciding when and which tools to invoke, with rewards grounded in tool-use correctness across diverse imaging tasks.",
+    "featured": false
+  },
+  {
+    "title": "MedRLM: Recursive Multimodal Health Intelligence for Long-Context Clinical Reasoning, Sensor-Guided Screening, Evidence-Grounded Decision Support, and Community-to-Tertiary Referral Optimization",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "clinical reasoning",
+      "screening",
+      "decision support",
+      "referral optimization"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.20164",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "EHR",
+      "multimodal",
+      "longitudinal"
+    ],
+    "summary": "Recursive multimodal framework coordinates specialized agents over EHRs, medical imaging, and sensor streams for long-context clinical reasoning, sensor-guided screening, and community-to-tertiary referral optimization.",
+    "featured": false
+  },
+  {
+    "title": "XMedFusion: A Knowledge-Guided Multimodal Perception and Reasoning Framework for Autonomous Medical Systems",
+    "year": 2026,
+    "domain": "Report Generation",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "report generation",
+      "visual perception",
+      "knowledge graph reasoning"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.14766",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "chest X-ray",
+      "knowledge graph",
+      "multi-agent"
+    ],
+    "summary": "Decomposes chest X-ray report generation into coordinated visual-perception, knowledge-graph-construction, and synthesis agents for image-grounded radiology reporting.",
+    "featured": false
+  },
+  {
+    "title": "Baichuan-M4: A Clinical-Grade Medical Agent System for Continuous Care",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "continuous care",
+      "patient memory",
+      "evidence retrieval"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using",
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.08982",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "reinforcement-learning",
+      "patient memory"
+    ],
+    "summary": "Clinical-grade medical agent system built on a unified tool-use runtime and continuous-care reinforcement learning, combining patient memory, evidence retrieval, and multimodal perception across documents, X-rays, and dermatology images.",
+    "featured": false
+  },
+  {
+    "title": "Automated Report-Derived Oncology VQA Benchmark for Evaluating Vision-Language Models on 3D Medical Imaging",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "3D imaging"
+    ],
+    "task": [
+      "benchmark",
+      "VQA",
+      "agent-driven dataset generation"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.02809",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "benchmark",
+      "oncology"
+    ],
+    "summary": "Agent-driven pipeline automatically generates contamination-controlled multiple-choice VQA benchmarks from paired radiology reports and 3D oncology imaging across four in-house cancer cohorts.",
+    "featured": false
+  },
+  {
+    "title": "MedExpMem: Adapting Experience Memory for Differential Diagnosis",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": null,
+    "task": [
+      "differential diagnosis",
+      "experience memory"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2605.22872",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026",
+    "tags": null,
+    "summary": "Experience-memory framework that lets VLM-based diagnostic agents accumulate differential diagnosis expertise from prior failures and retrieve it for radiology cases across 11 subspecialties.",
+    "featured": false
+  },
+  {
+    "title": "An Interactive Trustworthy AI Pathology Copilot to Improve Biomarker-Driven Prognostic Stratification and Therapeutic Response Prediction",
+    "year": 2026,
+    "domain": "Pathology",
+    "modality": [
+      "WSI"
+    ],
+    "task": [
+      "biomarker profiling",
+      "outcome prediction",
+      "clinical reasoning"
+    ],
+    "agent_type": [
+      "tool-using",
+      "human-in-the-loop"
+    ],
+    "paper_url": "https://www.medrxiv.org/content/10.64898/2026.05.17.26352870v1",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MedRxiv",
+    "tags": [
+      "human-in-the-loop"
+    ],
+    "summary": "TEAM-Agent dynamically orchestrates WSI-based biomarker profiling, outcome prediction, uncertainty-aware clinical reasoning, and clinician-in-the-loop refinement for pathology prognosis and therapy-response support.",
+    "featured": false
+  },
+  {
+    "title": "NOVA: An Agentic Framework for Automated Histopathology Analysis and Discovery",
+    "year": 2025,
+    "domain": "Pathology",
+    "modality": [
+      "WSI"
+    ],
+    "task": [
+      "biomarker discovery",
+      "tool use",
+      "data analysis"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2511.11324",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "whole-slide image",
+      "SlideQuest",
+      "benchmark"
+    ],
+    "summary": "Agentic framework converts pathology research queries into executable Python analysis pipelines using 49 domain-specific tools, introducing SlideQuest, a 90-question pathologist-verified benchmark for multi-step coding-agent reasoning over whole-slide images.",
+    "featured": false
+  },
+  {
+    "title": "FedAgentBench: Towards Automating Real-world Federated Medical Image Analysis with Server-Client LLM Agents",
+    "year": 2025,
+    "domain": "Benchmark",
+    "modality": [
+      "dermoscopy",
+      "ultrasound",
+      "fundus",
+      "histopathology",
+      "MRI",
+      "X-ray"
+    ],
+    "task": [
+      "benchmark",
+      "federated learning orchestration",
+      "client selection"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2509.23803",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "privacy",
+      "multi-agent",
+      "federated learning"
+    ],
+    "summary": "Benchmark and framework where server-agent and per-hospital client-agents autonomously coordinate federated learning setup, data harmonization, and model training across 201 datasets spanning six medical imaging modalities.",
+    "featured": false
+  },
+  {
+    "title": "Grounded Multimodal Retrieval-Augmented Drafting of Radiology Impressions Using Case-Based Similarity Search",
+    "year": 2026,
+    "domain": "Report Generation",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "report generation",
+      "retrieval"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.17765",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "RAG",
+      "hallucination"
+    ],
+    "summary": "Retrieval-augmented pipeline combines contrastive image-text embeddings, case-based similarity search, and citation-constrained generation to draft grounded chest radiograph impressions, with confidence-based refusal when evidence is insufficient.",
+    "featured": false
+  },
+  {
+    "title": "When Models Learn to Ask Why: Adaptive Causal Reasoning for Trustworthy Medical Vision-Language Models",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": [
+      "CXR",
+      "CT",
+      "MRI",
+      "ultrasound",
+      "histopathology",
+      "endoscopy",
+      "dermoscopy",
+      "fundus"
+    ],
+    "task": [
+      "diagnosis",
+      "clinical reasoning",
+      "causal reasoning"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.23085",
+    "code_url": "https://github.com/zhcz328/MedCausalX",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "hallucination",
+      "reinforcement-learning"
+    ],
+    "summary": "MedCausalX uses a two-stage adaptive self-reflection architecture with dedicated causal-analysis and verification tokens, refined via error-attributed reinforcement learning, to reduce hallucination and improve causal diagnostic consistency in medical VLMs.",
+    "featured": false
+  },
+  {
+    "title": "SurgRAW: Multi-Agent Workflow with Chain of Thought Reasoning for Robotic Surgical Video Analysis",
+    "year": 2025,
+    "domain": "Endoscopy",
+    "modality": [
+      "surgical video"
+    ],
+    "task": [
+      "surgical scene understanding",
+      "clinical reasoning",
+      "multi-agent collaboration"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2503.10265",
+    "code_url": "https://github.com/jinlab-imvr/SurgRAW",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "chain-of-thought",
+      "RAG"
+    ],
+    "summary": "A hierarchical orchestrator directs specialized agents through parallel chain-of-thought reasoning streams with a panel-discussion mechanism and retrieval-augmented surgical knowledge to interpret robotic surgical video, introducing the SurgCoTBench reasoning benchmark.",
+    "featured": false
+  },
+  {
+    "title": "Act Like a Pathologist: Tissue-Aware Whole Slide Image Reasoning",
+    "year": 2026,
+    "domain": "Pathology",
+    "modality": [
+      "WSI"
+    ],
+    "task": [
+      "question answering",
+      "tissue retrieval",
+      "diagnosis"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.00667",
+    "code_url": "https://github.com/winston52/HistoSelect",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "CVPR 2026",
+    "tags": [
+      "whole-slide imaging"
+    ],
+    "summary": "HistoSelect mimics pathologist visual search with a question-guided, tissue-aware, coarse-to-fine retrieval framework that progressively narrows from broad tissue regions to diagnostic patches, cutting visual token usage 70% on gigapixel whole-slide image question answering.",
+    "featured": false
+  },
+  {
+    "title": "MEDSYN: Benchmarking Multi-EviDence SYNthesis in Complex Clinical Cases for Multimodal Large Language Models",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "evaluation",
+      "benchmark",
+      "diagnostic reasoning"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2602.21950",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": null,
+    "summary": "A multilingual benchmark of complex clinical cases with up to seven visual evidence types per case shows 18 MLLMs match clinicians on generating differential diagnoses but lag badly at synthesizing diverse multimodal evidence into a final diagnosis.",
+    "featured": false
+  },
+  {
+    "title": "MedRoute: RL-Based Dynamic Specialist Routing in Multi-Agent Medical Diagnosis",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "diagnosis",
+      "triage",
+      "routing"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2604.06180",
+    "code_url": "https://github.com/UCF-CRCV/MedRoute/",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "reinforcement-learning"
+    ],
+    "summary": "A reinforcement-learning-trained General Practitioner agent dynamically routes each case to specialist large multimodal model agents, with a Moderator synthesizing their outputs into a final diagnosis across text- and image-based medical datasets.",
+    "featured": false
+  },
+  {
+    "title": "To Agree or To Be Right? The Grounding-Sycophancy Tradeoff in Medical Vision-Language Models",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "safety",
+      "hallucination detection",
+      "evaluation"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2603.22623",
+    "code_url": "https://github.com/UTSA-VIRLab/AgreeOrRight",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "hallucination",
+      "safety"
+    ],
+    "summary": "Introduces three new metrics to evaluate the tradeoff between hallucination resistance and sycophancy under social pressure across six medical VLMs, finding none exceed a 0.35 composite safety index.",
+    "featured": false
+  },
+  {
+    "title": "Hallucination in Medical Imaging AI: A Cross-Modality Analytical Framework for Taxonomy, Detection, and Mitigation under Regulatory Constraints",
+    "year": 2026,
+    "domain": "Survey",
+    "modality": [
+      "CT",
+      "MRI",
+      "PET",
+      "ultrasound",
+      "histopathology"
+    ],
+    "task": [
+      "safety",
+      "hallucination detection"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2606.13211",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "hallucination",
+      "safety"
+    ],
+    "summary": "Cross-modality survey building a hallucination taxonomy for medical imaging AI across CT, MRI, PET/SPECT, ultrasound, and digital pathology, mapping detection and mitigation strategies to FDA regulatory constraints.",
+    "featured": false
+  },
+  {
+    "title": "Evo-RAD: Navigating Rare Retinal Disease Diagnosis via Self-Evolving Agentic Retrieval",
+    "year": 2026,
+    "domain": "Ophthalmology",
+    "modality": [
+      "fundus",
+      "OCT"
+    ],
+    "task": [
+      "diagnosis",
+      "retrieval"
+    ],
+    "agent_type": [
+      "tool-using",
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.22955",
+    "code_url": "https://github.com/SDH-Lab/Evo-RAD",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026",
+    "tags": [
+      "self-evolving",
+      "RAG",
+      "rare disease"
+    ],
+    "summary": "Self-evolving agentic retrieval framework that reformulates evidence acquisition for rare retinal disease diagnosis as an MDP, dynamically inserting, deleting, and terminating reference-case retrieval to overcome the hubness problem of static retrieval.",
+    "featured": false
+  },
+  {
+    "title": "Can Agents Distinguish Visually Hard-to-Separate Diseases in a Zero-Shot Setting? A Pilot Study",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": [
+      "dermoscopy",
+      "CXR"
+    ],
+    "task": [
+      "diagnosis",
+      "clinical reasoning"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2602.22959",
+    "code_url": "https://github.com/TruhnLab/Contrastive-Agent-Reasoning",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026",
+    "tags": [
+      "multi-agent",
+      "zero-shot"
+    ],
+    "summary": "Multi-agent contrastive-adjudication framework probes zero-shot agent performance on visually confounded disease pairs (melanoma vs. atypical nevus; pulmonary edema vs. pneumonia), improving accuracy but finding it still short of clinical deployment.",
+    "featured": false
+  },
+  {
+    "title": "ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": null,
+    "task": [
+      "safety",
+      "hallucination detection"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2606.14697",
+    "code_url": "https://github.com/alibaba-damo-academy/ClinHallu",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": "https://github.com/alibaba-damo-academy/ClinHallu",
+    "venue": "arXiv",
+    "tags": [
+      "hallucination"
+    ],
+    "summary": "Benchmark of 7,031 instances that decomposes medical MLLM reasoning into visual recognition, knowledge recall, and reasoning integration stages to localize where hallucinations originate, using staged interventions and trace-supervised fine-tuning.",
+    "featured": false
+  },
+  {
+    "title": "CogRad: A Cognitively-Inspired Multi-Agent Framework for Radiology Report Generation",
+    "year": 2026,
+    "domain": "Report Generation",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "report generation"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2607.03853",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "chest X-ray",
+      "multi-agent",
+      "hallucination"
+    ],
+    "summary": "Coordinates Scout, Investigator, Writer, and Verifier agents that locate suspicious regions, focus analysis, draft findings, and validate each claim against the chest X-ray before finalizing the report.",
+    "featured": false
+  },
+  {
+    "title": "TopoAgent: An Agentic Framework for Automated Topology Learning in Medical Imaging",
+    "year": 2026,
+    "domain": "Segmentation",
+    "modality": null,
+    "task": [
+      "image analysis",
+      "tool use"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.29763",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "topological data analysis",
+      "persistent homology"
+    ],
+    "summary": "LLM-driven agent that automatically selects and applies topological descriptors (persistent homology) for a given medical imaging dataset without task-specific training.",
+    "featured": false
+  },
+  {
+    "title": "CPAgents: Agentic Composite Phenotype Generation for Cardiac Disease Association",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "cardiac imaging"
+    ],
+    "task": [
+      "phenotyping",
+      "disease association"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.28179",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026",
+    "tags": [
+      "cardiac",
+      "phenotyping",
+      "multi-agent"
+    ],
+    "summary": "Agentic framework that automatically constructs and validates interpretable composite phenotypes from cardiac imaging features to surface disease associations beyond single-variable phenome-wide studies.",
+    "featured": false
+  },
+  {
+    "title": "HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": null,
+    "task": [
+      "evaluation",
+      "tool use"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.31179",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "benchmark",
+      "healthcare agents"
+    ],
+    "summary": "Suite of 54 agentic healthcare tasks across 7 categories spanning the patient journey and multiple modalities, with medical imaging tasks emerging as the hardest for current frontier agents.",
+    "featured": false
+  },
+  {
+    "title": "Evaluating Agentic Harness Systems for Autonomous Computational Pathology",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "WSI"
+    ],
+    "task": [
+      "evaluation",
+      "workflow automation"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2607.02598",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "pathology",
+      "benchmark",
+      "whole-slide imaging"
+    ],
+    "summary": "Introduces ACP-Bench to evaluate how well general agentic harness systems convert high-level pathology goals into executable, traceable, and clinically bounded whole-slide analysis workflows.",
+    "featured": false
+  },
+  {
+    "title": "Cerebra: A Multidisciplinary AI Board for Multimodal Dementia Characterization and Risk Assessment",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "diagnosis",
+      "risk prediction"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.21597",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "dementia"
+    ],
+    "summary": "Multi-agent \"AI board\" coordinates specialist agents over EHR, clinical notes, and medical imaging to characterize dementia and assess risk, reaching 0.80 AUROC for risk prediction and 0.86 for diagnosis classification.",
+    "featured": false
+  },
+  {
+    "title": "MedVeriSeg: Teaching LISA-Like Medical Segmentation Models to Verify Query Validity Without Extra Training",
+    "year": 2026,
+    "domain": "Segmentation",
+    "modality": null,
+    "task": [
+      "segmentation",
+      "query verification"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2604.10242",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "hallucination",
+      "segmentation verification"
+    ],
+    "summary": "Training-free verification agent adds a similarity-based response quality score and a routed multi-agent module so LISA-like medical segmentation models can reject invalid or hallucinated queries without retraining.",
+    "featured": false
+  },
+  {
+    "title": "SurgCoT: Advancing Spatiotemporal Reasoning in Surgical Videos through a Chain-of-Thought Benchmark",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "surgical video"
+    ],
+    "task": [
+      "benchmark",
+      "evaluation"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2604.20319",
+    "code_url": "https://github.com/CVI-SZU/SurgCoT",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "CVPR 2026",
+    "tags": [
+      "benchmark",
+      "surgical video",
+      "chain-of-thought"
+    ],
+    "summary": "Chain-of-thought benchmark evaluating spatiotemporal reasoning in surgical videos across five dimensions — causal action ordering, cue-action alignment, affordance mapping, micro-transition localization, and anomaly onset tracking.",
+    "featured": false
+  },
+  {
+    "title": "Towards Autonomous Medical Artificial Intelligence Agents",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "diagnosis",
+      "treatment planning"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://www.nature.com/articles/s41586-026-10675-5",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Nature",
+    "tags": [
+      "EHR agent",
+      "clinical decision support"
+    ],
+    "summary": "MIRA, an autonomous agent operating within a sandboxed EHR environment, obtains patient histories, orders and interprets labs, imaging, and microbiology tests, generates differential diagnoses, and formulates treatment plans — outperforming physicians in diagnostic accuracy across real patient case simulations.",
     "featured": false
   }
 ]

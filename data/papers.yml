@@ -7437,3 +7437,92 @@ papers:
       - whole-slide imaging
     summary: "Introduces ACP-Bench to evaluate how well general agentic harness systems convert high-level pathology goals into executable, traceable, and clinically bounded whole-slide analysis workflows."
     featured: false
+
+  # ── New additions 2026-07-12 ──────────────────────────────────────────────
+
+  - title: "Cerebra: A Multidisciplinary AI Board for Multimodal Dementia Characterization and Risk Assessment"
+    year: 2026
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - diagnosis
+      - risk prediction
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2603.21597"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+      - dementia
+    summary: "Multi-agent \"AI board\" coordinates specialist agents over EHR, clinical notes, and medical imaging to characterize dementia and assess risk, reaching 0.80 AUROC for risk prediction and 0.86 for diagnosis classification."
+    featured: false
+
+  - title: "MedVeriSeg: Teaching LISA-Like Medical Segmentation Models to Verify Query Validity Without Extra Training"
+    year: 2026
+    domain: "Segmentation"
+    modality: null
+    task:
+      - segmentation
+      - query verification
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2604.10242"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - hallucination
+      - segmentation verification
+    summary: "Training-free verification agent adds a similarity-based response quality score and a routed multi-agent module so LISA-like medical segmentation models can reject invalid or hallucinated queries without retraining."
+    featured: false
+
+  - title: "SurgCoT: Advancing Spatiotemporal Reasoning in Surgical Videos through a Chain-of-Thought Benchmark"
+    year: 2026
+    domain: "Benchmark"
+    modality:
+      - surgical video
+    task:
+      - benchmark
+      - evaluation
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2604.20319"
+    code_url: "https://github.com/CVI-SZU/SurgCoT"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "CVPR 2026"
+    tags:
+      - benchmark
+      - surgical video
+      - chain-of-thought
+    summary: "Chain-of-thought benchmark evaluating spatiotemporal reasoning in surgical videos across five dimensions — causal action ordering, cue-action alignment, affordance mapping, micro-transition localization, and anomaly onset tracking."
+    featured: false
+
+  # ── New additions 2026-07-16 ──────────────────────────────────────────────
+
+  - title: "Towards Autonomous Medical Artificial Intelligence Agents"
+    year: 2026
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - diagnosis
+      - treatment planning
+    agent_type:
+      - tool-using
+    paper_url: "https://www.nature.com/articles/s41586-026-10675-5"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Nature"
+    tags:
+      - EHR agent
+      - clinical decision support
+    summary: "MIRA, an autonomous agent operating within a sandboxed EHR environment, obtains patient histories, orders and interprets labs, imaging, and microbiology tests, generates differential diagnoses, and formulates treatment plans — outperforming physicians in diagnostic accuracy across real patient case simulations."
+    featured: false
