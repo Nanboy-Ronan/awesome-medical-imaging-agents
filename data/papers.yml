@@ -7526,3 +7526,108 @@ papers:
       - clinical decision support
     summary: "MIRA, an autonomous agent operating within a sandboxed EHR environment, obtains patient histories, orders and interprets labs, imaging, and microbiology tests, generates differential diagnoses, and formulates treatment plans — outperforming physicians in diagnostic accuracy across real patient case simulations."
     featured: false
+
+  # ── New additions 2026-07-22 ──────────────────────────────────────────────
+
+  - title: "One-for-All Adaptive Radiotherapy Planning Agent: A Foundation Framework for Daily CBCT-guided Radiotherapy"
+    year: 2026
+    domain: "Radiology"
+    modality:
+      - CBCT
+    task:
+      - radiotherapy planning
+      - segmentation
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2607.14870"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - radiotherapy
+      - human-in-the-loop
+      - CBCT
+    summary: "Foundation-model agent that autonomously performs complete online adaptive radiotherapy planning directly from daily cone-beam CT in under two minutes, chaining synthetic CT generation, multimodal alignment, and tumor/organ segmentation into a human-in-the-loop workflow across head-and-neck, lung, abdominal, and prostate cancers."
+    featured: false
+
+  - title: "Towards Autonomous and Auditable Medical Imaging Model Development"
+    year: 2026
+    domain: "Workflow Simulation"
+    modality: null
+    task:
+      - workflow automation
+      - tool use
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2607.10522"
+    code_url: "https://github.com/CUHK-AIM-Group/AMID"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - AutoML
+    summary: "AMID automates machine learning engineering for medical imaging via LLM agents that perform data-conditioned method planning and verification-guided two-stage optimization, matching or exceeding human-expert solutions across 20 medical imaging challenge tasks."
+    featured: false
+
+  - title: "MAM: Modular Multi-Agent Framework for Multi-Modal Medical Diagnosis via Role-Specialized Collaboration"
+    year: 2025
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - diagnosis
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2506.19835"
+    code_url: "https://github.com/yczhou001/MAM"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Findings of ACL 2025"
+    tags:
+      - multi-agent
+    summary: "Decomposes multimodal medical diagnosis into five role-specialized LLM agents — General Practitioner, Specialist Team, Radiologist, Medical Assistant, and Director — improving 18-365% over baselines across text, image, audio, and video medical datasets with efficient knowledge updates."
+    featured: false
+
+  - title: "RADAR: A Multimodal Benchmark for 3D Image-Based Radiology Report Review"
+    year: 2026
+    domain: "Benchmark"
+    modality:
+      - CT
+    task:
+      - benchmark
+      - report review
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2603.06681"
+    code_url: "https://github.com/GeraldSun/RADAR"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - benchmark
+      - report review
+    summary: "Benchmark pairing 3D abdominal CT studies with preliminary radiology reports and candidate edits, requiring models to assess image-level agreement, clinical severity, and edit type for structured discrepancy review between trainee and attending radiologists."
+    featured: false
+
+  - title: "The Path to Self-Evolving Clinical Systems: Scaling Medical Agents from Assistance to Autonomy"
+    year: 2026
+    domain: "Survey"
+    modality: null
+    task:
+      - survey
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2607.11175"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - self-evolving
+      - survey
+    summary: "Survey establishing a three-level autonomy taxonomy (assisted, cooperative, autonomous) and a capability-framework-environment scaling roadmap for medical agents, consolidating 300+ references with emphasis on radiology, pathology, ophthalmology, and hospital-workflow applications."
+    featured: false
