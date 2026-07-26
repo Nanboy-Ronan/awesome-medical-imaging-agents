@@ -8952,5 +8952,228 @@
     ],
     "summary": "Survey establishing a three-level autonomy taxonomy (assisted, cooperative, autonomous) and a capability-framework-environment scaling roadmap for medical agents, consolidating 300+ references with emphasis on radiology, pathology, ophthalmology, and hospital-workflow applications.",
     "featured": false
+  },
+  {
+    "title": "Policy-Driven CT-Agent: Modeling Phase-Aware Diagnostic Control for Clinically Consistent CT Reasoning",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "CT"
+    ],
+    "task": [
+      "diagnosis",
+      "tool use"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2607.10748",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": null,
+    "summary": "Policy-driven agent (PD-CTAgent) harmonizes heterogeneous CT phases into a unified evidence representation via a Clinical Structure Abstraction Module, then evaluates phase sufficiency and iteratively requests additional contrast phases when needed, letting it flexibly follow institutional, regional, or guideline-specific diagnostic protocols.",
+    "featured": false
+  },
+  {
+    "title": "Understanding From Human Perspective: A Multi-agent System for Interactive Egocentric Medical Image Segmentation",
+    "year": 2026,
+    "domain": "Segmentation",
+    "modality": null,
+    "task": [
+      "segmentation",
+      "interactive segmentation"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2607.17341",
+    "code_url": "https://github.com/wdyyyyyy/EgoMed-Agent",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "human-in-the-loop"
+    ],
+    "summary": "EgoMed-Agent confirms the clinician-intended target through a reliability-scored grounding workflow, asking the user to clarify when grounding is unreliable, and keeps segmentation locked onto that target across egocentric smart-glasses video via localization-guided mask propagation, reaching 71.34% average Dice versus 11.70% for the best text-prompted baseline.",
+    "featured": false
+  },
+  {
+    "title": "MonteRET: AI Agent Enhancing Multimodal LLMs with Multi-granularity Knowledge Retrieval for Chest CT Report Generation",
+    "year": 2026,
+    "domain": "Report Generation",
+    "modality": [
+      "CT"
+    ],
+    "task": [
+      "report generation",
+      "retrieval"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2607.14264",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "RAG"
+    ],
+    "summary": "Region-aware retrieval-enhanced framework that integrates global and region-level chest CT representations, retrieves clinically relevant knowledge using predicted conditions and region-level vision-language alignment, and refines initial reports through a knowledge-guided report-rewriting agent, improving recall and radiologist-rated quality over prior methods.",
+    "featured": false
+  },
+  {
+    "title": "AtomiMed: Hierarchical Atomic Fact-Checking for Universal Clinical-Aware Medical Report Evaluation",
+    "year": 2026,
+    "domain": "Report Generation",
+    "modality": [
+      "CXR",
+      "CT",
+      "MRI",
+      "ultrasound"
+    ],
+    "task": [
+      "report generation"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.31292",
+    "code_url": "https://github.com/Venn2336/MRGEvalkit",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": "https://github.com/Venn2336/MRGEvalkit",
+    "venue": "arXiv",
+    "tags": [
+      "hallucination",
+      "multi-agent",
+      "benchmark"
+    ],
+    "summary": "Decomposes medical reports into a hierarchy of Atomic Clinical Facts spanning disease-level entities and attribute-level descriptors, and runs an agentic cross-verification loop that simulates multi-radiologist peer review to score diagnostic and descriptive accuracy, released with the OmniMRG-Bench benchmark and MRGEvalKit toolkit spanning X-ray, CT, MRI, and ultrasound.",
+    "featured": false
+  },
+  {
+    "title": "Bayesian uncertainty estimation improves clinical decision making in medical AI agents",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "safety",
+      "uncertainty estimation"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2607.20582",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "safety"
+    ],
+    "summary": "Monte Carlo dropout applied to a multi-task chest-radiograph classifier provides an epistemic uncertainty signal that raises error-detection AUROC from 0.74 to 0.77; a clinical-decision-support agent exploits this signal to cut confident misdiagnoses from 8.5% to 2.7%, but only when it is delivered as a binary error-risk flag rather than raw scores.",
+    "featured": false
+  },
+  {
+    "title": "Detecting Clinical Hallucinations in LVLMs via Counterfactual Visual Grounding Uncertainty",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": null,
+    "task": [
+      "safety",
+      "hallucination detection"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2606.28520",
+    "code_url": "https://github.com/Agentic-CliniAI/CounterVHD",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "hallucination"
+    ],
+    "summary": "Vision-traceable hallucination detection framework that extracts visually verifiable entities from an LVLM's clinical response, localizes them with a medical-domain-adapted grounding verifier, and contrasts factual versus counterfactual grounding confidence to flag unsupported findings without requiring internal model access, tested across multiple medical imaging modalities and LVLM backbones.",
+    "featured": false
+  },
+  {
+    "title": "MedBench v5: A Dynamic, Process-Oriented, and Hallucination-Aware Benchmark for Clinical Multimodal Models",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": null,
+    "task": [
+      "evaluation"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2606.24155",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "safety",
+      "hallucination"
+    ],
+    "summary": "Redesigned benchmark moving from static QA to dynamic, process-oriented evaluation of clinical multimodal models, combining Clinical Cognitive Responsiveness dimensions with four Medical Atomic Skill agent environments, switchable information-flow stressors, and hallucination-propagation monitoring across initiation, propagation, anchoring, and contradiction stages.",
+    "featured": false
+  },
+  {
+    "title": "Cura 1T: Specialized Model for Agentic Healthcare",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "diagnosis",
+      "tool use"
+    ],
+    "agent_type": [
+      "self-evolving",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2607.15314",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "self-evolving"
+    ],
+    "summary": "Healthcare-specialized LLM trained through a human-gated self-evolution loop in which a training agent plans a target capability, trains the model, evaluates benchmark trajectories, and refines the data mixture from observed failures — spanning patient consultation, clinical reasoning over text and images, interactive diagnosis, and EHR tool use.",
+    "featured": false
+  },
+  {
+    "title": "SAGEAgent: A Self-Evolving Agent for Cost-Aware Modality Acquisition in Multimodal Survival Prediction",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "survival prediction",
+      "modality acquisition"
+    ],
+    "agent_type": [
+      "self-evolving",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2607.09521",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "self-evolving"
+    ],
+    "summary": "Self-evolving LLM-based clinical agent that sequentially decides whether acquiring the next diagnostic modality along an ordered, escalating-burden clinical workflow is justified for a given patient, using episodic memory of similar past cases and semantic memory of reusable decision patterns to balance survival-prediction accuracy against acquisition burden, cutting acquisition burden by 55% on a glioma cohort combining TCGA-LGG, TCGA-GBM, and BraTS.",
+    "featured": false
   }
 ]
