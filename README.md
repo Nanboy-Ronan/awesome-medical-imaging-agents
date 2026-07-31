@@ -47,8 +47,8 @@ Twelve landmark systems, one per major domain, for readers who want the fastest 
 - [3D CT / MRI / Volumetric Imaging Agents (14)](#3d-ct--mri--volumetric-imaging-agents-14)
 - [Segmentation and Annotation Agents (12)](#segmentation-and-annotation-agents-12)
 - [Report Generation Agents (14)](#report-generation-agents-14)
-- [Medical Vision-Language Model (VLM) Agents (22)](#medical-vision-language-model-vlm-agents-22)
-  - [Backbone Foundation Models (not agents) (11)](#backbone-foundation-models-not-agents-11)
+- [Medical Vision-Language Model (VLM) Agents (23)](#medical-vision-language-model-vlm-agents-23)
+  - [Backbone Foundation Models (not agents) (12)](#backbone-foundation-models-not-agents-12)
 - [Tool-Using and Multi-Agent Frameworks](#tool-using-and-multi-agent-frameworks)
   - [Clinical Reasoning Agents (63)](#clinical-reasoning-agents-63)
   - [Workflow and Simulation Agents (39)](#workflow-and-simulation-agents-39)
@@ -60,7 +60,7 @@ Twelve landmark systems, one per major domain, for readers who want the fastest 
 - [Themes Index](#themes-index)
 - [Datasets](#datasets)
 - [Toolboxes](#toolboxes)
-- [Surveys and Position Papers (15)](#surveys-and-position-papers-15)
+- [Surveys and Position Papers (16)](#surveys-and-position-papers-16)
 - [Related Awesome Lists](#related-awesome-lists)
 - [Footnotes](#footnotes)
 - [Contributing](#contributing)
@@ -243,10 +243,11 @@ Agents focused on automated imaging report drafting, refinement, evaluation, and
 - [Medical AI Consensus: A Multi-Agent Framework for Radiology Report Generation and Evaluation](http://arxiv.org/abs/2509.17353) - Published in arXiv (2025). Ensembles expert agents to reach consensus on imaging impressions.
 - [Hybrid Retrieval-Generation Reinforced Agent for Medical Image Report Generation](http://arxiv.org/abs/1805.08298) - Published in arXiv (2018). Early agent that jointly retrieves priors and drafts radiology reports.
 
-## Medical Vision-Language Model (VLM) Agents (22)
+## Medical Vision-Language Model (VLM) Agents (23)
 
 Vision-language agents that combine imaging encoders, language models, tools, and clinical reasoning. Includes broad multimodal agents that reason jointly over multiple imaging modalities and clinical text.
 
+- [Inference-Time Agentic Decision Rules Beat Longer Evolving Search for Multi-Image Medical Reasoning](https://arxiv.org/abs/2607.27564) — CVPR 2026 Workshop (2026). Controlled study of five inference-time agentic decision strategies for multi-image medical VQA on MedFrameQA, finding a simple order-vote evidence-aggregation policy significantly outperforms a fixed baseline and a more complex order-rerank variant, and that a larger evolutionary search budget for the decision rule does not improve held-out generalization.
 - [ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages](https://arxiv.org/abs/2606.13572) - Published in arXiv (2026). Actor-critic multi-agent framework with tool grounding and dual-memory mechanisms for step-wise medical reasoning over six imaging modalities and text spanning English and seven Indian languages.
 - [MedVR: Annotation-Free Medical Visual Reasoning via Agentic Reinforcement Learning](https://arxiv.org/abs/2604.08203) - Published in ICLR 2026 (2026). RL-trained agent that uses entropy-guided visual regrounding and consensus-based credit assignment to improve medical VLM visual grounding without human annotation. [Code](https://github.com/alibaba-damo-academy/MedVR)
 - [Towards Responsible Multimodal Medical Reasoning via Context-Aligned Vision-Language Models](https://arxiv.org/abs/2604.08815) - Published in arXiv (2026). Context-aligned reasoning framework that enforces multi-modal evidence agreement before generating diagnostic conclusions, substantially reducing hallucinated keywords on radiology tasks.
@@ -270,7 +271,7 @@ Vision-language agents that combine imaging encoders, language models, tools, an
 - [MMedAgent: Learning to Use Medical Tools with Multi-modal Agent](https://arxiv.org/pdf/2407.02483) - Published in arXiv (2024). First paper to train a medical agent that selects and calls specialist tools (segmentation, retrieval, calculators) on demand across seven imaging modalities.
 - [Inquire, Interact, and Integrate: A Proactive Agent Collaborative Framework for Zero-Shot Multimodal Medical Reasoning](http://arxiv.org/abs/2405.11640) - Published in arXiv (2024). Planner-agent loop that interleaves questioning, evidence integration, and summarization.
 
-### Backbone Foundation Models (not agents) (11)
+### Backbone Foundation Models (not agents) (12)
 
 Pretrained medical LLMs/MLLMs frequently wrapped by the agent systems above; included for reference, not as agents themselves.
 
@@ -278,6 +279,7 @@ Pretrained medical LLMs/MLLMs frequently wrapped by the agent systems above; inc
 - [BioMedGPT: Open Multimodal Generative Pre-trained Transformer for BioMedicine](https://arxiv.org/abs/2308.09442) - Published in arXiv (2023). — Model (MLLM). Vision-language foundation model for biomedical image/text understanding; typically wrapped by agent controllers.
 - [ChatCAD+: Towards a Universal and Reliable Interactive CAD using LLMs](https://arxiv.org/abs/2305.15964) - Published in arXiv (2023). — Model (MLLM). Interactive CAD/VQA backbone for medical imaging workflows, not an agent by itself.
 - [ChatDoctor: A Medical Chat Model Fine-Tuned on a Large Language Model Meta-AI (LLaMA) Using Medical Domain Knowledge](https://arxiv.org/abs/2303.14070) - Published in arXiv (2023). — Model (LLM). Clinical dialogue-tuned base model commonly embedded inside agent toolchains.
+- [ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding](https://arxiv.org/abs/2607.24743) - Published in arXiv (2026). — Model (MLLM). Vision-centric multimodal LLM with a cascaded 2D/3D medical image encoder and a region-of-interest-grounded evaluation framework (MedIF-Bench); state-of-the-art open medical MLLM that downstream systems can augment with agentic tool use.
 - [DoctorGLM: Fine-tuning your Chinese Doctor is not a Herculean Task](https://arxiv.org/abs/2304.01097) - Published in arXiv (2023). — Model (LLM). Chinese clinical assistant model leveraged as the core reasoning engine in many agent systems.
 - [HuatuoGPT: Towards Taming Language Model to Be a Doctor](https://arxiv.org/abs/2305.15075) - Published in arXiv (2023). — Model (LLM). Chinese clinical dialogue and diagnosis base model used in downstream agent systems.
 - [LLaVA-Med: Training a Large Language-and-Vision Assistant for Biomedicine in One Day](https://arxiv.org/abs/2306.00890) - Published in arXiv (2023). — Model (MLLM). Rapidly trained LVLM used as a base for multimodal agents.
@@ -860,11 +862,12 @@ Open-source code for systems listed above.
 - [EvoClinician](https://github.com/yf-he/EvoClinician) — Self-evolving diagnostic agent with a Diagnose-Grade-Evolve loop and the Med-Inquire benchmark.
 - [MedVR](https://github.com/alibaba-damo-academy/MedVR) — Annotation-free medical visual reasoning via agentic reinforcement learning.
 
-## Surveys and Position Papers (15)
+## Surveys and Position Papers (16)
 
 Surveys and position papers on medical AI agents, evaluation, safety, and deployment.
 
 - [Agentic AI in Healthcare & Medicine: A Seven-Dimensional Taxonomy for Empirical Evaluation of LLM-based Agents](https://arxiv.org/abs/2602.04813) - Published in IEEE Access (2026). Taxonomy and rubric for evaluating healthcare LLM agents across seven capability dimensions.
+- [Agentic AI in medicine: architectures, applications, evaluation, and challenges for clinical translation](https://arxiv.org/abs/2607.25489) — arXiv (2026). Scoping review with systematic evidence mapping across 557 included studies of agentic AI in medicine, covering single agents with external tools, retrieval-augmented workflows, multimodal agents, and multi-agent systems applied to medical QA, image interpretation, EHR analysis, drug safety, and clinical trial prediction, and identifying gaps in process reliability, evidence traceability, and prospective clinical validation.
 - [Beyond Medical Chatbots: Meddollina and the Rise of Continuous Clinical Intelligence](https://arxiv.org/abs/2601.22645) - Published in arXiv (2026). Argues for governance-first clinical intelligence with bounded inference and principled deferral.
 - [From Agents to Governance: Essential AI Skills for Clinicians in the Large Language Model Era](https://www.jmir.org/2026/1/e86550) - Published in JMIR (2026). Defines a tiered competency framework for clinicians supervising agentic workflows.
 - [Rethinking Health Agents: From Siloed AI to Collaborative Decision Mediators](https://arxiv.org/abs/2603.24986) - Published in arXiv (2026). Perspective on shifting health agents from isolated assistants toward collaborative mediators embedded in real clinical decision processes.
@@ -891,7 +894,7 @@ Surveys and position papers on medical AI agents, evaluation, safety, and deploy
 
 - Structured metadata for this list is maintained in [data/papers.yml](data/papers.yml).
 - A machine-readable table view is available in [docs/papers.json](docs/papers.json).
-- Last updated: 2026-07-25.
+- Last updated: 2026-07-31.
 
 ## Contributing
 

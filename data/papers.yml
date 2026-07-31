@@ -7818,3 +7818,58 @@ papers:
       - self-evolving
     summary: "Self-evolving LLM-based clinical agent that sequentially decides whether acquiring the next diagnostic modality along an ordered, escalating-burden clinical workflow is justified for a given patient, using episodic memory of similar past cases and semantic memory of reusable decision patterns to balance survival-prediction accuracy against acquisition burden, cutting acquisition burden by 55% on a glioma cohort combining TCGA-LGG, TCGA-GBM, and BraTS."
     featured: false
+
+  - title: "Inference-Time Agentic Decision Rules Beat Longer Evolving Search for Multi-Image Medical Reasoning"
+    year: 2026
+    domain: "Medical VLM"
+    modality: null
+    task:
+      - visual question answering
+      - multi-image reasoning
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2607.27564"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "CVPR 2026 Workshop"
+    tags: null
+    summary: "Controlled study of five inference-time agentic decision strategies for multi-image medical VQA on MedFrameQA, finding that a simple order-vote evidence-aggregation policy significantly outperforms a fixed baseline and a more complex order-rerank variant, and that expanding evolutionary search budget for the decision rule does not improve held-out generalization."
+    featured: false
+
+  - title: "Agentic AI in medicine: architectures, applications, evaluation, and challenges for clinical translation"
+    year: 2026
+    domain: "Survey"
+    modality: null
+    task:
+      - evaluation
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2607.25489"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags: null
+    summary: "Scoping review with systematic evidence mapping across five electronic sources and 557 included studies of agentic AI in medicine, covering single agents with external tools, retrieval-augmented workflows, multimodal agents, and multi-agent systems applied to medical question answering, image interpretation, EHR analysis, drug safety, and clinical trial prediction, and identifying gaps in process reliability, evidence traceability, and prospective clinical validation."
+    featured: false
+
+  - title: "ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding"
+    year: 2026
+    domain: "Medical VLM"
+    modality: null
+    task:
+      - medical QA
+      - report generation
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2607.24743"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (MLLM). Vision-centric multimodal LLM with a cascaded 2D/3D medical image encoder and a vision-grounded, region-of-interest-aligned evaluation framework (MedIF-Bench); state-of-the-art open medical MLLM that downstream systems can augment with agentic tool use for retrieval-augmented and tool-assisted clinical workflows."
+    featured: false
