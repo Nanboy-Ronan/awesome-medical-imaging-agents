@@ -7873,3 +7873,215 @@ papers:
       - foundation model
     summary: "— Model (MLLM). Vision-centric multimodal LLM with a cascaded 2D/3D medical image encoder and a vision-grounded, region-of-interest-aligned evaluation framework (MedIF-Bench); state-of-the-art open medical MLLM that downstream systems can augment with agentic tool use for retrieval-augmented and tool-assisted clinical workflows."
     featured: false
+
+  # ── New additions 2026-08-04 ──────────────────────────────────────────────
+
+  - title: "CT-PrepAgent: Bounded Policy and Controlled Execution for Adaptive CT Data Preparation"
+    year: 2026
+    domain: "Radiology"
+    modality:
+      - CT
+    task:
+      - data preparation
+      - tool use
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.01233"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags: null
+    summary: "Policy-driven CT data-preparation agent that profiles heterogeneous DICOM series and executes adaptive preprocessing through guarded, verified, and recoverable steps, lifting verified output yield from 61.7% to 70.0% on private data and improving downstream segmentation Dice across three public CT tasks."
+    featured: false
+
+  - title: "OPERA: Offline Policy-guided Expert Routing and Adaptation for Universal Biomedical Image Analysis"
+    year: 2026
+    domain: "Multimodal"
+    modality:
+      - fundus
+      - CXR
+      - CT
+      - MRI
+    task:
+      - routing
+      - classification
+      - segmentation
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2607.25108"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "ACM MM 2026"
+    tags:
+      - multi-agent
+    summary: "Multi-agent ensemble that learns a gradient-free routing policy from a small validation set to assign each image to a specialized expert agent, using confidence calibration and distribution-aware test-time adaptation across 9 datasets spanning fundus photography, chest X-ray, CT, and MRI."
+    featured: false
+
+  - title: "UltraSAM3: A Concept-Driven Foundation Model for Universal Ultrasound Image Segmentation"
+    year: 2026
+    domain: "Ultrasound"
+    modality:
+      - ultrasound
+    task:
+      - segmentation
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2607.29200"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags: null
+    summary: "Adapts SAM3 to ultrasound image-mask-concept triplets across 37 datasets and 13 anatomical categories, pairing the segmentation model with an instruction-guided agent that parses complex natural-language queries into concise ultrasound concept prompts."
+    featured: false
+
+  - title: "Active few-shot segmentation by reinforcing data selection"
+    year: 2026
+    domain: "Segmentation"
+    modality:
+      - MRI
+    task:
+      - few-shot segmentation
+      - active learning
+    agent_type:
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2607.22371"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "EMA4MICCAI 2026"
+    tags:
+      - reinforcement-learning
+    summary: "Reinforcement-learning agent directly predicts the optimal support set from unlabeled candidate images to maximise downstream few-shot segmentation performance, outperforming per-sample active-selection baselines on cross-institutional pelvic MRI."
+    featured: false
+
+  - title: "Dialectic-Med: Mitigating Diagnostic Hallucinations via Counterfactual Adversarial Multi-Agent Debate"
+    year: 2026
+    domain: "Benchmark"
+    modality:
+      - CXR
+      - pathology
+    task:
+      - hallucination mitigation
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2604.11258"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "ACL 2026"
+    tags:
+      - hallucination
+      - multi-agent
+    summary: "Three role-specialized agents — a proponent that proposes diagnostic hypotheses, an opponent with a visual falsification module, and a mediator that resolves conflicts via a weighted consensus graph — engage in adversarial debate to reduce anchoring-driven hallucinations in medical VLMs across MIMIC-CXR-VQA, VQA-RAD, and PathVQA."
+    featured: false
+
+  - title: "CyberNeuro: A Privacy-Preserving Agentic Workbench for Cohort-Scale Neuroimage and Clinical Data Analysis"
+    year: 2026
+    domain: "3D Imaging"
+    modality:
+      - MRI
+    task:
+      - workflow automation
+      - preprocessing
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2607.28841"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - privacy
+      - multi-agent
+    summary: "Four-agent workbench (Planner, Validator, Dispatcher, Reporter) coordinated over a secure MCP bridge automates metadata curation, pipeline execution, and quality control for cohort-scale neuroimaging and clinical data while preserving clinical-grade data privacy."
+    featured: false
+
+  - title: "A 4D Representation for Training-Free Agentic Reasoning from Monocular Laparoscopic Video"
+    year: 2026
+    domain: "Endoscopy"
+    modality:
+      - endoscopy
+    task:
+      - spatiotemporal reasoning
+      - tool use
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2604.00867"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags: null
+    summary: "Fuses 2D vision-language understanding with 3D computer vision into an explicit 4D (space + time) scene representation, letting a multimodal LLM act training-free as an agent over trajectory-derived tools to answer clinically relevant spatiotemporal questions about laparoscopic surgery."
+    featured: false
+
+  - title: "EH-Benchmark Ophthalmic Hallucination Benchmark and Agent-Driven Top-Down Traceable Reasoning Workflow"
+    year: 2025
+    domain: "Benchmark"
+    modality:
+      - fundus
+    task:
+      - hallucination benchmark
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2507.22929"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - hallucination
+    summary: "Categorizes ophthalmic MLLM hallucinations into Visual Understanding and Logical Composition types and pairs the benchmark with a three-phase agent-driven, top-down traceable reasoning workflow — knowledge retrieval, case-study analysis, result validation — to improve accuracy and interpretability in eye-care visual question answering."
+    featured: false
+
+  - title: "AgentPolyp: Accurate Polyp Segmentation via Image Enhancement Agent"
+    year: 2025
+    domain: "Endoscopy"
+    modality:
+      - endoscopy
+    task:
+      - image enhancement
+      - segmentation
+    agent_type:
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2504.10978"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - reinforcement-learning
+    summary: "Reinforcement-learning agent combines CLIP-based semantic degradation analysis with a quality-assessment feedback loop to dynamically select multi-modal image-enhancement operations before polyp segmentation on degraded endoscopic frames."
+    featured: false
+
+  - title: "EndoWAM: A Grounded World-Action Model for Generalizable Endoscopic Navigation"
+    year: 2026
+    domain: "Endoscopy"
+    modality:
+      - endoscopy
+    task:
+      - autonomous navigation
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2608.01221"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags: null
+    summary: "Couples a diffusion-transformer world model that predicts future target regions with an action-generation head sharing the same predictive representation, enabling autonomous endoscopic navigation across ureteroscopy, esophagoscopy, and ERCP with strong zero-shot generalization to unseen viewpoints and targets."
+    featured: false
