@@ -9492,5 +9492,110 @@
     "tags": null,
     "summary": "Couples a diffusion-transformer world model that predicts future target regions with an action-generation head sharing the same predictive representation, enabling autonomous endoscopic navigation across ureteroscopy, esophagoscopy, and ERCP with strong zero-shot generalization to unseen viewpoints and targets.",
     "featured": false
+  },
+  {
+    "title": "AMANDA: Agentic Medical Knowledge Augmentation for Data-Efficient Medical Visual Question Answering",
+    "year": 2025,
+    "domain": "Medical VLM",
+    "modality": null,
+    "task": [
+      "visual question answering",
+      "RAG"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2510.02328",
+    "code_url": "https://github.com/REAL-Lab-NU/AMANDA",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "RAG"
+    ],
+    "summary": "Training-free agentic framework augments medical VLMs at inference time through intrinsic question decomposition and extrinsic biomedical knowledge-graph retrieval, improving zero- and few-shot accuracy across eight Med-VQA benchmarks without additional labeled data.",
+    "featured": false
+  },
+  {
+    "title": "ARGUS: An Agentic Reasoning and General Understanding System with Applications in Medical Image Analysis",
+    "year": 2026,
+    "domain": "Multimodal",
+    "modality": [
+      "MRI",
+      "pathology",
+      "OCT"
+    ],
+    "task": [
+      "tool use",
+      "quantification",
+      "report generation"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://doi.org/10.3390/ai7070261",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "AI (MDPI)",
+    "tags": [
+      "multi-agent"
+    ],
+    "summary": "Orchestrator Agent identifies the imaging modality and assembles task-specific pipelines of processing, quantification, verification, knowledge-retrieval, and reporting agents, demonstrated on brain MRI volumetry, digital-pathology nucleus counting, and OCT retinal-thickness estimation.",
+    "featured": false
+  },
+  {
+    "title": "MedOrch: Medical Diagnosis with Tool-Augmented Reasoning Agents for Flexible Extensibility",
+    "year": 2025,
+    "domain": "Clinical Reasoning",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "diagnosis",
+      "tool use",
+      "visual question answering"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2506.00235",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent"
+    ],
+    "summary": "Modular framework orchestrates a web-search agent alongside specialized imaging and reasoning tools for transparent, traceable medical decision support, evaluated on Alzheimer's diagnosis (93.26% accuracy), chest X-ray interpretation, and medical visual question answering.",
+    "featured": false
+  },
+  {
+    "title": "Confident but Unreliable: A Behavioral Safety Audit of Vision-Language Models on Brain MRI",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "safety evaluation"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2608.02790",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "safety"
+    ],
+    "summary": "Systematic behavioral audit of six instruction-tuned vision-language models on brain MRI interpretation finds high confidence on incorrect answers (mean 0.82-0.97) with 33-46% of responses being high-confidence errors, proposing confidence-reliability and confident-error metrics for safety-oriented evaluation.",
+    "featured": false
   }
 ]
