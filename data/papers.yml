@@ -8174,3 +8174,202 @@ papers:
       - safety
     summary: "Systematic behavioral audit of six instruction-tuned vision-language models on brain MRI interpretation finds high confidence on incorrect answers (mean 0.82-0.97) with 33-46% of responses being high-confidence errors, proposing confidence-reliability and confident-error metrics for safety-oriented evaluation."
     featured: false
+
+  # ── New additions 2026-08-10 ──────────────────────────────────────────────
+
+  - title: "Beyond Relevance: Bayesian Evidence Acquisition for Agentic Whole-Slide Image Reasoning"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - VQA
+      - diagnosis
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.05757"
+    code_url: "https://github.com/bryanwong17/BEACON"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - whole-slide image
+      - uncertainty
+    summary: "BEACON reformulates whole-slide image reasoning as Bayesian evidence acquisition, maintaining a probabilistic belief over competing diagnoses and sequentially acquiring patches that maximize expected information gain rather than semantic relevance, achieving the strongest zero-shot results among training-free agentic frameworks across five WSI-VQA benchmarks."
+    featured: false
+
+  - title: "Democratizing and accelerating AI-driven pathology research through agentic intelligence"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - workflow automation
+      - classification
+      - segmentation
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.20677"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - whole-slide imaging
+    summary: "PathLab translates natural-language research objectives into executable, validated computational pathology workflows by composing reusable methodological modules for preprocessing, model development, evaluation, and interpretation, matching expert implementations across 12 public datasets spanning ROI classification, WSI classification, segmentation, and survival prediction while letting non-programmers design and run studies."
+    featured: false
+
+  - title: "A Multi-modal Agentic Co-pilot for Evidence Grounded Computational Pathology"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - diagnosis
+      - retrieval
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.08093"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+      - RAG
+    summary: "PathPocket grounds pathology interpretation in a 110,472-document evidence corpus and a 4.55-million-entity multimodal hypergraph, coordinating input-understanding, evidence-retrieval, filtering, and diagnosis-generation agents to resolve tasks from text-only queries to gigapixel whole-slide diagnostics, improving pathologist diagnostic accuracy and confidence in user studies over 200,000 real-world cases."
+    featured: false
+
+  - title: "ARTEMIS: Agent-guided Reliability-aware Temporal Mask Evolution for Imperfectly Supervised Video Polyp Segmentation"
+    year: 2026
+    domain: "Endoscopy"
+    modality:
+      - colonoscopy
+    task:
+      - segmentation
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.20161"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - polyp segmentation
+      - weak supervision
+    summary: "A debate-and-judge vision-language agent selects reliable temporal anchor frames under weak or sparse supervision, then propagates masks bidirectionally with SAM2 and trains the segmenter with reliability-weighted robust learning, reaching state-of-the-art imperfectly supervised video polyp segmentation on SUN-SEG and CVC-ClinicDB-612."
+    featured: false
+
+  - title: "Human and AI collaboration for pulmonary nodule segmentation"
+    year: 2026
+    domain: "Segmentation"
+    modality:
+      - CT
+    task:
+      - segmentation
+      - interactive segmentation
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2606.22486"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - human-in-the-loop
+    summary: "Hi-Seg lets medical and non-medical annotators iteratively refine SAM prompts through trial-and-error and semantic reasoning for pulmonary nodule segmentation, reaching a mean Dice near 85% across 1,179 patients at 12 centers — 10-22% above five deep-learning baselines — while reducing annotation time for medical annotators."
+    featured: false
+
+  - title: "NeuroClaw Technical Report"
+    year: 2026
+    domain: "3D Imaging"
+    modality:
+      - MRI
+      - fMRI
+      - DTI
+      - PET
+    task:
+      - workflow automation
+      - preprocessing
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2604.24696"
+    code_url: null
+    project_url: "https://cuhk-aim-group.github.io/NeuroClaw/index.html"
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+      - neuroimaging
+    summary: "A three-tier skill/agent hierarchy grounds decisions directly in raw neuroimaging data and BIDS metadata across sMRI, fMRI, dMRI, EEG, PET, ASL, and MEG, combining checkpointing, post-execution verification, and environment management to make multi-stage neuroimaging pipelines reproducible and auditable, evaluated with the accompanying NeuroBench system-level benchmark."
+    featured: false
+
+  - title: "DALPHIN: Benchmarking Digital Pathology AI Copilots Against Pathologists on an Open Multicentric Dataset"
+    year: 2026
+    domain: "Benchmark"
+    modality:
+      - WSI
+    task:
+      - VQA
+      - evaluation
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2605.03544"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: "https://dalphin.grand-challenge.org"
+    venue: "arXiv"
+    tags:
+      - pathology
+      - whole-slide imaging
+    summary: "Open multicentric benchmark of 1,236 pathology images across 300 cases, 130 diagnoses, and 14 subspecialties pits general-purpose and pathology-specific AI copilots against 31 pathologists from 10 countries, finding no statistically significant gap from expert performance on only one to four of six diagnostic tasks depending on the model."
+    featured: false
+
+  - title: "Beyond Medical Diagnostics: How Medical Multimodal Large Language Models Think in Space"
+    year: 2026
+    domain: "Benchmark"
+    modality:
+      - CT
+    task:
+      - VQA
+      - benchmark
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2603.13800"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+      - 3D spatial reasoning
+    summary: "An agentic pipeline orchestrates volume-estimation and bounding-box tools with multi-agent collaboration and expert radiologist validation to autonomously synthesize SpatialMed, a 31,253-question benchmark of 3D spatial VQA across organs and tumor types, finding that 24 state-of-the-art medical MLLMs lack robust spatial reasoning."
+    featured: false
+
+  - title: "SWoMo: Neuro-Symbolic World Model for Cataract Surgery Simulation"
+    year: 2026
+    domain: "Workflow Simulation"
+    modality: null
+    task:
+      - simulation
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2605.16530"
+    code_url: "https://github.com/MECLabTUDA/SWoMo"
+    project_url: "https://ssharvienkumar.github.io/SWoMo/"
+    dataset_url: null
+    benchmark_url: null
+    venue: "MICCAI 2026"
+    tags:
+      - surgical simulation
+    summary: "A neuro-symbolic world model decouples cataract-surgery motion generation, driven by a rule-based simulator and scene graphs, from visual realism, driven by a diffusion model, enabling training-scale simulation for autonomous surgical agents that generalizes to unseen tool-tissue interaction geometries and improves downstream surgical phase detection."
+    featured: false
