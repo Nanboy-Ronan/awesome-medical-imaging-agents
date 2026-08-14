@@ -8373,3 +8373,413 @@ papers:
       - surgical simulation
     summary: "A neuro-symbolic world model decouples cataract-surgery motion generation, driven by a rule-based simulator and scene graphs, from visual realism, driven by a diffusion model, enabling training-scale simulation for autonomous surgical agents that generalizes to unseen tool-tissue interaction geometries and improves downstream surgical phase detection."
     featured: false
+
+  - title: "BiomedCLIP: a multimodal biomedical foundation model pretrained from fifteen million scientific image-text pairs"
+    year: 2023
+    domain: "Medical VLM"
+    modality: null
+    task:
+      - representation learning
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2303.00915"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (VLM encoder). Contrastive image-text encoder trained on PMC-15M; the default retrieval and zero-shot classification backbone inside many biomedical agent toolchains."
+    featured: false
+
+  - title: "CheXagent: A Vision-Language Foundation Model to Enhance Efficiency of Chest X-ray Interpretation"
+    year: 2024
+    domain: "Medical VLM"
+    modality:
+      - CXR
+    task:
+      - report generation
+      - VQA
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2401.12208"
+    code_url: "https://github.com/Stanford-AIMI/CheXagent"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (MLLM). Instruction-tuned chest X-ray foundation model with the CheXbench evaluation suite; widely used as the imaging expert wrapped by radiology agents."
+    featured: false
+
+  - title: "CONCH: A visual-language foundation model for computational pathology"
+    year: 2024
+    domain: "Medical VLM"
+    modality:
+      - WSI
+    task:
+      - representation learning
+    agent_type: null
+    paper_url: "https://www.nature.com/articles/s41591-024-02856-4"
+    code_url: "https://github.com/mahmoodlab/CONCH"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Nature Medicine (2024)"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (VLM encoder). Histopathology vision-language model trained on 1.17M image-caption pairs; provides the text-alignable tile representations that pathology agents query."
+    featured: false
+
+  - title: "CT-CLIP: Generalist Foundation Models from a Multimodal Dataset for 3D Computed Tomography"
+    year: 2024
+    domain: "Medical VLM"
+    modality:
+      - CT
+    task:
+      - representation learning
+      - VQA
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2403.17834"
+    code_url: "https://github.com/ibrahimethemhamamci/CT-CLIP"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (VLM encoder). Chest CT vision-language model and CT-CHAT conversational assistant released with the CT-RATE dataset; a common 3D volumetric backbone for CT agents."
+    featured: false
+
+  - title: "HealthGPT: A Medical Large Vision-Language Model for Unifying Comprehension and Generation via Heterogeneous Knowledge Adaptation"
+    year: 2025
+    domain: "Medical VLM"
+    modality: null
+    task:
+      - VQA
+      - image generation
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2502.09838"
+    code_url: "https://github.com/DCDmllm/HealthGPT"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (MLLM). Unifies medical visual comprehension and image generation in one autoregressive model, giving agent controllers a single backbone for both reading and synthesizing images."
+    featured: false
+
+  - title: "HuatuoGPT-Vision, Towards Injecting Medical Visual Knowledge into Multimodal LLMs at Scale"
+    year: 2024
+    domain: "Medical VLM"
+    modality: null
+    task:
+      - VQA
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2406.19280"
+    code_url: "https://github.com/FreedomIntelligence/HuatuoGPT-Vision"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (MLLM). Scales medical visual instruction tuning with the 1.3M-sample PubMedVision corpus; a widely adopted open multimodal backbone for Chinese and English medical agents."
+    featured: false
+
+  - title: "Lingshu: A Generalist Foundation Model for Unified Multimodal Medical Understanding and Reasoning"
+    year: 2025
+    domain: "Medical VLM"
+    modality: null
+    task:
+      - VQA
+      - clinical reasoning
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2506.07044"
+    code_url: "https://github.com/alibaba-damo-academy/lingshu"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (MLLM). Generalist medical MLLM with a multi-stage training recipe and the MedEvalKit evaluation harness; a strong open reasoning backbone for downstream agents."
+    featured: false
+
+  - title: "LLaVA-Rad: Towards a clinically accessible radiology foundation model: open-access and lightweight, with automated evaluation"
+    year: 2024
+    domain: "Medical VLM"
+    modality:
+      - CXR
+    task:
+      - report generation
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2403.08002"
+    code_url: "https://github.com/microsoft/LLaVA-Rad"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (MLLM). 7B chest X-ray report-generation model trainable and servable on a single GPU, released with the CheXprompt automated evaluator; the lightweight option for locally hosted radiology agents."
+    featured: false
+
+  - title: "M3D: Advancing 3D Medical Image Analysis with Multi-Modal Large Language Models"
+    year: 2024
+    domain: "Medical VLM"
+    modality:
+      - CT
+      - MRI
+    task:
+      - VQA
+      - report generation
+      - segmentation
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2404.00578"
+    code_url: "https://github.com/BAAI-DCAI/M3D"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (MLLM). 3D medical MLLM covering volumetric VQA, report generation, and referring segmentation; supplies the volumetric perception layer for CT and MRI agents."
+    featured: false
+
+  - title: "MAIRA-2: Grounded Radiology Report Generation"
+    year: 2024
+    domain: "Medical VLM"
+    modality:
+      - CXR
+    task:
+      - report generation
+      - grounding
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2406.04449"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (MLLM). Grounded chest X-ray reporting model that emits bounding boxes alongside report sentences, providing the spatial evidence that verification agents check."
+    featured: false
+
+  - title: "Med-Gemini: Capabilities of Gemini Models in Medicine"
+    year: 2024
+    domain: "Medical VLM"
+    modality: null
+    task:
+      - medical QA
+      - VQA
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2404.18416"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (MLLM). Multimodal medical model family with self-training and built-in web search; an early demonstration of tool-augmented reasoning at foundation-model scale."
+    featured: false
+
+  - title: "Med-PaLM M: Towards Generalist Biomedical AI"
+    year: 2023
+    domain: "Medical VLM"
+    modality: null
+    task:
+      - medical QA
+      - report generation
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2307.14334"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (MLLM). First generalist biomedical model spanning imaging, text, and genomics on the MultiMedBench suite; the reference point for later multimodal medical backbones."
+    featured: false
+
+  - title: "MedGemma Technical Report"
+    year: 2025
+    domain: "Medical VLM"
+    modality: null
+    task:
+      - VQA
+      - classification
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2507.05201"
+    code_url: "https://github.com/google-health/medgemma"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (MLLM). Open 4B/27B medical vision-language models built on Gemma 3 with the MedSigLIP encoder; the most commonly self-hosted backbone in recent open medical agent stacks."
+    featured: false
+
+  - title: "MedImageInsight: An Open-Source Embedding Model for General Domain Medical Imaging"
+    year: 2024
+    domain: "Medical VLM"
+    modality: null
+    task:
+      - representation learning
+      - retrieval
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2410.06542"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (image encoder). Cross-modality medical embedding model for classification and image-image search, reporting stronger demographic fairness than prior public encoders; used as the retrieval index behind image-grounded agents."
+    featured: false
+
+  - title: "MedVersa: A Generalist Foundation Model for Medical Image Interpretation"
+    year: 2024
+    domain: "Medical VLM"
+    modality: null
+    task:
+      - report generation
+      - segmentation
+      - detection
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2405.07988"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (MLLM). Generalist learner that dispatches to segmentation, detection, and reporting heads from a single interface, making it a natural drop-in perception module for imaging agents."
+    featured: false
+
+  - title: "Merlin: A Computed Tomography Vision-Language Foundation Model and Dataset"
+    year: 2024
+    domain: "Medical VLM"
+    modality:
+      - CT
+    task:
+      - representation learning
+      - retrieval
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2406.06512"
+    code_url: "https://github.com/StanfordMIMI/Merlin"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (VLM encoder). 3D abdominal CT vision-language model supervised by EHR diagnosis codes and radiology reports; a volumetric backbone for CT retrieval and triage agents."
+    featured: false
+
+  - title: "Prov-GigaPath: A whole-slide foundation model for digital pathology from real-world data"
+    year: 2024
+    domain: "Medical VLM"
+    modality:
+      - WSI
+    task:
+      - representation learning
+    agent_type: null
+    paper_url: "https://www.nature.com/articles/s41586-024-07441-w"
+    code_url: "https://github.com/prov-gigapath/prov-gigapath"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Nature (2024)"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (image encoder). Whole-slide model pairing a tile encoder with a LongNet slide encoder over 1.3B tiles; supplies slide-level context to WSI navigation agents."
+    featured: false
+
+  - title: "RAD-DINO: Exploring scalable medical image encoders beyond text supervision"
+    year: 2024
+    domain: "Medical VLM"
+    modality:
+      - CXR
+    task:
+      - representation learning
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2401.10815"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Nature Machine Intelligence (2025)"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (image encoder). Image-only DINOv2-style chest X-ray encoder that matches text-supervised encoders without paired reports; the vision tower under several radiology report agents."
+    featured: false
+
+  - title: "RadFM: Towards Generalist Foundation Model for Radiology by Leveraging Web-scale 2D&3D Medical Data"
+    year: 2023
+    domain: "Medical VLM"
+    modality:
+      - CT
+      - MRI
+      - CXR
+    task:
+      - VQA
+      - report generation
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2308.02463"
+    code_url: "https://github.com/chaoyi-wu/RadFM"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (MLLM). Radiology generalist trained on the MedMD 2D and 3D corpus with interleaved image-text inputs; an early multi-image backbone reused by volumetric agents."
+    featured: false
+
+  - title: "UNI: Towards a general-purpose foundation model for computational pathology"
+    year: 2024
+    domain: "Medical VLM"
+    modality:
+      - WSI
+    task:
+      - representation learning
+      - classification
+    agent_type: null
+    paper_url: "https://www.nature.com/articles/s41591-024-02857-3"
+    code_url: "https://github.com/mahmoodlab/UNI"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Nature Medicine (2024)"
+    tags:
+      - backbone
+      - foundation model
+    summary: "— Model (image encoder). Self-supervised histopathology encoder pretrained on 100M tiles from 100k slides across 20 tissue types; the default tile feature extractor for pathology agents."
+    featured: false
