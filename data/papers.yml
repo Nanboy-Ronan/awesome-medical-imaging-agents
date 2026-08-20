@@ -8783,3 +8783,203 @@ papers:
       - foundation model
     summary: "— Model (image encoder). Self-supervised histopathology encoder pretrained on 100M tiles from 100k slides across 20 tissue types; the default tile feature extractor for pathology agents."
     featured: false
+
+  # ── Added 2026-08-20 ────────────────────────────────────────────────────
+
+  - title: "DentAgent: Evidence-Centric Multi-Agent Coordination for Multimodal Dental Reasoning"
+    year: 2026
+    domain: "Radiology"
+    modality:
+      - X-ray
+    task:
+      - diagnosis
+      - tool use
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.18878"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+      - dental
+    summary: "An Orchestrator agent coordinates five modality-specialist agents over radiographs, intraoral photographs, and 3D dental data, tracking each agent's findings as structured evidence on a shared blackboard before generating traceable diagnoses, surpassing senior specialists by 17.3 points on multi-label diagnosis across four benchmarks."
+    featured: false
+
+  - title: "Interactive Whole Slide Images for RL-based Tumour Segmentation"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - segmentation
+    agent_type:
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2608.16607"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - reinforcement-learning
+      - whole-slide image
+    summary: "Formulates the whole-slide image itself as a hierarchical multi-resolution environment in which a PPO-trained actor-critic agent navigates via movement, zooming, and tumour-selection actions, performing end-to-end sequential tumour segmentation directly on full pulmonary adenocarcinoma slides in seconds rather than exhaustive patch-based inference."
+    featured: false
+
+  - title: "Auditable agentic AI for evidence-grounded thyroid ultrasound diagnosis and reporting"
+    year: 2026
+    domain: "Ultrasound"
+    modality:
+      - ultrasound
+    task:
+      - segmentation
+      - diagnosis
+      - report generation
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.12590"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - human-in-the-loop
+    summary: "ThyroidXAgent coordinates nodule-segmentation, risk-stratification, and reporting tools into an auditable, clinician-correctable case-level evidence record for thyroid ultrasound, evaluated on 28,458 test cases across 35 centres and raising report diagnostic consistency from 70.3% to 86.2%."
+    featured: false
+
+  - title: "MedClaw: Heuristic Agent Harness for Long-Horizon Surgical Video Reasoning"
+    year: 2026
+    domain: "Endoscopy"
+    modality:
+      - surgical video
+    task:
+      - video reasoning
+      - visual question answering
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.14015"
+    code_url: null
+    project_url: "https://fyycs.github.io/medclaw/"
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - surgical video
+      - long-horizon reasoning
+    summary: "A text-only orchestrator plans which visual evidence to gather and issues an auditable sequence of tool calls to frozen vision-language sub-agents that view, crop, and inspect frames of tens-of-minutes surgical recordings, improving via a gradient-free skill-distillation loop instead of weight updates."
+    featured: false
+
+  - title: "VLM- and LLM-Driven Multi-Agent System for PET Image Denoising"
+    year: 2026
+    domain: "3D Imaging"
+    modality:
+      - PET
+    task:
+      - image enhancement
+      - tool use
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.13791"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+    summary: "Multi-agent framework where vision-language and language models assess PET image quality and lesion status, autonomously select denoising models and parameters, and support closed-loop rollback, outperforming UNet, GAN, and DDPM baselines at two low-dose settings."
+    featured: false
+
+  - title: "Multi-Agent AI System for Radiology Report Structuring and Quality Assurance with Independent Radiologist Evaluation"
+    year: 2026
+    domain: "Report Generation"
+    modality:
+      - CT
+    task:
+      - report generation
+      - quality control
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2608.18072"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+      - quality assurance
+    summary: "Locally deployed multi-agent pipeline restructures 22,270 CT report sentences into standardized anatomical sections while flagging findings-impression mismatches, gender-anatomy conflicts, and undocumented critical-finding communication, rated \"excellent\" or \"good\" by independent radiologists in 84% of evaluated reports."
+    featured: false
+
+  - title: "EVADE: Evidence-Verified Agentic Diagnosis with Escape"
+    year: 2026
+    domain: "Medical VLM"
+    modality: null
+    task:
+      - visual question answering
+      - uncertainty estimation
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.18833"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - hallucination
+      - safety
+    summary: "Training-free method lets a frozen medical VLM localize the most diagnostically relevant region, re-answer on a zoomed view, and commit only when the whole-image and zoomed-view responses agree, otherwise abstaining, cutting expected calibration error by up to 45% on VQA-RAD, SLAKE, and PathVQA."
+    featured: false
+
+  - title: "MIRA: Medical Image Reflection for Agentic Diagnosis"
+    year: 2026
+    domain: "Medical VLM"
+    modality: null
+    task:
+      - diagnosis
+      - tool use
+      - visual question answering
+    agent_type:
+      - tool-using
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2608.10827"
+    code_url: null
+    project_url: "https://mira-vl.github.io/"
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - reinforcement-learning
+      - hallucination
+    summary: "Dynamically invokes zooming, grounding, pointing, rotation, measurement, and web search while reflectively verifying whether each tool action was necessary and whether the resulting evidence supports the current hypothesis, raising useful tool-use judgments from 56.2% to 73.8% across nine medical visual reasoning benchmarks."
+    featured: false
+
+  - title: "BaT: Towards Self-Evolving Medical Research Agent with Stage Rubrics"
+    year: 2026
+    domain: "Workflow Simulation"
+    modality: null
+    task:
+      - research automation
+      - tool use
+    agent_type:
+      - self-evolving
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2608.16211"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - self-evolving
+      - reinforcement-learning
+    summary: "Benchmark-as-Teacher recursively post-trains a medical-imaging research agent by synthesizing content-isolated training states outside the policy loop and using a bilevel curriculum reinforcement-learning method to verify rollouts against stage-level rubrics, more than doubling its base model's score on AutoMedBench-Lite."
+    featured: false
