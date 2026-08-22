@@ -8983,3 +8983,139 @@ papers:
       - reinforcement-learning
     summary: "Benchmark-as-Teacher recursively post-trains a medical-imaging research agent by synthesizing content-isolated training states outside the policy loop and using a bilevel curriculum reinforcement-learning method to verify rollouts against stage-level rubrics, more than doubling its base model's score on AutoMedBench-Lite."
     featured: false
+
+  # ── New additions 2026-08-22 ──────────────────────────────────────────────
+
+  - title: "An Autonomous Multimodal AI Agent for Evidence-Grounded Ophthalmic Diagnosis"
+    year: 2026
+    domain: "Ophthalmology"
+    modality:
+      - fundus
+      - ultrasound
+    task:
+      - diagnosis
+      - tool use
+      - retrieval
+    agent_type:
+      - tool-using
+    paper_url: "https://doi.org/10.1016/j.xcrm.2026.102969"
+    code_url: "https://github.com/OpenMedAILab/AgentEYE"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Cell Reports Medicine"
+    tags:
+      - RAG
+      - ophthalmology
+    summary: "AgentEYE routes fundus photographs and B-scan ultrasonography to specialized imaging tools, retrieves clinical guideline and web evidence, and synthesizes evidence-grounded reports, outperforming LLM-only baselines on diagnostic correctness, completeness, safety, and citation grounding across a 302-case internal benchmark and a 200-case blinded ophthalmologist evaluation."
+    featured: false
+
+  - title: "OphAgent: A Generalisable Ophthalmic Agentic System for Global Eye Care"
+    year: 2026
+    domain: "Ophthalmology"
+    modality:
+      - fundus
+      - OCT
+    task:
+      - diagnosis
+      - tool use
+    agent_type:
+      - multi-agent
+    paper_url: "https://doi.org/10.21203/rs.3.rs-9189179/v1"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Research Square preprint"
+    tags:
+      - multi-agent
+      - ophthalmology
+    summary: "Multi-agent ophthalmic system with a planner, executor, and verifier orchestrates LLM-driven specialist agents through dynamic diagnostic planning, guideline consultation, and structured inter-agent debate over four imaging modalities, improving diagnostic accuracy by up to 20% for 311 ophthalmologists across 86 centres in 22 countries."
+    featured: false
+
+  - title: "An Agentic AI Framework Overcomes Fundamental Limitations of Large Language Models for Glaucoma Detection from Fundus Photography"
+    year: 2026
+    domain: "Ophthalmology"
+    modality:
+      - fundus
+    task:
+      - diagnosis
+      - tool use
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.07651"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - ophthalmology
+    summary: "Agentic workflow combining LLM assessment, function-calling image-quality and segmentation tools, and LLM reflection corrects monolithic-LLM failure modes in glaucoma detection from fundus photographs, improving classification accuracy by 16 to 47 percentage points across two public datasets."
+    featured: false
+
+  - title: "Agentic AI-Powered Flexible Fiber-Bundle Endoscopy for High-Resolution NIR-II Fluorescence Imaging In Vivo"
+    year: 2026
+    domain: "Endoscopy"
+    modality:
+      - Endoscopy
+    task:
+      - image restoration
+      - tool use
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.08402"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - fluorescence imaging
+    summary: "Agent-Guided Mixture-of-Experts (GAME) pipeline uses a vision-language model to dynamically route each fiber-bundle NIR-II fluorescence endoscopy frame to the most suitable restoration expert, removing fiber-pattern artifacts for high-resolution in-vivo endoscopic imaging."
+    featured: false
+
+  - title: "NeuroPilot: An Agent-Driven Smart Pipeline for Processing, Quality Control, and Managing Neuroimages"
+    year: 2026
+    domain: "3D Imaging"
+    modality:
+      - MRI
+    task:
+      - preprocessing
+      - quality control
+      - tool use
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.07541"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+    summary: "LLM-driven multi-agent pipeline digitalizes neuroimage-processing expertise into standardization, preprocessing, and quality-control skills, deploying across 17 cohorts of more than 123,000 subjects and compressing a typical 2-3 month manual processing timeline into one week."
+    featured: false
+
+  - title: "A Discordance-Aware Multimodal Framework with Multi-Agent Clinical Reasoning"
+    year: 2026
+    domain: "Radiology"
+    modality:
+      - MRI
+      - X-ray
+    task:
+      - diagnosis
+      - phenotyping
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2604.16333"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - multi-agent
+    summary: "Multimodal ensemble fuses ResNet18-derived knee MRI and X-ray embeddings with demographics and biomarkers, then a multi-agent clinical-reasoning layer interprets discordance between imaging-observed structural damage and patient-reported symptoms to assign OA phenotypes and tailored management recommendations."
+    featured: false
