@@ -9119,3 +9119,173 @@ papers:
       - multi-agent
     summary: "Multimodal ensemble fuses ResNet18-derived knee MRI and X-ray embeddings with demographics and biomarkers, then a multi-agent clinical-reasoning layer interprets discordance between imaging-observed structural damage and patient-reported symptoms to assign OA phenotypes and tailored management recommendations."
     featured: false
+
+  # ── New additions 2026-08-26 ──────────────────────────────────────────────
+
+  - title: "STRIVE: Multi-Agent Structured Temporal Reasoning with Integrated Verification for Longitudinal Radiology Report Generation"
+    year: 2026
+    domain: "Report Generation"
+    modality:
+      - CXR
+    task:
+      - report generation
+      - spatiotemporal reasoning
+    agent_type:
+      - multi-agent
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2608.24237"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - chest X-ray
+      - longitudinal
+      - multi-agent
+      - reinforcement learning
+    summary: "Diagnosis, Attribute, and Temporal Change Agents produce explicit intermediate evidence for longitudinal chest X-ray reports, with the Temporal Change Agent trained via Progression-Aware GRPO and a Consistency Gate plus Validation Agent verifying outputs, more than doubling Longitudinal Change Concordance on Longitudinal-MIMIC."
+    featured: false
+
+  - title: "LUCAID: Agentic Multimodal AI for Lung Cancer Precision Pathology"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - diagnosis
+      - segmentation
+      - biomarker profiling
+      - report generation
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.23803"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - lung cancer
+      - whole-slide imaging
+      - clinical validation
+      - biomarkers
+    summary: "Integrative agent couples diagnostic reasoning with nine clinically validated modules spanning quality control, tumor detection and subtyping, microenvironment profiling, and PD-L1/MET/TROP-2 biomarker scoring through to structured report generation, reaching 93.0% concordance with an expert-panel reference versus 68.3-81.1% for five thoracic pathologists in prospective clinical validation."
+    featured: false
+
+  - title: "Can Coding Agents Build Robust Baselines? A Skill-Based Approach for Automating the Medical Imaging Model-Development Pipeline"
+    year: 2026
+    domain: "Workflow Simulation"
+    modality: null
+    task:
+      - workflow automation
+      - tool use
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.23336"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - AutoML
+      - coding agent
+      - benchmark
+    summary: "Skill-based coding-agent workflow combines literature-guided reasoning, automated code generation, and hypothesis-driven experimentation to build baseline medical imaging models, reaching competitive leaderboard placements (6th on PUMA, 31st on MILK10k) across segmentation, classification, and detection challenges with no task-specific redesign."
+    featured: false
+
+  - title: "A Source-Grounded Framework for Constructing and Evaluating Progressive Multimodal Diagnostic Dialogues from Clinical Case Reports"
+    year: 2026
+    domain: "Benchmark"
+    modality: null
+    task:
+      - benchmark
+      - multi-turn dialogue
+      - differential diagnosis
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2608.22713"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - benchmark
+      - multimodal
+      - clinical case reports
+      - diagnostic reasoning
+    summary: "Converts published case reports into progressive multimodal diagnostic dialogues interleaving history, exam, labs, and images, then scores MLLMs separately on final diagnosis, reasoning quality, and image-finding interpretation; frontier models o4-mini and Claude Haiku 4.5 reach only 2.5-2.75/5 on reasoning quality despite fluent answers."
+    featured: false
+
+  - title: "A Modular Agent for Reliable and Auditable Spatial Relation Verification in CT Scans"
+    year: 2026
+    domain: "Radiology"
+    modality:
+      - CT
+    task:
+      - visual reasoning
+      - tool use
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.21140"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - spatial reasoning
+      - CT
+      - auditable reasoning
+      - interpretability
+    summary: "Decomposes binary spatial-relation verification in axial CT slices into language parsing, YOLO-based anatomical localization, and deterministic geometric verification instead of end-to-end VLM prediction, reaching 94.1% accuracy on the MIRP spatial QA benchmark and beating direct Qwen2-VL prompting by 42.5 points while keeping every intermediate step auditable."
+    featured: false
+
+  - title: "Volumetric Radiology AI in the Era of Multimodal Large Language Models"
+    year: 2026
+    domain: "Survey · Radiology"
+    modality: null
+    task:
+      - survey
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2608.20549"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - survey
+      - volumetric imaging
+      - 3D
+      - MLLM
+    summary: "Reviews 200+ publications through July 2026 on volumetric radiology AI, organizing the literature around 3D-preserving representations, language alignment, and agentic orchestration (planning, tools, memory, workflow interaction), and introduces a Claim-Design-Validation framework for judging whether technical and clinical claims are matched by appropriate design and evaluation."
+    featured: false
+
+  - title: "An Integrated Diffusion-Weighted Imaging Processing and Interpretation Platform for MR-Guided Radiotherapy"
+    year: 2026
+    domain: "3D Imaging"
+    modality:
+      - MRI
+    task:
+      - preprocessing
+      - RAG
+      - clinical interpretation
+    agent_type:
+      - tool-using
+      - RAG
+    paper_url: "https://arxiv.org/abs/2608.20519"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - MRI
+      - radiotherapy
+      - diffusion-weighted imaging
+      - RAG
+    summary: "Web-based platform pairs a deep-learning MR-Linac DWI pipeline (distortion correction, denoising, IVIM/ADC fitting, longitudinal ROI analysis) with a retrieval-augmented interpretation agent that delegates arithmetic to deterministic tools and traces every statement to a source document, section, and line; across 54 expert ratings the pooled mean was 4.65/5 with 93% rated 4 or higher."
+    featured: false
