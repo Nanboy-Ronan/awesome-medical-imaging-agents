@@ -9289,3 +9289,120 @@ papers:
       - RAG
     summary: "Web-based platform pairs a deep-learning MR-Linac DWI pipeline (distortion correction, denoising, IVIM/ADC fitting, longitudinal ROI analysis) with a retrieval-augmented interpretation agent that delegates arithmetic to deterministic tools and traces every statement to a source document, section, and line; across 54 expert ratings the pooled mean was 4.65/5 with 93% rated 4 or higher."
     featured: false
+
+  # ── New additions 2026-08-29 ──────────────────────────────────────────────
+
+  - title: "TumorBoard: Evidence-Grounded Multi-Agent Decision Support for Longitudinal Neuro-Oncology"
+    year: 2026
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - clinical reasoning
+      - decision support
+      - diagnosis
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2608.03190"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - tumor board
+      - neuro-oncology
+      - longitudinal
+      - evidence grounding
+    summary: "Specialist agents for radiology, neuropathology, molecular analysis, clinical guidelines, and therapy planning each produce evidence-linked claims that an adversarial critic checks for contradictions before a safety-gated release policy decides whether to issue a recommendation; across 360 longitudinal brain tumor cases it reaches 0.772 F1 on action identification and 0.914 evidence-grounding accuracy, defers 84.2% of cases with incomplete evidence, and keeps harmful recommendations under 5.8%."
+    featured: false
+
+  - title: "Dementia-Agents: A Multi-Modal Multi-Agent System for Dementia Staging and Phenotyping"
+    year: 2026
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - diagnosis
+      - phenotyping
+      - clinical reasoning
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2606.21168"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - dementia
+      - multi-agent
+      - phenotyping
+      - interpretability
+    summary: "Three-stage clinically-informed framework — a data agent that converts structured clinical records into missingness-aware text, five fine-tuned expert agents that each generate a domain-specific prediction, and a coordinator agent that probabilistically aggregates them — targets syndrome-level dementia staging and phenotyping across etiologies rather than binary Alzheimer's detection; on 1,066 patients from two cognitive neurology clinics it outperforms monolithic MLLMs and prior medical multi-agent systems while keeping domain-level interpretability."
+    featured: false
+
+  - title: "RadHarmony: Radiological Data Handling in the Era of Agentic AI"
+    year: 2026
+    domain: "Workflow Simulation"
+    modality:
+      - CXR
+    task:
+      - workflow automation
+      - tool use
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2607.27235"
+    code_url: "https://github.com/f10409/RadHarmony"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - dataset harmonization
+      - agent skill
+      - chest X-ray
+      - AutoML
+    summary: "Open-source library standardizes metadata from 24 public radiology datasets into one schema, wraps MONAI map-style datasets for classification, segmentation, detection, and report-text supervision behind a unified API, and ships an AI-agent skill that walks a coding agent through inspecting, integrating, and testing a new dataset end to end, validated by training a chest-radiograph ViT baseline across three merged datasets with no dataset-specific code."
+    featured: false
+
+  - title: "Trust but Verify: Evidence-Linked Multi-Agent Clinical Information Extraction in Pathology"
+    year: 2026
+    domain: "Pathology"
+    modality: null
+    task:
+      - information extraction
+      - clinical reasoning
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2607.06435"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - pathology reports
+      - traceability
+      - clinical information extraction
+    summary: "Multi-agent workflow (nMAS) extracts structured clinical features from pathology reports via configurable field specifications, complexity-based routing, and report-level aggregation, linking every decision to verbatim source text; on 54 gastric biopsy reports covering 216 feature-case decisions it reaches 98.6% accuracy with all correct calls traceable to source evidence, and the authors frame its value as workflow traceability rather than raw accuracy over a single strong model."
+    featured: false
+
+  - title: "Rethinking Artificial Intelligence in Medical Imaging: Assumptions, Reality, and Reframing"
+    year: 2026
+    domain: "Survey · Radiology"
+    modality: null
+    task:
+      - survey
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2607.27428"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - survey
+      - position paper
+      - clinical translation
+      - agentic AI
+    summary: "Position paper argues that a decade of AI in medical imaging has stalled clinically not from algorithmic or regulatory gaps but from six structural mismatches — pixel-only models where multimodal fusion is needed, opaque systems that erode clinician trust, underused foundation models in data-scarce settings, fragmented datasets, a gap between validated algorithms and deployable platforms, and prediction-centric outputs that don't translate into actionable guidance — and calls for reframing toward agentic, physician-aligned systems that augment rather than replace clinical judgment."
+    featured: false
