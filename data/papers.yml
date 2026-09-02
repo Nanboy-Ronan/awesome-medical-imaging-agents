@@ -9406,3 +9406,172 @@ papers:
       - agentic AI
     summary: "Position paper argues that a decade of AI in medical imaging has stalled clinically not from algorithmic or regulatory gaps but from six structural mismatches — pixel-only models where multimodal fusion is needed, opaque systems that erode clinician trust, underused foundation models in data-scarce settings, fragmented datasets, a gap between validated algorithms and deployable platforms, and prediction-centric outputs that don't translate into actionable guidance — and calls for reframing toward agentic, physician-aligned systems that augment rather than replace clinical judgment."
     featured: false
+
+  # ── New additions 2026-09-02 ──────────────────────────────────────────────
+
+  - title: "SlideBank: A Persistent Hierarchical Evidence Bank for Consistent Whole-Slide Reasoning"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - visual reasoning
+      - retrieval
+    agent_type:
+      - tool-using
+      - RAG
+    paper_url: "https://arxiv.org/abs/2609.00342"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - whole-slide imaging
+      - evidence bank
+      - training-free
+      - consistency
+    summary: "Training-free framework builds a persistent, concept-indexed evidence bank per whole-slide image by hierarchically exploring informative regions and multi-scale views into explicit, patch-and-coordinate-grounded morphological observations, then answers queries by matching relevant evidence and fusing it via confidence-based cross-level consensus; reaches 52.77% on WSI-VQA with Patho-R1 and 50.92% on SlideBench-BCNB with Quilt-LLaVA, with over 99% answer consistency when the same bank is reused across rephrased queries."
+    featured: false
+
+  - title: "Evidence, Logic, and Compliance: Multi-Agent Structured Graph Reasoning with Expert Arbitration for Medical Referral"
+    year: 2026
+    domain: "Clinical Reasoning"
+    modality: null
+    task:
+      - triage
+      - clinical reasoning
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2608.30938"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - medical referral
+      - graph reasoning
+      - multi-agent
+      - patient safety
+    summary: "MASGR reframes hospital-department referral as structured graph construction: specialized agents extract evidence from patient narratives, labs, and imaging into a clinical reasoning graph that makes logical connections between conflicting findings explicit, and a knowledge-guided arbitration mechanism prioritizes patient-safety protocols over standard diagnostic classification when they conflict, substantially outperforming LLMs and looser multi-agent baselines on real medical records, especially complex cases mixing chronic-disease management with emergency signals."
+    featured: false
+
+  - title: "FRAC-MAS: A Safe and Explainable Multi-Agent System for Fracture Diagnosis"
+    year: 2026
+    domain: "Radiology"
+    modality:
+      - X-ray
+    task:
+      - diagnosis
+      - report generation
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.28662"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - bone fracture
+      - conformal prediction
+      - multi-agent
+      - explainability
+    summary: "Stacks four vision models with conformal prediction to produce statistically grounded differential fracture diagnoses, then hands off to a multi-agent workflow that independently verifies results, retrieves clinical guidelines, and drafts patient-accessible reports; the verification agent flags 86.6% of cases as high-confidence needing no escalation, and user studies rate its reports as significantly more comprehensible than reports from Llama, MedGemma, and Gemini."
+    featured: false
+
+  - title: "Guideline-as-Oracle: Zero-Annotation Training of an Ophthalmic Telephone Triage Agent"
+    year: 2026
+    domain: "Ophthalmology"
+    modality: null
+    task:
+      - triage
+      - patient education
+    agent_type: null
+    paper_url: "https://arxiv.org/abs/2608.04772"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - triage
+      - synthetic data
+      - clinical guidelines
+    summary: "Converts American Academy of Ophthalmology guidance into a 70-row operational rule table used to supervise 3,000 synthetic training dialogues across eight rule-to-dialogue conversion strategies, then fine-tunes a 9B GAO-Triage model with no expert-annotated data; agreement with reference triage decisions rises from 61.7% to 74.1% and emergent-case recall jumps from 9.5% to 69.0%, matching seven general-purpose systems without a frontier model at inference, with permutation tests confirming the gain comes from guideline supervision rather than dialogue style."
+    featured: false
+
+  - title: "Towards Fully Automated Medical Imaging Code Generation via Validation-based Context Engineering"
+    year: 2026
+    domain: "Workflow Simulation"
+    modality: null
+    task:
+      - workflow automation
+      - tool use
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2608.29016"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - AutoML
+      - code generation
+      - RAG
+    summary: "AutoMedImg designs an architecture with built-in verification checks from the dataset, then generates and validates medical-image-processing code modules in parallel, retrieving previously validated components from similar past projects to build context automatically; across six medical imaging datasets and multiple backing LLMs it reaches Dice scores up to 0.90 for segmentation and 99% classification accuracy with zero human intervention."
+    featured: false
+
+  - title: "ReclAIm: A Multi-Agent Framework for Monitoring and Correcting Performance Decline in Medical Imaging AI"
+    year: 2025
+    domain: "Workflow Simulation"
+    modality:
+      - MRI
+      - CT
+      - CXR
+    task:
+      - workflow automation
+      - tool use
+    agent_type:
+      - multi-agent
+    paper_url: "https://arxiv.org/abs/2510.17004"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Radiology: Artificial Intelligence"
+    tags:
+      - model monitoring
+      - performance degradation
+      - fine-tuning
+      - conversational interface
+    summary: "LLM-agent framework coordinated by a master agent monitors deployed medical image classifiers, detects performance decline, and triggers targeted fine-tuning (data augmentation, class balancing, forgetting-resistant regularization) through natural-language conversation rather than code; across 18 models spanning brain MRI, chest CT, and radiography it caught degradation in 8, restoring accuracy to within 2% of baseline even after drops as large as 40.6%."
+    featured: false
+
+  - title: "An Autonomous Agent for Auditing and Improving the Reliability of Clinical AI Models"
+    year: 2025
+    domain: "Workflow Simulation"
+    modality: null
+    task:
+      - evaluation
+      - workflow automation
+    agent_type:
+      - multi-agent
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2507.05755"
+    code_url: "https://github.com/MLO-lab/ModelAuditor"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - model auditing
+      - distribution shift
+      - reliability
+      - multi-agent debate
+    summary: "ModelAuditor converses with practitioners to understand deployment context, selects task-specific evaluation metrics, and simulates clinically relevant distribution shifts via a multi-agent debate mechanism, then generates interpretable reports naming specific failure modes, root causes, and remedies; across histopathology site variation, dermatology demographic shift, and chest-radiograph equipment differences it recovers 15-25% of performance lost to distribution shift, running on consumer hardware in under 10 minutes for under $0.50 per audit."
+    featured: false
