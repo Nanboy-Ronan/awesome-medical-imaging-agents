@@ -11251,5 +11251,87 @@
     ],
     "summary": "ModelAuditor converses with practitioners to understand deployment context, selects task-specific evaluation metrics, and simulates clinically relevant distribution shifts via a multi-agent debate mechanism, then generates interpretable reports naming specific failure modes, root causes, and remedies; across histopathology site variation, dermatology demographic shift, and chest-radiograph equipment differences it recovers 15-25% of performance lost to distribution shift, running on consumer hardware in under 10 minutes for under $0.50 per audit.",
     "featured": false
+  },
+  {
+    "title": "Tree-of-Reasoning: Towards Complex Medical Diagnosis via Multi-Agent Reasoning with Evidence Tree",
+    "year": 2025,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "diagnosis",
+      "clinical reasoning"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2508.03038",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "ACM MM 2025",
+    "tags": [
+      "multi-agent",
+      "evidence tree",
+      "cross-validation"
+    ],
+    "summary": "ToR records each agent's reasoning path and supporting clinical evidence as an explicit tree structure rather than a flat chat log, with dedicated radiology-doctor and pathology-doctor agents contributing modality-specific findings and a cross-validation mechanism checking consistency across agents before a diagnosis is finalized, outperforming existing multi-agent and single-model baselines on real-world medical diagnosis data.",
+    "featured": false
+  },
+  {
+    "title": "From Conflict to Consensus: Boosting Medical Reasoning via Multi-Round Agentic RAG",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "clinical reasoning",
+      "retrieval"
+    ],
+    "agent_type": [
+      "RAG",
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2603.03292",
+    "code_url": "https://github.com/NJU-RL/MA-RAG",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "ICML 2026",
+    "tags": [
+      "RAG",
+      "self-consistency",
+      "test-time scaling",
+      "medical QA"
+    ],
+    "summary": "MA-RAG treats disagreement among candidate answers as a constructive signal rather than noise: each round it identifies semantic conflict across candidates to generate targeted retrieval queries, then compresses reasoning history to counter long-context degradation, iterating evidence and reasoning together as an agentic refinement loop; averages +6.8 points of accuracy over the backbone model across seven medical QA benchmarks.",
+    "featured": false
+  },
+  {
+    "title": "GPAgentBench-2K: Benchmarking Large Language Model Agents in Complex Clinical Action Space",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": null,
+    "task": [
+      "benchmark",
+      "clinical reasoning"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2608.30188",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "benchmark",
+      "primary care",
+      "patient safety",
+      "constrained RL"
+    ],
+    "summary": "First constrained-MDP LLM-agent benchmark for primary care, built from expert-validated real GP encounters, modeling six foundational clinical actions under a topological workflow prior and treating safety-informed abstention as a first-class outcome; evaluating 16 frontier LLMs shows performance degrades sharply as the action space scales and reveals a quality-safety gap where even the most diagnostically accurate models violate safety constraints in over half of high-risk cases, with a proposed constrained-RL training method narrowing but not closing the gap.",
+    "featured": false
   }
 ]
