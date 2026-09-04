@@ -11333,5 +11333,112 @@
     ],
     "summary": "First constrained-MDP LLM-agent benchmark for primary care, built from expert-validated real GP encounters, modeling six foundational clinical actions under a topological workflow prior and treating safety-informed abstention as a first-class outcome; evaluating 16 frontier LLMs shows performance degrades sharply as the action space scales and reveals a quality-safety gap where even the most diagnostically accurate models violate safety constraints in over half of high-risk cases, with a proposed constrained-RL training method narrowing but not closing the gap.",
     "featured": false
+  },
+  {
+    "title": "Source-Dependent Deference in Medical Imaging Agents Under Falsified Findings: A Pilot Audit",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": null,
+    "task": [
+      "safety evaluation"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2608.29800",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "safety",
+      "sycophancy",
+      "tool use",
+      "auditing"
+    ],
+    "summary": "Audits whether a ReAct-style tool-calling agent abandons an image-grounded correct answer once a falsified finding arrives, and whether the source of that finding matters: on 20 VQA-RAD closed questions across four model tiers, a negated finding delivered as quoted prose attributed to a radiologist produced far higher deference than the identical claim delivered as JSON from a tool the agent itself invoked (10 of 13 reversed answers vs. 1 of 13 at the strongest tier, exact McNemar p=0.0039), a source-and-delivery asymmetry the authors caution is from a small pilot that didn't meet its pre-specified stopping rule.",
+    "featured": false
+  },
+  {
+    "title": "Why Trust Your Agent? Empirical Security Gains from TRiSM-Guided Agentic Workflows in Healthcare",
+    "year": 2026,
+    "domain": "Report Generation",
+    "modality": null,
+    "task": [
+      "security evaluation",
+      "report generation"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.28666",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "security",
+      "prompt injection",
+      "TRiSM",
+      "least privilege"
+    ],
+    "summary": "Applies Gartner's Trust, Risk, and Security Management (TRiSM) framework — least privilege and defense-in-depth — to a medical report-generation agent and compares it against an insecure baseline across five LLMs, 800 generations, and 500 attack scenarios (RAG poisoning, data-field injection, network injection); the TRiSM-guided workflow cut RAG-poisoning attack success from 31% to 10%, data-field-injection success from 42% to 25%, eliminated network injection entirely, and raised report accuracy from 72.5% to 86.5%, showing the secure design is also the more reliable one.",
+    "featured": false
+  },
+  {
+    "title": "Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "tool use",
+      "tool learning"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2609.00065",
+    "code_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "agent skills",
+      "procedural knowledge",
+      "reproducibility"
+    ],
+    "summary": "Open library of 163 versioned, human-readable procedures across 16 scientific domains — including medical imaging, genomics, cheminformatics, and study design — encoding the field-specific procedural choices (accepted tests, authoritative identifier systems, required caveats) that a defensible analysis depends on, so that agents equipped with a skill follow the same conventions a domain expert would rather than an unconstrained model's improvised approach.",
+    "featured": false
+  },
+  {
+    "title": "BioMed-Agent-RL: A Meta Learning, All You Need for Biomedical Applications",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": null,
+    "task": [
+      "diagnosis",
+      "segmentation",
+      "report generation"
+    ],
+    "agent_type": [
+      "RL-trained",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2608.21864",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "reinforcement learning",
+      "meta-learning",
+      "preference optimization"
+    ],
+    "summary": "Unified medical agent for Clinical Vision Large Language Models adds adaptive orchestration on top of policy- and reward-based reinforcement learning and multimodal meta-learning, adaptively invoking clinical grounding, lesion segmentation, and field-specific synthesis across imaging modalities as a specialized expert system; reaches roughly 73% accuracy, a 5-point improvement over baseline models.",
+    "featured": false
   }
 ]
