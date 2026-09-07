@@ -11440,5 +11440,111 @@
     ],
     "summary": "Unified medical agent for Clinical Vision Large Language Models adds adaptive orchestration on top of policy- and reward-based reinforcement learning and multimodal meta-learning, adaptively invoking clinical grounding, lesion segmentation, and field-specific synthesis across imaging modalities as a specialized expert system; reaches roughly 73% accuracy, a 5-point improvement over baseline models.",
     "featured": false
+  },
+  {
+    "title": "From Analytics to Tumor Boards: An Evidence-Linked Multi-Agent Workflow for Oncology Feature Extraction",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "information extraction",
+      "clinical reasoning"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2608.28974",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "oncology",
+      "information extraction",
+      "tumor board",
+      "multi-agent"
+    ],
+    "summary": "OncoLens selects and aggregates fragmented oncology documents across a patient's record, then the NimbleMind Multi-Agent System (nMAS) extracts a clinician-informed schema of 328 attributes spanning diagnosis, staging, and cancer-specific fields; on 230 documents from 40 patients it reaches 82.6% precision, 87.5% recall, and 85.0% F1 on rank-weighted value-level extraction, substantially outpacing a comparison baseline, demonstrating a path from scattered oncology records to reusable structured data for tumor-board workflows.",
+    "featured": false
+  },
+  {
+    "title": "MedAgent-R1: Faithfulness-Aware Reinforcement Learning for Evidence-Grounded Medical Reasoning",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "clinical reasoning",
+      "retrieval"
+    ],
+    "agent_type": [
+      "RL-trained",
+      "RAG"
+    ],
+    "paper_url": "https://arxiv.org/abs/2608.30676",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "reinforcement learning",
+      "faithfulness",
+      "citation grounding",
+      "reward design"
+    ],
+    "summary": "Identifies that outcome-only RL rewards on retrieval agents produce 'confident hallucination' — accuracy rises while citation fabrication climbs from 16.5% to 31.8% as agents answer from parametric memory and backfill plausible-looking but unsupported citations — and fixes it with a faithfulness-gated reward that only credits accuracy when the answer is properly evidence-grounded, cutting fabrication to 4.7% and raising evidence-completeness F1 to 82.6 while outscoring GPT-4o on factual support and overclaiming, though still trailing it on raw accuracy.",
+    "featured": false
+  },
+  {
+    "title": "Examining the Vulnerability of Multi-Agent Medical Systems to Human Interventions for Clinical Reasoning",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "diagnosis",
+      "human-in-the-loop"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2609.02191",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "human-in-the-loop",
+      "reasoning shortcuts",
+      "multi-agent",
+      "MedQA"
+    ],
+    "summary": "Identifies 'fault points' — moments in simulated multi-agent MedQA dialogues where an agent's reasoning is most vulnerable to external influence — and measures how human intervention there reshapes outcomes: well-targeted interventions raise diagnostic accuracy by up to 40%, while poorly timed or misleading ones cut accuracy by 6% and increase diagnostic uncertainty; the simulated agents also reproduce clinician-like reasoning shortcuts such as premature closure and susceptibility to misleading information.",
+    "featured": false
+  },
+  {
+    "title": "Counterfactual Fairness Audits of Multi-Step Clinical LLM Agents Require a Measured Per-Action Instability Floor",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": null,
+    "task": [
+      "fairness auditing"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2609.03221",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "fairness",
+      "counterfactual auditing",
+      "instability",
+      "methodology"
+    ],
+    "summary": "Shows that standard counterfactual fairness audits of clinical LLM agents are uninterpretable without a baseline instability floor: re-running sixteen identical vignettes with nothing changed still flips the agent's action in 8.7% of cases, with the floor varying 0.022-0.179 by action type across two different models, so any disparity reported without that floor alongside it cannot be read as evidence of bias; introduces FairMedAgent, a counterfactual-fairness evaluation framework that measures demographic disparity net of this inherent instability, with code and data released.",
+    "featured": false
   }
 ]
