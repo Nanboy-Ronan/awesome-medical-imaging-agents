@@ -11546,5 +11546,29 @@
     ],
     "summary": "Shows that standard counterfactual fairness audits of clinical LLM agents are uninterpretable without a baseline instability floor: re-running sixteen identical vignettes with nothing changed still flips the agent's action in 8.7% of cases, with the floor varying 0.022-0.179 by action type across two different models, so any disparity reported without that floor alongside it cannot be read as evidence of bias; introduces FairMedAgent, a counterfactual-fairness evaluation framework that measures demographic disparity net of this inherent instability, with code and data released.",
     "featured": false
+  },
+  {
+    "title": "Agentic artificial intelligence in radiology workflow: from image interpretation to report quality control",
+    "year": 2026,
+    "domain": "Survey · Radiology",
+    "modality": null,
+    "task": [
+      "survey"
+    ],
+    "agent_type": null,
+    "paper_url": "https://doi.org/10.3389/fmed.2026.1927284",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Frontiers in Medicine",
+    "tags": [
+      "survey",
+      "radiology workflow",
+      "report quality control",
+      "clinical validation"
+    ],
+    "summary": "Reviews PubMed-indexed evidence from 2023-2026 tracing radiology AI from CNNs through foundation models to multi-agent systems that triage worklists, retrieve priors, process images, draft structured reports, and check for mistakes; finds multi-agent cross-verification lowers hallucination rates, intelligent triage cuts report turnaround by up to 43.7%, and GPT-4 catches 82.7% of report errors matching human readers, but nearly all evidence comes from single-center retrospective studies and every systematic review agrees the technology is unproven in the clinic pending prospective, multi-center trials.",
+    "featured": false
   }
 ]
