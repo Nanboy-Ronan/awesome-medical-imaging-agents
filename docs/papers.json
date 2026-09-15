@@ -11570,5 +11570,143 @@
     ],
     "summary": "Reviews PubMed-indexed evidence from 2023-2026 tracing radiology AI from CNNs through foundation models to multi-agent systems that triage worklists, retrieve priors, process images, draft structured reports, and check for mistakes; finds multi-agent cross-verification lowers hallucination rates, intelligent triage cuts report turnaround by up to 43.7%, and GPT-4 catches 82.7% of report errors matching human readers, but nearly all evidence comes from single-center retrospective studies and every systematic review agrees the technology is unproven in the clinic pending prospective, multi-center trials.",
     "featured": false
+  },
+  {
+    "title": "MedVA: An End-to-End Neuro-Symbolic Agentic System for Medical Volume Visualization",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": null,
+    "task": [
+      "visualization",
+      "segmentation"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "neuro-symbolic",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2609.14874",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "volume visualization",
+      "neuro-symbolic",
+      "ROI identification",
+      "human-computer interaction"
+    ],
+    "summary": "Three cooperating agents replace end-to-end MLLM inference for medical volume rendering: a neuro-symbolic intent-formulation agent grounds natural-language visualization requests in clinical knowledge, a multi-model ROI-identification agent locates semantically specified regions using pretrained medical segmentation models, and an objective-driven optimization agent tunes ROI visibility and occlusion via a volume-based visibility objective; a formative user study found the system usable across expertise levels while producing more clinically complete ROI specifications than MLLM-only reasoning.",
+    "featured": false
+  },
+  {
+    "title": "CaseWeaver: A Multi-Agent Framework for Multimodal Virtual Clinical Case Generation",
+    "year": 2026,
+    "domain": "Workflow Simulation",
+    "modality": null,
+    "task": [
+      "data generation",
+      "simulation"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2609.05480",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "synthetic data",
+      "virtual patients",
+      "multimodal",
+      "clinical case generation"
+    ],
+    "summary": "Multi-agent framework builds a timeline-anchored Latent Clinical Case Graph that ties patient background, latent disease states, and clinical events together, then modality-specific agents generate coherent records, laboratory results, physiological signals, and medical images from scoped subgraphs of that shared representation; outperforms general-model and agentic-workflow baselines on both AgentClinic-based clinical inferability and a new Virtual Case Diversity score.",
+    "featured": false
+  },
+  {
+    "title": "MedTRACE: Tool-Augmented Multimodal Clinical Reasoning Agents for Evidence-Grounded Decision-Making",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "clinical reasoning",
+      "visual grounding",
+      "retrieval"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2609.14823",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "evidence-grounded",
+      "visual grounding",
+      "calibration",
+      "multimodal"
+    ],
+    "summary": "Tool-augmented clinical reasoning agent builds a unified patient-state representation from EHR, imaging, and physiological signals, then iterates hypothesis formation, tool-aware deliberation, and evidence verification — dynamically invoking visual grounding, retrieval, and structured-parsing tools and logging results to an evidence memory checked by a consistency verifier; improves diagnostic accuracy by 5.4% and AUROC by 4.7 points over the strongest baseline, lifts visual-grounding IoU by 6.5 points, cuts expected calibration error by 31.6%, and reduces unsupported diagnostic errors by 27.8%.",
+    "featured": false
+  },
+  {
+    "title": "EmoMed: An Emotionally-Aware Agent for Multimodal Medical Support with Real-Time Information Retrieval",
+    "year": 2026,
+    "domain": "Multimodal",
+    "modality": null,
+    "task": [
+      "patient communication",
+      "retrieval"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2609.07194",
+    "code_url": "https://github.com/NasonovIvan/EmoMed-Agent",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "emotion-aware",
+      "patient communication",
+      "retrieval-augmented",
+      "multimodal"
+    ],
+    "summary": "Multimodal medical consultation agent detects affect indicators (anxiety, confusion, urgency) from text and medical images and adapts response tone, structure, and detail while grounding clinical claims through dual web-based fact-checking and an API-connected medical knowledge base; evaluated across seven LLM backbones (GPT-4/5, Qwen3, Llama 4, Gemini 2.5, Grok4, Claude3) with LLM-as-judge, MedQA-style, and multimodal medical benchmarks, emotionally adaptive responses improve perceived empathy and communication clarity in a controlled user study without compromising factual accuracy.",
+    "featured": false
+  },
+  {
+    "title": "EMR: Self-Evolving Medical Multi-Agent System via Experience Mining and Reuse",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "clinical reasoning"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "self-evolving"
+    ],
+    "paper_url": "https://arxiv.org/abs/2609.15161",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "self-evolving",
+      "experience memory",
+      "multi-agent",
+      "multidisciplinary consultation"
+    ],
+    "summary": "Self-evolving medical multi-agent system organizes accumulated diagnostic knowledge into a hierarchical experience library of clinical principles, diagnostic patterns, and representative cases; a planner agent coordinates department-specific specialist agents to emulate multidisciplinary consultation while a summary agent synthesizes the final decision, and correct insights and failure warnings mined from each case's reasoning trajectory feed back into the library, consistently outperforming state-of-the-art medical multi-agent baselines and generalizing across specialties and LLM backbones.",
+    "featured": false
   }
 ]
