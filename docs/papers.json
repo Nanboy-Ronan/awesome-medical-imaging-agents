@@ -11853,5 +11853,181 @@
     ],
     "summary": "LLM agent for Alzheimer's disease analysis integrates a reasoning engine, specialized medical tools, and a collaborative outcome coordinator to handle multi-modal diagnosis and prognosis from MRI and PET, improving multi-modal diagnosis accuracy by 2.7% and multi-modal prognosis by 0.7% over prior methods.",
     "featured": false
+  },
+  {
+    "title": "MAC-RRG: Iterative Multi-Agent Collaboration for X-ray Radiology Report Generation",
+    "year": 2026,
+    "domain": "Report Generation",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "report generation",
+      "retrieval"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2609.26124",
+    "code_url": "https://github.com/Event-AHU/Medical_Image_Analysis/tree/main/MAC_RRG",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "knowledge graph",
+      "iterative refinement",
+      "radiology reporting"
+    ],
+    "summary": "Two knowledge agents gather structured disease and anatomy relations plus unstructured medical references to iteratively refine chest X-ray reports on IU X-ray, MIMIC-CXR, and CheXpert Plus.",
+    "featured": false
+  },
+  {
+    "title": "RACA: Rule-Aligned Collaborative Agents for Evidence-Grounded Breast Ultrasound Classification",
+    "year": 2026,
+    "domain": "Ultrasound",
+    "modality": [
+      "ultrasound"
+    ],
+    "task": [
+      "diagnosis",
+      "classification"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "retrieval"
+    ],
+    "paper_url": "https://github.com/Swecamellia/RACA/blob/main/Paper-2740.pdf",
+    "code_url": null,
+    "project_url": "https://github.com/Swecamellia/RACA",
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 (accepted)",
+    "tags": [
+      "multi-agent",
+      "breast ultrasound",
+      "evidence-grounded",
+      "rule-aligned diagnosis"
+    ],
+    "summary": "Perception, risk-modeling, and critic agents combine ultrasound lesion evidence with explicit diagnostic rules and prior-case retrieval for traceable breast-lesion classification across three benchmarks.",
+    "featured": false
+  },
+  {
+    "title": "A multitask framework for automated multi-frame right upper quadrant ultrasound interpretation and clinical decision support",
+    "year": 2026,
+    "domain": "Ultrasound",
+    "modality": [
+      "ultrasound"
+    ],
+    "task": [
+      "classification",
+      "report generation",
+      "clinical decision support"
+    ],
+    "agent_type": [
+      "vision-language agent"
+    ],
+    "paper_url": "https://doi.org/10.1038/s41467-026-77498-w",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Nature Communications",
+    "tags": [
+      "right upper quadrant ultrasound",
+      "multi-frame imaging",
+      "report generation",
+      "surgical triage"
+    ],
+    "summary": "A vision-language agent analyzes multi-frame right upper quadrant ultrasound studies to classify 16 findings, generate reports, and support cholecystectomy decisions, with evaluation across three institutions.",
+    "featured": false
+  },
+  {
+    "title": "AutoProtocol: Agent-Driven Automation of CT and MRI Protocoling in Radiology",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "CT",
+      "MRI"
+    ],
+    "task": [
+      "protocol selection",
+      "retrieval"
+    ],
+    "agent_type": [
+      "RAG"
+    ],
+    "paper_url": "https://openreview.net/forum?id=UXJ4X0HCHi",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MIDL 2026 Short Paper",
+    "tags": [
+      "RAG",
+      "exam protocoling",
+      "patient history"
+    ],
+    "summary": "Retrieves similar prior examinations from a 4.4-million-exam clinical database to help an LLM agent recommend patient-specific CT and MRI protocols without task-specific fine-tuning.",
+    "featured": false
+  },
+  {
+    "title": "HistoGym: A Reinforcement Learning Environment for Histopathological Image Analysis",
+    "year": 2024,
+    "domain": "Benchmark",
+    "modality": [
+      "WSI"
+    ],
+    "task": [
+      "tumor detection",
+      "classification",
+      "agent training"
+    ],
+    "agent_type": [
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2408.08847",
+    "code_url": "https://github.com/XjtuAI/HistoGym",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "reinforcement-learning",
+      "pathology",
+      "whole-slide navigation",
+      "benchmark"
+    ],
+    "summary": "Open-source reinforcement-learning environment exposes multi-scale whole-slide navigation, observations, actions, and rewards for training agents on histopathology tumor detection and classification.",
+    "featured": false
+  },
+  {
+    "title": "Towards Accessible Radiological Image Analysis via Local Agentic Framework: Validation in Mammography",
+    "year": 2026,
+    "domain": "Workflow Simulation",
+    "modality": [
+      "mammography"
+    ],
+    "task": [
+      "workflow automation",
+      "model development"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://doi.org/10.64898/2026.08.03.26359608",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "medRxiv",
+    "tags": [
+      "mammography",
+      "model development",
+      "radiologist-guided"
+    ],
+    "summary": "A local LLM agent reconstructs and improves a mammography deep-learning workflow, including a multi-view consensus step, then evaluates the customized model on external breast-imaging datasets.",
+    "featured": false
   }
 ]
