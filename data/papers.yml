@@ -10439,3 +10439,105 @@ papers:
       - oncology
     summary: "First large-scale benchmark for step-wise hallucination detection in 3D oncological PET/CT, with over 12,000 images and 1,000,000+ image-statement pairs showing current VLMs are highly susceptible to adversarial but clinically plausible reasoning steps."
     featured: false
+
+  - title: "Agentic Visual Reasoning in Whole-Slide Pathology Images via Active Perception"
+    year: 2026
+    domain: "Pathology"
+    modality:
+      - WSI
+    task:
+      - visual question answering
+      - diagnosis
+      - active perception
+    agent_type:
+      - tool-using
+      - RL-trained
+    paper_url: "https://arxiv.org/abs/2608.08648"
+    code_url: "https://github.com/G14nTDo4/AdaptivePath"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - whole-slide imaging
+      - active perception
+      - reinforcement-learning
+      - cancer subtyping
+    summary: "AdaptivePath treats whole-slide image analysis as sequential decision-making, with a PPO-trained Navigator choosing observation locations and magnification, a Morphology Interpreter extracting question-specific evidence, and a Deliberator-Arbiter pair refining answers across scales, reaching 80.14% accuracy on six-cohort TCGA cancer subtyping and 82.9% pathologist accuracy in a blinded diagnostic-utility study using its selected observation sequences."
+    featured: false
+
+  - title: "Agentic Autoresearch for CT Reconstruction"
+    year: 2026
+    domain: "Workflow Simulation"
+    modality:
+      - CT
+    task:
+      - tool use
+      - automated research
+      - benchmarking
+    agent_type:
+      - tool-using
+    paper_url: "https://arxiv.org/abs/2607.22824"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "arXiv"
+    tags:
+      - CT reconstruction
+      - autoresearch
+      - benchmarking
+      - automated science
+    summary: "An autonomous research-loop agent edits CT reconstruction solvers, runs cluster benchmarking jobs, and reads back a calibrated headroom score against an FBP baseline across 26 methods on Mayo low-dose and sparse-view breast CT, discovering a 969-parameter solver that matches top performers at 0.4% of their parameter count while showing that idealized noiseless leaderboards fail to predict robustness once realistic noise is introduced."
+    featured: false
+
+  - title: "End-to-End PET/CT Interpretation and Quantification with an LLM-Orchestrated AI Agent: A Real-World Pilot Study"
+    year: 2026
+    domain: "3D Imaging"
+    modality:
+      - PET
+      - CT
+    task:
+      - report generation
+      - tool use
+      - quantification
+    agent_type:
+      - tool-using
+    paper_url: "https://jnm.snmjournals.org/content/early/2026/06/18/jnumed.126.272362"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Journal of Nuclear Medicine"
+    tags:
+      - PET/CT
+      - nuclear medicine
+      - lung cancer staging
+      - DICOM
+    summary: "A three-layer LLM-orchestrated agent (a reasoning LLM as workflow orchestrator, a tool-abstraction layer, and Python execution modules running AutoPET nnU-Net segmentation, TotalSegmentator, and SUV/DICOM processing) autonomously interprets and quantifies FDG PET/CT for lung cancer staging end to end, completing 169 of 170 real-world baseline exams with 100% sensitivity for primary tumor detection but far lower sensitivity for adrenal (18.2%) and brain (0%) metastases."
+    featured: false
+
+  - title: "Trustworthy Multimodal AI Agents for Early Breast Cancer Detection and Clinical Decision Support"
+    year: 2025
+    domain: "Radiology"
+    modality:
+      - mammography
+    task:
+      - diagnosis
+      - risk assessment
+      - explainability
+    agent_type:
+      - multi-agent
+    paper_url: "https://doi.org/10.3390/engproc2025112052"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "Eng. Proc. (ICATH 2025)"
+    tags:
+      - breast cancer
+      - mammography
+      - multi-agent
+      - explainable AI
+    summary: "Four cooperating agents — an Imaging Agent (EfficientNet/ResNet/SwinUNet) for mammogram lesion classification, a Clinical Agent (LightGBM/CatBoost/TabNet) for structured BI-RADS and density features, a Risk Assessment Agent fusing both into calibrated malignancy scores, and a role-specific Explainability Agent (Grad-CAM, SHAP, LLM-generated plain-language summaries) — reach 0.922 AUC and 81.0% accuracy on a CBIS-DDSM held-out test set with well-calibrated probabilities (Brier 0.129, ECE 0.075)."
+    featured: false
