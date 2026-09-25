@@ -12029,5 +12029,237 @@
     ],
     "summary": "A local LLM agent reconstructs and improves a mammography deep-learning workflow, including a multi-view consensus step, then evaluates the customized model on external breast-imaging datasets.",
     "featured": false
+  },
+  {
+    "title": "Hepato-LLaVA: An Expert MLLM with Sparse Topo-Pack Attention for Hepatocellular Pathology Analysis on Whole Slide Images",
+    "year": 2026,
+    "domain": "Pathology",
+    "modality": [
+      "WSI"
+    ],
+    "task": [
+      "diagnosis",
+      "visual question answering"
+    ],
+    "agent_type": [
+      "vision-language agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2602.19424",
+    "code_url": "https://github.com/PRIS-CV/Hepto-LLaVA",
+    "project_url": "https://pris-cv.github.io/Hepto-LLaVA/",
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "hepatocellular carcinoma",
+      "whole-slide imaging",
+      "sparse attention",
+      "expert MLLM"
+    ],
+    "summary": "Introduces a sparse topo-pack attention mechanism and a 33K-pair expert-validated QA dataset to enable an expert multimodal LLM to interpret gigapixel hepatocellular carcinoma whole-slide pathology images.",
+    "featured": false
+  },
+  {
+    "title": "BiliVLA: Scene-Aware Vision-Language-Action Model with Reinforcement Learning for Autonomous Biliary Endoscopic Navigation",
+    "year": 2026,
+    "domain": "Endoscopy",
+    "modality": [
+      "endoscopy"
+    ],
+    "task": [
+      "navigation",
+      "autonomous control"
+    ],
+    "agent_type": [
+      "vision-language-action",
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.23531",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "biliary endoscopy",
+      "ERCP",
+      "vision-language-action",
+      "autonomous navigation"
+    ],
+    "summary": "Combines scene-aware semantic grounding with reinforcement learning to autonomously navigate biliary endoscopic procedures, achieving 91.96% action precision and an 84.85% success rate in phantom experiments.",
+    "featured": false
+  },
+  {
+    "title": "SurgVLA-Bench: Towards Evaluating Vision-Language-Action Models for Laparoscopic Surgical Robotics",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "endoscopy"
+    ],
+    "task": [
+      "benchmark",
+      "evaluation"
+    ],
+    "agent_type": [
+      "vision-language-action"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.29247",
+    "code_url": "https://github.com/VCL-HNU/SurgVLA",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": "https://github.com/VCL-HNU/SurgVLA",
+    "venue": "arXiv",
+    "tags": [
+      "vision-language-action",
+      "laparoscopic surgery",
+      "benchmark",
+      "surgical robotics"
+    ],
+    "summary": "First comprehensive benchmark for vision-language-action models in laparoscopic surgical robotics, finding autoregressive models handle semantic understanding well but remain constrained by physical limits like endoscopic field-of-view.",
+    "featured": false
+  },
+  {
+    "title": "SkinFlow: Efficient Information Transmission for Open Dermatological Diagnosis via Dynamic Visual Encoding and Staged RL",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": [
+      "dermoscopy"
+    ],
+    "task": [
+      "diagnosis",
+      "classification"
+    ],
+    "agent_type": [
+      "vision-language agent",
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2601.09136",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "dermatology",
+      "dynamic visual encoding",
+      "staged reinforcement learning"
+    ],
+    "summary": "Uses a dynamic vision encoder and two-stage reinforcement learning to optimize visual information transmission for open dermatological diagnosis, outperforming larger general-purpose vision-language models without parameter scaling.",
+    "featured": false
+  },
+  {
+    "title": "Skin-R1: Clinical Knowledge-Guided Dermatological Diagnosis Using Vision-Language Models",
+    "year": 2025,
+    "domain": "Medical VLM",
+    "modality": [
+      "dermoscopy"
+    ],
+    "task": [
+      "diagnosis"
+    ],
+    "agent_type": [
+      "vision-language agent",
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2511.14900",
+    "code_url": "https://github.com/l593191569/Skin-R1",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "ECCV 2026",
+    "tags": [
+      "dermatology",
+      "textbook-grounded reasoning",
+      "reinforcement learning",
+      "differential diagnosis"
+    ],
+    "summary": "Combines textbook-grounded clinical reasoning supervision with reinforcement learning over disease hierarchies to guide a dermatology vision-language model through differential-diagnosis reasoning trajectories.",
+    "featured": false
+  },
+  {
+    "title": "CardAIc-Agents: A Multimodal Framework with Hierarchical Adaptation for Cardiac Care Support",
+    "year": 2025,
+    "domain": "Multimodal",
+    "modality": [
+      "echocardiography",
+      "cardiac imaging"
+    ],
+    "task": [
+      "diagnosis",
+      "clinical decision support",
+      "tool use"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using",
+      "RAG"
+    ],
+    "paper_url": "https://arxiv.org/abs/2508.13256",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MIDL 2026",
+    "tags": [
+      "cardiac care",
+      "hierarchical adaptation",
+      "multidisciplinary team",
+      "knowledge-grounded planning"
+    ],
+    "summary": "A CardiacRAG agent plans from a curated cardiac knowledge base while a Chief agent autonomously selects diagnostic tests and tools, adaptively personalizing multimodal cardiac care pathways with a multidisciplinary discussion team for complex cases.",
+    "featured": false
+  },
+  {
+    "title": "MedHEval: Benchmarking Hallucinations and Mitigation Strategies in Medical Large Vision-Language Models",
+    "year": 2025,
+    "domain": "Benchmark",
+    "modality": null,
+    "task": [
+      "benchmark",
+      "hallucination evaluation"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2503.02157",
+    "code_url": "https://github.com/Aofei-Chang/MedHEval",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": "https://github.com/Aofei-Chang/MedHEval",
+    "venue": "arXiv",
+    "tags": [
+      "hallucination",
+      "benchmark",
+      "medical VLM",
+      "mitigation strategies"
+    ],
+    "summary": "Benchmarks 11 medical vision-language models and 7 mitigation techniques across close- and open-ended tasks, categorizing hallucinations into visual misinterpretation, knowledge deficiency, and context misalignment.",
+    "featured": false
+  },
+  {
+    "title": "Med-StepBench: A Hierarchical Reasoning Framework for Evaluating Hallucinations in Medical Vision-Language Models",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "PET",
+      "CT"
+    ],
+    "task": [
+      "benchmark",
+      "hallucination evaluation"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2605.10002",
+    "code_url": "https://github.com/alibaba-damo-academy/ClinHallu",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": "https://github.com/alibaba-damo-academy/ClinHallu",
+    "venue": "IJCAI-ECAI 2026",
+    "tags": [
+      "hallucination",
+      "PET/CT",
+      "step-wise reasoning",
+      "oncology"
+    ],
+    "summary": "First large-scale benchmark for step-wise hallucination detection in 3D oncological PET/CT, with over 12,000 images and 1,000,000+ image-statement pairs showing current VLMs are highly susceptible to adversarial but clinically plausible reasoning steps.",
+    "featured": false
   }
 ]
