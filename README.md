@@ -45,13 +45,13 @@ Twelve landmark systems, one per major domain, for readers who want the fastest 
 - [Endoscopy and Surgical Imaging Agents (19)](#endoscopy-and-surgical-imaging-agents-19)
 - [Ophthalmology Agents (13)](#ophthalmology-agents-13)
 - [3D CT / MRI / Volumetric Imaging Agents (22)](#3d-ct--mri--volumetric-imaging-agents-22)
-- [Segmentation and Annotation Agents (14)](#segmentation-and-annotation-agents-14)
-- [Report Generation Agents (17)](#report-generation-agents-17)
+- [Segmentation and Annotation Agents (17)](#segmentation-and-annotation-agents-17)
+- [Report Generation Agents (18)](#report-generation-agents-18)
 - [Medical Vision-Language Model (VLM) Agents (33)](#medical-vision-language-model-vlm-agents-33)
   - [Backbone Foundation Models (not agents) (32)](#backbone-foundation-models-not-agents-32)
 - [Tool-Using and Multi-Agent Frameworks](#tool-using-and-multi-agent-frameworks)
   - [Clinical Reasoning Agents (76)](#clinical-reasoning-agents-76)
-  - [Workflow and Simulation Agents (50)](#workflow-and-simulation-agents-50)
+  - [Workflow and Simulation Agents (52)](#workflow-and-simulation-agents-52)
   - [Agent Skills and Tool Learning (10)](#agent-skills-and-tool-learning-10)
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
   - [Benchmark Table](#benchmark-table)
@@ -247,10 +247,13 @@ Agents for volumetric CT, MRI, PET, dosimetry, neuroimaging, and multi-organ ima
 - [INFORM-CT: INtegrating LLMs and VLMs FOR Incidental Findings Management in Abdominal CT](https://arxiv.org/abs/2512.14732) — arXiv (2025). Plan-and-execute agentic framework where an LLM planner generates Python scripts and a VLM executor detects, classifies, and reports incidental findings in abdominal CT scans, outperforming pure VLM baselines.
 - [VoxelPrompt: A Vision Agent for End-to-End Medical Image Analysis](http://arxiv.org/abs/2410.08397) - Published in arXiv (2024). Multi-stage vision agent for end-to-end volumetric medical image analysis covering segmentation, detection, and QA across CT, MRI, and PET.
 
-## Segmentation and Annotation Agents (14)
+## Segmentation and Annotation Agents (17)
 
 Agents that plan, prompt, refine, or evaluate segmentation and annotation workflows.
 
+- [A Guideline-Aware AI Agent for Zero-Shot Target Volume Auto-Delineation](https://papers.miccai.org/miccai-2026/0009-Paper5049.html) — MICCAI 2026 (2026). OncoAgent converts textual radiotherapy guidelines into 3D target contours without target-volume annotations and adapts to alternative esophageal guidelines without retraining. [Code](https://github.com/Oncosoft-Research/OncoAgent)
+- [Source-Free Domain Adaptation for Medical Image Segmentation via LLM-Agent Collaboration](https://papers.miccai.org/miccai-2026/0975-Paper4948.html) — MICCAI 2026 (2026). RaMA uses a multimodal LLM to check semantic errors and guide a committee of SAM models toward consensus pseudo-labels for source-free cardiac MRI segmentation adaptation. [Code](https://github.com/TianyuZhang-hdu/RaMA)
+- [TSegAgent: Zero-Shot Tooth Segmentation via Geometry-Aware Vision-Language Agents](https://papers.miccai.org/miccai-2026/1094-Paper0737.html) — MICCAI 2026 (2026). A vision-language agent uses multi-view observations and dental-arch geometry to guide zero-shot tooth instance segmentation and identification in 3D intraoral scans. [Code](https://github.com/znshje/TSegAgent)
 - [Human and AI collaboration for pulmonary nodule segmentation](https://arxiv.org/abs/2606.22486) — arXiv (2026). Hi-Seg lets medical and non-medical annotators iteratively refine SAM prompts through trial-and-error and semantic reasoning for pulmonary nodule segmentation, reaching a mean Dice near 85% across 1,179 patients at 12 centers — 10-22% above five deep-learning baselines — while reducing annotation time for medical annotators.
 - [Active few-shot segmentation by reinforcing data selection](https://arxiv.org/abs/2607.22371) — EMA4MICCAI 2026 (2026). Reinforcement-learning agent directly predicts the optimal support set from unlabeled candidate images to maximise downstream few-shot segmentation performance, outperforming per-sample active-selection baselines on cross-institutional pelvic MRI.
 - [Understanding From Human Perspective: A Multi-agent System for Interactive Egocentric Medical Image Segmentation](https://arxiv.org/abs/2607.17341) — arXiv (2026). EgoMed-Agent confirms the clinician-intended target through a reliability-scored grounding workflow and keeps interactive segmentation locked onto that target across egocentric smart-glasses video via localization-guided mask propagation, reaching 71.34% average Dice versus 11.70% for the best text-prompted baseline. [Code](https://github.com/wdyyyyyy/EgoMed-Agent)
@@ -266,10 +269,11 @@ Agents that plan, prompt, refine, or evaluate segmentation and annotation workfl
 - [Towards User-Centered Interactive Medical Image Segmentation in VR with an Assistive AI Agent](https://arxiv.org/abs/2505.07214) - Published in arXiv (2025). SAMIRA is a conversational VR agent that assists radiologists with localizing, segmenting, and visualizing 3D medical image structures through speech and multimodal interaction.
 - [Iteratively-Refined Interactive 3D Medical Image Segmentation with Multi-Agent Reinforcement Learning](https://arxiv.org/abs/1911.10334) - Published in CVPR (2020). Foundational paper modelling iterative 3D medical image segmentation as an MDP; each voxel acts as an independent agent sharing a behaviour policy, converging to accurate segmentations with fewer user interactions than prior methods.
 
-## Report Generation Agents (17)
+## Report Generation Agents (18)
 
 Agents focused on automated imaging report drafting, refinement, evaluation, and quality control.
 
+- [A Multi-Agent Framework for Automated MRI Reporting in Glioma: A Real-World Clinical Validation](https://papers.miccai.org/miccai-2026-sat/MedAgent_007.html) — MICCAI 2026 MedAgent workshop (2026). Specialist agents align multi-sequence MRI, segment abnormalities, grade glioma, and draft and review reports under human oversight; evaluated retrospectively on 63 adult cases.
 - [MAC-RRG: Iterative Multi-Agent Collaboration for X-ray Radiology Report Generation](https://arxiv.org/abs/2609.26124) — arXiv (2026). Structured knowledge-graph and medical-reference agents supply complementary evidence to iteratively refine chest X-ray reports on IU X-ray, MIMIC-CXR, and CheXpert Plus. [Code](https://github.com/Event-AHU/Medical_Image_Analysis/tree/main/MAC_RRG)
 - [STRIVE: Multi-Agent Structured Temporal Reasoning with Integrated Verification for Longitudinal Radiology Report Generation](https://arxiv.org/abs/2608.24237) — arXiv (2026). Diagnosis, Attribute, and Temporal Change Agents produce explicit intermediate evidence for longitudinal chest X-ray reports, with the Temporal Change Agent trained via Progression-Aware GRPO and a Consistency Gate plus Validation Agent verifying outputs, more than doubling Longitudinal Change Concordance on Longitudinal-MIMIC.
 - [Multi-Agent AI System for Radiology Report Structuring and Quality Assurance with Independent Radiologist Evaluation](https://arxiv.org/abs/2608.18072) — arXiv (2026). Locally deployed multi-agent pipeline restructures 22,270 CT report sentences into standardized anatomical sections while flagging findings-impression mismatches, gender-anatomy conflicts, and undocumented critical-finding communication, rated "excellent" or "good" by independent radiologists in 84% of evaluated reports.
@@ -448,10 +452,12 @@ Agents for diagnosis, differential reasoning, treatment planning, retrieval, and
 - [MedAide: Information Fusion and Anatomy of Medical Intents via LLM-based Agent Collaboration](http://arxiv.org/abs/2410.12532) - Published in arXiv (2024). Decomposes physician intents into coordinated agent subtasks.
 - [Multi-agent Searching System for Medical Information](http://arxiv.org/abs/2203.12465) - Published in arXiv (2022). Early agentic pipeline that dispatches searchers and summarizers for literature triage.
 
-### Workflow and Simulation Agents (50)
+### Workflow and Simulation Agents (52)
 
 Agents and environments for clinical workflow automation, simulation, and operational task execution.
 
+- [An Artifact-Based Agent Framework for Adaptive and Reproducible Medical Image Processing](https://papers.miccai.org/miccai-2026/0049-Paper2038.html) — MICCAI 2026 (2026). An agent configures CT and MRI processing from structured artifact contracts while a deterministic workflow executor records provenance and supports repeatable execution across heterogeneous cohorts. [Code](https://github.com/MASILab/medimg-agent)
+- [AutoLand: A Data-Efficient Automated Agentic Workflow for Universal Medical Landmark Detection](https://papers.miccai.org/miccai-2026/0082-Paper0716.html) — MICCAI 2026 (2026). A vision-language agent combines modality-specific physical characteristics with a medical deep-learning library to choose few-shot landmark-detection training strategies across X-ray and MRI datasets.
 - [Towards Accessible Radiological Image Analysis via Local Agentic Framework: Validation in Mammography](https://doi.org/10.64898/2026.08.03.26359608) — medRxiv (2026). A local LLM agent reconstructs and improves a mammography model workflow, including multi-view consensus, then evaluates the customized model on external breast-imaging datasets.
 - [mAIstro: An Open-Source Multi-Agentic System for Automated End-to-End Development of Radiomics and Deep Learning Models for Medical Imaging](https://arxiv.org/abs/2505.03785) — European Journal of Radiology: Artificial Intelligence (2025). Open-source autonomous multi-agentic framework orchestrates exploratory data analysis, radiomic feature extraction, segmentation, classification, and regression through a natural-language interface requiring no coding; evaluated across a diverse prompt set spanning 16 open-source datasets and multiple imaging modalities, the agents successfully executed all tasks and produced validated models. [Code](https://github.com/eltzanis/mAIstro)
 - [CaseWeaver: A Multi-Agent Framework for Multimodal Virtual Clinical Case Generation](https://arxiv.org/abs/2609.05480) — arXiv (2026). Multi-agent framework builds a timeline-anchored Latent Clinical Case Graph that ties patient background, latent disease states, and clinical events together, then modality-specific agents generate coherent records, laboratory results, physiological signals, and medical images from scoped subgraphs of that shared representation; outperforms general-model and agentic-workflow baselines on both AgentClinic-based clinical inferability and a new Virtual Case Diversity score.
@@ -786,8 +792,10 @@ Benchmarks with explicit imaging modality and task metadata.
 - [RadioRAG: Online Retrieval-Augmented Generation for Radiology Question Answering](https://arxiv.org/abs/2407.15621) — arXiv (2024) · *Radiology Agents*
 - [Hybrid Retrieval-Generation Reinforced Agent for Medical Image Report Generation](http://arxiv.org/abs/1805.08298) — arXiv (2018) · *Report Generation Agents*
 
-### Multi-Agent Collaboration (147)
+### Multi-Agent Collaboration (149)
 
+- [Source-Free Domain Adaptation for Medical Image Segmentation via LLM-Agent Collaboration](https://papers.miccai.org/miccai-2026/0975-Paper4948.html) — MICCAI 2026 (2026) · *Segmentation and Annotation Agents*
+- [A Multi-Agent Framework for Automated MRI Reporting in Glioma: A Real-World Clinical Validation](https://papers.miccai.org/miccai-2026-sat/MedAgent_007.html) — MICCAI 2026 MedAgent workshop (2026) · *Report Generation Agents*
 - [CardAIc-Agents: A Multimodal Framework with Hierarchical Adaptation for Cardiac Care Support](https://arxiv.org/abs/2508.13256) — MIDL 2026 (2025) · *Medical VLM Agents*
 - [XrayClaw: Cooperative-Competitive Multi-Agent Alignment for Trustworthy Chest X-ray Diagnosis](https://arxiv.org/abs/2604.02695) — arXiv (2026) · *Radiology Agents*
 - [LAMMI-Pathology: A Tool-Centric Bottom-Up LVLM-Agent Framework for Molecularly Informed Medical Intelligence in Pathology](https://arxiv.org/abs/2602.18773) — arXiv (2026) · *Pathology Agents*
@@ -973,8 +981,9 @@ Benchmarks with explicit imaging modality and task metadata.
 - [HistoGym: A Reinforcement Learning Environment for Histopathological Image Analysis](https://arxiv.org/abs/2408.08847) — arXiv (2024) · *Benchmarks*
 - [Iteratively-Refined Interactive 3D Medical Image Segmentation with Multi-Agent Reinforcement Learning](https://arxiv.org/abs/1911.10334) — CVPR (2020) · *Segmentation Agents*
 
-### Human-in-the-Loop (19)
+### Human-in-the-Loop (20)
 
+- [A Multi-Agent Framework for Automated MRI Reporting in Glioma: A Real-World Clinical Validation](https://papers.miccai.org/miccai-2026-sat/MedAgent_007.html) — MICCAI 2026 MedAgent workshop (2026) · *Report Generation Agents*
 - [MedSAM-Agent: Empowering Interactive Medical Image Segmentation with Multi-turn Agentic Reinforcement Learning](https://arxiv.org/abs/2602.03320) — arXiv (2026) · *Segmentation Agents*
 - [MedClarify: An information-seeking AI agent for medical diagnosis with case-specific follow-up questions](https://arxiv.org/abs/2602.17308) — arXiv (2026) · *Clinical Reasoning Agents*
 - [Virtual Speech Therapist: A Clinician-in-the-Loop AI Speech Therapy Agent for Personalized and Supervised Therapy](https://arxiv.org/abs/2605.01101) — arXiv (2026) · *Workflow Agents*
@@ -1085,7 +1094,7 @@ Surveys and position papers on medical AI agents, evaluation, safety, and deploy
 
 - Structured metadata for this list is maintained in [data/papers.yml](data/papers.yml).
 - A machine-readable table view is available in [docs/papers.json](docs/papers.json).
-- Last updated: 2026-08-22.
+- Last updated: 2026-09-26.
 
 ## Contributing
 

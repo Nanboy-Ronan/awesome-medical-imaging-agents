@@ -10541,3 +10541,146 @@ papers:
       - explainable AI
     summary: "Four cooperating agents — an Imaging Agent (EfficientNet/ResNet/SwinUNet) for mammogram lesion classification, a Clinical Agent (LightGBM/CatBoost/TabNet) for structured BI-RADS and density features, a Risk Assessment Agent fusing both into calibrated malignancy scores, and a role-specific Explainability Agent (Grad-CAM, SHAP, LLM-generated plain-language summaries) — reach 0.922 AUC and 81.0% accuracy on a CBIS-DDSM held-out test set with well-calibrated probabilities (Brier 0.129, ECE 0.075)."
     featured: false
+
+  # ── MICCAI 2026 additions ────────────────────────────────────────────────
+
+  - title: "A Guideline-Aware AI Agent for Zero-Shot Target Volume Auto-Delineation"
+    year: 2026
+    domain: "Segmentation"
+    modality:
+      - CT
+    task:
+      - segmentation
+      - radiotherapy planning
+    agent_type:
+      - tool-using
+    paper_url: "https://papers.miccai.org/miccai-2026/0009-Paper5049.html"
+    code_url: "https://github.com/Oncosoft-Research/OncoAgent"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "MICCAI 2026"
+    tags:
+      - clinical guidelines
+      - target delineation
+      - zero-shot
+    summary: "OncoAgent converts textual radiotherapy guidelines into 3D target contours without target-volume annotations, and adapts to alternative esophageal guidelines without retraining."
+    featured: false
+
+  - title: "Source-Free Domain Adaptation for Medical Image Segmentation via LLM-Agent Collaboration"
+    year: 2026
+    domain: "Segmentation"
+    modality:
+      - MRI
+    task:
+      - segmentation
+      - domain adaptation
+    agent_type:
+      - multi-agent
+    paper_url: "https://papers.miccai.org/miccai-2026/0975-Paper4948.html"
+    code_url: "https://github.com/TianyuZhang-hdu/RaMA"
+    project_url: null
+    dataset_url: "https://www.ub.edu/mnms/"
+    benchmark_url: null
+    venue: "MICCAI 2026"
+    tags:
+      - cardiac MRI
+      - source-free adaptation
+      - SAM
+    summary: "RaMA uses a multimodal LLM to check semantic errors and guide a committee of SAM models toward consensus pseudo-labels for source-free cardiac MRI segmentation adaptation."
+    featured: false
+
+  - title: "TSegAgent: Zero-Shot Tooth Segmentation via Geometry-Aware Vision-Language Agents"
+    year: 2026
+    domain: "Segmentation"
+    modality:
+      - 3D intraoral scan
+    task:
+      - segmentation
+      - tooth identification
+    agent_type:
+      - tool-using
+    paper_url: "https://papers.miccai.org/miccai-2026/1094-Paper0737.html"
+    code_url: "https://github.com/znshje/TSegAgent"
+    project_url: null
+    dataset_url: "https://osf.io/um96h/"
+    benchmark_url: null
+    venue: "MICCAI 2026"
+    tags:
+      - digital dentistry
+      - geometric reasoning
+      - zero-shot
+    summary: "A vision-language agent uses multi-view observations and dental-arch geometry to guide zero-shot tooth instance segmentation and identification in 3D intraoral scans."
+    featured: false
+
+  - title: "A Multi-Agent Framework for Automated MRI Reporting in Glioma: A Real-World Clinical Validation"
+    year: 2026
+    domain: "Report Generation"
+    modality:
+      - MRI
+    task:
+      - report generation
+      - diagnosis
+      - quality assurance
+    agent_type:
+      - multi-agent
+    paper_url: "https://papers.miccai.org/miccai-2026-sat/MedAgent_007.html"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "MICCAI 2026 MedAgent workshop"
+    tags:
+      - glioma
+      - multi-sequence MRI
+      - human-in-the-loop
+    summary: "Specialist agents align multi-sequence MRI, segment abnormalities, grade glioma, and draft and review reports under human oversight; evaluated retrospectively on 63 adult cases."
+    featured: false
+
+  - title: "An Artifact-Based Agent Framework for Adaptive and Reproducible Medical Image Processing"
+    year: 2026
+    domain: "Workflow Simulation"
+    modality:
+      - CT
+      - MRI
+    task:
+      - workflow automation
+      - tool use
+    agent_type:
+      - tool-using
+    paper_url: "https://papers.miccai.org/miccai-2026/0049-Paper2038.html"
+    code_url: "https://github.com/MASILab/medimg-agent"
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "MICCAI 2026"
+    tags:
+      - provenance
+      - reproducibility
+      - artifact contracts
+    summary: "An agent configures CT and MRI processing from structured artifact contracts while a deterministic workflow executor records provenance and supports repeatable execution across heterogeneous cohorts."
+    featured: false
+
+  - title: "AutoLand: A Data-Efficient Automated Agentic Workflow for Universal Medical Landmark Detection"
+    year: 2026
+    domain: "Workflow Simulation"
+    modality:
+      - X-ray
+      - MRI
+    task:
+      - landmark detection
+      - workflow automation
+    agent_type:
+      - tool-using
+    paper_url: "https://papers.miccai.org/miccai-2026/0082-Paper0716.html"
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: "MICCAI 2026"
+    tags:
+      - landmark detection
+      - model selection
+      - data efficiency
+    summary: "A vision-language agent combines modality-specific physical characteristics with a medical deep-learning library to choose few-shot landmark-detection training strategies across X-ray and MRI datasets."
+    featured: false
