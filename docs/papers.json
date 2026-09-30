@@ -12554,5 +12554,289 @@
     ],
     "summary": "A vision-language agent combines modality-specific physical characteristics with a medical deep-learning library to choose few-shot landmark-detection training strategies across X-ray and MRI datasets.",
     "featured": false
+  },
+  {
+    "title": "A Fully Local Agentic LLM Architecture for Tool Invocation in Medical Imaging",
+    "year": 2026,
+    "domain": "Workflow Simulation",
+    "modality": null,
+    "task": [
+      "tool use",
+      "workflow automation"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using",
+      "RAG"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_008.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "3D Slicer",
+      "dental imaging",
+      "RAG",
+      "privacy"
+    ],
+    "summary": "A local Qwen3-8B router and parameter extractor translate natural-language requests into schema-constrained calls for a 23-tool dental imaging suite in 3D Slicer; evaluated on 250 multilingual queries, with clinician checking still needed for complete command correctness.",
+    "featured": false
+  },
+  {
+    "title": "From Metrics to Insight: Agent-Based Comprehensive Evaluation of Medical Image Segmentation",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": null,
+    "task": [
+      "segmentation evaluation",
+      "quality assurance"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_005.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "segmentation",
+      "robustness",
+      "uncertainty"
+    ],
+    "summary": "AgenticMedSegEvaluator adaptively selects evaluation tools for overlap, robustness, uncertainty, and anatomical consistency, producing evidence-grounded reports that expose case- and cohort-level failures hidden by aggregate segmentation scores.",
+    "featured": false
+  },
+  {
+    "title": "A Label-Efficient On-Device QC Agent for MRI Segmentation under Domain Shift",
+    "year": 2026,
+    "domain": "Segmentation",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "quality assurance",
+      "failure triage"
+    ],
+    "agent_type": [
+      "adaptive agent"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_023.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "brain tumor",
+      "domain shift",
+      "human-in-the-loop",
+      "edge deployment"
+    ],
+    "summary": "An on-device agent routes risky brain-tumor MRI slices for review and recalibrates from streamed feedback while keeping the segmenter frozen; feedback is simulated from ground-truth Dice, and improved discrimination yields only small gains at a fixed review budget.",
+    "featured": false
+  },
+  {
+    "title": "Agentic Visual Evidence Construction and Review Architecture for Medical VQA",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": null,
+    "task": [
+      "visual question answering",
+      "visual reasoning"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_036.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "medical VQA",
+      "multi-agent",
+      "evidence review",
+      "region grounding"
+    ],
+    "summary": "VERA-M selects direct or multi-step inference, builds question-specific evidence through global observation and regional inspection, and uses a review agent to check evidence sufficiency and cross-scale consistency before answer fusion.",
+    "featured": false
+  },
+  {
+    "title": "HarmoAgent: An Autonomous LLM Agentic Framework for Adaptive and Traceable Multi-Site MRI Harmonization",
+    "year": 2026,
+    "domain": "Workflow Simulation",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "harmonization",
+      "workflow automation",
+      "tool use"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_035.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "MRI harmonization",
+      "skill routing",
+      "provenance"
+    ],
+    "summary": "An LLM agent validates data and metadata requirements, selects paired, unpaired, or few-shot MRI harmonization skills, and executes workflows with standardized evaluation and provenance records; tested on expert-validated queries and traveling-subject data.",
+    "featured": false
+  },
+  {
+    "title": "LongCXR-Agent: Query-Driven Tool Selection for Longitudinal Chest X-ray Reasoning",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "visual question answering",
+      "longitudinal comparison",
+      "tool use"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_024.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "chest X-ray",
+      "longitudinal reasoning",
+      "tool selection"
+    ],
+    "summary": "A query-driven agent preserves prior-current chest X-ray order, routes questions among four comparison types, and selectively invokes five specialized tools for disease transitions, severity, spatial evidence, and structural comparison; evaluated on 666 longitudinal QA episodes.",
+    "featured": false
+  },
+  {
+    "title": "Evaluating Procedural Tool-Calling in AI Agents for Lung Cancer Workflows",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": null,
+    "task": [
+      "evaluation",
+      "workflow auditing"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_034.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "lung cancer",
+      "tool-calling trajectories",
+      "process evaluation"
+    ],
+    "summary": "A deterministic evaluator audits tool-call sequences for order, omissions, and unnecessary invocations in simulated lung cancer workflows with mock tools, revealing procedural differences among seven LLMs that aggregate outcome scores obscure.",
+    "featured": false
+  },
+  {
+    "title": "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
+    "year": 2026,
+    "domain": "Report Generation",
+    "modality": [
+      "CXR",
+      "CT",
+      "MRI"
+    ],
+    "task": [
+      "report structuring",
+      "ontology grounding"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_025.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "multi-agent",
+      "SNOMED-CT",
+      "human-in-the-loop",
+      "privacy",
+      "edge deployment"
+    ],
+    "summary": "An offline multi-agent pipeline converts radiologist dictation into structured reports through concept extraction, SNOMED-CT grounding, and generation, with speech-driven clinician correction; evaluated through stage-level metrics and CPU-only hardware profiling.",
+    "featured": false
+  },
+  {
+    "title": "When to Request and Whether to Trust: A Two-Decision Imaging Agent for Pleural Effusion Assessment",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "diagnosis",
+      "tool use",
+      "evidence verification"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_033.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "pleural effusion",
+      "tool trust",
+      "view selection"
+    ],
+    "summary": "A learned policy requests lateral chest radiographs selectively, then checks image-pair compatibility before re-reading; counterfactual controls find no measurable mean benefit from matched lateral views over duplicated frontal images, and verification rejects some valid returns.",
+    "featured": false
+  },
+  {
+    "title": "Ask4VG: A Risk-Aware Question Selection Agent for Reducing Prior-Driven Answers in Medical VQA",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": null,
+    "task": [
+      "visual question answering",
+      "hallucination mitigation"
+    ],
+    "agent_type": [
+      "reflective agent"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_015.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "medical VQA",
+      "hallucination",
+      "safety",
+      "counterfactual probing"
+    ],
+    "summary": "A perceive-reflect-plan-act agent probes a VLM with perturbed, blank, and mismatched images, estimates hallucination risk, and selects intent-preserving question rewrites before answering; evaluated on VQA-RAD and an external PMC-VQA sample without fine-tuning.",
+    "featured": false
   }
 ]
