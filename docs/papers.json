@@ -12838,5 +12838,246 @@
     ],
     "summary": "A perceive-reflect-plan-act agent probes a VLM with perturbed, blank, and mismatched images, estimates hallucination risk, and selects intent-preserving question rewrites before answering; evaluated on VQA-RAD and an external PMC-VQA sample without fine-tuning.",
     "featured": false
+  },
+  {
+    "title": "TissueCodePilot: A Code-Action Agent for AI-Assisted Spatial Tissue Analysis",
+    "year": 2026,
+    "domain": "Pathology",
+    "modality": [
+      "microscopy"
+    ],
+    "task": [
+      "spatial tissue analysis",
+      "code generation",
+      "tool use"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026/1062-Paper1741.html",
+    "code_url": null,
+    "project_url": "https://github.com/hula-ai/TissueCodePilot",
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026",
+    "tags": [
+      "spatial tissue analysis",
+      "code execution",
+      "benchmarking"
+    ],
+    "summary": "A coding agent plans and executes spatial tissue analyses from minimal natural-language prompts, evaluated on 1,500 image-question pairs across three tissue types; the project repository notes that code and data are not yet fully released.",
+    "featured": false
+  },
+  {
+    "title": "A Clinical Guideline-Grounded Hybrid Agentic Framework for Holistic Epilepsy Management",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": [
+      "MRI",
+      "EEG"
+    ],
+    "task": [
+      "clinical reasoning",
+      "diagnosis",
+      "treatment planning"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "RAG"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026/0004-Paper2852.html",
+    "code_url": "https://github.com/khoapham154/epi_guide",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026",
+    "tags": [
+      "multi-agent",
+      "RAG",
+      "clinical guidelines",
+      "epilepsy"
+    ],
+    "summary": "EPI-GUIDE combines modality-specific discriminative models and generative agents under a guideline-grounded orchestrator that iteratively reconciles evidence for six epilepsy management tasks across two datasets.",
+    "featured": false
+  },
+  {
+    "title": "Disentangling Perception and Reasoning in Zero-Shot Multimodal LLMs for Ultrasound Diagnosis",
+    "year": 2026,
+    "domain": "Ultrasound",
+    "modality": [
+      "ultrasound",
+      "echocardiography"
+    ],
+    "task": [
+      "diagnosis",
+      "evaluation"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_016.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "multi-agent",
+      "ultrasound",
+      "perception",
+      "reliability"
+    ],
+    "summary": "Compares zero-shot prompting with a multi-reader agent workflow for breast ultrasound and qualitatively examines echocardiography, finding that the multi-agent pipeline does not outperform single-request prompting and that lesion-feature perception is a major bottleneck.",
+    "featured": false
+  },
+  {
+    "title": "PathTrace: A Trace-Based Evidence Harness for Auditing Whole-Slide Pathology Agents",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "WSI"
+    ],
+    "task": [
+      "evaluation",
+      "workflow auditing",
+      "evidence verification"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/COMPAYL_034.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 COMPAYL workshop",
+    "tags": [
+      "pathology",
+      "evidence provenance",
+      "benchmarking"
+    ],
+    "summary": "Standardizes whole-slide agent navigation, evidence pins, and diagnostic claims into replayable traces; a study on 250 PANDA prostate biopsies reveals that high cancer-detection accuracy can coexist with poorly grounded visual evidence.",
+    "featured": false
+  },
+  {
+    "title": "Learning to Reason Over Physician Corrections: An Interactive Agentic Framework for 3D Tumor Segmentation",
+    "year": 2026,
+    "domain": "Segmentation",
+    "modality": [
+      "CT",
+      "PET"
+    ],
+    "task": [
+      "segmentation",
+      "interactive annotation"
+    ],
+    "agent_type": [
+      "RL-trained"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/CLiMeM_013.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 CLiMeM workshop",
+    "tags": [
+      "human-in-the-loop",
+      "reinforcement-learning",
+      "3D SAM",
+      "tumor segmentation"
+    ],
+    "summary": "LORE trains an agent on a frozen 3D SAM backbone to reason over correction histories and anticipate subsequent physician edits using a spatial grounding reward, evaluated on six CT and FDG-PET tumor benchmarks.",
+    "featured": false
+  },
+  {
+    "title": "MorphoOrgaAgent: A Foundation-Model-Based Multi-Agent System for Autonomous Organoid Analysis",
+    "year": 2026,
+    "domain": "Pathology",
+    "modality": [
+      "microscopy"
+    ],
+    "task": [
+      "segmentation",
+      "quantification",
+      "report generation"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_039.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "multi-agent",
+      "organoids",
+      "SAM3",
+      "benchmarking"
+    ],
+    "summary": "Agents interpret natural-language organoid analysis requests, combine Cellpose geometric prompts with SAM3 text prompts for instance segmentation, and generate measurements and reports; introduces the MorphoOrgaVQA evaluation benchmark.",
+    "featured": false
+  },
+  {
+    "title": "Towards Automated Cardiac MRI Assessment: A MultiAgent CAD Framework for Functional Analysis and Tissue Characterization",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "segmentation",
+      "quantification",
+      "report generation"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "RAG"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_017.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "multi-agent",
+      "RAG",
+      "cardiac MRI",
+      "fibrosis"
+    ],
+    "summary": "MRI-CARDAIX uses a supervisor to coordinate cine MRI, late-gadolinium-enhancement MRI, and evidence-retrieval agents for cardiac function, fibrosis quantification, and reporting, with routing and clinical report-reliability evaluation.",
+    "featured": false
+  },
+  {
+    "title": "Agents Catching Agents: Shortcut Cascades and Benchmark Gaming in Clinical Multi-Agent Systems",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "evaluation",
+      "robustness auditing"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_040.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "multi-agent",
+      "safety",
+      "benchmark gaming",
+      "social influence"
+    ],
+    "summary": "Audits shortcut propagation in clinical agent committees across text, chest X-ray, and ICU datasets, showing that repeated wrong peer claims induce answer adoption and that an independent referee transfers to imaging more effectively than transcript-only oversight.",
+    "featured": false
   }
 ]
