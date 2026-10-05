@@ -13079,5 +13079,263 @@
     ],
     "summary": "Audits shortcut propagation in clinical agent committees across text, chest X-ray, and ICU datasets, showing that repeated wrong peer claims induce answer adoption and that an independent referee transfers to imaging more effectively than transcript-only oversight.",
     "featured": false
+  },
+  {
+    "title": "An agentic framework for autonomous scientific discovery in cancer pathology",
+    "year": 2026,
+    "domain": "Pathology",
+    "modality": [
+      "WSI",
+      "multiplexed imaging"
+    ],
+    "task": [
+      "biomarker discovery",
+      "tool generation"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://www.nature.com/articles/s41591-026-04357-y",
+    "code_url": "https://github.com/cpath-ukk/SPARK",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Nature Medicine",
+    "tags": [
+      "multi-agent",
+      "computational pathology",
+      "scientific discovery"
+    ],
+    "summary": "SPARK generates biological hypotheses, converts them into executable tissue-analysis tools, and verifies candidate biomarkers across histopathology and spatial biology cohorts; clinical utility still requires prospective validation.",
+    "featured": false
+  },
+  {
+    "title": "UltraG-Bench: A Multi-task Benchmark for assessing Large Vision-Language Models on Pixel-level Evidence Grounding in Ultrasound",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "Ultrasound"
+    ],
+    "task": [
+      "evaluation",
+      "visual grounding",
+      "segmentation",
+      "report generation"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2609.30928",
+    "code_url": "https://github.com/zhuqh19/UltraG-Bench",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "benchmark",
+      "visual grounding",
+      "ultrasound"
+    ],
+    "summary": "Evaluates instruction-guided segmentation, evidence-grounded VQA, and report generation using 40 ultrasound datasets across 13 anatomical categories, and introduces UltraG-Agent to combine VLM reasoning with UltraSAM3 segmentation.",
+    "featured": false
+  },
+  {
+    "title": "Active guidance in ultrasound bladder scanning using reinforcement learning",
+    "year": 2026,
+    "domain": "Ultrasound",
+    "modality": [
+      "Ultrasound"
+    ],
+    "task": [
+      "probe guidance",
+      "view localization"
+    ],
+    "agent_type": [
+      "RL-trained"
+    ],
+    "paper_url": "https://www.nature.com/articles/s41598-026-35285-z",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Scientific Reports",
+    "tags": [
+      "reinforcement-learning",
+      "bladder",
+      "probe navigation"
+    ],
+    "summary": "Uses a Deep Q-Network variant with ultrasound-specific rewards to guide probe positioning toward optimal bladder views, demonstrating navigation feasibility in a simulated scanning environment.",
+    "featured": false
+  },
+  {
+    "title": "Agent with Tangent-based Formulation and Anatomical Perception for Standard Plane Localization in 3D Ultrasound",
+    "year": 2022,
+    "domain": "Ultrasound",
+    "modality": [
+      "3D Ultrasound"
+    ],
+    "task": [
+      "standard plane localization"
+    ],
+    "agent_type": [
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2207.00475",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2022",
+    "tags": [
+      "reinforcement-learning",
+      "fetal ultrasound",
+      "anatomical navigation"
+    ],
+    "summary": "Reinforcement-learning agent searches for standard planes using a tangent-point action representation, auxiliary anatomical perception, and spatial-anatomical rewards, evaluated on fetal brain and uterus ultrasound volumes.",
+    "featured": false
+  },
+  {
+    "title": "Agent with Warm Start and Adaptive Dynamic Termination for Plane Localization in 3D Ultrasound",
+    "year": 2021,
+    "domain": "Ultrasound",
+    "modality": [
+      "3D Ultrasound"
+    ],
+    "task": [
+      "standard plane localization"
+    ],
+    "agent_type": [
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2103.14502",
+    "code_url": "https://github.com/wulalago/AgentSPL",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "IEEE Transactions on Medical Imaging",
+    "tags": [
+      "reinforcement-learning",
+      "fetal ultrasound",
+      "adaptive termination"
+    ],
+    "summary": "Adds adaptive early stopping to a reinforcement-learning plane-search agent with anatomical alignment, evaluating localization of seven standard planes across fetal brain, fetal abdomen, and uterus volumes.",
+    "featured": false
+  },
+  {
+    "title": "Computational Pathology in the Era of Emerging Foundation and Agentic AI -- International Expert Perspectives on Clinical Integration and Translational Readiness",
+    "year": 2026,
+    "domain": "Survey",
+    "modality": [
+      "WSI"
+    ],
+    "task": [
+      "review"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2603.05884",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "survey",
+      "pathology",
+      "clinical translation"
+    ],
+    "summary": "Expert perspective examines clinical relevance, technical maturity, operational readiness, and economic and regulatory barriers to translating pathology foundation models and agentic systems into patient care.",
+    "featured": false
+  },
+  {
+    "title": "Review of agentic artificial intelligence (AI) in radiology: from current clinical integration to future innovations",
+    "year": 2026,
+    "domain": "Survey",
+    "modality": null,
+    "task": [
+      "review"
+    ],
+    "agent_type": null,
+    "paper_url": "https://doi.org/10.1016/j.crad.2026.107351",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Clinical Radiology",
+    "tags": [
+      "survey",
+      "radiology",
+      "clinical integration"
+    ],
+    "summary": "Scoping review synthesizes radiology agent research searched across four bibliographic databases, covering clinical integration, human oversight, and future links between imaging and other patient data.",
+    "featured": false
+  },
+  {
+    "title": "Agentic AI in Radiology: Evolution from Large Language Models to Future Clinical Integration",
+    "year": 2026,
+    "domain": "Survey",
+    "modality": null,
+    "task": [
+      "review"
+    ],
+    "agent_type": null,
+    "paper_url": "https://pubs.rsna.org/doi/10.1148/ryai.250651",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Radiology: Artificial Intelligence",
+    "tags": [
+      "survey",
+      "radiology",
+      "clinical integration"
+    ],
+    "summary": "Special report explains memory, retrieval, computer use, and agent coordination across the imaging lifecycle, proposing a four-phase implementation roadmap with clinician supervision and governance.",
+    "featured": false
+  },
+  {
+    "title": "AI agents: a game changer in ophthalmology?",
+    "year": 2026,
+    "domain": "Survey",
+    "modality": null,
+    "task": [
+      "perspective"
+    ],
+    "agent_type": null,
+    "paper_url": "https://www.nature.com/articles/s41433-026-04543-9",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Eye",
+    "tags": [
+      "perspective",
+      "ophthalmology",
+      "clinical integration"
+    ],
+    "summary": "Commentary considers how agents could coordinate ophthalmic models and combine history, examination, and imaging, flagging conflicting outputs for clinician review rather than establishing clinical efficacy.",
+    "featured": false
+  },
+  {
+    "title": "Agentic AI in radiology: emerging potential and unresolved challenges",
+    "year": 2025,
+    "domain": "Survey",
+    "modality": null,
+    "task": [
+      "perspective"
+    ],
+    "agent_type": null,
+    "paper_url": "https://academic.oup.com/bjr/article/98/1174/1582/8211910",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "British Journal of Radiology",
+    "tags": [
+      "perspective",
+      "radiology",
+      "clinical integration"
+    ],
+    "summary": "Commentary discusses agent-driven imaging triage, task planning, and follow-up, emphasizing limited clinical validation and the regulatory and integration barriers to deployment.",
+    "featured": false
   }
 ]
