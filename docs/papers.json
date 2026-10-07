@@ -13337,5 +13337,97 @@
     ],
     "summary": "Commentary discusses agent-driven imaging triage, task planning, and follow-up, emphasizing limited clinical validation and the regulatory and integration barriers to deployment.",
     "featured": false
+  },
+  {
+    "title": "IBISAgent: Reinforcing Pixel-Level Visual Reasoning in MLLMs for Universal Biomedical Object Referring and Segmentation",
+    "year": 2026,
+    "domain": "Segmentation",
+    "modality": [
+      "multi-modality"
+    ],
+    "task": [
+      "segmentation",
+      "referring segmentation",
+      "tool use"
+    ],
+    "agent_type": [
+      "RL-trained",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2601.03054",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "segmentation",
+      "reinforcement-learning",
+      "multimodal LLM",
+      "interactive"
+    ],
+    "summary": "Frames segmentation as a multi-step decision process in which an MLLM interleaves reasoning with text-based click actions and segmentation-tool calls, trained by supervised cold start followed by agentic reinforcement learning with fine-grained rewards.",
+    "featured": false
+  },
+  {
+    "title": "How Well Can Modern LLMs Act as Agent Cores in Radiology Environments?",
+    "year": 2024,
+    "domain": "Benchmark · Radiology",
+    "modality": [
+      "multi-modality"
+    ],
+    "task": [
+      "benchmark",
+      "tool use",
+      "report generation"
+    ],
+    "agent_type": [
+      "tool-using",
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2412.09529",
+    "code_url": "https://github.com/MAGIC-AI4Med/RadABench",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "benchmark",
+      "radiology",
+      "tool availability",
+      "multi-agent"
+    ],
+    "summary": "RadA-BenchPlat tests LLM agent cores on synthetic records and 165 real 2D/3D cases with executable grounding, diagnosis, and report tools, finding a roughly 15% drop from idealized settings and low long-chain performance, which prompting, multi-agent coordination, and on-the-fly tool synthesis only partly recover.",
+    "featured": false
+  },
+  {
+    "title": "Multi-Agent AI for Chest Radiography: A Sequential Segmentation and LLM-Driven Consultative Tool for Medical Training",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "segmentation",
+      "report generation",
+      "education"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://www.medrxiv.org/content/10.64898/2026.05.29.26354432v1",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "medRxiv",
+    "tags": [
+      "chest X-ray",
+      "hallucination",
+      "grounding",
+      "medical education"
+    ],
+    "summary": "Vision agents localize anatomy and segment pathology, then pass a structured payload to a locally hosted LLaVA 7B tutor with prompt guardrails that block unanchored queries; the preprint reports no quantitative performance metrics.",
+    "featured": false
   }
 ]
