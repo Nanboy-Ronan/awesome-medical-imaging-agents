@@ -13429,5 +13429,154 @@
     ],
     "summary": "Vision agents localize anatomy and segment pathology, then pass a structured payload to a locally hosted LLaVA 7B tutor with prompt guardrails that block unanchored queries; the preprint reports no quantitative performance metrics.",
     "featured": false
+  },
+  {
+    "title": "RadOnc-Agent: An LLM-Orchestrated Framework for AI Workflows Across the Radiotherapy Care Pathway",
+    "domain": "Radiology",
+    "modality": null,
+    "task": [
+      "workflow orchestration",
+      "tool use",
+      "treatment planning"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.06923",
+    "tags": [
+      "radiotherapy",
+      "longitudinal workflows",
+      "schema validation"
+    ],
+    "summary": "An LLM controller coordinates 26 functions across four radiotherapy phases through schema-constrained tool calls and persistent patient context; evaluation measures workflow execution rather than clinical correctness or prospective benefit.",
+    "year": 2026,
+    "venue": "arXiv",
+    "featured": false,
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null
+  },
+  {
+    "title": "templar: agentic induction and evolution of standardized radiology reporting templates from large-scale clinical corpora",
+    "domain": "Report Generation",
+    "modality": null,
+    "task": [
+      "report structuring",
+      "template induction",
+      "diagnostic reasoning"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.05247",
+    "tags": [
+      "multi-agent",
+      "knowledge graph",
+      "structured reporting"
+    ],
+    "summary": "Induction, Evolution, and Clinical Agents build and revise radiology reporting templates using anatomical and diagnostic knowledge graphs, external evidence, and downstream feedback, with evaluation across four report datasets.",
+    "year": 2026,
+    "venue": "arXiv",
+    "featured": false,
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null
+  },
+  {
+    "title": "CRC-Router: Risk-Constrained Routing for Medical Agentic AI Systems",
+    "domain": "Benchmark",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "triage",
+      "uncertainty estimation",
+      "risk-controlled routing"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2609.30714",
+    "code_url": "https://github.com/XLIAaron/CRC-Router",
+    "tags": [
+      "safety",
+      "human-in-the-loop",
+      "conformal risk control",
+      "uncertainty"
+    ],
+    "summary": "Combines predictive scores and uncertainty signals with conformal risk control to route chest X-ray findings between autonomous acceptance and further review, evaluated on ChestX-ray14 both independently and within MedRAX.",
+    "year": 2026,
+    "venue": "arXiv",
+    "featured": false,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null
+  },
+  {
+    "title": "BIABench: Evaluating AI agents on real-world bioimage analysis tasks",
+    "domain": "Benchmark",
+    "modality": [
+      "histopathology",
+      "microscopy",
+      "3D microscopy",
+      "time-lapse microscopy"
+    ],
+    "task": [
+      "benchmark",
+      "bioimage analysis",
+      "tool use"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2609.34274",
+    "code_url": "https://github.com/BIABench/BIABench",
+    "dataset_url": "https://huggingface.co/datasets/BIABench/BIABench",
+    "tags": [
+      "benchmark",
+      "bioimage analysis",
+      "long-horizon tasks",
+      "reproducibility"
+    ],
+    "summary": "Reconstructs 16 end-to-end bioimage analysis tasks from published studies, scoring output accuracy and analysis process separately; evaluations expose failures on complex 3D and time-lapse data and substantial run-to-run variability.",
+    "year": 2026,
+    "venue": "arXiv",
+    "featured": false,
+    "project_url": null,
+    "benchmark_url": null
+  },
+  {
+    "title": "MedRSI: Recursive Self-Improvement for Medical Agents via Clinically Aligned Self-Evolution",
+    "domain": "Medical VLM",
+    "modality": [
+      "fundus photography",
+      "OCT",
+      "echocardiography"
+    ],
+    "task": [
+      "tool learning",
+      "model development",
+      "diagnosis",
+      "segmentation"
+    ],
+    "agent_type": [
+      "tool-using",
+      "self-evolving"
+    ],
+    "paper_url": "https://arxiv.org/abs/2609.24838",
+    "code_url": "https://github.com/ImprintLab/MedRSI",
+    "tags": [
+      "self-improving",
+      "self-evolving",
+      "tool learning",
+      "clinical-cost prioritization"
+    ],
+    "summary": "Turns diagnostic failures into new tools and task-specific models, prioritizing errors by clinical consequences and retaining capabilities only after evaluation on subsequent patient cohorts; studied on glaucoma and cardiac imaging tasks.",
+    "year": 2026,
+    "venue": "arXiv",
+    "featured": false,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null
   }
 ]
