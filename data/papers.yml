@@ -11549,3 +11549,279 @@ papers:
     project_url: null
     dataset_url: null
     benchmark_url: null
+
+  # ── Recent additions (2026-10-12) ─────────────────────────────────────────
+
+  - title: 'OA-MAP: Evidence-Grounded Multi-Agent Multimodal Framework for Interpretable Knee Osteoarthritis Progression'
+    domain: Radiology
+    modality:
+    - MRI
+    - X-ray
+    task:
+    - progression prediction
+    - tool use
+    - literature retrieval
+    agent_type:
+    - multi-agent
+    - tool-using
+    paper_url: https://arxiv.org/abs/2610.12134
+    tags:
+    - multi-agent
+    - RAG
+    - human-in-the-loop
+    - knee osteoarthritis
+    summary: A coordinator recruits MRI, X-ray, and clinical agents that select prediction tools and retrieve literature evidence, with uncertainty-informed clinician review that triggers recomputation of affected findings; fusion models reach AUROCs of 0.80 for structural and 0.68 for pain progression on 100 held-out FNIH participants.
+    year: 2026
+    venue: arXiv
+    featured: false
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+  - title: 'CineMR: Tool-Integrated Vision-Language Reasoning for Quantitative Cardiac MRI Assessment'
+    domain: 3D Imaging
+    modality:
+    - cardiac MRI
+    task:
+    - quantitative measurement
+    - diagnosis
+    - VQA
+    - tool use
+    agent_type:
+    - tool-using
+    - RL-trained
+    paper_url: https://arxiv.org/abs/2610.01166
+    code_url: null
+    tags:
+    - reinforcement learning
+    - tool use
+    - cine CMR
+    summary: A VLM trained with SFT on tool-interaction traces and then GRPO with conditional tool-use rewards calls segmentation, phase-selection, volumetry, morphometry, and wall-motion tools during interleaved reasoning, reaching 35.9% pass@1 on a multi-cohort cine CMR benchmark versus 1.5% for its Qwen3-VL-8B backbone.
+    year: 2026
+    venue: arXiv
+    featured: false
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+  - title: 'FaceLandmarkAgent: A Training-Free Planner-Critic Agent for 3D Facial Landmarking via Spatial-Semantic Reasoning'
+    domain: 3D Imaging
+    modality:
+    - 3D facial scans
+    task:
+    - landmark detection
+    - tool use
+    agent_type:
+    - multi-agent
+    - tool-using
+    paper_url: https://papers.miccai.org/miccai-2026-sat/MedAgent_047.html
+    tags:
+    - multi-agent
+    - planner-critic
+    - training-free
+    summary: A planning agent rotates and renders 3D facial meshes through typed geometric tools and lifts VLM landmark proposals onto the surface via ray-mesh intersection, while a belief-state critic requests extra views; reaches 3.92 mm mean radial error on a BU-3DFE holdout, behind a 2.42 mm supervised baseline.
+    year: 2026
+    venue: MICCAI 2026 MedAgent workshop
+    featured: false
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+  - title: 'Retrieval-Augmented Longitudinal Reasoning for OCT Change Detection and Forecasting: A Trajectory-Aware Multimodal RAG Framework with Calibrated Vision-Language Models'
+    domain: Ophthalmology
+    modality:
+    - OCT
+    task:
+    - change detection
+    - forecasting
+    - retrieval
+    agent_type:
+    - retrieval-augmented
+    paper_url: https://papers.miccai.org/miccai-2026-sat/MedAgent_010.html
+    tags:
+    - RAG
+    - hallucination
+    - longitudinal
+    - calibration
+    summary: TrajRAG retrieves precedent visit-pair trajectories from a patient-disjoint memory to condition medical VLMs on OCT change detection and next-visit forecasting; controls on MARIO and OLIVES show that retrieved-label copying, rather than longitudinal reasoning, accounts for most of the reported gains.
+    year: 2026
+    venue: MICCAI 2026 MedAgent workshop
+    featured: false
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+  - title: 'Vision-Language Model Guided Semantic Curation for Large-Scale Medical Data Cohorts'
+    domain: Workflow Simulation
+    modality:
+    - CT
+    task:
+    - dataset curation
+    - anatomical region assignment
+    agent_type:
+    - tool-using
+    paper_url: https://papers.miccai.org/miccai-2026-sat/MedAgent_003.html
+    tags:
+    - data curation
+    - cross-modal reconciliation
+    summary: An LLM acts as an agentic reconciliation module that combines CT volumes, whole-body segmentation organ-presence signals, acquisition metadata, and radiology reports to assign anatomical regions without supervision, evaluated on a clinical CT repository of more than 360K patients.
+    year: 2026
+    venue: MICCAI 2026 MedAgent workshop
+    featured: false
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+  - title: 'AgentQC: Policy-Constrained Agentic Assessment of Task-Aware Reliability in Medical Imaging Datasets'
+    domain: Workflow Simulation
+    modality:
+    - CT
+    task:
+    - dataset curation
+    - quality control
+    agent_type:
+    - tool-using
+    paper_url: https://papers.miccai.org/miccai-2026-sat/MedAgent_028.html
+    tags:
+    - data curation
+    - provenance
+    - quality control
+    summary: Separates deterministic evidence extraction, LLM reasoning and critique, review routing, and a deterministic final policy into provenance-tracked artifacts for task-specific dataset curation; instantiated on 1,000 pancreas CT cases, it evaluates policy compliance rather than expert agreement or downstream utility.
+    year: 2026
+    venue: MICCAI 2026 MedAgent workshop
+    featured: false
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+  - title: 'ActiveMedAgent: Cost-Aware Trajectory Learning for Multimodal Medical Diagnosis'
+    domain: Medical VLM
+    modality:
+    - clinical images
+    task:
+    - diagnosis
+    - evidence acquisition
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2610.11140
+    code_url: null
+    tags:
+    - cost-aware diagnosis
+    - sequential acquisition
+    summary: Wraps a frozen API vision-language model with a diagnostic belief tracker and a lightweight MLP controller trained offline on cost-scored trajectories to decide when to request more text or image evidence and when to commit; across three diagnostic pathway datasets including NEJM Image Challenge it outperforms full-modality baselines, with 175 cases solved only by omitting channels.
+    year: 2026
+    venue: EMNLP 2026
+    featured: false
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+  - title: 'MedPrune: Topology-Efficient Multimodal Multi-Agent Communication Evolution for Medical VQA Tasks'
+    domain: Medical VLM
+    modality: null
+    task:
+    - VQA
+    agent_type:
+    - multi-agent
+    - RL-trained
+    paper_url: https://arxiv.org/abs/2610.06695
+    tags:
+    - multi-agent
+    - reinforcement learning
+    - communication topology
+    summary: Models department-specialist agents as a heterogeneous communication graph and uses reinforcement learning to prune task-irrelevant agents and low-value intra- and inter-department edges, improving medical VQA accuracy and token efficiency over multi-agent baselines.
+    year: 2026
+    venue: arXiv
+    featured: false
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+  - title: 'MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles'
+    domain: Benchmark
+    modality:
+    - CT
+    - MRI
+    - ultrasound
+    task:
+    - GUI operation
+    - acquisition planning
+    - benchmark
+    agent_type:
+    - GUI agent
+    paper_url: https://arxiv.org/abs/2610.04800
+    tags:
+    - benchmark
+    - GUI agents
+    - image acquisition
+    summary: Agents operate simulated CT, MR, and ultrasound acquisition consoles through screenshots and mouse-and-keyboard actions across seven capability levels; eleven open-weight agents complete much of the workflow (21.5-74.5 progress) but rarely acquire the intended anatomy (3.0-25.0 success).
+    year: 2026
+    venue: arXiv
+    featured: false
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+  - title: 'MedBenchAgent: Towards Systematic Automation of Medical VLM Benchmark Construction'
+    domain: Benchmark
+    modality: null
+    task:
+    - benchmark construction
+    - VQA
+    agent_type:
+    - multi-agent
+    paper_url: https://arxiv.org/abs/2610.11312
+    tags:
+    - multi-agent
+    - benchmark
+    - benchmark construction
+    summary: A multi-agent framework derives benchmark specifications from evaluation requirements, imaging annotations, and medical knowledge through a Benchmark Intermediate Representation, separating specification planning from item instantiation; reaches 90.9% Task-Space F1, with 994 of 1,000 sampled items passing human audit.
+    year: 2026
+    venue: arXiv
+    featured: false
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+  - title: 'Too Tight or Too Loose: How VLM Persona Committees Miscalibrate Inter-Rater Ambiguity in Medical Image Segmentation'
+    domain: Benchmark
+    modality:
+    - CT
+    task:
+    - segmentation
+    - uncertainty estimation
+    agent_type:
+    - multi-agent
+    paper_url: https://papers.miccai.org/miccai-2026-sat/MedAgent_043.html
+    tags:
+    - multi-agent
+    - hallucination
+    - inter-rater variability
+    summary: Tests whether VLM radiologist-persona committees prompting MedSAM reproduce inter-rater disagreement on LIDC lung nodules; a parameter-free geometric baseline predicts human disagreement better than Qwen, Claude, or MedGemma committees, whose diversity is miscalibrated in opposite directions.
+    year: 2026
+    venue: MICCAI 2026 MedAgent workshop
+    featured: false
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+  - title: 'Absent-Byte Diagnoses: Auditing Structured Medical VLM Interfaces'
+    domain: Benchmark
+    modality:
+    - CXR
+    task:
+    - interface auditing
+    - diagnosis
+    agent_type:
+    - tool-using
+    paper_url: https://papers.miccai.org/miccai-2026-sat/MedAgent_050.html
+    tags:
+    - safety
+    - fairness
+    - hallucination
+    summary: Shows that hosted VLMs fill structured diagnosis fields when the prompt claims an image is attached but no image bytes are sent (617 of 3,000 calls), with demographic wording shifting the returned diagnoses, and binds each request to caller-owned image fingerprints, blocking all 5,047 specified violations in an offline suite.
+    year: 2026
+    venue: MICCAI 2026 MedAgent workshop
+    featured: false
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
