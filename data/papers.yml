@@ -11825,3 +11825,107 @@ papers:
     project_url: null
     dataset_url: null
     benchmark_url: null
+
+  # Additional papers verified against primary publication sources (2026-10-15).
+
+  - title: 'MedSAM3: Delving into Segment Anything with Medical Concepts'
+    year: 2025
+    domain: Medical VLM
+    modality:
+    - X-ray
+    - MRI
+    - ultrasound
+    - CT
+    - video
+    task:
+    - segmentation
+    agent_type: null
+    paper_url: https://arxiv.org/abs/2511.19046
+    code_url: https://github.com/Joey-S-Liu/MedSAM3
+    venue: arXiv
+    tags:
+    - backbone
+    - foundation model
+    - segmentation
+    summary: Model (segmentation backbone). Adapts SAM3 to medical concepts for text-prompted medical image and video segmentation; listed as a foundation model, not a standalone agent.
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: A Multi-Agent Framework for Grounding Medical AI in Expert Clinical Knowledge beyond Textual Retrieval
+    year: 2026
+    domain: Medical VLM
+    modality:
+    - fundus photography
+    - echocardiography
+    - ECG
+    task:
+    - biomarker extraction
+    - diagnosis
+    - code generation
+    agent_type:
+    - multi-agent
+    - tool-using
+    - retrieval-augmented
+    paper_url: https://openaccess.thecvf.com/content/CVPR2026W/GRAIL-V/html/Urooj_A_Multi-Agent_Framework_for_Grounding_Medical_AI_in_Expert_Clinical_CVPRW_2026_paper.html
+    venue: CVPR 2026 GRAIL-V workshop
+    tags:
+    - multi-agent
+    - RAG
+    - grounding
+    - biomarkers
+    summary: GRACE coordinates retrieval, reasoning, and execution agents to turn clinical knowledge into verified biomarker-measurement code and auditable evidence, then aligns knowledge-derived representations with a visual backbone; textual retrieval alone does not match supervised visual classifiers.
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: CRAgents for Disease Modelling via Multi-Agent Critique and Refinement
+    year: 2026
+    domain: Workflow Simulation
+    modality: null
+    task:
+    - task formulation
+    - model optimization
+    - disease prediction
+    agent_type:
+    - multi-agent
+    paper_url: https://openreview.net/pdf?id=3cU8ugleNX
+    venue: MIDL 2026 Short Paper
+    tags:
+    - multi-agent
+    - automated machine learning
+    - self-reflection
+    summary: Eight agents combine an inner debate loop for clinically grounded prediction-target selection with an outer reflection loop for validation-driven model refinement, evaluated on UK Biobank disease modelling.
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: 'Agentic AI for Precision Radiotherapy: A Multi-Agent Framework for Clinical Decision Support'
+    year: 2026
+    domain: Survey
+    modality:
+    - CT
+    - MRI
+    - PET
+    - CBCT
+    task:
+    - workflow orchestration
+    - treatment planning
+    - quality assurance
+    agent_type:
+    - multi-agent
+    paper_url: https://www.mdpi.com/2673-592X/6/4/37
+    venue: Radiation
+    tags:
+    - multi-agent
+    - radiotherapy
+    - human-in-the-loop
+    - safety
+    summary: Review proposes coordinated agents for imaging, contour review, planning, quality assurance, and adaptive radiotherapy with clinician oversight; its workflow architectures are conceptual design examples, not implemented or clinically validated systems.
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
