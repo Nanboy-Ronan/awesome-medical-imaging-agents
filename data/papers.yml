@@ -11929,3 +11929,351 @@ papers:
     dataset_url: null
     benchmark_url: null
     featured: false
+
+  # Additional papers verified against primary publication sources (2026-10-17).
+
+  - title: 'X-Ragent: Tool-Augmented Reinforcement Learning for Evidence-Grounded Chest X-Ray Reasoning'
+    year: 2026
+    domain: Radiology
+    modality:
+    - chest X-ray
+    task:
+    - diagnostic reasoning
+    - visual question answering
+    agent_type:
+    - tool-using
+    - RL-trained
+    paper_url: https://arxiv.org/abs/2610.16811
+    code_url: null
+    venue: arXiv
+    tags:
+    - chest X-ray
+    - tool use
+    - reinforcement-learning
+    - evidence-grounded
+    summary: Trains a Qwen3-VL-8B chest X-ray agent with agentic SFT and GRPO on Rad-CoT, a 7.7K-trajectory tool-augmented corpus, separating learned evidence seeking from validity-gated measurement so invalid quantitative tool outputs never enter the reasoning; reports the best results on three CXR benchmarks, including +8.6 points on held-out ChestAgentBench.
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: 'MammoClaw: Towards Skill-Evolving Agent Harness for Breast Cancer Mammography Analysis'
+    year: 2026
+    domain: Radiology
+    modality:
+    - mammography
+    task:
+    - BI-RADS assessment
+    - breast density estimation
+    agent_type:
+    - tool-using
+    - self-evolving
+    paper_url: https://papers.miccai.org/miccai-2026-sat/Deep_Brea3th_010.html
+    code_url: null
+    venue: MICCAI 2026 Deep-Brea3th workshop
+    tags:
+    - self-evolving
+    - training-free
+    - tool use
+    - mammography
+    summary: Training-free harness lets frozen MLLMs gather mammography evidence with ROI, paired-view, and contralateral-breast tools, and turns failed trajectories into reusable skills; on BI-RADS assessment and breast density estimation, tools alone did not reliably help while evolved skills improved tool use in some settings.
+    project_url: https://krishnakanthnakka.github.io/mammoclaw
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: 'PlanPath: Exploration-Guided Orchestration for Patient-Level Pathology Reasoning'
+    year: 2026
+    domain: Pathology
+    modality:
+    - whole-slide image
+    task:
+    - patient-level visual question answering
+    - planning
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2610.18664
+    code_url: https://github.com/JSGe-AI/PlanPath_1
+    venue: arXiv
+    tags:
+    - pathology
+    - whole-slide image
+    - planning
+    summary: Turns a clinical question into an exploration plan, routes to the relevant slides among roughly 15 WSIs per patient, and moves from tissue- to cell-level analysis; on new renal and gastric cancer patient-level VQA datasets it beats the strongest baseline by 9.4% and 12.1% overall accuracy.
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: 'PathPilot: An Adaptive Question-Conditioned Multi-Magnification Navigation Agent for Whole-Slide Image Analysis'
+    year: 2026
+    domain: Pathology
+    modality:
+    - whole-slide image
+    task:
+    - slide navigation
+    - visual question answering
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2610.16734
+    code_url: null
+    venue: arXiv
+    tags:
+    - pathology
+    - whole-slide image
+    - autonomous navigation
+    summary: 'Navigates across magnifications like a pathologist: CrossMagLoc learns per-magnification localization from pathologist viewing behavior to pick a starting region, then EviRegionSearch explores outward according to which question-relevant evidence is still missing; evaluated on question answering across five internal and external cohorts.'
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: 'MechAgent: Active Mechanism Falsification for Agentic Cross-Species Medical Reasoning'
+    year: 2026
+    domain: Pathology
+    modality:
+    - histopathology
+    task:
+    - translational pathology reasoning
+    - hypothesis testing
+    agent_type:
+    - multi-agent
+    paper_url: https://papers.miccai.org/miccai-2026-sat/MedAgent_042.html
+    code_url: null
+    venue: MICCAI 2026 MedAgent workshop
+    tags:
+    - multi-agent
+    - pathology
+    - interpretability
+    summary: A committee of pathology, toxicology, translational, evidence-auditor, and adversarial agents deliberates over a typed hypothesis graph, selecting evidence information-theoretically and running latent interventions on a multimodal foundation model to test whether proposed biological mechanisms causally drive preclinical-to-clinical predictions.
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: 'Toward Agentic Echocardiography: Reinforcement Learning with Foundation-Model Similarity Rewards in a CT-Derived Simulation'
+    year: 2026
+    domain: Ultrasound
+    modality:
+    - echocardiography
+    - CT
+    task:
+    - standard-view acquisition
+    - probe guidance
+    agent_type:
+    - RL-trained
+    paper_url: https://papers.miccai.org/miccai-2026-sat/HAIC26_018.html
+    code_url: null
+    venue: MICCAI 2026 HAIC workshop
+    tags:
+    - reinforcement-learning
+    - echocardiography
+    - robotic ultrasound
+    summary: Frames transthoracic view acquisition as reinforcement learning in a patient-specific ultrasound simulator built from public chest CT, rewarding a soft actor-critic probe policy with frozen DINOv2 similarity to the target view; it acquires the PLAX view on five unseen patients with 12.4 mm mean position error and 81.2% clinical-tolerance success.
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: 'ARISE: Adaptive Agentic Reasoning with Image-grounded Self-Evaluation for Interpretable IBD Assessment'
+    year: 2026
+    domain: Endoscopy
+    modality:
+    - capsule endoscopy
+    - ultrasound
+    task:
+    - diagnosis
+    - disease assessment
+    agent_type:
+    - reflective agent
+    paper_url: https://arxiv.org/abs/2610.04777
+    code_url: null
+    venue: arXiv
+    tags:
+    - endoscopy
+    - self-reflection
+    - interpretability
+    - few-shot
+    summary: A VLM agent runs hypothesis generation, image-grounded evidence summary, evidence-based refinement, symbolic verification, and final diagnosis for few-shot inflammatory bowel disease assessment from capsule endoscopy (Crohn's disease) and bowel ultrasound (ulcerative colitis), improving over baseline VLMs on two patient cohorts.
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: Structured Reasoning Agentic Framework for Interpretable Critical View of Safety Assessment
+    year: 2026
+    domain: Endoscopy
+    modality:
+    - laparoscopic video
+    task:
+    - critical view of safety assessment
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2609.31524
+    code_url: null
+    venue: arXiv
+    tags:
+    - surgical video
+    - interpretability
+    - scene graph
+    summary: ReasonCVS decomposes laparoscopic cholecystectomy Critical View of Safety criteria into anatomical checks over a scene graph, with a rationale-distilled LLM decision agent querying a VLM verifier per sub-criterion and aggregating a traceable verdict; it reaches 68.1% mAP on Endoscapes-CVS201.
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: 'SpineSAC: Hierarchical Multi-Agent Soft Actor-Critic for Patient-Agnostic 2D–3D Spine Registration in Image-Guided Spine Surgery'
+    year: 2026
+    domain: Endoscopy
+    modality:
+    - CT
+    - X-ray
+    task:
+    - 2D-3D registration
+    - image-guided surgery
+    agent_type:
+    - multi-agent
+    - RL-trained
+    paper_url: https://papers.miccai.org/miccai-2026-sat/COLAS_020.html
+    code_url: null
+    venue: MICCAI 2026 COLAS workshop
+    tags:
+    - multi-agent
+    - reinforcement-learning
+    - image-guided surgery
+    summary: Hierarchical multi-agent soft actor-critic agents estimate six-degree-of-freedom vertebral pose to register preoperative CT to intraoperative C-arm X-ray, using a PCA-based canonical coordinate system and a rotational feature encoder over DRR and X-ray views; reports 1.45 mm TRE on phantoms, 2.31 mm on cadavers, and 9x faster inference.
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: 'OphthaAgent: Learning Cognitive Prudence for Reliable Fundus Diagnosis via Tool-Augmented Reinforcement Learning'
+    year: 2026
+    domain: Ophthalmology
+    modality:
+    - fundus photography
+    task:
+    - diagnosis
+    agent_type:
+    - tool-using
+    - RL-trained
+    paper_url: https://papers.miccai.org/miccai-2026-sat/OMIA_007.html
+    code_url: https://github.com/rikey123/OphthaAgent
+    venue: MICCAI 2026 OMIA workshop
+    tags:
+    - ophthalmology
+    - reinforcement-learning
+    - tool use
+    - self-reflection
+    summary: Trains a tool-augmented fundus MLLM in an online multi-turn environment to decide when to call specialist tools and when to trigger reflective verification, countering blind trust in brittle tools; reports state-of-the-art in- and out-of-distribution results on two fundus benchmarks and emergent self-correction.
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: 'From Given to Gathered Evidence: Agentic Learning for Longitudinal Medical Reasoning'
+    year: 2026
+    domain: 3D Imaging
+    modality:
+    - MRI
+    task:
+    - longitudinal diagnostic reasoning
+    - evidence seeking
+    - benchmark
+    agent_type:
+    - multi-agent
+    - tool-using
+    - RL-trained
+    paper_url: https://arxiv.org/abs/2609.39566
+    code_url: https://github.com/VinyehShaw/CASE
+    venue: arXiv
+    tags:
+    - longitudinal
+    - MRI
+    - reinforcement-learning
+    - benchmark
+    summary: CASE trains role-specific clinical agents with SFT and agentic RL to choose which visits, organs, sequences, slices, and tools to inspect in UK Biobank baseline and follow-up MRI, with a 50,401-question ICD-10-grounded benchmark over 4,739 participants; a Qwen3-VL-8B agent reports over 16% relative accuracy gain over GPT-5.4.
+    project_url: null
+    dataset_url: https://huggingface.co/CASE-Bench
+    benchmark_url: null
+    featured: false
+  - title: 'ReVision3D: Attribution-Guided Recursive Self-Improvement for 3D Medical Perception'
+    year: 2026
+    domain: 3D Imaging
+    modality:
+    - CT
+    task:
+    - lesion detection
+    agent_type:
+    - self-evolving
+    paper_url: https://arxiv.org/abs/2609.32984
+    code_url: null
+    venue: arXiv
+    tags:
+    - self-improving
+    - CT
+    - lesion detection
+    summary: A frozen LLM designer proposes revisions to acquisition, perception, training, or inference stages while a grounded verifier keeps a change only if it beats measured seed-to-seed noise; attribution flagged perception as the bottleneck, yielding 79% liver and 83% kidney lesion recall at under 0.4 false positives per patient on abdominal CT.
+    project_url: https://leeh43.github.io/ReVision3D/
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: 'MedPAO-VL: Interpretable and Protocol-Compliant Agent for Structured Radiology Report Generation'
+    year: 2026
+    domain: Report Generation
+    modality:
+    - chest X-ray
+    task:
+    - structured report generation
+    agent_type:
+    - tool-using
+    - reflective agent
+    paper_url: https://arxiv.org/abs/2610.21794
+    code_url: null
+    venue: ECCV 2026 BISCUIT workshop
+    tags:
+    - chest X-ray
+    - self-reflection
+    - structured reporting
+    summary: A plan-act-observe agent first surfaces diagnostic uncertainty with a vision module, then drafts and iteratively revises a protocol-compliant structured chest X-ray report by checking text against visual findings; expert raters scored accuracy 3.5/5 and structure 4.3/5.
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: 'SkinAgent AI: A Safety-Grounded Multimodal Agentic Framework for Non-Diagnostic Skincare Support'
+    year: 2026
+    domain: Medical VLM
+    modality:
+    - dermatology photography
+    task:
+    - task routing
+    - skin-type estimation
+    - acne severity support
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2609.29341
+    code_url: null
+    venue: arXiv
+    tags:
+    - dermatology
+    - safety
+    - privacy
+    - human-in-the-loop
+    summary: Tool-using agent routes consumer face and skin photos among acne, pore, and wrinkle tools with safety and privacy checks, approval before state-changing actions, and traceable logs; reports 99.84% routing accuracy but 47.08% strict task completion on a 240-case system benchmark, and explicitly does not claim clinical readiness.
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
+  - title: Reliability Stress Tests and Decision-Time Routing for Chest X-ray Vision-Language Models
+    year: 2026
+    domain: Benchmark
+    modality:
+    - chest X-ray
+    task:
+    - reliability evaluation
+    - workflow routing
+    agent_type:
+    - multi-agent
+    paper_url: https://arxiv.org/abs/2610.02270
+    code_url: https://github.com/Yangxinyee/cxr-vlm-routing
+    venue: IEEE/ACM CHASE 2026 workshop
+    tags:
+    - safety
+    - multi-agent
+    - evaluation
+    - chest X-ray
+    summary: Stress-tests 36 configurations of CheXagent, MedGemma-4B, and MedGemma-27B across prompt styles and single- versus multi-agent workflows on private and MIMIC-CXR data, showing exact-match accuracy flatters models that default to Normal and multi-agent reasoning helps only some settings; a decision-time router escalates to multi-agent inference only when expected to help.
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    featured: false
