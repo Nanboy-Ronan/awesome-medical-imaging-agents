@@ -14479,5 +14479,178 @@
     "dataset_url": null,
     "benchmark_url": null,
     "featured": false
+  },
+  {
+    "title": "MRGAgents: A Multi-Agent Framework for Improved Medical Report Generation with Med-LVLMs",
+    "year": 2025,
+    "domain": "Report Generation",
+    "modality": [
+      "chest X-ray"
+    ],
+    "task": [
+      "report generation"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2505.18530",
+    "code_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "chest X-ray",
+      "disease-specific agents"
+    ],
+    "summary": "Splits chest X-ray reports into disease-specific sentences to fine-tune specialist vision-language agents, then combines their outputs into reports that better cover normal and abnormal findings on IU X-ray and MIMIC-CXR.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "Agentic-J: An AI Agent for Biological Microscopy Image Analysis",
+    "year": 2026,
+    "domain": "Workflow Simulation",
+    "modality": [
+      "microscopy"
+    ],
+    "task": [
+      "workflow orchestration",
+      "segmentation",
+      "cell tracking",
+      "code generation"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2606.02080",
+    "code_url": "https://github.com/MMV-Lab/Agentic-J",
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "RAG",
+      "microscopy",
+      "reproducibility"
+    ],
+    "summary": "Containerized ImageJ/Fiji assistant coordinates plugin selection, scripting, debugging, statistical analysis, and quality-assurance agents to turn natural-language microscopy requests into executable, documented projects; demonstrated on cell-tracking and apoptosis-analysis workflows.",
+    "project_url": "https://mmv-lab.github.io/Agentic-J/",
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "M3D-QAdapter: 3D Medical VQA with Lesion-Level Finding-Segmentation Alignment and Query-Driven Adaptive Token Reduction",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "CT"
+    ],
+    "task": [
+      "visual question answering",
+      "region selection"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026/0604-Paper1643.html",
+    "code_url": "https://github.com/ccarliu/M3D-QAdapter",
+    "venue": "MICCAI 2026",
+    "tags": [
+      "tool use",
+      "CT",
+      "visual grounding"
+    ],
+    "summary": "Uses query-conditioned anatomical region selection followed by segmentation and geometry-semantics token sampling for volumetric CT question answering, with lesion-level alignment and safe negative mining; its bounded tool sequence is evaluated on 3D-RAD.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "Operating Room Workflow Analysis via Reasoning Segmentation over Digital Twins",
+    "year": 2025,
+    "domain": "Endoscopy",
+    "modality": [
+      "operating room video"
+    ],
+    "task": [
+      "workflow analysis",
+      "reasoning segmentation"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2503.21054",
+    "code_url": null,
+    "venue": "MICCAI 2025",
+    "tags": [
+      "surgical video",
+      "planning",
+      "visual grounding"
+    ],
+    "summary": "ORDiRS-Agent decomposes operating-room efficiency questions into reasoning-segmentation subqueries over digital twins encoding semantic and spatial relations, then combines temporal analysis with textual explanations and supporting visual evidence.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "Optimizing Efficiency and Effectiveness in Sequential Prompt Strategy for SAM using Reinforcement Learning",
+    "year": 2024,
+    "domain": "Segmentation",
+    "modality": [
+      "MRI",
+      "CT",
+      "colonoscopy"
+    ],
+    "task": [
+      "interactive segmentation",
+      "prompt selection",
+      "stopping policy"
+    ],
+    "agent_type": [
+      "RL-trained"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2024/579-Paper1442.html",
+    "code_url": null,
+    "venue": "MICCAI 2024",
+    "tags": [
+      "reinforcement-learning",
+      "human-in-the-loop",
+      "segmentation"
+    ],
+    "summary": "AIES trains a deep Q-network to recommend point or box interactions and decide when to stop prompting SAM, balancing segmentation accuracy against interaction costs on three medical datasets while clinicians still supply prompt locations.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "Agentic systems in computational pathology: architectures, evidence, and translational challenges",
+    "year": 2026,
+    "domain": "Survey",
+    "modality": [
+      "whole-slide image"
+    ],
+    "task": [
+      "survey",
+      "evaluation"
+    ],
+    "agent_type": null,
+    "paper_url": "https://link.springer.com/article/10.1186/s12967-026-08829-0",
+    "code_url": null,
+    "venue": "Journal of Translational Medicine",
+    "tags": [
+      "pathology",
+      "safety",
+      "human-in-the-loop",
+      "evaluation"
+    ],
+    "summary": "Reviews pathology agents through dynamic control flow, inference-time tool selection, and knowledge integration, emphasizing matched comparisons, computational cost, prospective validation, and pathologist oversight because current evidence mainly establishes retrospective technical feasibility.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
   }
 ]
