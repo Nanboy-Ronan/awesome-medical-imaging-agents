@@ -14652,5 +14652,527 @@
     "dataset_url": null,
     "benchmark_url": null,
     "featured": false
+  },
+  {
+    "title": "nnInteractive Agent: General-Purpose AI Agents as 3D Image Annotators",
+    "year": 2026,
+    "domain": "Segmentation",
+    "modality": [
+      "CT",
+      "MRI",
+      "PET",
+      "micro-CT"
+    ],
+    "task": [
+      "interactive segmentation",
+      "annotation"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.31080",
+    "code_url": "https://github.com/MIC-DKFZ/nninteractive-agent",
+    "venue": "arXiv",
+    "tags": [
+      "tool use",
+      "MCP",
+      "segmentation",
+      "3D"
+    ],
+    "summary": "Exposes the nnInteractive 3D segmenter as Model Context Protocol tools plus a prompting skill so general-purpose coding agents locate targets, place prompts, inspect and correct volumetric masks, and write their own analysis code; on 51 targets across CT, MRI, PET, and micro-CT, Claude Code and Codex reach mean Dice 0.81 and 0.84 from plain-language requests alone.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "SegBanana: Steering Unified Multimodal Models into Medical Segmenters",
+    "year": 2026,
+    "domain": "Segmentation",
+    "modality": [
+      "multi-modality"
+    ],
+    "task": [
+      "segmentation"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2609.34235",
+    "code_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "tool use",
+      "RAG",
+      "segmentation",
+      "training-free"
+    ],
+    "summary": "Training-free agentic segmentation in which a state-aware controller iteratively orchestrates anatomy-aware exemplar retrieval, comparative quality critique, and targeted mask editing around a frozen unified multimodal generator; averages 77.45% mDice over eight datasets, at least 14.93 points above SAM3, SegGPT, BiomedParse, and MedSAM3.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "MMedAgent-Plus: Scaling Multimodal Medical Agents across Modalities, Tasks and Workflows",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": [
+      "multi-modality"
+    ],
+    "task": [
+      "tool orchestration",
+      "visual question answering",
+      "segmentation"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.27233",
+    "code_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "tool use",
+      "multimodal",
+      "planning"
+    ],
+    "summary": "A vision-language planner instruction-tuned on 208,928 samples from 32 benchmarks selects and sequences 18 specialist models covering 12 tasks and 8 modalities through a unified tool interface; it invokes the required specialist in 90.6% of 350 end-to-end cases and reaches 0.98 final-answer accuracy versus 0.28 for the strongest baseline.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "Frozen Models, Evolving Expertise: Model-Agnostic Learning from Deployment Experience for Multimodal Medical AI",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": [
+      "multi-modality"
+    ],
+    "task": [
+      "diagnosis",
+      "visual question answering"
+    ],
+    "agent_type": [
+      "tool-using",
+      "self-evolving"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.09146",
+    "code_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "self-evolving",
+      "memory",
+      "RAG",
+      "tool use"
+    ],
+    "summary": "Lets frozen LLMs and VLMs improve during deployment through an evolving skill for reasoning and tool use, a knowledge memory of evidence-backed facts, and a multimodal knowledge base of retrieved visual cases, keeping an update only if it helps new cases without degrading earlier ones; gains up to 34.2% over base models on medical tasks across six benchmarks.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "VoxelSage: Tool-Augmented 3D CT Analysis and Simulator-Shielded Sequential Resection Planning for Liver Tumors",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "CT"
+    ],
+    "task": [
+      "measurement",
+      "3D reconstruction",
+      "surgical planning"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2609.37648",
+    "code_url": "https://github.com/ZJUMAI/VoxelSage",
+    "venue": "arXiv",
+    "tags": [
+      "tool use",
+      "CT",
+      "surgical planning",
+      "hallucination"
+    ],
+    "summary": "Dual-port liver-tumor system separates LLM request interpretation and skill selection from eight image-computation skills (measurement, 3D reconstruction, mask refinement, resection planning) so numbers are never computed by the language model; a behavior-cloned ranker with a simulator safety shield orders resections, cutting simulated blood loss 38.9% across 256 unseen scenes.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "MedRAG-SCA: A Retrieval-Augmented Self-correcting Agent for Clinically Compliant Cross-Modality MRI Synthesis",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "image synthesis",
+      "quality control"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "tool-using"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026/0641-Paper3774.html",
+    "code_url": "https://github.com/exsinger-hub/MedRAG-SCA",
+    "venue": "MICCAI 2026",
+    "tags": [
+      "multi-agent",
+      "RAG",
+      "MRI",
+      "self-correction"
+    ],
+    "summary": "Retrieve–Verify–Refine agent for cross-modality brain MRI synthesis: a protocol-aware RAG consultant turns ACR guidelines into pixel-space checks, an anatomist–radiologist–diagnostician critic committee localizes violations for targeted inpainting, and a geometric fail-safe preserves lesions; blinded neuroradiologists rate 92% of BraTS 2024 outputs clinically acceptable, 11 points above the best diffusion baseline.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "CORTEX: Deep Reinforcement Learning with Pulse-Sequence Computation for Resource-Efficient MRI Protocol Adaptation",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "protocol adaptation",
+      "acquisition"
+    ],
+    "agent_type": [
+      "RL-trained"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MIRASOL_020.html",
+    "code_url": null,
+    "venue": "MICCAI 2026 MIRASOL workshop",
+    "tags": [
+      "reinforcement-learning",
+      "MRI",
+      "acquisition"
+    ],
+    "summary": "An actor–critic agent adapts brain 2D fast-spin-echo protocol parameters to each patient's coverage while calling a vendor pulse-sequence API at every transition to enforce patient and hardware limits; it converges on 97.0% of protocols with 100% limit-compliant parameters and an SNR-ratio MAE of 0.079.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "Inter-Slice Acquisition Budget Allocation for Pathology Aware Accelerated MRI",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "active acquisition",
+      "reconstruction"
+    ],
+    "agent_type": [
+      "RL-trained"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MLMI_061.html",
+    "code_url": null,
+    "venue": "MICCAI 2026 MLMI workshop",
+    "tags": [
+      "reinforcement-learning",
+      "MRI",
+      "active acquisition"
+    ],
+    "summary": "Volume-level RL agent observes per-slice lesion confidence and sampling fractions and decides which slice of an accelerated 3D knee MRI receives more k-space lines next; on fastMRI it gives the best lesion-region SSIM at 2–4× acceleration, +0.041 to +0.078 over uniform random sampling, without lesion annotations at test time.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "CAG-WM: A Synthetic-Data-Driven Coronary World Model for Autonomous Guidewire Navigation",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "X-ray angiography"
+    ],
+    "task": [
+      "guidewire navigation",
+      "interventional planning"
+    ],
+    "agent_type": [
+      "embodied agent"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026/0138-Paper4072.html",
+    "code_url": "https://github.com/CaoYue2004/CAG-WM",
+    "venue": "MICCAI 2026",
+    "tags": [
+      "world model",
+      "navigation",
+      "interventional radiology",
+      "simulation"
+    ],
+    "summary": "A world model trained on 100 synthetic angiography–3D coronary cases in a SOFA simulator learns vessel–guidewire dynamics and plans through internal multi-step rollouts for autonomous percutaneous coronary guidewire navigation; it exceeds 80% success on 20 multi-center clinical cases with the shortest total navigation time (about 2 minutes).",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "SeedPro: Place Brachytherapy Seeds Like Expert Clinicians via Hierarchical Reinforcement Agents",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "CT"
+    ],
+    "task": [
+      "radiotherapy planning"
+    ],
+    "agent_type": [
+      "RL-trained"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026/0930-Paper3635.html",
+    "code_url": "https://github.com/Haitao-Lee/SeedPro",
+    "venue": "MICCAI 2026",
+    "tags": [
+      "reinforcement-learning",
+      "radiotherapy planning",
+      "hierarchical RL"
+    ],
+    "summary": "Hierarchical reinforcement-learning agents generate fine-grained preoperative brachytherapy seed-placement plans that favor fewer needle punctures; on internal and external datasets they reduce organ-at-risk exposure by 12–20% and puncture count by 25% relative to prior planners.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "MeVisQA: Medical Visual Question Answering via Visual Programming",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "multi-modality"
+    ],
+    "task": [
+      "visual question answering",
+      "measurement"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/SAFER_007.html",
+    "code_url": null,
+    "venue": "MICCAI 2026 SAFER workshop",
+    "tags": [
+      "tool use",
+      "visual programming",
+      "code generation",
+      "benchmark"
+    ],
+    "summary": "Applies visual programming to medical VQA, with generated code invoking vision modules so reasoning and execution stay separate and auditable for measurement, counting, multi-step, and multi-image questions; introduces the radiologist-workflow-inspired SliceVQA benchmark, where it nearly doubles the accuracy of recent medical LVLMs.",
+    "project_url": null,
+    "dataset_url": "https://github.com/NdkArthur/SliceVQA",
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "Pressure-Tuned Auditor for Sycophancy-Resistant Breast Ultrasound VLM Diagnosis",
+    "year": 2026,
+    "domain": "Ultrasound",
+    "modality": [
+      "breast ultrasound"
+    ],
+    "task": [
+      "diagnosis",
+      "lesion localization"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026/0807-Paper4746.html",
+    "code_url": null,
+    "venue": "MICCAI 2026",
+    "tags": [
+      "multi-agent",
+      "sycophancy",
+      "hallucination",
+      "visual grounding"
+    ],
+    "summary": "Two-agent audit pipeline in which a pressure-tuned, visually grounded second agent independently checks and corrects a first VLM's breast ultrasound diagnosis when clinicians supply misleading prompts; on a new 16-template sycophancy benchmark it cuts sycophancy from 20.8% to 0.9% while keeping 98.5% cancer detection accuracy and raising lesion IoU from 0.12 to 0.59.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "Ultrasound Operator Guidance Using World Modeling and Retrieval Based Action Planning",
+    "year": 2026,
+    "domain": "Ultrasound",
+    "modality": [
+      "carotid ultrasound"
+    ],
+    "task": [
+      "probe guidance",
+      "navigation"
+    ],
+    "agent_type": [
+      "embodied agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.06008",
+    "code_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "world model",
+      "navigation",
+      "retrieval",
+      "ultrasound"
+    ],
+    "summary": "Plans probe motions by receding-horizon search in a V-JEPA 2.1 latent world model whose transitions are retrieved from a database of physically executed probe moves, guiding operators from the live image alone; it reaches the target carotid view in 86% of retrospective closed-loop episodes versus 52% and 43% for baselines, and 83% in a prospective volunteer study on CPU.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "SurgiCLAW: An Interpretable Atomic-Skill Agent for Precision Robotic Micromanipulation",
+    "year": 2026,
+    "domain": "Endoscopy",
+    "modality": [
+      "surgical video"
+    ],
+    "task": [
+      "robotic manipulation",
+      "skill selection"
+    ],
+    "agent_type": [
+      "tool-using",
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.15766",
+    "code_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "surgical robotics",
+      "skill selection",
+      "reinforcement-learning"
+    ],
+    "summary": "Confines a multimodal LLM to intraoperative visual understanding, explanation, and atomic-skill selection while verifiable deterministic programs execute the motions, trained with SFT and then RL rewards for action correctness, prerequisites, and format; for brain–machine-interface implantation it reaches 94.6% skill-selection accuracy and 88% success over 50 closed-loop real-robot trials.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "SurgVLA-Struct: Structured Surgical Reward Modeling for Across-Task Vision-Language Robotic Manipulation",
+    "year": 2026,
+    "domain": "Endoscopy",
+    "modality": [
+      "surgical video"
+    ],
+    "task": [
+      "robotic manipulation"
+    ],
+    "agent_type": [
+      "vision-language-action",
+      "RL-trained"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/COLAS_002.html",
+    "code_url": null,
+    "venue": "MICCAI 2026 COLAS workshop",
+    "tags": [
+      "surgical robotics",
+      "VLA",
+      "reinforcement-learning",
+      "simulation"
+    ],
+    "summary": "GRPO-refined vision-language-action policy for surgical robots in SurRoL predicts chunked 7-DoF actions in a shared action space, with task-invariant simulator-verifiable rewards for precision, efficiency, trajectory stability, and contact safety; on a 10-task benchmark with seven new language-conditioned variants it outperforms classical RL and prior VLA models.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "TrustMed-RL: Long-Horizon Reinforcement Learning for Evidence-Grounded Clinical Diagnosis",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": [
+      "multi-modality"
+    ],
+    "task": [
+      "diagnosis",
+      "test ordering"
+    ],
+    "agent_type": [
+      "RL-trained",
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.04387",
+    "code_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "reinforcement-learning",
+      "diagnosis",
+      "evidence grounding"
+    ],
+    "summary": "An 8B vision-language policy trained with clinically adapted GiGPO acts across interviews, examinations, tests, specialist consultation, and literature search on PubMed rare-disease cases with more than 24,000 annotated image panels; it reaches 37.1% diagnostic accuracy on 2,500 cases (+12.4 points over SFT), and physicians rate 83% of 200 reviewed trajectories 4–5 for evidential grounding.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "A Multi-Agent Framework for Automated Machine Learning with Evidence-based Planning for Medical Image Analysis",
+    "year": 2026,
+    "domain": "Workflow Simulation",
+    "modality": [
+      "multi-modality"
+    ],
+    "task": [
+      "AutoML",
+      "model training"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.28410",
+    "code_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "RAG",
+      "AutoML"
+    ],
+    "summary": "MedicalMLOmni trains models for single- and multi-modal medical imaging tasks from natural-language requests, retrieving published results to plan model selection and running parallel agents for hyperparameter search; it scores best on 19 of 20 benchmarks, with backbone-matched controls attributing the gains to the framework.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
+  },
+  {
+    "title": "From Treatment Choices to Tumour Trajectories: Proof-of-Concept in Preference-Aware Agentic Simulation for Digital Twins",
+    "year": 2026,
+    "domain": "Workflow Simulation",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "treatment planning",
+      "simulation"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/DT4H_017.html",
+    "code_url": null,
+    "venue": "MICCAI 2026 DT4H workshop",
+    "tags": [
+      "multi-agent",
+      "digital twin",
+      "simulation",
+      "oncology"
+    ],
+    "summary": "Proof-of-concept digital tumour twin for high-grade glioma calibrates a reaction-diffusion model from MRI and treatment history, then lets eight agents explore preference-constrained alternative chemoradiotherapy doses and schedules as inspectable tumour trajectories; after calibration, 34 of 40 agent runs predict final tumour cell count within 2% across five simulated cases.",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "featured": false
   }
 ]
