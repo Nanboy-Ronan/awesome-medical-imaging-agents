@@ -1301,6 +1301,7 @@ Surveys and position papers on medical AI agents, evaluation, safety, and deploy
 - [Awesome-Specialized-Medical-LLMs](https://github.com/FreedomIntelligence/Awesome-Specialized-Medical-LLMs) — Specialized medical LLMs organized by ICD-10 chapter and clinical specialty.
 - [awesome-machine-learning-for-healthcare](https://github.com/baeseongsu/awesome-machine-learning-for-healthcare) — Broader ML-for-healthcare list covering medical agents, multimodal LLMs, and clinical NLP.
 - [Awesome-Pathology-Agents](https://github.com/G14nTDo4/Awesome-Pathology-Agents) — Focused list of computational pathology papers and datasets, organized by agentic capability (perception, reasoning, planning, tool use, memory, self-improvement, discovery).
+- [DoomPay](https://github.com/doomsday-network/doom-pay) - 2-line Stripe-style non-custodial Web3 checkout widget (`pay.js`), HTTP 402 payment wall, and MCP tool server for verifying Layer-1 `DOOM` and Base Mainnet `wDOOM` payments.
 
 ## Footnotes
 
