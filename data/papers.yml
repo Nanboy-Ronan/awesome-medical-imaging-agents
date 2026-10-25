@@ -12835,3 +12835,181 @@ papers:
     dataset_url: null
     benchmark_url: null
     featured: false
+
+  # Additional imaging agents and earlier RL landmark-localization studies
+
+  - title: An Evidence-Driven Multi-Agent Compound AI System for Head and Neck Proton Radiotherapy Planning
+    year: 2026
+    domain: Radiology
+    modality: null
+    task:
+    - treatment planning
+    - tool use
+    agent_type:
+    - multi-agent
+    - tool-using
+    - RL-trained
+    paper_url: https://arxiv.org/abs/2610.29010
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - multi-agent
+    - reinforcement-learning
+    - human-in-the-loop
+    - radiotherapy
+    - proton therapy
+    summary: Combines PPO-generated proton therapy plans with planning, conversational, and evaluation agents that use prior-plan evidence to refine physician-requested trade-offs; the Qwen3-14B planner is post-trained with SFT and GRPO, with eight held-out refinement examples from a 21-patient cohort.
+    featured: false
+  - title: Optimizing Point-of-Care Ultrasound Video Acquisition for Probabilistic Multi-Task Heart Failure Detection
+    year: 2026
+    domain: Ultrasound
+    modality:
+    - ultrasound
+    task:
+    - view selection
+    - acquisition planning
+    - cardiac assessment
+    agent_type:
+    - RL-trained
+    paper_url: https://arxiv.org/abs/2602.13658
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: IJCARS / IPCAI 2026 special issue (accepted)
+    tags:
+    - reinforcement-learning
+    - echocardiography
+    - active acquisition
+    - uncertainty
+    summary: An RL agent selects the next echocardiographic video or stops acquisition, balancing acquisition cost against joint aortic stenosis and ejection-fraction assessment; on 1,820 test studies it matches full-study performance using 32% fewer videos, with prospective validation still needed.
+    featured: false
+  - title: 'EndoRSI: Physical-Evidence-Driven Recursive Improvement of Endoscopic Robot Policies'
+    year: 2026
+    domain: Endoscopy
+    modality:
+    - endoscopy
+    task:
+    - robotic navigation
+    - policy development
+    - self-improvement
+    agent_type:
+    - coding-agent
+    - self-improving
+    - tool-using
+    paper_url: https://arxiv.org/abs/2610.13376
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - self-improving
+    - human-in-the-loop
+    - endoscopic robotics
+    - physical experiments
+    summary: The EndoForge coding agent revises endoscopic robot policies from failed physical rollouts under human-authorized execution; insertion success increases from 2/21 to 17/21 across four policy generations, with final-policy evaluation on six independent ex-vivo porcine specimens.
+    featured: false
+  - title: Multi-Target Landmark Detection with Incomplete Images via Reinforcement Learning and Shape Prior
+    year: 2023
+    domain: 3D Imaging
+    modality:
+    - DXA
+    - MRI
+    - CT
+    task:
+    - landmark detection
+    - anatomical localization
+    agent_type:
+    - multi-agent
+    - RL-trained
+    paper_url: https://arxiv.org/abs/2301.05392
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - multi-agent
+    - reinforcement-learning
+    - shape prior
+    - limited field of view
+    summary: Multi-agent reinforcement learning incorporates a statistical shape model to localize multiple anatomical landmarks despite incomplete fields of view, evaluated on whole-body DXA, cardiac MRI, and head CT, including prediction of landmarks outside the observed image.
+    featured: false
+  - title: Communicative Reinforcement Learning Agents for Landmark Detection in Brain Images
+    year: 2020
+    domain: 3D Imaging
+    modality:
+    - MRI
+    - ultrasound
+    task:
+    - landmark detection
+    - anatomical localization
+    agent_type:
+    - multi-agent
+    - RL-trained
+    paper_url: https://arxiv.org/abs/2008.08055
+    code_url: https://github.com/gml16/rl-medical
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: MICCAI 2020 MLCN workshop
+    tags:
+    - multi-agent
+    - reinforcement-learning
+    - agent communication
+    - brain imaging
+    summary: C-MARL learns explicit communication channels between landmark-search agents alongside shared convolutional weights, improving anatomical landmark localization over independent agents on adult brain MRI and fetal ultrasound.
+    featured: false
+  - title: Multitask radiological modality invariant landmark localization using deep reinforcement learning
+    year: 2020
+    domain: 3D Imaging
+    modality:
+    - MRI
+    task:
+    - landmark detection
+    - anatomical localization
+    agent_type:
+    - multi-agent
+    - RL-trained
+    paper_url: https://proceedings.mlr.press/v121/parekh20a.html
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: MIDL 2020
+    tags:
+    - multi-agent
+    - reinforcement-learning
+    - multiparametric MRI
+    - multi-organ
+    summary: MIDRL trains a 2D agent to localize six anatomical structures across multiparametric MRI sequences and a 3D multi-agent model for four whole-body landmarks, demonstrating shared localization policies across organs and acquisition contrasts.
+    featured: false
+  - title: Multiple Landmark Detection using Multi-Agent Reinforcement Learning
+    year: 2019
+    domain: 3D Imaging
+    modality:
+    - MRI
+    - ultrasound
+    task:
+    - landmark detection
+    - anatomical localization
+    agent_type:
+    - multi-agent
+    - RL-trained
+    paper_url: https://arxiv.org/abs/1907.00318
+    code_url: https://github.com/thanosvlo/MARL-for-Anatomical-Landmark-Detection
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: MICCAI 2019
+    tags:
+    - multi-agent
+    - reinforcement-learning
+    - collaborative DQN
+    - landmark detection
+    summary: Collab-DQN shares convolutional representations and experience among agents searching for different anatomical landmarks, exploiting spatial interdependence in brain MRI, cardiac MRI, and fetal brain ultrasound while reducing training cost relative to separate agents.
+    featured: false
