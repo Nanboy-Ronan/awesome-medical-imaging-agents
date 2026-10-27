@@ -15390,5 +15390,247 @@
     ],
     "summary": "Collab-DQN shares convolutional representations and experience among agents searching for different anatomical landmarks, exploiting spatial interdependence in brain MRI, cardiac MRI, and fetal brain ultrasound while reducing training cost relative to separate agents.",
     "featured": false
+  },
+  {
+    "title": "ClinLoop: Human-AI Collaborative Agents for Multimodal Breast Cancer Diagnosis Under Incomplete Clinical Data",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "CT",
+      "MRI",
+      "mammography"
+    ],
+    "task": [
+      "diagnosis",
+      "case deferral"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026/0173-Paper2960.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026",
+    "tags": [
+      "multi-agent",
+      "human-in-the-loop",
+      "breast cancer",
+      "missing modality",
+      "uncertainty"
+    ],
+    "summary": "Pairs a diagnosis agent that fuses whichever of CT, MRI, or mammography is available with a quality-assurance agent that uses ensemble uncertainty to defer low-confidence or discordant cases to clinicians, whose confirmed labels update the model; evaluated with five-fold cross-validation on a private 3,108-patient breast cancer cohort.",
+    "featured": false
+  },
+  {
+    "title": "TIAgent: From Natural Language to Grounded Agentic Workflows for Computational Pathology",
+    "year": 2026,
+    "domain": "Pathology",
+    "modality": [
+      "WSI"
+    ],
+    "task": [
+      "workflow generation",
+      "tool use"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.32993",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "pathology",
+      "tool use",
+      "workflow generation",
+      "benchmark"
+    ],
+    "summary": "Turns natural-language computational pathology requests into inspectable, executable computational graphs built from existing tissue-analysis operations, and benchmarks 14 backbone LLMs on 90 unit tasks spanning 18 operation types, where the best model reaches 0.967 unit workflow success.",
+    "featured": false
+  },
+  {
+    "title": "AGRO-SUVIDE: Agentic Robotics for Surgical Viscoelastic Debridement",
+    "year": 2026,
+    "domain": "Endoscopy",
+    "modality": [
+      "surgical video"
+    ],
+    "task": [
+      "surgical automation",
+      "skill composition"
+    ],
+    "agent_type": [
+      "coding-agent",
+      "self-evolving",
+      "embodied agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2609.34823",
+    "code_url": null,
+    "project_url": "https://surgical-robotics.github.io/AGRO-SUVIDE/",
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "self-evolving",
+      "surgical robotics",
+      "dVRK",
+      "learning from demonstration"
+    ],
+    "summary": "A coding agent extracts recurring skills from a single expert demonstration using visual and kinematic signals, builds each as a model-based or learned policy skill, and composes them into a monitored loop that checks pre- and post-conditions for surgical debridement on the da Vinci Research Kit, reaching 85% single-fragment success over 340 physical trials.",
+    "featured": false
+  },
+  {
+    "title": "Complexity-Aware Surgical Video Reasoning Segmentation with Digital Twin and Context Memory",
+    "year": 2026,
+    "domain": "Endoscopy",
+    "modality": [
+      "surgical video",
+      "endoscopy"
+    ],
+    "task": [
+      "reasoning segmentation",
+      "video understanding"
+    ],
+    "agent_type": [
+      "RL-trained",
+      "memory-augmented"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.28776",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "reinforcement-learning",
+      "RAG",
+      "digital twin",
+      "reasoning segmentation",
+      "benchmark"
+    ],
+    "summary": "SurgReasonSeg answers implicit surgical-video segmentation queries with RL-trained LLM adapters over digital-twin representations, using an RL-trained router to pick between complexity-specific adapters and a context memory that retrieves similar historical cases; introduces the EndoVis-ReasonSeg benchmark and runs at 18.8 FPS.",
+    "featured": false
+  },
+  {
+    "title": "UniField++: A Unified Agentic Framework with Loop Reasoning for MRI Field-Strength Enhancement",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "MRI"
+    ],
+    "task": [
+      "image enhancement",
+      "super-resolution"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.22982",
+    "code_url": "https://github.com/CUHK-AIM-Group/UniField_plusplus",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "multi-agent",
+      "hallucination",
+      "MRI",
+      "low-field MRI"
+    ],
+    "summary": "A VLM planner trained on radiologist annotations predicts hallucination-prone brain regions and correction plans, guiding a flow-matching enhancer that loops over high-risk regions across 64mT-to-3T and 3T-to-7T field-strength transitions and improves PSNR by 2.74 dB on average over comparison methods.",
+    "featured": false
+  },
+  {
+    "title": "Multi-agent Test-Time Adaptation for Robust Medical Image-to-Image Translation",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "MRI",
+      "CT"
+    ],
+    "task": [
+      "image translation",
+      "denoising",
+      "test-time adaptation"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026/0680-Paper2376.html",
+    "code_url": "https://github.com/arco-group/Multi-Agent-TTA",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026",
+    "tags": [
+      "multi-agent",
+      "test-time adaptation",
+      "distribution shift"
+    ],
+    "summary": "Splits test-time adaptation into task-execution, distribution-shift monitoring, adaptation-selection, and model-update agents so each sample receives only the adaptation it needs, evaluated on T1-to-T2 MRI translation and low-dose CT denoising across four public datasets.",
+    "featured": false
+  },
+  {
+    "title": "Reinforcing intra-operative tumour localisation with weak supervision from pre-operative appearances",
+    "year": 2026,
+    "domain": "3D Imaging",
+    "modality": [
+      "CT",
+      "MRI"
+    ],
+    "task": [
+      "tumour localization",
+      "surgical navigation"
+    ],
+    "agent_type": [
+      "RL-trained"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.31253",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "reinforcement-learning",
+      "weak supervision",
+      "cross-modality",
+      "liver"
+    ],
+    "summary": "A classifier trained on pre-operative MRI supplies weak tumour-presence signals that guide a reinforcement-learning agent to localise hepatocellular carcinoma on intra-operative CT without paired MR-CT data; translating CT into synthetic MR before localisation performs best on an external cohort.",
+    "featured": false
+  },
+  {
+    "title": "An Agentic AI Workflow for Liver Lesion Segmentation and Structured Radiology Reporting",
+    "year": 2026,
+    "domain": "Report Generation",
+    "modality": [
+      "CT"
+    ],
+    "task": [
+      "segmentation",
+      "report generation"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.34599",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "tool use",
+      "structured reporting",
+      "segmentation",
+      "liver"
+    ],
+    "summary": "Chains TotalSegmentator-based nnU-Net liver, Couinaud-segment, and lesion segmentation with deterministic measurement tools and an LLM that fills a predefined reporting schema under numerical consistency checks against the source measurements; reports 0.947 liver Dice and 75.6% lesion sensitivity on 51 LiTS cases.",
+    "featured": false
   }
 ]
