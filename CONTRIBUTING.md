@@ -16,6 +16,8 @@ We welcome additions that improve and grow our curated collections of high-quali
 1. **Fork the repository** you want to contribute to.
 2. **Create a new branch** for your changes.
 3. **Make your edits**:
+   - Use the [classification guide](docs/taxonomy.md) to choose one primary section and add supported task, modality, mechanism, and evaluation metadata.
+   - Update the README entry and `data/papers.yml` together; supporting foundation models and datasets have separate pages under `docs/`.
    - Follow the existing style and format.
    - Keep descriptions short and informative.
    - Ensure links are correct and not broken.
@@ -31,6 +33,9 @@ Before you submit, please ensure:
 - [ ] Descriptions are clear and objective.
 - [ ] The list remains alphabetically sorted (if applicable).
 - [ ] You have not added multiple links to promote a single source.
+- [ ] The primary placement follows the classification guide; overlapping themes use tags or cross-references.
+- [ ] Section counts and count-based links are updated, and metadata/count validation passes.
+- [ ] `python scripts/update_themes.py` has regenerated the theme index when relevant.
 
 ## What We Don’t Accept
 

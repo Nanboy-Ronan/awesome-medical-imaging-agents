@@ -116,6 +116,24 @@ THEMES: dict[str, dict] = {
     },
 }
 
+# Group the discovery index by taxonomy axis, preserving existing theme names
+# and their count-based anchors for compatibility.
+THEME_GROUPS = {
+    "Agent Mechanisms": [
+        "RAG and Retrieval",
+        "Multi-Agent Collaboration",
+        "Reinforcement Learning",
+        "Human-in-the-Loop",
+        "Self-Evolving and Self-Improving Agents",
+    ],
+    "Trustworthiness": [
+        "Fairness and Bias",
+        "Hallucination and Reliability",
+        "Safety and Robustness",
+        "Privacy and Federated Learning",
+    ],
+}
+
 # ── README parsing ─────────────────────────────────────────────────────────────
 THEMES_HEADING = "## Themes Index"
 
@@ -401,23 +419,41 @@ def generate_themes_section(index: dict[str, list[dict]], total_tagged: int) -> 
     lines: list[str] = [
         THEMES_HEADING,
         "",
-        ("*Cross-cutting topics from the [main list](../README.md). "
-         "Each paper is listed once in its primary section; this index lets you "
-         "find it by theme.*"),
+        ("Cross-cutting views of the [main list](../README.md), organized by "
+         "the [classification guide](taxonomy.md). A paper may appear in several themes; "
+         "theme counts are not unique-paper totals."),
+        "",
+        ("Entries combine explicit metadata tags with keyword matches. "
+         "Treat matches as discovery aids that require editorial review."),
+        "",
+        "### Browse themes",
         "",
     ]
 
+    for group, themes in THEME_GROUPS.items():
+        group_anchor = group.lower().replace(" ", "-")
+        lines.append(f"- [{group}](#{group_anchor})")
+        for theme_name in themes:
+            entries = index.get(theme_name, [])
+            if entries:
+                anchor = theme_name.lower().replace(" ", "-") + f"-{len(entries)}"
+                lines.append(f"  - [{theme_name} ({len(entries)})](#{anchor})")
+    lines.append("")
+
     any_found = False
-    for theme_name in THEMES:          # preserve THEMES dict order
-        entries = index.get(theme_name, [])
-        if not entries:
-            continue
-        any_found = True
-        lines.append(f"### {theme_name} ({len(entries)})")
+    for group, themes in THEME_GROUPS.items():
+        lines.append(f"## {group}")
         lines.append("")
-        for entry in entries:
-            lines.append(_paper_line(entry))
-        lines.append("")
+        for theme_name in themes:
+            entries = index.get(theme_name, [])
+            if not entries:
+                continue
+            any_found = True
+            lines.append(f"### {theme_name} ({len(entries)})")
+            lines.append("")
+            for entry in entries:
+                lines.append(_paper_line(entry))
+            lines.append("")
 
     if not any_found:
         lines.append("*No papers matched canonical theme keywords yet.*")

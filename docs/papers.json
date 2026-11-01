@@ -15632,5 +15632,154 @@
     ],
     "summary": "Chains TotalSegmentator-based nnU-Net liver, Couinaud-segment, and lesion segmentation with deterministic measurement tools and an LLM that fills a predefined reporting schema under numerical consistency checks against the source measurements; reports 0.947 liver Dice and 75.6% lesion sensitivity on 51 LiTS cases.",
     "featured": false
+  },
+  {
+    "title": "PathCowork: Learning from real-world pathology practice to build AI copilots",
+    "year": 2026,
+    "domain": "Pathology",
+    "modality": [
+      "WSI"
+    ],
+    "task": [
+      "visual grounding",
+      "diagnosis",
+      "slide navigation"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2610.39441",
+    "code_url": "https://github.com/zhihuanglab/PathCowork",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "pathology",
+      "expert demonstrations",
+      "visual grounding",
+      "diagnostic procedures"
+    ],
+    "summary": "Uses synchronized pathologist gaze, narration, and slide navigation from 48 sessions to train visual grounding and supply diagnostic procedures to pathology agents; evaluates grounding-guided agents across five organ-specific tasks and demonstrates region selection for prostate grading with limited slide labels.",
+    "featured": false
+  },
+  {
+    "title": "MedAdaptAgent: An Automatic Harness for Adapting Medical Imaging Models to New Sites",
+    "year": 2026,
+    "domain": "Workflow Simulation",
+    "modality": [
+      "CT",
+      "MRI",
+      "CXR"
+    ],
+    "task": [
+      "model adaptation",
+      "segmentation",
+      "classification"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2610.34884",
+    "code_url": "https://github.com/Guhanxue/medagent",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "domain adaptation",
+      "distribution shift",
+      "model selection",
+      "reproducibility"
+    ],
+    "summary": "An LLM planner selects compatible adaptation experiments under label and compute budgets, revises them using model-site evidence, and packages the selected model for inference; evaluates segmentation and classification transfers with explicit comparisons against retaining the pretrained model to reduce harmful replacements.",
+    "featured": false
+  },
+  {
+    "title": "A lightweight portable ultrasound robot for autonomous liver sonography",
+    "year": 2026,
+    "domain": "Ultrasound",
+    "modality": [
+      "ultrasound"
+    ],
+    "task": [
+      "robotic scanning",
+      "standard plane acquisition",
+      "navigation"
+    ],
+    "agent_type": [
+      "embodied"
+    ],
+    "paper_url": "https://doi.org/10.1038/s41467-026-79007-5",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Nature Communications",
+    "tags": [
+      "robotic ultrasound",
+      "liver",
+      "multisensory feedback",
+      "expert demonstrations"
+    ],
+    "summary": "A patient-mounted ultrasound robot uses a sonographer-informed agent trained on scanning trajectories to combine spatial, tactile, and visual feedback for liver imaging; evaluated in 102 healthy participants and 17 patients, with additional low-resource screening and vehicle-based scanning demonstrations.",
+    "featured": false
+  },
+  {
+    "title": "An Agentic AI Workflow for Automated Macular Hole Diagnosis and Structured Report Generation",
+    "year": 2026,
+    "domain": "Ophthalmology",
+    "modality": [
+      "OCT"
+    ],
+    "task": [
+      "diagnosis",
+      "report generation"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://doi.org/10.1007/s40123-026-01523-w",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Ophthalmology and Therapy",
+    "tags": [
+      "macular hole",
+      "structured reporting",
+      "workflow orchestration"
+    ],
+    "summary": "A sequential workflow agent invokes a fine-tuned RETFound classifier on OCT B-scans and passes its diagnosis to GPT-4 for patient-friendly reports; evaluated on 1,014 external images and 40 reviewed reports, with diagnosis restricted to macular hole versus normal and no language-model influence on classification.",
+    "featured": false
+  },
+  {
+    "title": "MedMCP: An Open Agentic Ecosystem for Medical Imaging Workflows",
+    "year": 2026,
+    "domain": "Workflow Simulation",
+    "modality": [
+      "CT",
+      "MRI"
+    ],
+    "task": [
+      "workflow orchestration",
+      "image analysis",
+      "tool use"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://doi.org/10.64898/2026.10.12.758708",
+    "code_url": "https://github.com/medmcp/medmcp",
+    "project_url": "https://medmcp.ai/",
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "bioRxiv preprint",
+    "tags": [
+      "MCP",
+      "human-in-the-loop",
+      "reproducibility",
+      "provenance"
+    ],
+    "summary": "Describes an on-premise workspace where a local LLM plans imaging workflows and invokes independently testable tools through MCP, with human permission gates, output provenance, and export to deterministic workflows; the preprint focuses on infrastructure and design principles.",
+    "featured": false
   }
 ]

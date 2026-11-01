@@ -9,18 +9,20 @@ This repository curates research papers, agent benchmarks, and open-source syste
 - [Taxonomy](#taxonomy)
 - [Start Here](#start-here)
 - [Scope](#scope)
-- [Radiology Agents (57)](#radiology-agents-57)
-- [Pathology Agents (Whole-Slide Imaging · Digital Pathology) (40)](#pathology-agents-whole-slide-imaging--digital-pathology-40)
-- [Ultrasound Agents (Echocardiography · Robotic Ultrasound) (28)](#ultrasound-agents-echocardiography--robotic-ultrasound-28)
-- [Endoscopy and Surgical Imaging Agents (28)](#endoscopy-and-surgical-imaging-agents-28)
-- [Ophthalmology Agents (15)](#ophthalmology-agents-15)
-- [3D CT / MRI / Volumetric Imaging Agents (39)](#3d-ct--mri--volumetric-imaging-agents-39)
-- [Segmentation and Annotation Agents (23)](#segmentation-and-annotation-agents-23)
-- [Report Generation Agents (23)](#report-generation-agents-23)
-- [Medical Vision-Language Model (VLM) Agents (41)](#medical-vision-language-model-vlm-agents-41)
+- [Imaging Domains](#imaging-domains)
+  - [Radiology Agents (57)](#radiology-agents-57)
+  - [Pathology Agents (Whole-Slide Imaging · Digital Pathology) (41)](#pathology-agents-whole-slide-imaging--digital-pathology-41)
+  - [Ultrasound Agents (Echocardiography · Robotic Ultrasound) (29)](#ultrasound-agents-echocardiography--robotic-ultrasound-29)
+  - [Endoscopy and Surgical Imaging Agents (28)](#endoscopy-and-surgical-imaging-agents-28)
+  - [Ophthalmology Agents (16)](#ophthalmology-agents-16)
+- [Cross-Domain Tasks and Representations](#cross-domain-tasks-and-representations)
+  - [3D CT / MRI / Volumetric Imaging Agents (39)](#3d-ct--mri--volumetric-imaging-agents-39)
+  - [Segmentation and Annotation Agents (23)](#segmentation-and-annotation-agents-23)
+  - [Report Generation Agents (23)](#report-generation-agents-23)
+  - [Medical Vision-Language Model (VLM) Agents (41)](#medical-vision-language-model-vlm-agents-41)
 - [Tool-Using and Multi-Agent Frameworks](#tool-using-and-multi-agent-frameworks)
   - [Clinical Reasoning Agents (78)](#clinical-reasoning-agents-78)
-  - [Workflow and Simulation Agents (60)](#workflow-and-simulation-agents-60)
+  - [Workflow and Simulation Agents (62)](#workflow-and-simulation-agents-62)
   - [Agent Skills and Tool Learning (11)](#agent-skills-and-tool-learning-11)
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
   - [Benchmark Overview](#benchmark-overview)
@@ -29,10 +31,22 @@ This repository curates research papers, agent benchmarks, and open-source syste
 - [Toolboxes](#toolboxes)
 - [Surveys and Position Papers (26)](#surveys-and-position-papers-26)
 - [Related Awesome Lists](#related-awesome-lists)
+- [Classification Guide](docs/taxonomy.md)
 
 ## Taxonomy
 
-<a href="https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents#readme"><img src="assets/medical-imaging-agents-taxonomy.svg" alt="Visual taxonomy of medical imaging agents" width="380"></a>
+Classify each work along four independent axes: **where it is used**, **what it does**, **how the agent operates**, and **how it is evaluated**. A pathology agent can also perform segmentation, use reinforcement learning, and be evaluated for reliability.
+
+<a href="docs/taxonomy.md"><img src="assets/medical-imaging-agents-taxonomy.svg" alt="Four-axis taxonomy: imaging domains and inputs, clinical tasks, agent mechanisms, and evaluation and resources" width="900"></a>
+
+| Browse by | Categories | Entry points |
+|---|---|---|
+| **Application and input** | Radiology, pathology, ultrasound, endoscopy/surgery, ophthalmology; CT/MRI/PET volumes; multimodal inputs | [Imaging domains](#imaging-domains) · [3D imaging](#3d-ct--mri--volumetric-imaging-agents-39) · [Medical VLMs](#medical-vision-language-model-vlm-agents-41) |
+| **Clinical task** | Acquisition and navigation; diagnosis and reasoning; segmentation and annotation; reporting; treatment planning; workflow and simulation | [Segmentation](#segmentation-and-annotation-agents-23) · [Reporting](#report-generation-agents-23) · [Reasoning](#clinical-reasoning-agents-78) · [Workflows](#workflow-and-simulation-agents-62) |
+| **Agent mechanism** | Tool use, retrieval, multi-agent collaboration, reinforcement learning, human feedback, memory and self-improvement | [Frameworks](#tool-using-and-multi-agent-frameworks) · [Skills](#agent-skills-and-tool-learning-11) · [Mechanism index](docs/themes.md#agent-mechanisms) |
+| **Evaluation and resources** | Task/process evaluation; reliability, safety, fairness and privacy; benchmarks, datasets, tools, foundation models and surveys | [Benchmarks](#benchmarks-and-evaluation) · [Trustworthiness index](docs/themes.md#trustworthiness) · [Datasets](docs/datasets.md) · [Foundation models](docs/foundation-models.md) · [Surveys](#surveys-and-position-papers-26) |
+
+The main list gives each paper a primary home; the [themes index](docs/themes.md) provides overlapping views. Section counts describe entries in that section, not disjoint totals across the taxonomy. See the [classification guide](docs/taxonomy.md) for definitions, examples, and contribution rules.
 
 ## Start Here
 
@@ -59,7 +73,11 @@ Selected systems, surveys, and benchmarks across imaging domains.
 - Research resources including peer-reviewed papers, arXiv preprints, agent benchmarks, reproducible code, and related open-source systems.
 - Safety and evaluation work on hallucination detection, fairness, robustness, uncertainty, abstention, privacy, and clinically grounded evaluation.
 
-## Radiology Agents (57)
+## Imaging Domains
+
+Browse by clinical specialty or imaging environment. Tasks and agent mechanisms can overlap across these domains.
+
+### Radiology Agents (57)
 
 Agents for chest X-ray, CT, MRI, DICOM workflows, radiotherapy planning, and radiology decision support.
 
@@ -121,10 +139,11 @@ Agents for chest X-ray, CT, MRI, DICOM workflows, radiotherapy planning, and rad
 - [Zero-Shot Large Language Model Agents for Fully Automated Radiotherapy Treatment Planning](https://arxiv.org/abs/2510.11754) - Planning agent automates radiotherapy workflows with iterative plan refinement via zero-shot LLM reasoning (arXiv, 2025).
 - [RadioRAG: Online Retrieval-Augmented Generation for Radiology Question Answering](https://arxiv.org/abs/2407.15621) - Streaming RAG agent that continuously pulls prior studies and reports while answering radiology questions (arXiv, 2024).
 
-## Pathology Agents (Whole-Slide Imaging · Digital Pathology) (40)
+### Pathology Agents (Whole-Slide Imaging · Digital Pathology) (41)
 
 Agents for whole-slide image analysis, digital pathology, pathology reports, and slide navigation.
 
+- [PathCowork: Learning from real-world pathology practice to build AI copilots](https://arxiv.org/abs/2610.39441) - Uses synchronized pathologist gaze, narration, and slide navigation from 48 sessions to train visual grounding and supply diagnostic procedures to pathology agents; evaluates grounding-guided agents across five organ-specific tasks and demonstrates region selection for prostate grading with limited slide labels (arXiv, 2026; [Code](https://github.com/zhihuanglab/PathCowork)).
 - [PlanPath: Exploration-Guided Orchestration for Patient-Level Pathology Reasoning](https://arxiv.org/abs/2610.18664) - Turns a clinical question into an exploration plan, routes to the relevant slides among roughly 15 WSIs per patient, and moves from tissue- to cell-level analysis; on new renal and gastric cancer patient-level VQA datasets it beats the strongest baseline by 9.4% and 12.1% overall accuracy (arXiv, 2026; [Code](https://github.com/JSGe-AI/PlanPath_1)).
 - [PathPilot: An Adaptive Question-Conditioned Multi-Magnification Navigation Agent for Whole-Slide Image Analysis](https://arxiv.org/abs/2610.16734) - Navigates across magnifications like a pathologist: CrossMagLoc learns per-magnification localization from pathologist viewing behavior to pick a starting region, then EviRegionSearch explores outward according to which question-relevant evidence is still missing; evaluated on question answering across five internal and external cohorts (arXiv, 2026).
 - [MechAgent: Active Mechanism Falsification for Agentic Cross-Species Medical Reasoning](https://papers.miccai.org/miccai-2026-sat/MedAgent_042.html) - A committee of pathology, toxicology, translational, evidence-auditor, and adversarial agents deliberates over a typed hypothesis graph, selecting evidence information-theoretically and running latent interventions on a multimodal foundation model to test whether proposed biological mechanisms causally drive preclinical-to-clinical predictions (MICCAI 2026 MedAgent workshop, 2026).
@@ -166,10 +185,11 @@ Agents for whole-slide image analysis, digital pathology, pathology reports, and
 - [SurvAgent: Hierarchical CoT-Enhanced Case Banking and Dichotomy-Based Multi-Agent System for Multimodal Survival Prediction](https://arxiv.org/pdf/2511.16635v1) - Multimodal agents pool pathology, imaging, and clinical signals for survival analysis (arXiv, 2025).
 - [WSI-Agents: A Collaborative Multi-Agent System for Multi-Modal Whole Slide Image Analysis](https://arxiv.org/pdf/2507.14680) - Delegates slide parsing, reporting, and triaging across specialized collaborative agents for whole-slide image analysis (MICCAI 2025, 2025).
 
-## Ultrasound Agents (Echocardiography · Robotic Ultrasound) (28)
+### Ultrasound Agents (Echocardiography · Robotic Ultrasound) (29)
 
 Agents for echocardiography interpretation, fetal ultrasound, robotic scanning, and ultrasound-guided workflows.
 
+- [A lightweight portable ultrasound robot for autonomous liver sonography](https://doi.org/10.1038/s41467-026-79007-5) - A patient-mounted ultrasound robot uses a sonographer-informed agent trained on scanning trajectories to combine spatial, tactile, and visual feedback for liver imaging; evaluated in 102 healthy participants and 17 patients, with additional low-resource screening and vehicle-based scanning demonstrations (Nature Communications, 2026).
 - [Pressure-Tuned Auditor for Sycophancy-Resistant Breast Ultrasound VLM Diagnosis](https://papers.miccai.org/miccai-2026/0807-Paper4746.html) - Two-agent audit pipeline in which a pressure-tuned, visually grounded second agent independently checks and corrects a first VLM's breast ultrasound diagnosis when clinicians supply misleading prompts; on a new 16-template sycophancy benchmark it cuts sycophancy from 20.8% to 0.9% while keeping 98.5% cancer detection accuracy and raising lesion IoU from 0.12 to 0.59 (MICCAI 2026, 2026).
 - [Ultrasound Operator Guidance Using World Modeling and Retrieval Based Action Planning](https://arxiv.org/abs/2610.06008) - Plans probe motions by receding-horizon search in a V-JEPA 2.1 latent world model whose transitions are retrieved from a database of physically executed probe moves, guiding operators from the live image alone; it reaches the target carotid view in 86% of retrospective closed-loop episodes versus 52% and 43% for baselines, and 83% in a prospective volunteer study on CPU (arXiv, 2026).
 - [Toward Agentic Echocardiography: Reinforcement Learning with Foundation-Model Similarity Rewards in a CT-Derived Simulation](https://papers.miccai.org/miccai-2026-sat/HAIC26_018.html) - Frames transthoracic view acquisition as reinforcement learning in a patient-specific ultrasound simulator built from public chest CT, rewarding a soft actor-critic probe policy with frozen DINOv2 similarity to the target view; it acquires the PLAX view on five unseen patients with 12.4 mm mean position error and 81.2% clinical-tolerance success (MICCAI 2026 HAIC workshop, 2026).
@@ -200,7 +220,7 @@ Agents for echocardiography interpretation, fetal ultrasound, robotic scanning, 
 - [Agent with Warm Start and Adaptive Dynamic Termination for Plane Localization in 3D Ultrasound](https://arxiv.org/abs/2103.14502) - Adds adaptive early stopping to a reinforcement-learning plane-search agent with anatomical alignment, evaluating localization of seven standard planes across fetal brain, fetal abdomen, and uterus volumes (IEEE Transactions on Medical Imaging, 2021; [Code](https://github.com/wulalago/AgentSPL)).
 
 
-## Endoscopy and Surgical Imaging Agents (28)
+### Endoscopy and Surgical Imaging Agents (28)
 
 Agents for gastrointestinal endoscopy, surgical scene understanding, and autonomous endoscopic navigation.
 
@@ -233,10 +253,11 @@ Agents for gastrointestinal endoscopy, surgical scene understanding, and autonom
 - [SurgVisAgent: Multimodal Agentic Model for Versatile Surgical Visual Enhancement](https://arxiv.org/abs/2507.02252) - Identifies distortion categories and severity in endoscopic images via in-context few-shot reasoning and chain-of-thought to apply targeted enhancements such as low-light correction, smoke removal, and motion deblurring (arXiv, 2025).
 - [SurgRAW: Multi-Agent Workflow with Chain of Thought Reasoning for Robotic Surgical Video Analysis](https://arxiv.org/abs/2503.10265) - Hierarchical orchestrator directs specialized agents through parallel chain-of-thought reasoning streams with a panel-discussion mechanism and RAG-grounded surgical knowledge, introducing the SurgCoTBench reasoning benchmark (arXiv, 2025; [Code](https://github.com/jinlab-imvr/SurgRAW)).
 
-## Ophthalmology Agents (15)
+### Ophthalmology Agents (16)
 
 Agents for fundus, OCT, glaucoma, diabetic retinopathy, myopia, and neuro-ophthalmic decision support.
 
+- [An Agentic AI Workflow for Automated Macular Hole Diagnosis and Structured Report Generation](https://doi.org/10.1007/s40123-026-01523-w) - A sequential workflow agent invokes a fine-tuned RETFound classifier on OCT B-scans and passes its diagnosis to GPT-4 for patient-friendly reports; evaluated on 1,014 external images and 40 reviewed reports, with diagnosis restricted to macular hole versus normal and no language-model influence on classification (Ophthalmology and Therapy, 2026).
 - [OphthaAgent: Learning Cognitive Prudence for Reliable Fundus Diagnosis via Tool-Augmented Reinforcement Learning](https://papers.miccai.org/miccai-2026-sat/OMIA_007.html) - Trains a tool-augmented fundus MLLM in an online multi-turn environment to decide when to call specialist tools and when to trigger reflective verification, countering blind trust in brittle tools; reports state-of-the-art in- and out-of-distribution results on two fundus benchmarks and emergent self-correction (MICCAI 2026 OMIA workshop, 2026; [Code](https://github.com/rikey123/OphthaAgent)).
 - [Retrieval-Augmented Longitudinal Reasoning for OCT Change Detection and Forecasting: A Trajectory-Aware Multimodal RAG Framework with Calibrated Vision-Language Models](https://papers.miccai.org/miccai-2026-sat/MedAgent_010.html) - TrajRAG retrieves precedent visit-pair trajectories from a patient-disjoint memory to condition medical VLMs on OCT change detection and next-visit forecasting; controls on MARIO and OLIVES show that retrieved-label copying, rather than longitudinal reasoning, accounts for most of the reported gains (MICCAI 2026 MedAgent workshop, 2026).
 - [Guideline-as-Oracle: Zero-Annotation Training of an Ophthalmic Telephone Triage Agent](https://arxiv.org/abs/2608.04772) - Converts American Academy of Ophthalmology guidance into a 70-row operational rule table used to supervise 3,000 synthetic training dialogues across eight rule-to-dialogue conversion strategies, then fine-tunes a 9B GAO-Triage model with no expert-annotated data; agreement with reference triage decisions rises from 61.7% to 74.1% and emergent-case recall jumps from 9.5% to 69.0%, matching seven general-purpose systems without a frontier model at inference (arXiv, 2026).
@@ -253,7 +274,11 @@ Agents for fundus, OCT, glaucoma, diabetic retinopathy, myopia, and neuro-ophtha
 - [MedChat: A Multi-Agent Framework for Multimodal Diagnosis with Large Language Models](https://arxiv.org/abs/2506.07400) - Director agent coordinates role-specific LLM agents (ophthalmologist, glaucoma specialist, optometrist, pharmacist) each receiving deep-learning classifier outputs for fundus-based glaucoma diagnosis (IEEE MIPR 2025, 2025).
 - [Multimodal reasoning agent for enhanced ophthalmic decision-making: a preliminary real-world clinical validation](https://doi.org/10.3389/fcell.2025.1642539) - Three-module agentic pipeline integrating GPT-4o visual understanding, RAG from ophthalmic guideline knowledge bases, and DeepSeek-R1 diagnostic reasoning; validated on 30 real-world ophthalmic cases matching ophthalmology resident accuracy (Frontiers in Cell and Developmental Biology, 2025).
 
-## 3D CT / MRI / Volumetric Imaging Agents (39)
+## Cross-Domain Tasks and Representations
+
+Browse by a shared task or input representation. Volumetric imaging and VLMs describe inputs or system interfaces; segmentation and reporting describe tasks. These views complement the specialty sections above.
+
+### 3D CT / MRI / Volumetric Imaging Agents (39)
 
 Agents for volumetric CT, MRI, PET, dosimetry, neuroimaging, and multi-organ image analysis.
 
@@ -297,7 +322,7 @@ Agents for volumetric CT, MRI, PET, dosimetry, neuroimaging, and multi-organ ima
 - [Multitask radiological modality invariant landmark localization using deep reinforcement learning](https://proceedings.mlr.press/v121/parekh20a.html) - MIDRL trains a 2D agent to localize six anatomical structures across multiparametric MRI sequences and a 3D multi-agent model for four whole-body landmarks, demonstrating shared localization policies across organs and acquisition contrasts (MIDL 2020, 2020).
 - [Multiple Landmark Detection using Multi-Agent Reinforcement Learning](https://arxiv.org/abs/1907.00318) - Collab-DQN shares convolutional representations and experience among agents searching for different anatomical landmarks, exploiting spatial interdependence in brain MRI, cardiac MRI, and fetal brain ultrasound while reducing training cost relative to separate agents (MICCAI 2019, 2019; [Code](https://github.com/thanosvlo/MARL-for-Anatomical-Landmark-Detection)).
 
-## Segmentation and Annotation Agents (23)
+### Segmentation and Annotation Agents (23)
 
 Agents that plan, prompt, refine, or evaluate segmentation and annotation workflows.
 
@@ -325,7 +350,7 @@ Agents that plan, prompt, refine, or evaluate segmentation and annotation workfl
 - [Optimizing Efficiency and Effectiveness in Sequential Prompt Strategy for SAM using Reinforcement Learning](https://papers.miccai.org/miccai-2024/579-Paper1442.html) - AIES trains a deep Q-network to recommend point or box interactions and decide when to stop prompting SAM, balancing segmentation accuracy against interaction costs on three medical datasets while clinicians still supply prompt locations (MICCAI 2024, 2024).
 - [Iteratively-Refined Interactive 3D Medical Image Segmentation with Multi-Agent Reinforcement Learning](https://arxiv.org/abs/1911.10334) - Foundational paper modelling iterative 3D medical image segmentation as an MDP; each voxel acts as an independent agent sharing a behaviour policy, converging to accurate segmentations with fewer user interactions than prior methods (CVPR, 2020).
 
-## Report Generation Agents (23)
+### Report Generation Agents (23)
 
 Agents focused on automated imaging report drafting, refinement, evaluation, and quality control.
 
@@ -353,7 +378,7 @@ Agents focused on automated imaging report drafting, refinement, evaluation, and
 - [Medical AI Consensus: A Multi-Agent Framework for Radiology Report Generation and Evaluation](http://arxiv.org/abs/2509.17353) - Ensembles expert agents to reach consensus on imaging impressions (arXiv, 2025).
 - [Hybrid Retrieval-Generation Reinforced Agent for Medical Image Report Generation](http://arxiv.org/abs/1805.08298) - Early agent that jointly retrieves priors and drafts radiology reports (arXiv, 2018).
 
-## Medical Vision-Language Model (VLM) Agents (41)
+### Medical Vision-Language Model (VLM) Agents (41)
 
 Vision-language agents that combine imaging encoders, language models, tools, and clinical reasoning. Includes broad multimodal agents that reason jointly over multiple imaging modalities and clinical text.
 
@@ -486,10 +511,12 @@ Agents for diagnosis, differential reasoning, treatment planning, retrieval, and
 - [MedAide: Information Fusion and Anatomy of Medical Intents via LLM-based Agent Collaboration](http://arxiv.org/abs/2410.12532) - Decomposes physician intents into coordinated agent subtasks (arXiv, 2024).
 - [Multi-agent Searching System for Medical Information](http://arxiv.org/abs/2203.12465) - Early agentic pipeline that dispatches searchers and summarizers for literature triage (arXiv, 2022).
 
-### Workflow and Simulation Agents (60)
+### Workflow and Simulation Agents (62)
 
 Agents and environments for clinical workflow automation, simulation, and operational task execution.
 
+- [MedAdaptAgent: An Automatic Harness for Adapting Medical Imaging Models to New Sites](https://arxiv.org/abs/2610.34884) - An LLM planner selects compatible adaptation experiments under label and compute budgets, revises them using model-site evidence, and packages the selected model for inference; evaluates segmentation and classification transfers with explicit comparisons against retaining the pretrained model to reduce harmful replacements (arXiv, 2026; [Code](https://github.com/Guhanxue/medagent)).
+- [MedMCP: An Open Agentic Ecosystem for Medical Imaging Workflows](https://doi.org/10.64898/2026.10.12.758708) - Describes an on-premise workspace where a local LLM plans imaging workflows and invokes independently testable tools through MCP, with human permission gates, output provenance, and export to deterministic workflows; the preprint focuses on infrastructure and design principles (bioRxiv preprint, 2026; [Code](https://github.com/medmcp/medmcp); [Project](https://medmcp.ai/)).
 - [A Multi-Agent Framework for Automated Machine Learning with Evidence-based Planning for Medical Image Analysis](https://arxiv.org/abs/2610.28410) - MedicalMLOmni trains models for single- and multi-modal medical imaging tasks from natural-language requests, retrieving published results to plan model selection and running parallel agents for hyperparameter search; it scores best on 19 of 20 benchmarks, with backbone-matched controls attributing the gains to the framework (arXiv, 2026).
 - [From Treatment Choices to Tumour Trajectories: Proof-of-Concept in Preference-Aware Agentic Simulation for Digital Twins](https://papers.miccai.org/miccai-2026-sat/DT4H_017.html) - Proof-of-concept digital tumour twin for high-grade glioma calibrates a reaction-diffusion model from MRI and treatment history, then lets eight agents explore preference-constrained alternative chemoradiotherapy doses and schedules as inspectable tumour trajectories; after calibration, 34 of 40 agent runs predict final tumour cell count within 2% across five simulated cases (MICCAI 2026 DT4H workshop, 2026).
 - [Agentic-J: An AI Agent for Biological Microscopy Image Analysis](https://arxiv.org/abs/2606.02080) - Containerized ImageJ/Fiji assistant coordinates plugin selection, scripting, debugging, statistical analysis, and quality-assurance agents to turn natural-language microscopy requests into executable, documented projects; demonstrated on cell-tracking and apoptosis-analysis workflows (arXiv, 2026; [Code](https://github.com/MMV-Lab/Agentic-J); [Project](https://mmv-lab.github.io/Agentic-J/)).
@@ -755,4 +782,4 @@ Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before
 - Structured metadata for this list is maintained in [data/papers.yml](data/papers.yml).
 - A machine-readable table view is available in [docs/papers.json](docs/papers.json).
 - Supporting resources: [foundation models](docs/foundation-models.md), [datasets](docs/datasets.md), and the [generated themes index](docs/themes.md).
-- Last updated: 2026-10-27.
+- Last updated: 2026-11-01.
