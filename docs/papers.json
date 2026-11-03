@@ -15781,5 +15781,175 @@
     ],
     "summary": "Describes an on-premise workspace where a local LLM plans imaging workflows and invokes independently testable tools through MCP, with human permission gates, output provenance, and export to deterministic workflows; the preprint focuses on infrastructure and design principles.",
     "featured": false
+  },
+  {
+    "title": "LUMINA: LongitUdinal MultImodal reasoNing Agent for Medical Imaging",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": null,
+    "task": [
+      "diagnosis",
+      "longitudinal outcome prediction",
+      "evidence verification"
+    ],
+    "agent_type": [
+      "single-agent",
+      "RAG"
+    ],
+    "paper_url": "https://aclanthology.org/2026.emnlp-main.1753/",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "EMNLP 2026",
+    "tags": [
+      "longitudinal reasoning",
+      "memory",
+      "RAG",
+      "evidence grounding"
+    ],
+    "summary": "A single agent builds an auditable evidence state across patient visits, maintains longitudinal memory, optionally retrieves cross-subject summaries, and verifies evidence before predicting; evaluated across nine multimodal backbones on Alzheimer’s classification and 36-month progression forecasting, with additional Parkinsonian-state and breast cancer response tasks.",
+    "featured": false
+  },
+  {
+    "title": "MDTeamGPT: Mitigating Context Collapse and Enabling Self-Evolution in Medical Multi-Agent Reasoning",
+    "year": 2026,
+    "domain": "Clinical Reasoning",
+    "modality": null,
+    "task": [
+      "diagnosis",
+      "question answering"
+    ],
+    "agent_type": [
+      "multi-agent",
+      "RAG"
+    ],
+    "paper_url": "https://aclanthology.org/2026.findings-acl.1427/",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Findings of ACL 2026",
+    "tags": [
+      "multi-agent",
+      "RAG",
+      "self-evolving",
+      "memory",
+      "context compression"
+    ],
+    "summary": "A lead physician compresses and reorganizes multi-round specialist consensus, while separate knowledge bases retrieve verified trajectories and reflected errors to support subsequent consultations; evaluated on MedQA, PubMedQA, VQA-RAD, SLAKE, and collected clinical problems.",
+    "featured": false
+  },
+  {
+    "title": "LongAgent: History-Guided Agentic Search for Longitudinal Outcome Prediction",
+    "year": 2026,
+    "domain": "Workflow Simulation",
+    "modality": null,
+    "task": [
+      "longitudinal outcome prediction",
+      "feature selection"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://papers.miccai.org/miccai-2026-sat/MedAgent_037.html",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "MICCAI 2026 MedAgent workshop",
+    "tags": [
+      "memory",
+      "longitudinal data",
+      "agentic search"
+    ],
+    "summary": "An agent searches combinations of clinical variables, temporal windows, and longitudinal aggregation functions, using memory of previous searches and numerical evaluation to guide exploration; improves modestly over the strongest non-agent baseline on synthetic data and performs comparably on a real clinical dataset.",
+    "featured": false
+  },
+  {
+    "title": "MedCUA-Bench: A Screenshot-Only Benchmark for Clinical Computer-Use Agents",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": null,
+    "task": [
+      "benchmark",
+      "computer use",
+      "workflow evaluation"
+    ],
+    "agent_type": null,
+    "paper_url": "https://aclanthology.org/2026.findings-emnlp.271/",
+    "code_url": "https://github.com/Jia7878/MedCUA-BenchMark",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Findings of EMNLP 2026",
+    "tags": [
+      "benchmark",
+      "computer use",
+      "safety",
+      "radiology",
+      "pathology"
+    ],
+    "summary": "Screenshot-only benchmark covers 18 clinical scenarios across 10 domains, including PACS radiology and pathology viewers, with intent- and step-level goals and deterministic safety-aware scoring; across 23 agents, the strongest closed-source model reaches 54.2% strict success, while all remain below 9% on real OpenEMR.",
+    "featured": false
+  },
+  {
+    "title": "Tool Quality, Not Framework Complexity: Evaluating RLM Vision, Code, and Memory Pipelines for Radiology Applications",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "benchmark",
+      "report generation",
+      "image classification"
+    ],
+    "agent_type": [
+      "tool-using",
+      "RAG"
+    ],
+    "paper_url": "https://aclanthology.org/2026.realm-1.26/",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "REALM 2026 workshop",
+    "tags": [
+      "benchmark",
+      "RAG",
+      "code execution",
+      "efficiency",
+      "negative results"
+    ],
+    "summary": "Compares direct vision, iterative tool use, and model-written code under four retrieved-memory conditions on 100 CheXpert Plus chest X-rays; direct vision outperforms both agentic variants, with the recursive loop using 7–9 times more tokens, while retrieval benefits depend on the metric and pipeline.",
+    "featured": false
+  },
+  {
+    "title": "Performance, Failures, and Oversight of a Large Language Model Agent for Clinical Data Analysis: Evaluation Study",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": null,
+    "task": [
+      "failure analysis",
+      "clinical data analysis"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://www.jmir.org/2026/1/e99597/",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Journal of Medical Internet Research",
+    "tags": [
+      "reliability",
+      "human-in-the-loop",
+      "code execution",
+      "ophthalmology"
+    ],
+    "summary": "Evaluates Claude Chat, Code, and Cowork across 27 runs of an ophthalmology outcomes-analysis workflow; identifies repeated formula and cohort-logic errors despite plausible analysis plans, showing why code execution and reported clinical results require expert verification.",
+    "featured": false
   }
 ]
