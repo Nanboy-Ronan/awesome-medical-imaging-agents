@@ -12,7 +12,7 @@ Use the clinical setting to describe the application and `modality` to describe 
 |---|---|---|
 | Radiology and image-guided treatment | CXR, CT, MRI, mammography, PET, angiography | [Radiology](../README.md#radiology-agents-57) |
 | Computational pathology | Whole-slide images, tissue tiles, microscopy | [Pathology](../README.md#pathology-agents-whole-slide-imaging--digital-pathology-41) |
-| Ultrasound and echocardiography | Still images, cine loops, probe observations | [Ultrasound](../README.md#ultrasound-agents-echocardiography--robotic-ultrasound-29) |
+| Ultrasound and echocardiography | Still images, cine loops, probe observations | [Ultrasound](../README.md#ultrasound-agents-echocardiography--robotic-ultrasound-30) |
 | Endoscopy and surgery | Endoscopic video, surgical scenes, robot observations | [Endoscopy and surgery](../README.md#endoscopy-and-surgical-imaging-agents-28) |
 | Ophthalmology | Fundus images, OCT, ophthalmic video | [Ophthalmology](../README.md#ophthalmology-agents-16) |
 | Other or multiple specialties | For example, dermatology or combined imaging and clinical records | Use the closest existing section and record the actual modalities; do not force a specialty assignment |

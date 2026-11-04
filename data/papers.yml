@@ -13477,3 +13477,120 @@ papers:
     - ophthalmology
     summary: Evaluates Claude Chat, Code, and Cowork across 27 runs of an ophthalmology outcomes-analysis workflow; identifies repeated formula and cohort-logic errors despite plausible analysis plans, showing why code execution and reported clinical results require expert verification.
     featured: false
+
+  - title: 'SMILE: A Structured Multi-Agent Clinical Reasoning for Liver Ultrasound Understanding'
+    year: 2026
+    domain: Ultrasound
+    modality:
+    - ultrasound
+    task:
+    - report generation
+    - question answering
+    agent_type:
+    - multi-agent
+    paper_url: https://arxiv.org/abs/2611.02581
+    code_url: https://github.com/CMME-Lab/SMILE
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: WACV 2027 (accepted)
+    tags:
+    - multi-agent
+    - liver ultrasound
+    - consensus
+    summary: Combines image interpretation, clinical-stage reasoning, and targeted VQA agents through a judge-guided consensus step for liver ultrasound reporting, evaluated on public and internal datasets.
+    featured: false
+  - title: 'Taurus: LLM-in-the-Loop CT Annotation Matches Coding Agents at Half the Cost'
+    year: 2026
+    domain: Segmentation
+    modality:
+    - CT
+    task:
+    - segmentation
+    - annotation
+    - quality control
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.00247
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - aorta
+    - CT annotation
+    - efficiency
+    - error correction
+    summary: Pairs automated aortic CT segmentation with targeted model review of flagged errors; after evaluation on six public datasets, the refined harness matches free-form coding-agent performance on 38 held-out cases at under half the per-case cost.
+    featured: false
+  - title: 'Measure Before You Repair: An Explainable Agent for Blind Restoration of Multi-Artifact 3-D MRI'
+    year: 2026
+    domain: 3D Imaging
+    modality:
+    - MRI
+    task:
+    - artifact detection
+    - image restoration
+    - quality control
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.03996
+    code_url: https://github.com/itu-biai/measure-before-you-repair
+    project_url: https://itu-biai.github.io/measure-before-you-repair/
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - 3D imaging
+    - brain MRI
+    - artifact correction
+    - inspectable traces
+    summary: Dx-Rx measures suspected MRI artifacts, selects diagnostic and restoration tools, checks repairs, and can revisit earlier volumes; evaluation uses 148 brain MRI volumes with simulated artifacts calibrated to radiologist grades.
+    featured: false
+  - title: Coupled or Independent? Fault Coupling in Agentic Medical Vision Systems
+    year: 2026
+    domain: Benchmark
+    modality:
+    - skin photography
+    task:
+    - robustness evaluation
+    - failure analysis
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2610.40913
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - safety
+    - RAG
+    - dermatology
+    - typographic injection
+    - correlated failures
+    summary: Audits a dermatology agent with segmentation, retrieval, and iterative visual reasoning on PAD-UFES-20 and HIBA, showing how shared visual faults can make tool and reasoning channels agree on wrong answers and evade disagreement-based checks.
+    featured: false
+  - title: 'Accessed, never disclosed: Silent access to protected health information by medical artificial intelligence agents'
+    year: 2026
+    domain: Benchmark
+    modality: null
+    task:
+    - privacy auditing
+    - tool-use evaluation
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.02319
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - privacy
+    - safety
+    - access control
+    - synthetic patient records
+    summary: Uses canaries in synthetic patient records to audit unnecessary identifier access across five models, finding that output-only checks miss silent tool access and that task-necessity gates substantially reduce it.
+    featured: false

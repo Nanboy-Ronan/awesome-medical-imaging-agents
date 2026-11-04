@@ -12,12 +12,12 @@ This repository curates research papers, agent benchmarks, and open-source syste
 - [Imaging Domains](#imaging-domains)
   - [Radiology Agents (57)](#radiology-agents-57)
   - [Pathology Agents (Whole-Slide Imaging · Digital Pathology) (41)](#pathology-agents-whole-slide-imaging--digital-pathology-41)
-  - [Ultrasound Agents (Echocardiography · Robotic Ultrasound) (29)](#ultrasound-agents-echocardiography--robotic-ultrasound-29)
+  - [Ultrasound Agents (Echocardiography · Robotic Ultrasound) (30)](#ultrasound-agents-echocardiography--robotic-ultrasound-30)
   - [Endoscopy and Surgical Imaging Agents (28)](#endoscopy-and-surgical-imaging-agents-28)
   - [Ophthalmology Agents (16)](#ophthalmology-agents-16)
 - [Cross-Domain Tasks and Representations](#cross-domain-tasks-and-representations)
-  - [3D CT / MRI / Volumetric Imaging Agents (39)](#3d-ct--mri--volumetric-imaging-agents-39)
-  - [Segmentation and Annotation Agents (23)](#segmentation-and-annotation-agents-23)
+  - [3D CT / MRI / Volumetric Imaging Agents (40)](#3d-ct--mri--volumetric-imaging-agents-40)
+  - [Segmentation and Annotation Agents (24)](#segmentation-and-annotation-agents-24)
   - [Report Generation Agents (23)](#report-generation-agents-23)
   - [Medical Vision-Language Model (VLM) Agents (42)](#medical-vision-language-model-vlm-agents-42)
 - [Tool-Using and Multi-Agent Frameworks](#tool-using-and-multi-agent-frameworks)
@@ -27,7 +27,7 @@ This repository curates research papers, agent benchmarks, and open-source syste
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
   - [Benchmark Overview](#benchmark-overview)
   - [Benchmark Papers (57)](#benchmark-papers-57)
-  - [Safety, Robustness, and Fairness (40)](#safety-robustness-and-fairness-40)
+  - [Safety, Robustness, and Fairness (42)](#safety-robustness-and-fairness-42)
 - [Toolboxes](#toolboxes)
 - [Surveys and Position Papers (26)](#surveys-and-position-papers-26)
 - [Related Awesome Lists](#related-awesome-lists)
@@ -37,12 +37,12 @@ This repository curates research papers, agent benchmarks, and open-source syste
 
 Classify each work along four independent axes: **where it is used**, **what it does**, **how the agent operates**, and **how it is evaluated**. A pathology agent can also perform segmentation, use reinforcement learning, and be evaluated for reliability.
 
-<a href="docs/taxonomy.md"><img src="assets/medical-imaging-agents-taxonomy.svg" alt="Four-axis taxonomy: imaging domains and inputs, clinical tasks, agent mechanisms, and evaluation and resources" width="900"></a>
+<a href="docs/taxonomy.md"><img src="assets/medical-imaging-agents-taxonomy.svg" alt="Visual taxonomy: a tree of main-list sections where each paper has one primary home, plus four cross-cutting label axes: application and input, clinical task, agent mechanism, and evaluation and resources" width="900"></a>
 
 | Browse by | Categories | Entry points |
 |---|---|---|
-| **Application and input** | Radiology, pathology, ultrasound, endoscopy/surgery, ophthalmology; CT/MRI/PET volumes; multimodal inputs | [Imaging domains](#imaging-domains) · [3D imaging](#3d-ct--mri--volumetric-imaging-agents-39) · [Medical VLMs](#medical-vision-language-model-vlm-agents-42) |
-| **Clinical task** | Acquisition and navigation; diagnosis and reasoning; segmentation and annotation; reporting; treatment planning; workflow and simulation | [Segmentation](#segmentation-and-annotation-agents-23) · [Reporting](#report-generation-agents-23) · [Reasoning](#clinical-reasoning-agents-79) · [Workflows](#workflow-and-simulation-agents-63) |
+| **Application and input** | Radiology, pathology, ultrasound, endoscopy/surgery, ophthalmology; CT/MRI/PET volumes; multimodal inputs | [Imaging domains](#imaging-domains) · [3D imaging](#3d-ct--mri--volumetric-imaging-agents-40) · [Medical VLMs](#medical-vision-language-model-vlm-agents-42) |
+| **Clinical task** | Acquisition and navigation; diagnosis and reasoning; segmentation and annotation; reporting; treatment planning; workflow and simulation | [Segmentation](#segmentation-and-annotation-agents-24) · [Reporting](#report-generation-agents-23) · [Reasoning](#clinical-reasoning-agents-79) · [Workflows](#workflow-and-simulation-agents-63) |
 | **Agent mechanism** | Tool use, retrieval, multi-agent collaboration, reinforcement learning, human feedback, memory and self-improvement | [Frameworks](#tool-using-and-multi-agent-frameworks) · [Skills](#agent-skills-and-tool-learning-11) · [Mechanism index](docs/themes.md#agent-mechanisms) |
 | **Evaluation and resources** | Task/process evaluation; reliability, safety, fairness and privacy; benchmarks, datasets, tools, foundation models and surveys | [Benchmarks](#benchmarks-and-evaluation) · [Trustworthiness index](docs/themes.md#trustworthiness) · [Datasets](docs/datasets.md) · [Foundation models](docs/foundation-models.md) · [Surveys](#surveys-and-position-papers-26) |
 
@@ -185,10 +185,11 @@ Agents for whole-slide image analysis, digital pathology, pathology reports, and
 - [SurvAgent: Hierarchical CoT-Enhanced Case Banking and Dichotomy-Based Multi-Agent System for Multimodal Survival Prediction](https://arxiv.org/pdf/2511.16635v1) - Multimodal agents pool pathology, imaging, and clinical signals for survival analysis (arXiv, 2025).
 - [WSI-Agents: A Collaborative Multi-Agent System for Multi-Modal Whole Slide Image Analysis](https://arxiv.org/pdf/2507.14680) - Delegates slide parsing, reporting, and triaging across specialized collaborative agents for whole-slide image analysis (MICCAI 2025, 2025).
 
-### Ultrasound Agents (Echocardiography · Robotic Ultrasound) (29)
+### Ultrasound Agents (Echocardiography · Robotic Ultrasound) (30)
 
 Agents for echocardiography interpretation, fetal ultrasound, robotic scanning, and ultrasound-guided workflows.
 
+- [SMILE: A Structured Multi-Agent Clinical Reasoning for Liver Ultrasound Understanding](https://arxiv.org/abs/2611.02581) - Combines image interpretation, clinical-stage reasoning, and targeted VQA agents through a judge-guided consensus step for liver ultrasound reporting, evaluated on public and internal datasets (WACV 2027 accepted; preprint 2026; [Code](https://github.com/CMME-Lab/SMILE)).
 - [A lightweight portable ultrasound robot for autonomous liver sonography](https://doi.org/10.1038/s41467-026-79007-5) - A patient-mounted ultrasound robot uses a sonographer-informed agent trained on scanning trajectories to combine spatial, tactile, and visual feedback for liver imaging; evaluated in 102 healthy participants and 17 patients, with additional low-resource screening and vehicle-based scanning demonstrations (Nature Communications, 2026).
 - [Pressure-Tuned Auditor for Sycophancy-Resistant Breast Ultrasound VLM Diagnosis](https://papers.miccai.org/miccai-2026/0807-Paper4746.html) - Two-agent audit pipeline in which a pressure-tuned, visually grounded second agent independently checks and corrects a first VLM's breast ultrasound diagnosis when clinicians supply misleading prompts; on a new 16-template sycophancy benchmark it cuts sycophancy from 20.8% to 0.9% while keeping 98.5% cancer detection accuracy and raising lesion IoU from 0.12 to 0.59 (MICCAI 2026, 2026).
 - [Ultrasound Operator Guidance Using World Modeling and Retrieval Based Action Planning](https://arxiv.org/abs/2610.06008) - Plans probe motions by receding-horizon search in a V-JEPA 2.1 latent world model whose transitions are retrieved from a database of physically executed probe moves, guiding operators from the live image alone; it reaches the target carotid view in 86% of retrospective closed-loop episodes versus 52% and 43% for baselines, and 83% in a prospective volunteer study on CPU (arXiv, 2026).
@@ -278,10 +279,11 @@ Agents for fundus, OCT, glaucoma, diabetic retinopathy, myopia, and neuro-ophtha
 
 Browse by a shared task or input representation. Volumetric imaging and VLMs describe inputs or system interfaces; segmentation and reporting describe tasks. These views complement the specialty sections above.
 
-### 3D CT / MRI / Volumetric Imaging Agents (39)
+### 3D CT / MRI / Volumetric Imaging Agents (40)
 
 Agents for volumetric CT, MRI, PET, dosimetry, neuroimaging, and multi-organ image analysis.
 
+- [Measure Before You Repair: An Explainable Agent for Blind Restoration of Multi-Artifact 3-D MRI](https://arxiv.org/abs/2611.03996) - Dx-Rx measures suspected MRI artifacts, selects diagnostic and restoration tools, checks repairs, and can revisit earlier volumes; evaluation uses 148 brain MRI volumes with simulated artifacts calibrated to radiologist grades (arXiv, 2026; [Code](https://github.com/itu-biai/measure-before-you-repair); [Project](https://itu-biai.github.io/measure-before-you-repair/)).
 - [VoxelSage: Tool-Augmented 3D CT Analysis and Simulator-Shielded Sequential Resection Planning for Liver Tumors](https://arxiv.org/abs/2609.37648) - Dual-port liver-tumor system separates LLM request interpretation and skill selection from eight image-computation skills (measurement, 3D reconstruction, mask refinement, resection planning) so numbers are never computed by the language model; a behavior-cloned ranker with a simulator safety shield orders resections, cutting simulated blood loss 38.9% across 256 unseen scenes (arXiv, 2026; [Code](https://github.com/ZJUMAI/VoxelSage)).
 - [MedRAG-SCA: A Retrieval-Augmented Self-correcting Agent for Clinically Compliant Cross-Modality MRI Synthesis](https://papers.miccai.org/miccai-2026/0641-Paper3774.html) - Retrieve–Verify–Refine agent for cross-modality brain MRI synthesis: a protocol-aware RAG consultant turns ACR guidelines into pixel-space checks, an anatomist–radiologist–diagnostician critic committee localizes violations for targeted inpainting, and a geometric fail-safe preserves lesions; blinded neuroradiologists rate 92% of BraTS 2024 outputs clinically acceptable, 11 points above the best diffusion baseline (MICCAI 2026, 2026; [Code](https://github.com/exsinger-hub/MedRAG-SCA)).
 - [CORTEX: Deep Reinforcement Learning with Pulse-Sequence Computation for Resource-Efficient MRI Protocol Adaptation](https://papers.miccai.org/miccai-2026-sat/MIRASOL_020.html) - An actor–critic agent adapts brain 2D fast-spin-echo protocol parameters to each patient's coverage while calling a vendor pulse-sequence API at every transition to enforce patient and hardware limits; it converges on 97.0% of protocols with 100% limit-compliant parameters and an SNR-ratio MAE of 0.079 (MICCAI 2026 MIRASOL workshop, 2026).
@@ -322,10 +324,11 @@ Agents for volumetric CT, MRI, PET, dosimetry, neuroimaging, and multi-organ ima
 - [Multitask radiological modality invariant landmark localization using deep reinforcement learning](https://proceedings.mlr.press/v121/parekh20a.html) - MIDRL trains a 2D agent to localize six anatomical structures across multiparametric MRI sequences and a 3D multi-agent model for four whole-body landmarks, demonstrating shared localization policies across organs and acquisition contrasts (MIDL 2020, 2020).
 - [Multiple Landmark Detection using Multi-Agent Reinforcement Learning](https://arxiv.org/abs/1907.00318) - Collab-DQN shares convolutional representations and experience among agents searching for different anatomical landmarks, exploiting spatial interdependence in brain MRI, cardiac MRI, and fetal brain ultrasound while reducing training cost relative to separate agents (MICCAI 2019, 2019; [Code](https://github.com/thanosvlo/MARL-for-Anatomical-Landmark-Detection)).
 
-### Segmentation and Annotation Agents (23)
+### Segmentation and Annotation Agents (24)
 
 Agents that plan, prompt, refine, or evaluate segmentation and annotation workflows.
 
+- [Taurus: LLM-in-the-Loop CT Annotation Matches Coding Agents at Half the Cost](https://arxiv.org/abs/2611.00247) - Pairs automated aortic CT segmentation with targeted model review of flagged errors; after evaluation on six public datasets, the refined harness matches free-form coding-agent performance on 38 held-out cases at under half the per-case cost (arXiv, 2026).
 - [nnInteractive Agent: General-Purpose AI Agents as 3D Image Annotators](https://arxiv.org/abs/2610.31080) - Exposes the nnInteractive 3D segmenter as Model Context Protocol tools plus a prompting skill so general-purpose coding agents locate targets, place prompts, inspect and correct volumetric masks, and write their own analysis code; on 51 targets across CT, MRI, PET, and micro-CT, Claude Code and Codex reach mean Dice 0.81 and 0.84 from plain-language requests alone (arXiv, 2026; [Code](https://github.com/MIC-DKFZ/nninteractive-agent)).
 - [SegBanana: Steering Unified Multimodal Models into Medical Segmenters](https://arxiv.org/abs/2609.34235) - Training-free agentic segmentation in which a state-aware controller iteratively orchestrates anatomy-aware exemplar retrieval, comparative quality critique, and targeted mask editing around a frozen unified multimodal generator; averages 77.45% mDice over eight datasets, at least 14.93 points above SAM3, SegGPT, BiomedParse, and MedSAM3 (arXiv, 2026).
 - [IBISAgent: Reinforcing Pixel-Level Visual Reasoning in MLLMs for Universal Biomedical Object Referring and Segmentation](https://arxiv.org/abs/2601.03054) - An MLLM interleaves reasoning with text-based click actions and segmentation-tool calls, trained with supervised cold start and agentic reinforcement learning with fine-grained rewards (arXiv, 2026).
@@ -681,8 +684,10 @@ Benchmarks with explicit imaging modality and task metadata.
 - [ABRA: Agent Benchmark for Radiology Applications](https://arxiv.org/abs/2605.11224) - First benchmark where agents operate a real DICOM viewer (OHIF + Orthanc) via tool calls, testing end-to-end radiology agent workflows on live imaging software (arXiv, 2026). <a id="start-abra"></a><a id="benchmark-abra"></a>
 - [DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agents](https://arxiv.org/abs/2605.09679) - Hierarchical 3D CT tumor VQA benchmark that isolates perception, localization, reasoning, and tool-use failures stage by stage (arXiv, 2026). <a id="benchmark-deeptumorvqa"></a>
 
-### Safety, Robustness, and Fairness (40)
+### Safety, Robustness, and Fairness (42)
 
+- [Coupled or Independent? Fault Coupling in Agentic Medical Vision Systems](https://arxiv.org/abs/2610.40913) - Audits a dermatology agent with segmentation, retrieval, and iterative visual reasoning on PAD-UFES-20 and HIBA, showing how shared visual faults can make tool and reasoning channels agree on wrong answers and evade disagreement-based checks (arXiv, 2026).
+- [Accessed, never disclosed: Silent access to protected health information by medical artificial intelligence agents](https://arxiv.org/abs/2611.02319) - Uses canaries in synthetic patient records to audit unnecessary identifier access across five models, finding that output-only checks miss silent tool access and that task-necessity gates substantially reduce it (arXiv, 2026).
 - [Performance, Failures, and Oversight of a Large Language Model Agent for Clinical Data Analysis: Evaluation Study](https://www.jmir.org/2026/1/e99597/) - Evaluates Claude Chat, Code, and Cowork across 27 runs of an ophthalmology outcomes-analysis workflow; identifies repeated formula and cohort-logic errors despite plausible analysis plans, showing why code execution and reported clinical results require expert verification (Journal of Medical Internet Research, 2026).
 - [Reliability Stress Tests and Decision-Time Routing for Chest X-ray Vision-Language Models](https://arxiv.org/abs/2610.02270) - Stress-tests 36 configurations of CheXagent, MedGemma-4B, and MedGemma-27B across prompt styles and single- versus multi-agent workflows on private and MIMIC-CXR data, showing exact-match accuracy flatters models that default to Normal and multi-agent reasoning helps only some settings; a decision-time router escalates to multi-agent inference only when expected to help (IEEE/ACM CHASE 2026 workshop, 2026; [Code](https://github.com/Yangxinyee/cxr-vlm-routing)).
 - [Absent-Byte Diagnoses: Auditing Structured Medical VLM Interfaces](https://papers.miccai.org/miccai-2026-sat/MedAgent_050.html) - Shows that hosted VLMs fill structured diagnosis fields when the prompt claims an image is attached but no image bytes are sent (617 of 3,000 calls), with demographic wording shifting the returned diagnoses, and binds each request to caller-owned image fingerprints, blocking all 5,047 specified violations in an offline suite (MICCAI 2026 MedAgent workshop, 2026).
@@ -788,4 +793,4 @@ Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before
 - Structured metadata for this list is maintained in [data/papers.yml](data/papers.yml).
 - A machine-readable table view is available in [docs/papers.json](docs/papers.json).
 - Supporting resources: [foundation models](docs/foundation-models.md), [datasets](docs/datasets.md), and the [generated themes index](docs/themes.md).
-- Last updated: 2026-11-02.
+- Last updated: 2026-11-04.
