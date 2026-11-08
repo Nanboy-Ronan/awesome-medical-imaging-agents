@@ -4,6 +4,8 @@
 
 This repository curates research papers, agent benchmarks, and open-source systems for medical imaging agents. It focuses on tool use, retrieval-augmented generation, multi-agent collaboration, planning, segmentation, report generation, clinical reasoning, safety, and evaluation across CT, MRI, chest X-ray, ultrasound, pathology, endoscopy, ophthalmology, PET, and other imaging modalities.
 
+For broader medical AI research beyond agentic systems, see the companion list [Awesome Medical AI Papers](https://github.com/Nanboy-Ronan/awesome-medical-ai-papers), organized by CS/AI conference and publication year across medical imaging, computational pathology, foundation models, clinical NLP, and healthcare AI.
+
 ## Contents
 
 - [Taxonomy](#taxonomy)
@@ -778,6 +780,7 @@ Surveys and position papers on medical AI agents, evaluation, safety, and deploy
 
 ## Related Awesome Lists
 
+- [Awesome Medical AI Papers](https://github.com/Nanboy-Ronan/awesome-medical-ai-papers) - Companion list of medical AI and healthcare AI papers from major CS/AI conferences, organized by conference, year, and topic; complements this list's focus on medical imaging agents, tools, and benchmarks.
 - [Awesome-AI-Agents-for-Healthcare](https://github.com/AgenticHealthAI/Awesome-AI-Agents-for-Healthcare) - Broad curated list of agentic AI for healthcare spanning imaging, EHR, drug discovery, and operations.
 - [Awesome-Medical-LLM-Agent](https://github.com/yczhou001/Awesome-Medical-LLM-Agent) - Tracks the evolution from medical LLMs to single- and multi-agent medical systems.
 - [Awesome-Specialized-Medical-LLMs](https://github.com/FreedomIntelligence/Awesome-Specialized-Medical-LLMs) - Specialized medical LLMs organized by ICD-10 chapter and clinical specialty.
