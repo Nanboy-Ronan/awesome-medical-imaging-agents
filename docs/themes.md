@@ -9,20 +9,20 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 ### Browse themes
 
 - [Agent Mechanisms](#agent-mechanisms)
-  - [RAG and Retrieval (68)](#rag-and-retrieval-68)
-  - [Multi-Agent Collaboration (187)](#multi-agent-collaboration-187)
+  - [RAG and Retrieval (69)](#rag-and-retrieval-69)
+  - [Multi-Agent Collaboration (189)](#multi-agent-collaboration-189)
   - [Reinforcement Learning (60)](#reinforcement-learning-60)
   - [Human-in-the-Loop (34)](#human-in-the-loop-34)
   - [Self-Evolving and Self-Improving Agents (31)](#self-evolving-and-self-improving-agents-31)
 - [Trustworthiness](#trustworthiness)
   - [Fairness and Bias (8)](#fairness-and-bias-8)
   - [Hallucination and Reliability (51)](#hallucination-and-reliability-51)
-  - [Safety and Robustness (44)](#safety-and-robustness-44)
+  - [Safety and Robustness (45)](#safety-and-robustness-45)
   - [Privacy and Federated Learning (10)](#privacy-and-federated-learning-10)
 
 ## Agent Mechanisms
 
-### RAG and Retrieval (68)
+### RAG and Retrieval (69)
 
 - [GAZE: Grounded Agentic Zero-shot Evaluation on Rare Brain MRI](https://arxiv.org/abs/2605.00876) — arXiv (2026) · *Radiology Agents*
 - [CXReasonAgent: Evidence-Grounded Diagnostic Reasoning Agent for Chest X-rays](https://arxiv.org/abs/2602.23276) — arXiv (2026) · *Radiology Agents*
@@ -72,6 +72,7 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [MDTeamGPT: Mitigating Context Collapse and Enabling Self-Evolution in Medical Multi-Agent Reasoning](https://aclanthology.org/2026.findings-acl.1427/) — Findings of ACL 2026 (2026) · *Clinical Reasoning Agents*
 - [Tool Quality, Not Framework Complexity: Evaluating RLM Vision, Code, and Memory Pipelines for Radiology Applications](https://aclanthology.org/2026.realm-1.26/) — REALM 2026 workshop (2026) · *Benchmarks*
 - [Coupled or Independent? Fault Coupling in Agentic Medical Vision Systems](https://arxiv.org/abs/2610.40913) — arXiv (2026) · *Benchmarks*
+- [SkinMind: Equipping Agentic RAG with Human-Inspired Graph Probing for Reliable Dermatology AI](https://arxiv.org/abs/2611.08935) — arXiv (2026) · *Medical VLM Agents*
 - [Why Trust Your Agent? Empirical Security Gains from TRiSM-Guided Agentic Workflows in Healthcare](https://arxiv.org/abs/2606.28666) — 2026 · *Safety*
 - [EyeAgent: An Agentic AI System for Multimodal Clinical Decision Support in Ophthalmology](https://arxiv.org/abs/2511.09394) — arXiv (2025) · *Ophthalmology Agents*
 - [Multimodal reasoning agent for enhanced ophthalmic decision-making: a preliminary real-world clinical validation](https://doi.org/10.3389/fcell.2025.1642539) — Frontiers in Cell and Developmental Biology (2025) · *Ophthalmology Agents*
@@ -93,7 +94,7 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [RadioRAG: Online Retrieval-Augmented Generation for Radiology Question Answering](https://arxiv.org/abs/2407.15621) — arXiv (2024) · *Radiology Agents*
 - [Hybrid Retrieval-Generation Reinforced Agent for Medical Image Report Generation](http://arxiv.org/abs/1805.08298) — arXiv (2018) · *Report Generation Agents*
 
-### Multi-Agent Collaboration (187)
+### Multi-Agent Collaboration (189)
 
 - [XrayClaw: Cooperative-Competitive Multi-Agent Alignment for Trustworthy Chest X-ray Diagnosis](https://arxiv.org/abs/2604.02695) — arXiv (2026) · *Radiology Agents*
 - [LAMMI-Pathology: A Tool-Centric Bottom-Up LVLM-Agent Framework for Molecularly Informed Medical Intelligence in Pathology](https://arxiv.org/abs/2602.18773) — arXiv (2026) · *Pathology Agents*
@@ -210,6 +211,8 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [Multi-agent Test-Time Adaptation for Robust Medical Image-to-Image Translation](https://papers.miccai.org/miccai-2026/0680-Paper2376.html) — MICCAI 2026 (2026) · *3D Imaging Agents*
 - [MDTeamGPT: Mitigating Context Collapse and Enabling Self-Evolution in Medical Multi-Agent Reasoning](https://aclanthology.org/2026.findings-acl.1427/) — Findings of ACL 2026 (2026) · *Clinical Reasoning Agents*
 - [SMILE: A Structured Multi-Agent Clinical Reasoning for Liver Ultrasound Understanding](https://arxiv.org/abs/2611.02581) — WACV 2027 (accepted) (2026) · *Ultrasound Agents*
+- [RetinaGuard: Risk-Controlled Agentic Triage for Multi-Disease Retinal Screening](https://arxiv.org/abs/2611.10689) — arXiv (2026) · *Ophthalmology Agents*
+- [MATS: A Multi-Agent Framework for Controllable and Reflective Tumor Synthesis](https://arxiv.org/abs/2610.41159) — IEEE BIBM 2026 (2026) · *3D Imaging Agents*
 - [Multi-Agent AI for Chest Radiography: A Sequential Segmentation and LLM-Driven Consultative Tool for Medical Training](https://www.medrxiv.org/content/10.64898/2026.05.29.26354432v1) — 2026 · *Radiology Agents*
 - [Trust but Verify: Evidence-Linked Multi-Agent Clinical Information Extraction in Pathology](https://arxiv.org/abs/2607.06435) — 2026 · *Pathology Agents*
 - [NeuroAgent: LLM Agents for Multimodal Neuroimaging Analysis and Research](https://arxiv.org/abs/2605.06584) — 2026 · *3D Imaging Agents*
@@ -484,7 +487,7 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [EH-Benchmark Ophthalmic Hallucination Benchmark and Agent-Driven Top-Down Traceable Reasoning Workflow](https://arxiv.org/abs/2507.22929) — arXiv (2025) · *Benchmarks*
 - [MedHEval: Benchmarking Hallucinations and Mitigation Strategies in Medical Large Vision-Language Models](https://arxiv.org/abs/2503.02157) — arXiv (2025) · *Benchmarks*
 
-### Safety and Robustness (44)
+### Safety and Robustness (45)
 
 - [XrayClaw: Cooperative-Competitive Multi-Agent Alignment for Trustworthy Chest X-ray Diagnosis](https://arxiv.org/abs/2604.02695) — arXiv (2026) · *Radiology Agents*
 - [An Explainable Agentic AI Framework for Uncertainty-Aware and Abstention-Enabled Acute Ischemic Stroke Imaging Decisions](https://arxiv.org/abs/2601.01008) — arXiv (2026) · *Radiology Agents*
@@ -518,6 +521,7 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [MedCUA-Bench: A Screenshot-Only Benchmark for Clinical Computer-Use Agents](https://aclanthology.org/2026.findings-emnlp.271/) — Findings of EMNLP 2026 (2026) · *Benchmarks*
 - [Coupled or Independent? Fault Coupling in Agentic Medical Vision Systems](https://arxiv.org/abs/2610.40913) — arXiv (2026) · *Benchmarks*
 - [Accessed, never disclosed: Silent access to protected health information by medical artificial intelligence agents](https://arxiv.org/abs/2611.02319) — arXiv (2026) · *Benchmarks*
+- [Safeguarding Agentic AI in Radiology Workflows: A Multimodel Evaluation of Rule-based and Large Language Model-based Verification](https://arxiv.org/abs/2611.11541) — arXiv (2026) · *Benchmarks*
 - [MechAgent: Active Mechanism Falsification for Agentic Cross-Species Medical Reasoning](https://papers.miccai.org/miccai-2026-sat/MedAgent_042.html) — 2026 · *Pathology Agents*
 - [Why Trust Your Agent? Empirical Security Gains from TRiSM-Guided Agentic Workflows in Healthcare](https://arxiv.org/abs/2606.28666) — 2026 · *Safety*
 - [AT-CXR: Uncertainty-Aware Agentic Triage for Chest X-rays](https://arxiv.org/abs/2508.19322) — arXiv (2025) · *Radiology Agents*

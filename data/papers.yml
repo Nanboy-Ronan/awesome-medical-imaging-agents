@@ -13594,3 +13594,334 @@ papers:
     - synthetic patient records
     summary: Uses canaries in synthetic patient records to audit unnecessary identifier access across five models, finding that output-only checks miss silent tool access and that task-necessity gates substantially reduce it.
     featured: false
+
+  # Additional papers verified against primary publication sources (2026-11-11).
+  - title: 'MammoSeek: A Mammography Agent with selective zooming for grounded reports'
+    year: 2026
+    domain: Radiology
+    modality:
+    - mammography
+    task:
+    - screening
+    - report generation
+    - lesion localization
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.07188
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - mammography
+    - selective zooming
+    - BI-RADS
+    - agent skills
+    summary: Forms a per-breast impression, then decides which detector candidates to inspect at full resolution before assigning a BI-RADS category and writing a localized, lexicon-structured report; reaches exam-level AUCs of 0.824 on EMBED and 0.818 on VinDr-Mammo, with selective zooming outperforming no zooming and forced zooming..
+    featured: false
+  - title: Agent-Driven Generative Priors for Pathology Image Synthesis and Segmentation
+    year: 2026
+    domain: Pathology
+    modality:
+    - histopathology
+    task:
+    - quality control
+    - image synthesis
+    - segmentation
+    agent_type:
+    - reflective agent
+    paper_url: https://arxiv.org/abs/2611.06701
+    code_url: https://github.com/script-Yang/Agent-GenPath
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - data curation
+    - quality control
+    - generative models
+    - self-verification
+    summary: A perception-reasoning-verification agent scores pathology patches for cell presence, stain quality, and clarity, and a regressor distilled from it screens TCGA into a 217,030-patch set; a generative model trained on the screened data is then adapted to cell segmentation..
+    featured: false
+  - title: 'SurgEye: Instruction Tuning-Free Perception-Reasoning Framework for Surgical Scene Understanding'
+    year: 2026
+    domain: Endoscopy
+    modality:
+    - surgical video
+    task:
+    - surgical scene understanding
+    - question answering
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.04012
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - surgical VQA
+    - temporal memory
+    - vision foundation model
+    summary: A frozen language model calls task-specific perception specialists and a temporal memory as tools to answer surgical questions without instruction tuning, evaluated on SurgEye-Bench spanning eight procedures with perception labels paired to each question..
+    featured: false
+  - title: 'RetinaGuard: Risk-Controlled Agentic Triage for Multi-Disease Retinal Screening'
+    year: 2026
+    domain: Ophthalmology
+    modality:
+    - fundus
+    task:
+    - screening triage
+    - selective referral
+    agent_type:
+    - multi-agent
+    paper_url: https://arxiv.org/abs/2611.10689
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - multi-agent
+    - uncertainty
+    - conformal risk control
+    - selective referral
+    summary: Quality, diagnostic, uncertainty, verification, and explanation agents gather evidence per fundus photograph, a failure predictor estimates whether the decision is unsafe, and conformal risk control certifies the acceptance threshold; on RFMiD the gain over uncertainty-based referral is clear with a weaker primary model and shrinks with a stronger one..
+    featured: false
+  - title: 'AgentCT: A Vision-Language Agent for Universal CT Imaging'
+    year: 2026
+    domain: 3D Imaging
+    modality:
+    - CT
+    task:
+    - image restoration
+    - denoising
+    - artifact reduction
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.11503
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - 3D imaging
+    - low-dose CT
+    - sparse-view CT
+    - metal artifact reduction
+    summary: A fine-tuned vision-language controller identifies CT degradation type and severity, routes images to low-dose, sparse-view, or metal-artifact specialists, and reassesses the result; on Mayo 2020 abdominal CT the controller and specialists are evaluated separately, and end-to-end automatic routing is left untested..
+    featured: false
+  - title: 'SmartBloch-Agent: An Agentic Framework for Automated MRI Sequence Design and Optimization'
+    year: 2026
+    domain: 3D Imaging
+    modality:
+    - MRI
+    task:
+    - MRI sequence design
+    - parameter optimization
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.09413
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - MRI physics
+    - pulse sequence design
+    - Bloch simulation
+    - closed-loop optimization
+    summary: Takes imaging objectives and constraints in natural language, then plans sequence construction and parameter search around a GPU Bloch simulation engine whose reconstruction and evaluation results feed back into revision and candidate selection..
+    featured: false
+  - title: 'MATS: A Multi-Agent Framework for Controllable and Reflective Tumor Synthesis'
+    year: 2026
+    domain: 3D Imaging
+    modality:
+    - CT
+    task:
+    - tumor synthesis
+    - data augmentation
+    - segmentation
+    agent_type:
+    - multi-agent
+    paper_url: https://arxiv.org/abs/2610.41159
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: IEEE BIBM 2026
+    tags:
+    - multi-agent
+    - tumor synthesis
+    - diffusion
+    - self-reflection
+    summary: 'Agents profile a disease''s tumor morphology, plan generation that boosts underrepresented subtypes, place and render tumors with two-stage diffusion, and verify attribute alignment at three checkpoints; trained on one pancreatic tumor dataset, it improves downstream segmentation on LiTS, KiTS, and MSD-Pancreas..'
+    featured: false
+  - title: Can Agentic Systems Close the Gap in Radiology with Production AI Tools?
+    year: 2026
+    domain: Report Generation
+    modality:
+    - multi-modality
+    task:
+    - report generation
+    - tool orchestration
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.09836
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - FDA-cleared devices
+    - tool availability
+    - orchestration
+    - simulation study
+    summary: Simulates structured reporting in which an orchestrator may call only finding classes offered by FDA-cleared radiology AI devices; from the clinical indication alone it recovers under a third of clinically actionable findings, with most misses traced to tools that do not exist for the modality and a third to available tools left uncalled..
+    featured: false
+  - title: 'SkinMind: Equipping Agentic RAG with Human-Inspired Graph Probing for Reliable Dermatology AI'
+    year: 2026
+    domain: Medical VLM
+    modality:
+    - dermatology photography
+    task:
+    - visual question answering
+    - evidence retrieval
+    agent_type:
+    - tool-using
+    - RAG
+    paper_url: https://arxiv.org/abs/2611.08935
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - RAG
+    - knowledge graph
+    - dermatology
+    - multimodal retrieval
+    summary: An orchestrator uses eight graph-probing tools to explore a dermatology knowledge graph built from guidelines, textbooks, and 423K images, assembling a query-specific evidence subgraph; improves average scores on six dermatology VQA benchmarks by nearly nine points over direct answering..
+    featured: false
+  - title: 'MRFoundry: Knowledge-guided agent loops for end-to-end MRI research'
+    year: 2026
+    domain: Workflow Simulation
+    modality:
+    - MRI
+    task:
+    - research workflow automation
+    - image reconstruction
+    - tool learning
+    agent_type:
+    - tool-using
+    - coding-agent
+    paper_url: https://arxiv.org/abs/2611.13289
+    code_url: https://github.com/KeWang0622/MRFoundry
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - agent skills
+    - MRI physics
+    - memory
+    - benchmark
+    summary: Open-source package that connects MRI knowledge, project-local memory, and output checks to coding agents; on the accompanying MRI Agent Bench, all-checks-passed completion rises from 67.5% to 78.3% across 240 paired core evaluations and from 36.6% to 44.8% on hard tasks..
+    featured: false
+  - title: 'How to "train" a surgeon? Benchmarking generalist agents in surgical scene understanding'
+    year: 2026
+    domain: Benchmark
+    modality:
+    - surgical video
+    task:
+    - surgical scene understanding
+    - tool-use evaluation
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.11437
+    code_url: null
+    project_url: https://vitagent.github.io/
+    dataset_url: null
+    benchmark_url: null
+    venue: NeurIPS 2026 Evaluations and Datasets Track
+    tags:
+    - benchmark
+    - surgical
+    - retrieval
+    - visual grounding
+    summary: SurgKnowBench harmonizes public surgical datasets to map what general-purpose multimodal models already know, and SurgAgentGym tests whether knowledge search and visual grounding tools help at inference time; tool use narrows the gap on perception-heavy tasks, while fine-grained localization and expert-style assessment remain weak..
+    featured: false
+  - title: 'Safeguarding Agentic AI in Radiology Workflows: A Multimodel Evaluation of Rule-based and Large Language Model-based Verification'
+    year: 2026
+    domain: Benchmark
+    modality: null
+    task:
+    - safety evaluation
+    - clinical documentation
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.11541
+    code_url: https://github.com/ibrarad/radiology-agent-safeguards
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - safety
+    - guardrails
+    - radiology workflow
+    - misleading information
+    summary: Runs six tool-using agents through 91 synthetic radiology documentation scenarios under permissions only, deterministic rules, and rules plus a local model checker; high-severity violations fall from 19.4% to 13.2% of episodes with layered safeguards but are not eliminated..
+    featured: false
+  - title: 'CONFIRM: Governing Scientific Reporting for Trustworthy Agentic Neuroimaging'
+    year: 2026
+    domain: Benchmark
+    modality:
+    - neuroimaging
+    task:
+    - scientific reporting
+    - claim verification
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.01449
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - reliability
+    - neuroimaging
+    - pre-specified analysis
+    - confound control
+    - benchmark
+    summary: Separates running a neuroimaging analysis from deciding what to report, using pre-specified analysis plans and five deterministic gates for multiplicity, confounds, power, stability, and replication; on the 489-claim NeuroClaimBench it falsely supports at most 3% of controls versus 23-38% for baselines..
+    featured: false
+  - title: 'Next-Generation Segmentation in Radiotherapy: A Narrative Review from Atlas-Based Methods to Agentic Vision-Language Models'
+    year: 2026
+    domain: Survey
+    modality:
+    - CT
+    - MRI
+    task:
+    - segmentation
+    - radiotherapy contouring
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.12085
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - survey
+    - radiotherapy
+    - segmentation
+    - vision-language models
+    summary: Narrative review traces radiotherapy contouring from atlas-based propagation through convolutional and promptable foundation models to vision-language and agentic systems, arguing that evaluation must add surface, dosimetric, and prompt-adherence measures to geometric overlap..
+    featured: false
