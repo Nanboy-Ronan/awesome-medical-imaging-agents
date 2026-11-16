@@ -13925,3 +13925,169 @@ papers:
     - vision-language models
     summary: Narrative review traces radiotherapy contouring from atlas-based propagation through convolutional and promptable foundation models to vision-language and agentic systems, arguing that evaluation must add surface, dosimetric, and prompt-adherence measures to geometric overlap..
     featured: false
+
+  - title: 'NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging'
+    year: 2026
+    domain: Benchmark
+    modality:
+    - MRI
+    - PET
+    task:
+    - workflow evaluation
+    - skill transfer evaluation
+    - scientific claim verification
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.15831
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - benchmark
+    - neuroimaging
+    - self-improving
+    - reliability
+    summary: Evaluates 19 models on neuroimaging execution and workflow reconstruction across 56 tasks, skill distillation and transfer, and 36 Alzheimer's research claims; reproducible computations can still yield conclusions that disagree with expert answers.
+    featured: false
+  - title: 'ScienceVision: Can AI Observe and Reason Like a Scientist?'
+    year: 2026
+    domain: Benchmark
+    modality:
+    - 3D medical imaging
+    task:
+    - visual question answering
+    - spatial reasoning evaluation
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.04087
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - benchmark
+    - 3D imaging
+    - MCP
+    - visual reasoning
+    summary: Benchmarks scientific 3D reasoning with 250 questions, including 50 in medical imaging, comparing native-artifact file and code access, added MCP inspection tools, and rendered-image inputs under shared deterministic answer scoring.
+    featured: false
+  - title: 'RadStructAgent: agentic structuring of free-text chest X-ray reports with small language models'
+    year: 2026
+    domain: Report Generation
+    modality: null
+    task:
+    - report structuring
+    - report verification
+    agent_type:
+    - tool-using
+    - multi-agent
+    paper_url: https://doi.org/10.1007/s11548-026-03811-z
+    code_url: https://github.com/badhon1512/RadStructAgent
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: International Journal of Computer Assisted Radiology and Surgery
+    tags:
+    - multi-agent
+    - chest X-ray reports
+    - small language models
+    - verification
+    summary: An orchestrator selects findings and anatomy judges, revision, and candidate selection to structure free-text CXR reports; Qwen3-4B and 8B improve clinical quality and anatomical assignment on 1,000 reports.
+    featured: false
+  - title: 'MedGenAgent: a closed-loop agent for oncology CT foundation model pretraining'
+    year: 2026
+    domain: Workflow Simulation
+    modality:
+    - CT
+    task:
+    - synthetic data generation
+    - quality control
+    - model pretraining
+    agent_type:
+    - tool-using
+    paper_url: https://doi.org/10.1038/s41698-026-01743-0
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: npj Precision Oncology
+    tags:
+    - oncology
+    - 3D imaging
+    - synthetic data
+    - memory
+    summary: Coordinates CT synthesis, vision-language quality checks, and model training through an orchestrator and memory store; retains 11,000 synthetic volumes and reports comparable downstream performance with 4,400 real alignment samples across three retrospective tasks.
+    featured: false
+  - title: A multimodal tool-augmented agent for evidence-based clinical decision support in longitudinal AMD follow-up
+    year: 2026
+    domain: Ophthalmology
+    modality:
+    - retinal imaging
+    task:
+    - longitudinal assessment
+    - clinical decision support
+    agent_type:
+    - tool-using
+    - RAG
+    paper_url: https://doi.org/10.1038/s41746-026-03412-9
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: npj Digital Medicine
+    tags:
+    - RAG
+    - ophthalmology
+    - longitudinal imaging
+    - evidence grounding
+    summary: AMDagent combines quantitative retinal imaging tools and guideline retrieval for longitudinal follow-up recommendations; a curated 20-case proof of concept finds 92.0% of decision-support units appropriate and 83.3% of audited major claims explicitly grounded.
+    featured: false
+  - title: 'Seeing Is Not Believing: Counterfactual Lesion Erasure Teaches a Small Medical Vision-Language Agent to Report Only What the Image Shows'
+    year: 2026
+    domain: Benchmark
+    modality:
+    - multimodal
+    task:
+    - hallucination evaluation
+    - visual question answering
+    - abstention
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2611.13006
+    code_url: https://github.com/bhaskargurram-ai/medscope
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - hallucination
+    - safety
+    - counterfactual evaluation
+    - abstention
+    summary: Trains MedScope-4B with lesion-erased and control-edited images in a shared zoom/window tool loop, reducing unsupported findings on internal tests; external sensitivity remains limited, including 0 of 48 pneumothorax films detected on a fresh test.
+    featured: false
+  - title: 'Agentic AI workflows in anatomic pathology: Opportunities and challenges'
+    year: 2026
+    domain: Survey
+    modality: null
+    task:
+    - survey
+    - workflow design
+    agent_type: null
+    paper_url: https://doi.org/10.1016/j.jpi.2026.100718
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: Journal of Pathology Informatics
+    tags:
+    - survey
+    - pathology
+    - RAG
+    - human-in-the-loop
+    - governance
+    summary: Conceptual review describes retrieval, tools, skills, and agent loops for pathology workflows, with illustrative designs for reflex testing, case routing, and ancillary test support; discusses integration, validation, and human oversight rather than presenting a validated system.
+    featured: false

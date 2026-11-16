@@ -10,11 +10,11 @@ Use the clinical setting to describe the application and `modality` to describe 
 
 | Application | Typical inputs | Main-list location |
 |---|---|---|
-| Radiology and image-guided treatment | CXR, CT, MRI, mammography, PET, angiography | [Radiology](../README.md#radiology-agents-57) |
-| Computational pathology | Whole-slide images, tissue tiles, microscopy | [Pathology](../README.md#pathology-agents-whole-slide-imaging--digital-pathology-41) |
+| Radiology and image-guided treatment | CXR, CT, MRI, mammography, PET, angiography | [Radiology](../README.md#radiology-agents-58) |
+| Computational pathology | Whole-slide images, tissue tiles, microscopy | [Pathology](../README.md#pathology-agents-whole-slide-imaging--digital-pathology-42) |
 | Ultrasound and echocardiography | Still images, cine loops, probe observations | [Ultrasound](../README.md#ultrasound-agents-echocardiography--robotic-ultrasound-30) |
-| Endoscopy and surgery | Endoscopic video, surgical scenes, robot observations | [Endoscopy and surgery](../README.md#endoscopy-and-surgical-imaging-agents-28) |
-| Ophthalmology | Fundus images, OCT, ophthalmic video | [Ophthalmology](../README.md#ophthalmology-agents-16) |
+| Endoscopy and surgery | Endoscopic video, surgical scenes, robot observations | [Endoscopy and surgery](../README.md#endoscopy-and-surgical-imaging-agents-29) |
+| Ophthalmology | Fundus images, OCT, ophthalmic video | [Ophthalmology](../README.md#ophthalmology-agents-18) |
 | Other or multiple specialties | For example, dermatology or combined imaging and clinical records | Use the closest existing section and record the actual modalities; do not force a specialty assignment |
 
 **3D/volumetric** describes an input representation, and **medical VLM** describes a model interface. Their existing sections provide useful entry points, but neither is a separate clinical specialty. A VLM belongs in the agent collection only when the work demonstrates agent behavior.
