@@ -32,30 +32,28 @@ papers:
 
   # ── Radiology Agents ──────────────────────────────────────────────────────
 
-  - title: "MedRAX: Medical Reasoning Agent for Chest X-ray"
+  - title: 'MedRAX: Medical Reasoning Agent for Chest X-ray'
     year: 2025
-    domain: "Radiology"
+    domain: Radiology
     modality:
-      - CXR
+    - CXR
     task:
-      - report generation
-      - tool use
-      - visual reasoning
+    - report generation
+    - tool use
+    - visual reasoning
     agent_type:
-      - multi-agent
-      - tool-using
-    paper_url: "https://arxiv.org/pdf/2502.02673v1"
-    code_url: "https://github.com/bowang-lab/MedRAX"
+    - tool-using
+    paper_url: https://arxiv.org/pdf/2502.02673v1
+    code_url: https://github.com/bowang-lab/MedRAX
     project_url: null
     dataset_url: null
     benchmark_url: null
-    venue: "ICML 2025"
+    venue: ICML 2025
     tags:
-      - chest X-ray
-      - director-worker
-      - composable tools
-      - multi-agent
-    summary: "Director-worker architecture where composable tool-using agents outperform single-model baselines on chest X-ray reasoning."
+    - chest X-ray
+    - specialist tools
+    - tool selection
+    summary: Integrates specialist chest X-ray tools with a multimodal language-model controller without additional agent training, evaluated on 2,500 ChestAgentBench queries.
     featured: true
 
   - title: "RadAgent: A Tool-Using AI Agent for Stepwise Interpretation of Chest CT"
@@ -644,28 +642,28 @@ papers:
     summary: "Hierarchical multi-agent framework with a Visual-Language Endoscopy Agent plus domain-specialist agents for radiology, lab, and text analysis, emulating multidisciplinary team decision-making for GI oncology."
     featured: false
 
-  - title: "EndoAgent: A Memory-Guided Reflective Agent for Intelligent Endoscopic Vision-to-Decision Reasoning"
+  - title: 'EndoCogniAgent: Closed-Loop Agentic Reasoning with Self-Consistency Validation for Endoscopic Diagnosis'
     year: 2025
-    domain: "Endoscopy"
+    domain: Endoscopy
     modality:
-      - endoscopy
+    - endoscopy
     task:
-      - diagnosis
-      - action planning
+    - diagnosis
+    - action planning
     agent_type:
-      - memory-augmented
-      - reflective agent
-    paper_url: "https://arxiv.org/abs/2508.07292"
-    code_url: "https://github.com/Tyyds-ai/EndoAgent"
+    - tool-using
+    - memory-augmented
+    paper_url: https://arxiv.org/abs/2508.07292
+    code_url: https://github.com/Tyyds-ai/EndoCogniAgent
     project_url: null
     dataset_url: null
     benchmark_url: null
-    venue: "arXiv"
+    venue: arXiv
     tags:
-      - endoscopy
-      - episodic memory
-      - reflective reasoning
-    summary: "Memory-guided reflective agent for endoscopic vision-to-decision reasoning; representative model for specialty-specific imaging agent design."
+    - endoscopy
+    - episodic memory
+    - reflective reasoning
+    summary: A planner acquires evidence from specialist endoscopic tools and uses knowledge and temporal consistency checks to update its diagnostic state, evaluated on EndoAgentBench and blinded clinician grading.
     featured: true
 
   - title: "SCOPE: Speech-guided COllaborative PErception Framework for Surgical Scene Segmentation"
@@ -839,7 +837,7 @@ papers:
     agent_type:
       - vision agent
       - multi-stage
-    paper_url: "http://arxiv.org/abs/2410.08397"
+    paper_url: "https://arxiv.org/abs/2410.08397"
     code_url: null
     project_url: null
     dataset_url: null
@@ -849,7 +847,7 @@ papers:
       - volumetric
       - 3D imaging
       - end-to-end
-    summary: "Multi-stage vision agent for end-to-end volumetric medical image analysis covering segmentation, detection, and QA across CT, MRI, and PET."
+    summary: "A code-generating language agent invokes a jointly trained volumetric vision network for compositional image analysis, evaluated on neuroimaging segmentation, morphology, and lesion characterization."
     featured: true
 
   - title: "MARCH: Multi-Agent Radiology Clinical Hierarchy for CT Report Generation"
@@ -952,7 +950,7 @@ papers:
       - reinforcement-learning
       - interactive
       - human-in-the-loop
-    summary: "Introduces multi-turn RL to train an interactive segmentation agent that decides which prompts to issue to SAM — the first RL-trained imaging segmentation agent."
+    summary: "Uses multi-turn reinforcement learning with outcome and process rewards to train a segmentation agent that selects and refines prompts to specialist segmentation tools."
     featured: true
 
   - title: "Shifting Adaptation from Weight Space to Memory Space: A Memory-Augmented Agent for Medical Image Segmentation"
@@ -1081,38 +1079,34 @@ papers:
     summary: "Three collaborative agents (DERM-Rec, DERM-Rep, DERM-Reason) built on a resource-efficient multimodal LLM for real-world dermatologic diagnosis and treatment, matching larger models with only 103 training cases through structured domain-aware multi-agent design."
     featured: false
 
-  - title: "MMedAgent: Learning to Use Medical Tools with Multi-modal Agent"
+  - title: 'MMedAgent: Learning to Use Medical Tools with Multi-modal Agent'
     year: 2024
-    domain: "Multimodal"
+    domain: Multimodal
     modality:
-      - CXR
-      - CT
-      - MRI
-      - pathology
-      - ultrasound
-      - dermatology
-      - fundus
+    - CXR
+    - CT
+    - MRI
+    - histology
+    - gross pathology
     task:
-      - tool use
-      - segmentation
-      - retrieval
-      - diagnosis
+    - tool use
+    - segmentation
+    - retrieval
+    - diagnosis
     agent_type:
-      - tool-using
-      - multi-agent
-    paper_url: "https://arxiv.org/pdf/2407.02483"
-    code_url: "https://github.com/Wangyixinxin/MMedAgent"
+    - tool-using
+    paper_url: https://arxiv.org/pdf/2407.02483
+    code_url: https://github.com/Wangyixinxin/MMedAgent
     project_url: null
     dataset_url: null
     benchmark_url: null
-    venue: "arXiv"
+    venue: Findings of EMNLP 2024
     tags:
-      - multimodal
-      - tool selection
-      - seven modalities
-      - specialist tools
-      - multi-agent
-    summary: "First paper to train a medical agent that selects and calls specialist tools (segmentation, retrieval, calculators) on demand across seven imaging modalities."
+    - multimodal
+    - tool selection
+    - five modalities
+    - specialist tools
+    summary: 'Instruction-tunes a medical agent to select six specialist tools for seven tasks across five modalities: X-ray, CT, MRI, histology, and gross pathology.'
     featured: true
 
   - title: "MedAgent-Pro: Towards Evidence-based Multi-modal Medical Diagnosis via Reasoning Agentic Workflow"
@@ -14090,4 +14084,99 @@ papers:
     - human-in-the-loop
     - governance
     summary: Conceptual review describes retrieval, tools, skills, and agent loops for pathology workflows, with illustrative designs for reflex testing, case routing, and ancillary test support; discusses integration, validation, and human oversight rather than presenting a validated system.
+    featured: false
+
+  - title: 'PathLoop: Self-Evolving Multi-Agent Reasoning for Evidence-Grounded Whole-Slide Image Analysis'
+    year: 2026
+    domain: Pathology
+    modality:
+    - WSI
+    task:
+    - biomarker prediction
+    - survival prediction
+    - subtype classification
+    agent_type:
+    - multi-agent
+    paper_url: https://arxiv.org/abs/2611.19527
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - multi-agent
+    - self-evolving
+    - omics
+    - evidence verification
+    summary: Coordinates visual and omics interpreters across slide, patch, and pixel scales, checks evidence against Pathology-Wiki, and re-examines inconsistent findings; a four-level memory reuses trajectories, tips, skills, and tools, with evaluation on four TCGA cohorts.
+    featured: false
+  - title: Interleaving anatomical inspection and diagnostic reasoning for explainable radiology report generation
+    year: 2026
+    domain: Report Generation
+    modality:
+    - CXR
+    task:
+    - report generation
+    - anatomical inspection
+    agent_type:
+    - tool-using
+    - RL-trained
+    paper_url: https://arxiv.org/abs/2611.14018
+    code_url: https://github.com/DUTIR-BioNLP/ARIVE
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - reinforcement-learning
+    - anatomical grounding
+    - inspectable traces
+    summary: ARIVE interleaves regional anatomical inspection and clinical interpretation before report composition, trained on 159,416 MIMIC-CXR trajectories with anatomical and clinical rewards; paired review identifies more erroneous reports when trajectories are available, at increased review time.
+    featured: false
+  - title: A Self-Evolving Agent for Longitudinal Personal Health Management
+    year: 2026
+    domain: Workflow Simulation
+    modality:
+    - multimodal
+    task:
+    - longitudinal health management
+    - memory management
+    - experience retrieval
+    agent_type:
+    - tool-using
+    paper_url: https://arxiv.org/abs/2607.13940
+    code_url: https://github.com/HC-Guo/Self-Evolving_HealthJev
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: arXiv
+    tags:
+    - self-evolving
+    - memory
+    - safety
+    - medical imaging
+    summary: HealthJev separates shared medical knowledge from private longitudinal memory and uses JevGate to screen lessons before reuse; evaluated on 90-day simulated interactions for 20 users and six tasks including medical imaging, with a November 2026 revision.
+    featured: false
+  - title: 'MSM-Mem: A Universal Medical Structured Multimodal Memory Framework for Medical AI Agents'
+    year: 2026
+    domain: Workflow Simulation
+    modality:
+    - multimodal
+    task:
+    - experience retrieval
+    - memory management
+    - medical reasoning
+    agent_type:
+    - RAG
+    paper_url: https://arxiv.org/abs/2608.21810
+    code_url: null
+    project_url: null
+    dataset_url: null
+    benchmark_url: null
+    venue: NeurIPS 2026 GenAI4Health workshop
+    tags:
+    - self-evolving
+    - RAG
+    - multimodal memory
+    summary: Organizes medical experiences into semantic, episodic, and visual memory that updates during inference and retrieves prior cases for reasoning; evaluates accumulated-experience gains on MoE-LLaVA backbones, with a November 2026 revision.
     featured: false

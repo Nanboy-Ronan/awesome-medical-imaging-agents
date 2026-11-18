@@ -37,6 +37,33 @@ Before you submit, please ensure:
 - [ ] Section counts and count-based links are updated, and metadata/count validation passes.
 - [ ] `python scripts/update_themes.py` has regenerated the theme index when relevant.
 
+After editing papers, refresh and check the generated indexes from the repository root:
+
+```sh
+python scripts/generate_json.py
+python scripts/update_themes.py
+python scripts/generate_comparison.py
+python scripts/generate_readme.py --validate-only
+python scripts/validate_counts.py
+python scripts/validate_counts.py docs/themes.md
+python scripts/generate_json.py --check
+python scripts/update_themes.py --check
+python scripts/generate_comparison.py --check
+```
+
+The generators require PyYAML (`python -m pip install pyyaml`). The `--check` commands
+do not modify files and fail when an index is missing or stale. CI runs them for paper,
+documentation, and script changes. For generator changes, also run
+`python -m unittest discover -s tests`.
+
+## Evidence Reviews and Research Briefs
+
+The broad paper list and the reviewed comparison have different scopes. New list entries do not automatically become reviewed comparison entries. Follow the [review protocol](docs/review-protocol.md) when editing `data/comparison.yml`, and use the [evidence review issue form](https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents/issues/new?template=evidence-review.yml) for corrections or execution evidence.
+
+Record the primary-source version, review scope, and actual source-check date. Keep author-reported results separate from independent tests. A public repository is not evidence of a successful installation or a reproduced result. Stronger execution claims require public logs and an extension of the comparison schema before acceptance.
+
+For a [research brief](docs/briefs/README.md), select five readings, state the coverage cutoff, cite primary sources, preserve limitations and negative results, and mark editorial interpretation. Keep earlier issues in the archive. Authors may submit clarifications through issues or PRs; maintainers do not need to contact authors to publish a source-backed review.
+
 ## What We Don’t Accept
 
 - Broken links or duplicates.

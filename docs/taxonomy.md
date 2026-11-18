@@ -11,7 +11,7 @@ Use the clinical setting to describe the application and `modality` to describe 
 | Application | Typical inputs | Main-list location |
 |---|---|---|
 | Radiology and image-guided treatment | CXR, CT, MRI, mammography, PET, angiography | [Radiology](../README.md#radiology-agents-58) |
-| Computational pathology | Whole-slide images, tissue tiles, microscopy | [Pathology](../README.md#pathology-agents-whole-slide-imaging--digital-pathology-42) |
+| Computational pathology | Whole-slide images, tissue tiles, microscopy | [Pathology](../README.md#pathology-agents-whole-slide-imaging--digital-pathology-43) |
 | Ultrasound and echocardiography | Still images, cine loops, probe observations | [Ultrasound](../README.md#ultrasound-agents-echocardiography--robotic-ultrasound-30) |
 | Endoscopy and surgery | Endoscopic video, surgical scenes, robot observations | [Endoscopy and surgery](../README.md#endoscopy-and-surgical-imaging-agents-29) |
 | Ophthalmology | Fundus images, OCT, ophthalmic video | [Ophthalmology](../README.md#ophthalmology-agents-18) |
@@ -77,9 +77,9 @@ The following examples illustrate classification using the collection's existing
 
 | Work | Application / input | Task | Mechanism | Primary home |
 |---|---|---|---|---|
-| MedRAX | Radiology / CXR | Image interpretation and reasoning | Tool use; director-worker coordination | Radiology |
+| MedRAX | Radiology / CXR | Image interpretation and reasoning | Tool use; specialist model selection | Radiology |
 | RadAgent | Radiology / CT | Interpretation and reporting | Stepwise tool use | Radiology |
-| EndoAgent | Endoscopy | Vision-to-decision reasoning | Memory; reflection | Endoscopy and surgery |
+| EndoCogniAgent (formerly EndoAgent) | Endoscopy | Diagnostic evidence acquisition | Tool use; consistency validation; memory | Endoscopy and surgery |
 | MedSAM-Agent | Medical imaging / interactive segmentation | Mask refinement | Multi-turn agentic reinforcement learning | Segmentation and annotation |
 | MMedAgent | Multiple imaging modalities | Select and execute medical tools | Tool use | Medical VLM |
 | ABRA | Radiology / DICOM viewer | Evaluate viewer-based agent workflows | Benchmark rather than a mechanism label | Benchmark Papers |

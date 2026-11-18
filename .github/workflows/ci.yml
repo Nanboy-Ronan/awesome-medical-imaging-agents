@@ -6,11 +6,23 @@ on:
     paths:
       - 'README.md'
       - 'data/papers.yml'
+      - 'data/comparison.yml'
+      - '.github/ISSUE_TEMPLATE/**'
+      - 'docs/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'CONTRIBUTING.md'
       - '.github/workflows/ci.yml'
   pull_request:
     paths:
       - 'README.md'
       - 'data/papers.yml'
+      - 'data/comparison.yml'
+      - '.github/ISSUE_TEMPLATE/**'
+      - 'docs/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'CONTRIBUTING.md'
       - '.github/workflows/ci.yml'
   schedule:
     # Run link check weekly on Sunday at 06:00 UTC
@@ -30,6 +42,13 @@ jobs:
         run: pip install pyyaml
       - name: Validate YAML schema
         run: python scripts/generate_readme.py --validate-only
+      - name: Check generated indexes are current
+        run: |
+          python scripts/generate_json.py --check
+          python scripts/update_themes.py --check
+          python scripts/generate_comparison.py --check
+      - name: Test generated-index checks
+        run: python -m unittest discover -s tests
 
   validate-counts:
     name: Validate README section counts
@@ -40,7 +59,9 @@ jobs:
         with:
           python-version: '3.11'
       - name: Check section (N) counts match bullet counts
-        run: python scripts/validate_counts.py
+        run: |
+          python scripts/validate_counts.py
+          python scripts/validate_counts.py docs/themes.md
 
   check-links:
     name: Check README links

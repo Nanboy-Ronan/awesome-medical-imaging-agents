@@ -1,3 +1,5 @@
 .claude
 CLAUDE.md
 generated/
+__pycache__/
+*.py[cod]

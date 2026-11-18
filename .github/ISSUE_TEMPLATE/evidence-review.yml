@@ -1,0 +1,42 @@
+name: Evidence review or reproduction
+description: Correct a comparison, clarify resources, or submit independent execution evidence.
+title: "[Evidence] "
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Review type
+      options:
+        - Paper or comparison correction
+        - Code, model, or data availability
+        - Independent smoke test
+        - Independent result reproduction
+        - Suggested brief reading
+    validations:
+      required: true
+  - type: input
+    id: work
+    attributes:
+      label: Paper or comparison record
+      description: Paper URL, DOI, or comparison record name.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Claim and supporting source
+      description: State what should change and link the primary-source version, section/table, or repository revision.
+    validations:
+      required: true
+  - type: textarea
+    id: execution
+    attributes:
+      label: Execution details, if applicable
+      description: Hardware/OS, dependencies, model revision, data source/split, commands, seed, expected/observed output, time/cost, and public logs. Leave empty for source-only corrections. Do not upload private patient data or credentials.
+  - type: input
+    id: relationship
+    attributes:
+      label: Relationship to the work
+      description: For example, author, collaborator, or independent reader.
+    validations:
+      required: true

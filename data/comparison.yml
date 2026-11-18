@@ -1,0 +1,470 @@
+# Curator annotations for selected papers; regenerate docs/comparison.md after editing.
+schema_version: 1
+entries:
+- id: MedRAX
+  label: MedRAX
+  title: 'MedRAX: Medical Reasoning Agent for Chest X-ray'
+  paper_url: https://arxiv.org/pdf/2502.02673v1
+  source_url: https://arxiv.org/abs/2502.02673v2
+  source_version: v2
+  group: Tool orchestration and segmentation
+  mechanism: Multimodal controller selects specialist CXR tools.
+  training: No additional agent training.
+  evaluation: 'ChestAgentBench: 2,500 queries in seven categories.'
+  evidence: offline_benchmark
+  control_evidence: Comparisons with open and proprietary models reported; matched tool budgets not established
+    from abstract.
+  limitation: Benchmark accuracy does not establish patient-care benefit.
+  code_status: source_inspected
+  code_url: https://github.com/bowang-lab/MedRAX
+  code_note: Public README and source tree inspected; medrax/, benchmark/ and quickstart.py present. API credentials
+    and specialist assets remain execution prerequisites.
+  review_basis: Paper abstract; repository README and root tree
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: CXR reasoning
+  readme_snapshot:
+    path: README.md
+    sha: 4673f103df5ddf933bebddcbd92f76a6ed849032
+- id: MMedAgent
+  label: MMedAgent
+  title: 'MMedAgent: Learning to Use Medical Tools with Multi-modal Agent'
+  paper_url: https://arxiv.org/pdf/2407.02483
+  source_url: https://arxiv.org/abs/2407.02483v2
+  source_version: v2
+  group: Tool orchestration and segmentation
+  mechanism: Instruction-tuned model chooses specialist medical tools.
+  training: Instruction tuning covering six tools, seven tasks, five modalities.
+  evaluation: Tool selection and medical-task experiments.
+  evidence: offline_benchmark
+  control_evidence: Open-model and GPT-4o comparisons reported; full matched-backbone attribution not audited.
+  limitation: Five modalities and seven tasks are distinct; the older catalog description conflated them.
+  code_status: source_inspected
+  code_url: https://github.com/Wangyixinxin/MMedAgent
+  code_note: Public README, tool table, training/inference entry points and source tree inspected. Base-model, tool-weight
+    and data downloads were not tested.
+  review_basis: Paper abstract; repository README and root tree
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Multimodal tool selection
+  readme_snapshot:
+    path: README.md
+    sha: 7d707b656c5751ae06bce81ef345432a9b77a02b
+- id: MedSAM-Agent
+  label: MedSAM-Agent
+  title: 'MedSAM-Agent: Empowering Interactive Medical Image Segmentation with Multi-turn Agentic Reinforcement
+    Learning'
+  paper_url: https://arxiv.org/abs/2602.03320
+  source_url: https://arxiv.org/abs/2602.03320v1
+  source_version: v1
+  group: Tool orchestration and segmentation
+  mechanism: Agent issues and refines prompts to segmentation tools over multiple turns.
+  training: Expert trajectories followed by multi-turn reinforcement learning with outcome and process rewards.
+  evaluation: 21 datasets across six modalities.
+  evidence: offline_benchmark
+  control_evidence: Process and outcome reward design described; exact matched-backbone ablations not audited here.
+  limitation: Independent execution and external clinical workflow benefit remain unverified.
+  code_status: source_inspected
+  code_url: https://github.com/CUHK-AIM-Group/MedSAM-Agent
+  code_note: 'README and root tree inspected: infer/ and RL-verl/ present. README still lists SFT/RL datasets and
+    trajectory-generation code as unreleased; full training reproduction is not established.'
+  review_basis: Paper abstract; repository README and root tree
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Interactive segmentation
+  readme_snapshot:
+    path: README.md
+    sha: 83f47a964f904b1f08a7a8f6d63015371c7e8a0d
+- id: VoxelPrompt
+  label: VoxelPrompt
+  title: 'VoxelPrompt: A Vision Agent for End-to-End Medical Image Analysis'
+  paper_url: https://arxiv.org/abs/2410.08397
+  source_url: https://arxiv.org/abs/2410.08397v2
+  source_version: v2
+  group: Tool orchestration and segmentation
+  mechanism: Language agent generates executable code calling a jointly trained volumetric vision network.
+  training: Language and vision components jointly trained from scratch.
+  evaluation: Neuroimaging segmentation, morphology and lesion characterization.
+  evidence: offline_benchmark
+  control_evidence: Specialist-model comparisons reported; ablation section exists, but individual control results
+    not audited.
+  limitation: Evidence is centered on neuroimaging; do not infer validation on every volumetric modality.
+  code_status: not_established
+  code_url: null
+  code_note: Full text links the Voxel utility library; availability of that dependency does not establish release
+    of the complete VoxelPrompt agent.
+  review_basis: Paper abstract and full-text implementation section
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Volumetric analysis
+- id: Taurus
+  label: Taurus
+  title: 'Taurus: LLM-in-the-Loop CT Annotation Matches Coding Agents at Half the Cost'
+  paper_url: https://arxiv.org/abs/2611.00247
+  source_url: https://arxiv.org/abs/2611.00247v2
+  source_version: v2
+  group: Tool orchestration and segmentation
+  mechanism: Automated aortic labels plus targeted multiple-choice review of flagged errors.
+  training: Harness refinement; a new trained controller is not established from abstract.
+  evaluation: Six public CT datasets, 939 volumes; refined system evaluated on 38 held-out cases.
+  evidence: offline_benchmark
+  control_evidence: Free-form coding-agent comparison; initial model review and later automation are distinguished.
+  limitation: Most reported gain comes from harness automation; final held-out set is much smaller than initial
+    dataset pool.
+  code_status: not_established
+  code_url: null
+  code_note: No implementation link established in the inspected paper abstract; this is not a claim that code does
+    not exist.
+  review_basis: Paper abstract
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Aortic CT annotation
+- id: EndoCogniAgent
+  label: EndoCogniAgent
+  title: 'EndoCogniAgent: Closed-Loop Agentic Reasoning with Self-Consistency Validation for Endoscopic Diagnosis'
+  paper_url: https://arxiv.org/abs/2508.07292
+  source_url: https://arxiv.org/abs/2508.07292v4
+  source_version: v4
+  group: Specialty and image-grounded workflows
+  mechanism: Planner acquires visual evidence; consistency validation governs state updates and re-examination.
+  training: Agent workflow; controller training requirements not established from inspected abstract.
+  evaluation: 'EndoAgentBench: 6,132 QA pairs from 11 endoscopy datasets; blinded clinician grading.'
+  evidence: offline_benchmark_expert_review
+  control_evidence: Full text reports agentic-core, consistency-validation and memory ablations.
+  limitation: Formerly indexed as EndoAgent; clinician grading of responses is not a prospective patient-outcome
+    trial.
+  code_status: source_inspected
+  code_url: https://github.com/Tyyds-ai/EndoCogniAgent
+  code_note: 'Current paper-linked public tree inspected: EndoAgent/, vlmeval/, run.py and tutorial.md present.
+    The older Tyyds-ai/EndoAgent URL refers to a separate repository.'
+  review_basis: Paper abstract and full-text ablation headings; public repository tree
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Endoscopic diagnosis
+  readme_snapshot:
+    path: README.md
+    sha: f165aab73d88f6fdbbf2d9de1f3519449315ae22
+- id: PathLoop
+  label: PathLoop
+  title: 'PathLoop: Self-Evolving Multi-Agent Reasoning for Evidence-Grounded Whole-Slide Image Analysis'
+  paper_url: https://arxiv.org/abs/2611.19527
+  source_url: https://arxiv.org/abs/2611.19527v1
+  source_version: v1
+  group: Specialty and image-grounded workflows
+  mechanism: Visual/omics agents collect multi-scale evidence; judge triggers re-examination; memory reuses experience.
+  training: Framework with four-level memory; controller training not established from abstract.
+  evaluation: 'Four TCGA cohorts: biomarker prediction, survival and subtype classification.'
+  evidence: retrospective_cohorts
+  control_evidence: Mechanism described; matched-backbone and compute-budget comparisons not audited.
+  limitation: Omics-informed region selection depends on molecular evidence availability; prospective benefit not
+    established.
+  code_status: not_established
+  code_url: null
+  code_note: No implementation link established in the inspected paper abstract; this is not a claim that code does
+    not exist.
+  review_basis: Paper abstract
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: WSI/omics analysis
+- id: SMILE
+  label: SMILE
+  title: 'SMILE: A Structured Multi-Agent Clinical Reasoning for Liver Ultrasound Understanding'
+  paper_url: https://arxiv.org/abs/2611.02581
+  source_url: https://arxiv.org/abs/2611.02581v1
+  source_version: v1
+  group: Specialty and image-grounded workflows
+  mechanism: Image, clinical-stage and VQA specialists feed a judge-guided consensus.
+  training: Specialist LoRA adapters documented in repository.
+  evaluation: Public and internal liver ultrasound datasets.
+  evidence: retrospective_datasets
+  control_evidence: Baseline VLM comparisons reported; equal inference-cost attribution not established here.
+  limitation: Reported reporting and VQA metrics do not measure downstream clinical outcomes.
+  code_status: source_inspected
+  code_url: https://github.com/CMME-Lab/SMILE
+  code_note: 'README and root tree inspected: src/, scripts/ and smile-dataset/ present. Dataset and adapter links
+    are documented; their downloads were not verified.'
+  review_basis: Paper abstract; repository README and root tree
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Liver ultrasound reporting
+  readme_snapshot:
+    path: README.md
+    sha: 55374420858320fda6540d7dad93054aa0c18e79
+- id: Dx-Rx
+  label: Dx-Rx
+  title: 'Measure Before You Repair: An Explainable Agent for Blind Restoration of Multi-Artifact 3-D MRI'
+  paper_url: https://arxiv.org/abs/2611.03996
+  source_url: https://arxiv.org/abs/2611.03996v1
+  source_version: v1
+  group: Specialty and image-grounded workflows
+  mechanism: Measures artifacts, chooses restoration tools, checks repairs and can roll back.
+  training: Existing MLLMs orchestrate diagnostic and repair tools.
+  evaluation: 148 T1 brain MRI volumes with simulated artifact mixtures calibrated to radiologist grades.
+  evidence: synthetic_corruptions
+  control_evidence: Image-only agent, same-tool expert rules and ground-truth-artifact oracle comparisons.
+  limitation: Radiologist-calibrated corruption is still simulation; clinical mixed-artifact restoration is not
+    established.
+  code_status: source_inspected
+  code_url: https://github.com/itu-biai/measure-before-you-repair
+  code_note: 'README and root tree inspected: src/, configs/, splits/, tests/ and uv.lock present. IXI data, weights
+    and model API access were not downloaded or executed.'
+  review_basis: Paper abstract; repository README and root tree
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Brain MRI restoration
+  readme_snapshot:
+    path: README.md
+    sha: a4c0c0772dae4c879f4ce091681a200c0b09e82f
+- id: MammoSeek
+  label: MammoSeek
+  title: 'MammoSeek: A Mammography Agent with selective zooming for grounded reports'
+  paper_url: https://arxiv.org/abs/2611.07188
+  source_url: https://arxiv.org/abs/2611.07188v1
+  source_version: v1
+  group: Specialty and image-grounded workflows
+  mechanism: Global impression followed by selective zoom on detector candidates and BI-RADS-guided reporting.
+  training: Agent plus image-model decision layer; controller training not established from abstract.
+  evaluation: EMBED internal and VinDr-Mammo external retrospective datasets.
+  evidence: retrospective_external
+  control_evidence: Selective versus no zoom and forced zoom comparisons reported.
+  limitation: External retrospective evaluation is stronger than a single internal test, but does not establish
+    prospective recall benefit.
+  code_status: not_established
+  code_url: null
+  code_note: No implementation link established in the inspected paper abstract; this is not a claim that code does
+    not exist.
+  review_basis: Paper abstract
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Mammography reporting
+- id: ARIVE
+  label: ARIVE
+  title: Interleaving anatomical inspection and diagnostic reasoning for explainable radiology report generation
+  paper_url: https://arxiv.org/abs/2611.14018
+  source_url: https://arxiv.org/abs/2611.14018v1
+  source_version: v1
+  group: Reporting and research pipelines
+  mechanism: Requests anatomical visual observations between reasoning steps before final report composition.
+  training: SFT on 159,416 trajectories followed by anatomical and clinical-content GRPO rewards.
+  evaluation: MIMIC-CXR and MIMIC-ABN; blinded grading and paired error review.
+  evidence: offline_benchmark_expert_review
+  control_evidence: Paired review with/without trajectories; anatomical and clinical reward ablations described.
+  limitation: More detected report errors came with longer review time; inspectable reasoning is not automatically
+    faithful.
+  code_status: source_inspected
+  code_url: https://github.com/DUTIR-BioNLP/ARIVE
+  code_note: 'README and public tree inspected: data_generation/, inference/, qwenvl/ and scripts/ present. Credentialed
+    MIMIC access, model downloads and GPU execution were not tested.'
+  review_basis: Paper abstract and full-text methods/code availability; repository README and tree
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: CXR report generation
+  readme_snapshot:
+    path: README.md
+    sha: 0fc149bb9853ab81c0172d9f75a8a0674769ace9
+- id: RadStructAgent
+  label: RadStructAgent
+  title: 'RadStructAgent: agentic structuring of free-text chest X-ray reports with small language models'
+  paper_url: https://doi.org/10.1007/s11548-026-03811-z
+  source_url: https://doi.org/10.1007/s11548-026-03811-z
+  source_version: Publisher article, 2026-11-06
+  group: Reporting and research pipelines
+  mechanism: Orchestrator selects findings/anatomy judges, revision and candidate selection.
+  training: Qwen3-4B/8B prompted workflow; agent fine-tuning not established in abstract.
+  evaluation: 1,000 free-text CXR reports; separate 97K-sample, 10-institution report-supervision experiment.
+  evidence: retrospective_reports
+  control_evidence: Base SLM versus agentic structuring comparisons on the same report task.
+  limitation: The 97K experiment concerns structured supervision, not evaluation of the structuring agent itself.
+  code_status: source_inspected
+  code_url: https://github.com/badhon1512/RadStructAgent
+  code_note: 'README.MD and source tree inspected: src/, scripts/, requirements.txt and dataset_sample/ present.
+    Runtime and dataset completeness not tested.'
+  review_basis: Publisher abstract and methods; repository README.MD and tree
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Report structuring
+  readme_snapshot:
+    path: README.MD
+    sha: d1a20671ef82e3960e1877e2ff2e24126591d9bc
+- id: MedGenAgent
+  label: MedGenAgent
+  title: 'MedGenAgent: a closed-loop agent for oncology CT foundation model pretraining'
+  paper_url: https://doi.org/10.1038/s41698-026-01743-0
+  source_url: https://doi.org/10.1038/s41698-026-01743-0
+  source_version: Publisher article, 2026-11-04
+  group: Reporting and research pipelines
+  mechanism: Orchestrator and memory coordinate CT synthesis, VLM quality checks and model pretraining.
+  training: Synthetic pretraining then alignment using 4,400 DeepLesion samples.
+  evaluation: 11,000 retained synthetic volumes; three retrospective downstream tasks.
+  evidence: retrospective_downstream
+  control_evidence: Full-data pretraining comparison reported; contribution of each orchestration component not
+    audited.
+  limitation: Synthetic quality varies by anatomical region; downstream gains do not establish clinical deployment
+    readiness.
+  code_status: not_established
+  code_url: null
+  code_note: No implementation link established in the inspected paper abstract; this is not a claim that code does
+    not exist.
+  review_basis: Publisher abstract retrieved through indexed primary-source search
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: CT pretraining data
+- id: AMDagent
+  label: AMDagent
+  title: A multimodal tool-augmented agent for evidence-based clinical decision support in longitudinal AMD follow-up
+  paper_url: https://doi.org/10.1038/s41746-026-03412-9
+  source_url: https://doi.org/10.1038/s41746-026-03412-9
+  source_version: Publisher article, 2026-11-03
+  group: Reporting and research pipelines
+  mechanism: Quantitative retinal imaging tools and guideline retrieval ground longitudinal recommendations.
+  training: Tool-augmented clinical agent; new controller training not established from abstract.
+  evaluation: 20 curated longitudinal AMD cases; expert-adjudicated support units and claim-grounding audit.
+  evidence: curated_case_expert_review
+  control_evidence: Appropriateness and grounding audits reported; comparative clinical-effectiveness trial not
+    established.
+  limitation: 92.0% concerns decision-support units, not patient-level diagnostic accuracy; small proof of concept.
+  code_status: not_established
+  code_url: null
+  code_note: No implementation link established in the inspected paper abstract; this is not a claim that code does
+    not exist.
+  review_basis: Publisher abstract retrieved through indexed primary-source search
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Longitudinal AMD support
+- id: MMedAgent-Plus
+  label: MMedAgent-Plus
+  title: 'MMedAgent-Plus: Scaling Multimodal Medical Agents across Modalities, Tasks and Workflows'
+  paper_url: https://arxiv.org/abs/2610.27233
+  source_url: https://arxiv.org/abs/2610.27233v1
+  source_version: v1
+  group: Reporting and research pipelines
+  mechanism: Vision-language planner sequences 18 specialists across 12 tasks and eight modalities.
+  training: Instruction tuning on 208,928 samples from 32 public benchmarks.
+  evaluation: Separate orchestration, supplied-tool-output synthesis and 350 end-to-end cases.
+  evidence: offline_benchmark
+  control_evidence: Tool-call, synthesis and end-to-end evaluations separated; specialist and model baselines reported.
+  limitation: Synthesis given correct outputs is not end-to-end reliability; final-answer score should retain its
+    task setting.
+  code_status: not_established
+  code_url: null
+  code_note: No implementation link established in the inspected paper abstract; this is not a claim that code does
+    not exist.
+  review_basis: Paper abstract
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Multimodal tool workflows
+- id: NIBench
+  label: NIBench
+  title: 'NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging'
+  paper_url: https://arxiv.org/abs/2611.15831
+  source_url: https://arxiv.org/abs/2611.15831v1
+  source_version: v1
+  group: Benchmarks and reliability
+  mechanism: Environment evaluates execution, workflow reconstruction, skill transfer and scientific judgment.
+  training: 19 model agents evaluated; selected agents receive distilled procedural skills.
+  evaluation: 56 tasks across seven tool ecosystems plus 36 Alzheimer research claims.
+  evidence: research_workflow_benchmark
+  control_evidence: Supplied versus withheld protocols and skill transfer to unseen tasks/models.
+  limitation: Reproducible outputs can support expert-inconsistent conclusions; task completion and judgment are
+    separate outcomes.
+  code_status: not_established
+  code_url: null
+  code_note: No implementation link established in the inspected paper abstract; this is not a claim that code does
+    not exist.
+  review_basis: Paper abstract
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Neuroimaging research evaluation
+- id: ScienceVision
+  label: ScienceVision
+  title: 'ScienceVision: Can AI Observe and Reason Like a Scientist?'
+  paper_url: https://arxiv.org/abs/2611.04087
+  source_url: https://arxiv.org/abs/2611.04087v1
+  source_version: v1
+  group: Benchmarks and reliability
+  mechanism: Agent harness exposes native 3D files, code tools and optional MCP inspection/measurement.
+  training: Evaluation of 12 models; no new agent training described in abstract.
+  evaluation: 250 questions across five domains, including 50 medical imaging questions.
+  evidence: cross_domain_benchmark
+  control_evidence: Native artifacts with/without added MCP tools versus rendered-image inputs; deterministic scoring.
+  limitation: Overall benchmark averages include nonmedical domains; do not present them as medical-only performance.
+  code_status: not_established
+  code_url: null
+  code_note: No implementation link established in the inspected paper abstract; this is not a claim that code does
+    not exist.
+  review_basis: Paper abstract
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Scientific 3D reasoning evaluation
+- id: MedImageOSWorld
+  label: MedImageOSWorld
+  title: 'MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles'
+  paper_url: https://arxiv.org/abs/2610.04800
+  source_url: https://arxiv.org/abs/2610.04800v1
+  source_version: v1
+  group: Benchmarks and reliability
+  mechanism: GUI agents operate simulated CT/MR/ultrasound consoles with screenshots and mouse/keyboard.
+  training: Evaluation harness; new agent training not established from abstract.
+  evaluation: Seven capability levels; separate workflow checks and hidden anatomy-based outcomes.
+  evidence: simulated_workflow
+  control_evidence: Shared episode conditions and interaction budgets; workflow progress separated from acquisition
+    success.
+  limitation: Simulated scanner operation is not physical scanner control or prospective acquisition evidence.
+  code_status: not_established
+  code_url: null
+  code_note: No implementation link established in the inspected paper abstract; this is not a claim that code does
+    not exist.
+  review_basis: Paper abstract
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Acquisition-console evaluation
+- id: ABRA
+  label: ABRA
+  title: 'ABRA: Agent Benchmark for Radiology Applications'
+  paper_url: https://arxiv.org/abs/2605.11224
+  source_url: https://arxiv.org/abs/2605.11224v1
+  source_version: v1
+  group: Benchmarks and reliability
+  mechanism: OHIF and Orthanc exposed through 21 navigation, annotation and reporting tools.
+  training: Ten models evaluated; no new controller training required by benchmark description.
+  evaluation: 655 generated tasks from three public CT/MRI collections.
+  evidence: workstation_benchmark
+  control_evidence: Paired real and oracle annotation tasks distinguish perception from tool execution.
+  limitation: Real software and retrospective scans do not make this a live clinical workflow trial.
+  code_status: source_inspected
+  code_url: https://github.com/Luab/ABRA
+  code_note: 'Paper-linked public tree inspected: docker-compose.yml, server/, src/, configs/ and tests/ present.
+    Images, containers and model backends were not executed.'
+  review_basis: Paper abstract and full-text environment description; public source tree
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Radiology workstation evaluation
+  readme_snapshot:
+    path: README.md
+    sha: 34ce0fc3cc8f1e900a473add661ff794ab62d0ab
+- id: MedScope-4B
+  label: MedScope-4B
+  title: 'Seeing Is Not Believing: Counterfactual Lesion Erasure Teaches a Small Medical Vision-Language Agent to
+    Report Only What the Image Shows'
+  paper_url: https://arxiv.org/abs/2611.13006
+  source_url: https://arxiv.org/abs/2611.13006v1
+  source_version: v1
+  group: Benchmarks and reliability
+  mechanism: Shared zoom/window loop with answer, refer and clarify actions; counterfactual evidence training.
+  training: Supervised and rejection-sampling fine-tuning on label-derived edited-image trajectories.
+  evaluation: 507 internal cases; external centers and fresh pneumothorax test.
+  evidence: counterfactual_external
+  control_evidence: Lesion erasure/control edits, training ablations and removal-based DPO comparison.
+  limitation: 'Lower erased-lesion claims coexist with missed real disease: 0/48 pneumothorax detections in fresh
+    external testing.'
+  code_status: source_inspected
+  code_url: https://github.com/bhaskargurram-ai/medscope
+  code_note: 'README and root tree inspected: medscope/, configs/, scripts/ and tests/ present. Models, data recipes
+    and reported results were not independently run.'
+  review_basis: Paper abstract and full-text protocol/training sections; repository README and tree
+  checked_at: '2026-11-17'
+  reproduction_status: not_run
+  task: Evidence sensitivity / abstention
+  readme_snapshot:
+    path: README.md
+    sha: f0a5b3b617697494eb90be64b2e96864fc08a13b

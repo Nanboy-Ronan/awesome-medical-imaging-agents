@@ -9,20 +9,20 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 ### Browse themes
 
 - [Agent Mechanisms](#agent-mechanisms)
-  - [RAG and Retrieval (71)](#rag-and-retrieval-71)
-  - [Multi-Agent Collaboration (190)](#multi-agent-collaboration-190)
-  - [Reinforcement Learning (60)](#reinforcement-learning-60)
+  - [RAG and Retrieval (72)](#rag-and-retrieval-72)
+  - [Multi-Agent Collaboration (189)](#multi-agent-collaboration-189)
+  - [Reinforcement Learning (61)](#reinforcement-learning-61)
   - [Human-in-the-Loop (35)](#human-in-the-loop-35)
-  - [Self-Evolving and Self-Improving Agents (32)](#self-evolving-and-self-improving-agents-32)
+  - [Self-Evolving and Self-Improving Agents (35)](#self-evolving-and-self-improving-agents-35)
 - [Trustworthiness](#trustworthiness)
   - [Fairness and Bias (8)](#fairness-and-bias-8)
   - [Hallucination and Reliability (52)](#hallucination-and-reliability-52)
-  - [Safety and Robustness (46)](#safety-and-robustness-46)
+  - [Safety and Robustness (47)](#safety-and-robustness-47)
   - [Privacy and Federated Learning (10)](#privacy-and-federated-learning-10)
 
 ## Agent Mechanisms
 
-### RAG and Retrieval (71)
+### RAG and Retrieval (72)
 
 - [GAZE: Grounded Agentic Zero-shot Evaluation on Rare Brain MRI](https://arxiv.org/abs/2605.00876) — arXiv (2026) · *Radiology Agents*
 - [CXReasonAgent: Evidence-Grounded Diagnostic Reasoning Agent for Chest X-rays](https://arxiv.org/abs/2602.23276) — arXiv (2026) · *Radiology Agents*
@@ -75,6 +75,7 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [SkinMind: Equipping Agentic RAG with Human-Inspired Graph Probing for Reliable Dermatology AI](https://arxiv.org/abs/2611.08935) — arXiv (2026) · *Medical VLM Agents*
 - [A multimodal tool-augmented agent for evidence-based clinical decision support in longitudinal AMD follow-up](https://doi.org/10.1038/s41746-026-03412-9) — npj Digital Medicine (2026) · *Ophthalmology Agents*
 - [Agentic AI workflows in anatomic pathology: Opportunities and challenges](https://doi.org/10.1016/j.jpi.2026.100718) — Journal of Pathology Informatics (2026) · *Surveys*
+- [MSM-Mem: A Universal Medical Structured Multimodal Memory Framework for Medical AI Agents](https://arxiv.org/abs/2608.21810) — NeurIPS 2026 GenAI4Health workshop (2026) · *Workflow Agents*
 - [Why Trust Your Agent? Empirical Security Gains from TRiSM-Guided Agentic Workflows in Healthcare](https://arxiv.org/abs/2606.28666) — 2026 · *Safety*
 - [EyeAgent: An Agentic AI System for Multimodal Clinical Decision Support in Ophthalmology](https://arxiv.org/abs/2511.09394) — arXiv (2025) · *Ophthalmology Agents*
 - [Multimodal reasoning agent for enhanced ophthalmic decision-making: a preliminary real-world clinical validation](https://doi.org/10.3389/fcell.2025.1642539) — Frontiers in Cell and Developmental Biology (2025) · *Ophthalmology Agents*
@@ -96,7 +97,7 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [RadioRAG: Online Retrieval-Augmented Generation for Radiology Question Answering](https://arxiv.org/abs/2407.15621) — arXiv (2024) · *Radiology Agents*
 - [Hybrid Retrieval-Generation Reinforced Agent for Medical Image Report Generation](http://arxiv.org/abs/1805.08298) — arXiv (2018) · *Report Generation Agents*
 
-### Multi-Agent Collaboration (190)
+### Multi-Agent Collaboration (189)
 
 - [XrayClaw: Cooperative-Competitive Multi-Agent Alignment for Trustworthy Chest X-ray Diagnosis](https://arxiv.org/abs/2604.02695) — arXiv (2026) · *Radiology Agents*
 - [LAMMI-Pathology: A Tool-Centric Bottom-Up LVLM-Agent Framework for Molecularly Informed Medical Intelligence in Pathology](https://arxiv.org/abs/2602.18773) — arXiv (2026) · *Pathology Agents*
@@ -216,12 +217,12 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [RetinaGuard: Risk-Controlled Agentic Triage for Multi-Disease Retinal Screening](https://arxiv.org/abs/2611.10689) — arXiv (2026) · *Ophthalmology Agents*
 - [MATS: A Multi-Agent Framework for Controllable and Reflective Tumor Synthesis](https://arxiv.org/abs/2610.41159) — IEEE BIBM 2026 (2026) · *3D Imaging Agents*
 - [RadStructAgent: agentic structuring of free-text chest X-ray reports with small language models](https://doi.org/10.1007/s11548-026-03811-z) — International Journal of Computer Assisted Radiology and Surgery (2026) · *Report Generation Agents*
+- [PathLoop: Self-Evolving Multi-Agent Reasoning for Evidence-Grounded Whole-Slide Image Analysis](https://arxiv.org/abs/2611.19527) — arXiv (2026) · *Pathology Agents*
 - [Multi-Agent AI for Chest Radiography: A Sequential Segmentation and LLM-Driven Consultative Tool for Medical Training](https://www.medrxiv.org/content/10.64898/2026.05.29.26354432v1) — 2026 · *Radiology Agents*
 - [Trust but Verify: Evidence-Linked Multi-Agent Clinical Information Extraction in Pathology](https://arxiv.org/abs/2607.06435) — 2026 · *Pathology Agents*
 - [NeuroAgent: LLM Agents for Multimodal Neuroimaging Analysis and Research](https://arxiv.org/abs/2605.06584) — 2026 · *3D Imaging Agents*
 - [MedVeriSeg: Teaching LISA-Like Medical Segmentation Models to Verify Query Validity Without Extra Training](https://arxiv.org/abs/2604.10242) — 2026 · *Segmentation Agents*
 - [A Multi-Agent Framework for Automated MRI Reporting in Glioma: A Real-World Clinical Validation](https://papers.miccai.org/miccai-2026-sat/MedAgent_007.html) — 2026 · *Report Generation Agents*
-- [MedRAX: Medical Reasoning Agent for Chest X-ray](https://arxiv.org/pdf/2502.02673v1) — ICML 2025 (2025) · *Radiology Agents*
 - [PathFinder: A Multi-Modal Multi-Agent System for Medical Diagnostic Decision-Making Applied to Histopathology](https://arxiv.org/pdf/2502.08916) — arXiv (2025) · *Pathology Agents*
 - [WSI-Agents: A Collaborative Multi-Agent System for Multi-Modal Whole Slide Image Analysis](https://arxiv.org/pdf/2507.14680) — MICCAI 2025 (2025) · *Pathology Agents*
 - [Multi-Agent Intelligence for Multidisciplinary Decision-Making in Gastrointestinal Oncology](https://arxiv.org/abs/2512.08674) — arXiv (2025) · *Endoscopy Agents*
@@ -274,7 +275,6 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [mAIstro: An Open-Source Multi-Agentic System for Automated End-to-End Development of Radiomics and Deep Learning Models for Medical Imaging](https://arxiv.org/abs/2505.03785) — European Journal of Radiology: Artificial Intelligence (2025) · *Workflow Agents*
 - [Trustworthy Multimodal AI Agents for Early Breast Cancer Detection and Clinical Decision Support](https://doi.org/10.3390/engproc2025112052) — Eng. Proc. (ICATH 2025) (2025) · *Radiology Agents*
 - [MRGAgents: A Multi-Agent Framework for Improved Medical Report Generation with Med-LVLMs](https://arxiv.org/abs/2505.18530) — arXiv (2025) · *Report Generation Agents*
-- [MMedAgent: Learning to Use Medical Tools with Multi-modal Agent](https://arxiv.org/pdf/2407.02483) — arXiv (2024) · *Multimodal Agents*
 - [MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning](https://aclanthology.org/2024.findings-acl.33.pdf) — Findings of ACL 2024 (2024) · *Clinical Reasoning Agents*
 - [MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making](https://proceedings.neurips.cc/paper_files/paper/2024/file/90d1fc07f46e31387978b88e7e057a31-Paper-Conference.pdf) — NeurIPS 2024 (2024) · *Clinical Reasoning Agents*
 - [Agent Hospital: A Simulacrum of Hospital with Evolvable Medical Agents](https://arxiv.org/pdf/2405.02957) — arXiv (2024) · *Workflow Agents*
@@ -289,7 +289,7 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [Multitask radiological modality invariant landmark localization using deep reinforcement learning](https://proceedings.mlr.press/v121/parekh20a.html) — MIDL 2020 (2020) · *3D Imaging Agents*
 - [Multiple Landmark Detection using Multi-Agent Reinforcement Learning](https://arxiv.org/abs/1907.00318) — MICCAI 2019 (2019) · *3D Imaging Agents*
 
-### Reinforcement Learning (60)
+### Reinforcement Learning (61)
 
 - [Anatomical Landmark-Guided Deep Reinforcement Learning for Autonomous Gastric Navigation](https://arxiv.org/abs/2605.08269) — arXiv (2026) · *Endoscopy Agents*
 - [Reinforcement Learning for Follow-the-Leader Robotic Endoscopic Navigation via Synthetic Data](https://arxiv.org/abs/2601.02798) — arXiv (2026) · *Endoscopy Agents*
@@ -329,6 +329,7 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [Optimizing Point-of-Care Ultrasound Video Acquisition for Probabilistic Multi-Task Heart Failure Detection](https://arxiv.org/abs/2602.13658) — IJCARS / IPCAI 2026 special issue (accepted) (2026) · *Ultrasound Agents*
 - [Complexity-Aware Surgical Video Reasoning Segmentation with Digital Twin and Context Memory](https://arxiv.org/abs/2610.28776) — arXiv (2026) · *Endoscopy Agents*
 - [Reinforcing intra-operative tumour localisation with weak supervision from pre-operative appearances](https://arxiv.org/abs/2610.31253) — arXiv (2026) · *3D Imaging Agents*
+- [Interleaving anatomical inspection and diagnostic reasoning for explainable radiology report generation](https://arxiv.org/abs/2611.14018) — arXiv (2026) · *Report Generation Agents*
 - [BiliVLA: Scene-Aware Vision-Language-Action Model with Reinforcement Learning for Autonomous Biliary Endoscopic Navigation](https://arxiv.org/abs/2606.23531) — 2026 · *Endoscopy Agents*
 - [Task-Based CT Protocol Optimization Using Reinforcement Learning and Virtual Imaging Trials](https://arxiv.org/abs/2609.13309) — 2026 · *3D Imaging Agents*
 - [MedPrune: Topology-Efficient Multimodal Multi-Agent Communication Evolution for Medical VQA Tasks](https://arxiv.org/abs/2610.06695) — 2026 · *Medical VLM Agents*
@@ -390,7 +391,7 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [ChatCAD+: Towards a Universal and Reliable Interactive CAD using LLMs](https://arxiv.org/abs/2305.15964) — arXiv (2023) · *Medical VLM Agents*
 - [Iteratively-Refined Interactive 3D Medical Image Segmentation with Multi-Agent Reinforcement Learning](https://arxiv.org/abs/1911.10334) — CVPR (2020) · *Segmentation Agents*
 
-### Self-Evolving and Self-Improving Agents (32)
+### Self-Evolving and Self-Improving Agents (35)
 
 - [Shifting Adaptation from Weight Space to Memory Space: A Memory-Augmented Agent for Medical Image Segmentation](https://arxiv.org/abs/2603.05873) — arXiv (2026) · *Segmentation Agents*
 - [TheraAgent: Multi-Agent Framework with Self-Evolving Memory and Evidence-Calibrated Reasoning for PET Theranostics](https://arxiv.org/abs/2603.13676) — arXiv (2026) · *3D Imaging Agents*
@@ -420,6 +421,9 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [AGRO-SUVIDE: Agentic Robotics for Surgical Viscoelastic Debridement](https://arxiv.org/abs/2609.34823) — arXiv (2026) · *Endoscopy Agents*
 - [MDTeamGPT: Mitigating Context Collapse and Enabling Self-Evolution in Medical Multi-Agent Reasoning](https://aclanthology.org/2026.findings-acl.1427/) — Findings of ACL 2026 (2026) · *Clinical Reasoning Agents*
 - [NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging](https://arxiv.org/abs/2611.15831) — arXiv (2026) · *Benchmarks*
+- [PathLoop: Self-Evolving Multi-Agent Reasoning for Evidence-Grounded Whole-Slide Image Analysis](https://arxiv.org/abs/2611.19527) — arXiv (2026) · *Pathology Agents*
+- [A Self-Evolving Agent for Longitudinal Personal Health Management](https://arxiv.org/abs/2607.13940) — arXiv (2026) · *Workflow Agents*
+- [MSM-Mem: A Universal Medical Structured Multimodal Memory Framework for Medical AI Agents](https://arxiv.org/abs/2608.21810) — NeurIPS 2026 GenAI4Health workshop (2026) · *Workflow Agents*
 - [MedAgentSim: Self-Evolving Multi-Agent Simulations for Realistic Clinical Interactions](https://arxiv.org/abs/2503.22678) — MICCAI 2025 (2025) · *Workflow Agents*
 - [MedReflect: Teaching Medical LLMs to Self-Improve via Reflective Correction](https://arxiv.org/abs/2510.03687) — arXiv (2025) · *Clinical Reasoning Agents*
 - [Agent Hospital: A Simulacrum of Hospital with Evolvable Medical Agents](https://arxiv.org/pdf/2405.02957) — arXiv (2024) · *Workflow Agents*
@@ -493,7 +497,7 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [EH-Benchmark Ophthalmic Hallucination Benchmark and Agent-Driven Top-Down Traceable Reasoning Workflow](https://arxiv.org/abs/2507.22929) — arXiv (2025) · *Benchmarks*
 - [MedHEval: Benchmarking Hallucinations and Mitigation Strategies in Medical Large Vision-Language Models](https://arxiv.org/abs/2503.02157) — arXiv (2025) · *Benchmarks*
 
-### Safety and Robustness (46)
+### Safety and Robustness (47)
 
 - [XrayClaw: Cooperative-Competitive Multi-Agent Alignment for Trustworthy Chest X-ray Diagnosis](https://arxiv.org/abs/2604.02695) — arXiv (2026) · *Radiology Agents*
 - [An Explainable Agentic AI Framework for Uncertainty-Aware and Abstention-Enabled Acute Ischemic Stroke Imaging Decisions](https://arxiv.org/abs/2601.01008) — arXiv (2026) · *Radiology Agents*
@@ -529,6 +533,7 @@ Entries combine explicit metadata tags with keyword matches. Treat matches as di
 - [Accessed, never disclosed: Silent access to protected health information by medical artificial intelligence agents](https://arxiv.org/abs/2611.02319) — arXiv (2026) · *Benchmarks*
 - [Safeguarding Agentic AI in Radiology Workflows: A Multimodel Evaluation of Rule-based and Large Language Model-based Verification](https://arxiv.org/abs/2611.11541) — arXiv (2026) · *Benchmarks*
 - [Seeing Is Not Believing: Counterfactual Lesion Erasure Teaches a Small Medical Vision-Language Agent to Report Only What the Image Shows](https://arxiv.org/abs/2611.13006) — arXiv (2026) · *Benchmarks*
+- [A Self-Evolving Agent for Longitudinal Personal Health Management](https://arxiv.org/abs/2607.13940) — arXiv (2026) · *Workflow Agents*
 - [MechAgent: Active Mechanism Falsification for Agentic Cross-Species Medical Reasoning](https://papers.miccai.org/miccai-2026-sat/MedAgent_042.html) — 2026 · *Pathology Agents*
 - [Why Trust Your Agent? Empirical Security Gains from TRiSM-Guided Agentic Workflows in Healthcare](https://arxiv.org/abs/2606.28666) — 2026 · *Safety*
 - [AT-CXR: Uncertainty-Aware Agentic Triage for Chest X-rays](https://arxiv.org/abs/2508.19322) — arXiv (2025) · *Radiology Agents*
