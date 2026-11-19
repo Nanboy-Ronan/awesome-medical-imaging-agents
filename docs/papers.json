@@ -16824,5 +16824,207 @@
     ],
     "summary": "Organizes medical experiences into semantic, episodic, and visual memory that updates during inference and retrieves prior cases for reasoning; evaluates accumulated-experience gains on MoE-LLaVA backbones, with a November 2026 revision.",
     "featured": false
+  },
+  {
+    "title": "System 1 agents: a method for local, reliable and fast agentic AI",
+    "year": 2026,
+    "domain": "Workflow Simulation",
+    "modality": null,
+    "task": [
+      "tool selection",
+      "tool argument extraction",
+      "abstention"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2611.21053",
+    "code_url": "https://github.com/eltzanis/SystemOneAgents",
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "tool learning",
+      "local inference",
+      "reliability",
+      "biomedical tools"
+    ],
+    "summary": "Compiles tool schemas and requests into multiple-choice decisions so a local agent selects tools and fills arguments without generating text; evaluated on 1,952 requests to 157 biomedical tools, with separate tool-choice and argument-filling measures.",
+    "featured": false
+  },
+  {
+    "title": "Not All Evidence Is Admissible: Evidence Governance for Tool-Augmented Medical Agents",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": [
+      "fundus",
+      "CXR"
+    ],
+    "task": [
+      "diagnosis",
+      "evidence verification",
+      "medical question answering"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2611.22169",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "safety",
+      "evidence governance",
+      "tool reliability",
+      "evidence hijacking"
+    ],
+    "summary": "CIEG writes tool outputs as input-checkable cards and uses an independent checker to decide which enter a frozen reasoner's context, without training; evaluates evidence filtering on medical QA, fundus glaucoma screening, and CXR pneumonia classification.",
+    "featured": false
+  },
+  {
+    "title": "Diagnostic Accuracy and Navigation Behavior of Vision-Language Model Agents Reading Emergency CT and MRI Examinations",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": [
+      "CT",
+      "MRI"
+    ],
+    "task": [
+      "diagnostic evaluation",
+      "navigation evaluation",
+      "confidence calibration"
+    ],
+    "agent_type": [
+      "tool-using"
+    ],
+    "paper_url": "https://arxiv.org/abs/2611.23480",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "benchmark",
+      "radiology",
+      "navigation",
+      "reliability"
+    ],
+    "summary": "Retrospective study compares six VLM agents across four viewing strategies on 100 emergency examinations and radiologists on 30 shared cases; free navigation yields lower pooled accuracy than single-request all-slice or key-slice inputs, with persistent early hypotheses and overconfidence.",
+    "featured": false
+  },
+  {
+    "title": "Visual Harness Scales General VLMs to Medical Images",
+    "year": 2026,
+    "domain": "Medical VLM",
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "image exploration",
+      "measurement",
+      "lesion detection",
+      "visual reasoning"
+    ],
+    "agent_type": [
+      "tool-using",
+      "reflective agent"
+    ],
+    "paper_url": "https://arxiv.org/abs/2611.22815",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "visual tools",
+      "memory",
+      "evidence management",
+      "answer refinement"
+    ],
+    "summary": "VERA equips general VLMs with interactive image tools and persistent evidence memory, then assesses omissions and finding reliability to guide further inspection, measurement, and answer revision; evaluated on 11 tasks across four imaging modalities.",
+    "featured": false
+  },
+  {
+    "title": "TRACER: A Multimodal Multi-agent Workflow for Transparent Chest X-ray Assistance",
+    "year": 2026,
+    "domain": "Radiology",
+    "modality": [
+      "CXR"
+    ],
+    "task": [
+      "report generation",
+      "consultation support",
+      "prior-report comparison"
+    ],
+    "agent_type": [
+      "multi-agent"
+    ],
+    "paper_url": "https://doi.org/10.1007/s10278-026-02469-y",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Journal of Imaging Informatics in Medicine",
+    "tags": [
+      "multi-agent",
+      "transparency",
+      "visual grounding",
+      "human evaluation"
+    ],
+    "summary": "Combines structured findings, Grad-CAM cues, report generation, and execution traces for CXR consultation and prior-report comparison; evaluates 2,000 frontal CXRs and 60 non-radiologist participants, with patient and clinician usefulness left for future evaluation.",
+    "featured": false
+  },
+  {
+    "title": "Clinical readiness of foundation and agentic AI in computational pathology",
+    "year": 2026,
+    "domain": "Survey",
+    "modality": null,
+    "task": [
+      "position paper",
+      "clinical translation"
+    ],
+    "agent_type": null,
+    "paper_url": "https://doi.org/10.1016/j.medj.2026.101333",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "Med",
+    "tags": [
+      "pathology",
+      "clinical readiness",
+      "validation",
+      "governance"
+    ],
+    "summary": "Defines pathology AI readiness at the intended-use system level and outlines evidence, validation, economic sustainability, and governance requirements, proposing a deployment roadmap rather than reporting a new validated agent.",
+    "featured": false
+  },
+  {
+    "title": "Where Does Hindsight Enter Clinical Agent Benchmarks? An Audit of Simulators and Case Construction",
+    "year": 2026,
+    "domain": "Benchmark",
+    "modality": null,
+    "task": [
+      "benchmark auditing",
+      "leakage evaluation"
+    ],
+    "agent_type": null,
+    "paper_url": "https://arxiv.org/abs/2611.22241",
+    "code_url": null,
+    "project_url": null,
+    "dataset_url": null,
+    "benchmark_url": null,
+    "venue": "arXiv",
+    "tags": [
+      "benchmark",
+      "safety",
+      "data leakage",
+      "retrospective bias"
+    ],
+    "summary": "HindAudit separates simulator and case-text hindsight channels on 27,489 MIMIC-IV emergency admissions; finds the largest measured effect in retrospective case summaries, while registered simulator tests show little diagnosis-access effect, with the case-text gap bounded by reconstructed presentation-time history.",
+    "featured": false
   }
 ]

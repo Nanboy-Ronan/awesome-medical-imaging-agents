@@ -10,7 +10,7 @@ Use the clinical setting to describe the application and `modality` to describe 
 
 | Application | Typical inputs | Main-list location |
 |---|---|---|
-| Radiology and image-guided treatment | CXR, CT, MRI, mammography, PET, angiography | [Radiology](../README.md#radiology-agents-58) |
+| Radiology and image-guided treatment | CXR, CT, MRI, mammography, PET, angiography | [Radiology](../README.md#radiology-agents-59) |
 | Computational pathology | Whole-slide images, tissue tiles, microscopy | [Pathology](../README.md#pathology-agents-whole-slide-imaging--digital-pathology-43) |
 | Ultrasound and echocardiography | Still images, cine loops, probe observations | [Ultrasound](../README.md#ultrasound-agents-echocardiography--robotic-ultrasound-30) |
 | Endoscopy and surgery | Endoscopic video, surgical scenes, robot observations | [Endoscopy and surgery](../README.md#endoscopy-and-surgical-imaging-agents-29) |
